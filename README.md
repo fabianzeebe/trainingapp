@@ -6,7 +6,7 @@ Aktuelles Ziel: **Haspa Marathon Hamburg, 25.04.2027, 2:55:00**.
 ## Nutzung
 - In Safari öffnen → Teilen → **Zum Home-Bildschirm**.
 - **Woche / Monat**: Soll-Plan, Häkchen = erledigt (wie geplant). Antippen → Details & Ist-Werte.
-- **Verschieben**: Einheit lange drücken und auf einen anderen Tag ziehen (oder in der Einheit „Verschieben“). Die App schlägt eine angepasste Woche vor.
+- **Verschieben**: Einheit am Griff ⠿ auf einen anderen Tag ziehen (oder in der Einheit „Verschieben“). Die App schlägt eine angepasste Woche vor.
 - **Krankheit**: Mehr → Krankheit melden. Einheiten werden abgesagt, der Wiedereinstieg wird automatisch geplant.
 - **Bilanz**: Sonntagabend-Abgleich Soll / Ist mit Wochenkommentar.
 - **Mehr**: FTP, Gewicht, Schwelle, HF → alle Pace-/Watt-/HF-Vorgaben werden neu berechnet. Backup Export/Import.

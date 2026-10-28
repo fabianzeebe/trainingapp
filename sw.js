@@ -1,5 +1,5 @@
 // Service Worker: App offline verfügbar machen. Bei Änderungen VERSION erhöhen.
-const VERSION = 'v1';
+const VERSION = 'v2';
 const CACHE = `trainingapp-${VERSION}`;
 const SHELL = ['./', 'index.html', 'styles.css', 'js/app.js', 'js/core.js', 'js/engine.js', 'js/store.js', 'manifest.webmanifest', 'icons/icon-180.png', 'icons/icon-192.png', 'icons/icon-512.png', 'plan.json'];
 

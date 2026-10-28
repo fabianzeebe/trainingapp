@@ -240,7 +240,7 @@ function renderWeek() {
   <div class="days" id="days">
     ${dates.map((d) => dayCard(d, map.get(d) || [], a)).join('')}
   </div>
-  <p class="hint">Tipp: Einheit lange drücken und auf einen anderen Tag ziehen, um sie zu verschieben.</p>`;
+  <p class="hint">Tipp: Einheit am Griff ⠿ festhalten und auf einen anderen Tag ziehen, um sie zu verschieben.</p>`;
 }
 
 function illnessOn(d) {
@@ -278,6 +278,7 @@ function sessRow(s, a) {
       ${act?.done ? `<div class="sess-ist">✓ ${h(actualSummary(act, s.sport, a))}</div>` : ''}
       ${act?.note ? `<div class="sess-note">„${h(act.note)}“</div>` : ''}
     </div>
+    ${!s.cancelled && s.sport !== 'race' && st !== 'done' ? '<span class="grip" data-grip aria-label="Ziehen zum Verschieben">⠿</span>' : ''}
     ${s.cancelled ? '' : `<button class="check ${st}" data-check="${s.id}" aria-label="Abhaken">${st === 'done' ? '✓' : st === 'missed' ? '✕' : ''}</button>`}
   </div>`;
 }
@@ -796,9 +797,10 @@ function openExtra(d, xid) {
       <div class="form-grid">
         <label>Dauer Std<input class="input" name="h" inputmode="numeric" value="${x.min ? Math.floor(x.min / 60) : ''}"></label>
         <label>Min<input class="input" name="m" inputmode="numeric" value="${x.min ? Math.round(x.min % 60) : ''}"></label>
-        <label>Distanz km<input class="input" name="km" inputmode="decimal" value="${x.km != null ? String(x.km).replace('.', ',') : ''}"></label>
-        <label>Ø Watt<input class="input" name="watts" inputmode="numeric" value="${x.watts ?? ''}"></label>
-        <label>Ø HF<input class="input" name="hr" inputmode="numeric" value="${x.hr ?? ''}"></label>
+        <label data-for="run bike">Distanz km<input class="input" name="km" inputmode="decimal" value="${x.km != null ? String(x.km).replace('.', ',') : ''}"></label>
+        <label data-for="bike">Ø Watt<input class="input" name="watts" inputmode="numeric" value="${x.watts ?? ''}"></label>
+        <label data-for="run bike other">Ø HF<input class="input" name="hr" inputmode="numeric" value="${x.hr ?? ''}"></label>
+        <div class="calc" id="x-calc"></div>
       </div>
       <div class="rpe-l">Anstrengung (RPE)</div>
       <div class="rpe">${Array.from({ length: 10 }, (_, i) => `<button type="button" data-rpe="${i + 1}" class="${x.rpe === i + 1 ? 'on' : ''}">${i + 1}</button>`).join('')}</div>
@@ -810,6 +812,22 @@ function openExtra(d, xid) {
       onMount(sheet) {
         const form = $('#extra-form', sheet);
         let rpe = x.rpe || null;
+        // nur die Felder zeigen, die zur Sportart passen; Pace bzw. W/kg live berechnen
+        const update = () => {
+          const sp = form.elements.sport.value;
+          $$('[data-for]', form).forEach((el) => (el.hidden = !el.dataset.for.split(' ').includes(sp)));
+          const fd = new FormData(form);
+          const min = (num(fd.get('h')) || 0) * 60 + (num(fd.get('m')) || 0);
+          const km = num(fd.get('km'));
+          const w = num(fd.get('watts'));
+          let txt = '';
+          if (sp === 'run' && min && km) txt = `Ø Pace ${C.fmtPace((min * 60) / km)}/km`;
+          if (sp === 'bike' && w) txt = `${(w / a.weight).toFixed(2).replace('.', ',')} W/kg · ${pct(w, a.ftp)} % FTP`;
+          $('#x-calc', sheet).textContent = txt;
+        };
+        form.addEventListener('input', update);
+        form.addEventListener('change', update);
+        update();
         $$('[data-rpe]', form).forEach((b) =>
           b.addEventListener('click', () => {
             rpe = Number(b.dataset.rpe);
@@ -820,7 +838,8 @@ function openExtra(d, xid) {
           e.preventDefault();
           const fd = new FormData(form);
           const min = (num(fd.get('h')) || 0) * 60 + (num(fd.get('m')) || 0);
-          const entry = { id: xid || `x${Date.now()}`, sport: fd.get('sport'), title: fd.get('title').trim(), min: min || null, km: num(fd.get('km')), watts: num(fd.get('watts')), hr: num(fd.get('hr')), rpe, note: fd.get('note').trim() };
+          const sp = fd.get('sport');
+          const entry = { id: xid || `x${Date.now()}`, sport: sp, title: fd.get('title').trim(), min: min || null, km: sp === 'run' || sp === 'bike' ? num(fd.get('km')) : null, watts: sp === 'bike' ? num(fd.get('watts')) : null, hr: sp === 'gym' ? null : num(fd.get('hr')), rpe, note: fd.get('note').trim() };
           const arr = (app.state.extras[d] ||= []);
           const i = arr.findIndex((e2) => e2.id === entry.id);
           if (i >= 0) arr[i] = entry;
@@ -1000,7 +1019,7 @@ function navigate(kind, dir) {
     }
   }
   render();
-  window.scrollTo({ top: 0 });
+  $('#view').scrollTo({ top: 0 });
 }
 
 function saveSettings() {
@@ -1050,17 +1069,12 @@ async function doImport(file) {
   }
 }
 
-// ---------- Drag & Drop (lange drücken) ----------
+// ---------- Drag & Drop (am Griff ⠿ ziehen) ----------
 function setupDrag() {
   const view = $('#view');
-  let timer = null;
-  let start = null;
   let drag = null;
+  let scroller = null;
 
-  const cancel = () => {
-    clearTimeout(timer);
-    timer = null;
-  };
   const begin = (row, x, y) => {
     if (app.tab !== 'week') return;
     const id = row.dataset.id;
@@ -1072,11 +1086,24 @@ function setupDrag() {
     ghost.style.width = `${rect.width}px`;
     document.body.appendChild(ghost);
     row.classList.add('dragging');
-    drag = { id, row, ghost, from: s.date, dx: x - rect.left, dy: y - rect.top, over: null };
+    drag = { id, row, ghost, from: s.date, dx: x - rect.left, dy: y - rect.top, over: null, x, y };
     moveGhost(x, y);
     navigator.vibrate?.(15);
+    // automatisch scrollen, wenn der Finger am oberen/unteren Rand steht
+    scroller = setInterval(() => {
+      if (!drag || !drag.moved) return;
+      const r = view.getBoundingClientRect();
+      const step = drag.y < r.top + 40 ? -6 : drag.y > r.bottom - 40 ? 6 : 0;
+      if (step) {
+        view.scrollBy(0, step);
+        moveGhost(drag.x, drag.y);
+      }
+    }, 16);
   };
   const moveGhost = (x, y) => {
+    if (Math.abs(y - drag.y) > 3) drag.moved = true;
+    drag.x = x;
+    drag.y = y;
     drag.ghost.style.transform = `translate(${x - drag.dx}px, ${y - drag.dy}px)`;
     drag.ghost.style.display = 'none';
     const el = document.elementFromPoint(x, y);
@@ -1085,11 +1112,9 @@ function setupDrag() {
     if (drag.over && drag.over !== day) drag.over.classList.remove('drop');
     if (day) day.classList.add('drop');
     drag.over = day;
-    if (y < 90) window.scrollBy(0, -12);
-    else if (y > window.innerHeight - 110) window.scrollBy(0, 12);
   };
   const end = () => {
-    cancel();
+    clearInterval(scroller);
     if (!drag) return;
     const { id, row, ghost, over, from } = drag;
     ghost.remove();
@@ -1102,32 +1127,24 @@ function setupDrag() {
     if (to && to !== from) openMoveProposal(id, to);
   };
 
-  const down = (target, x, y) => {
-    const row = target.closest('.days .sess[data-id]');
-    if (!row || target.closest('.check')) return;
-    start = { x, y };
-    timer = setTimeout(() => {
-      timer = null;
-      begin(row, x, y);
-    }, 380);
-  };
-  const move = (x, y, e) => {
-    if (drag) {
-      e.preventDefault();
-      moveGhost(x, y);
-    } else if (timer && start && Math.hypot(x - start.x, y - start.y) > 10) cancel();
-  };
-
-  view.addEventListener('touchstart', (e) => down(e.target, e.touches[0].clientX, e.touches[0].clientY), { passive: true });
-  document.addEventListener('touchmove', (e) => move(e.touches[0].clientX, e.touches[0].clientY, e), { passive: false });
-  document.addEventListener('touchend', end);
-  document.addEventListener('touchcancel', end);
-  view.addEventListener('mousedown', (e) => down(e.target, e.clientX, e.clientY));
-  document.addEventListener('mousemove', (e) => move(e.clientX, e.clientY, e));
-  document.addEventListener('mouseup', end);
-  view.addEventListener('contextmenu', (e) => {
-    if (e.target.closest('.sess')) e.preventDefault();
+  view.addEventListener('pointerdown', (e) => {
+    const grip = e.target.closest('[data-grip]');
+    if (!grip) return;
+    e.preventDefault();
+    try {
+      grip.setPointerCapture(e.pointerId);
+    } catch {}
+    begin(grip.closest('.sess[data-id]'), e.clientX, e.clientY);
   });
+  view.addEventListener('pointermove', (e) => {
+    if (!drag) return;
+    e.preventDefault();
+    moveGhost(e.clientX, e.clientY);
+  });
+  view.addEventListener('pointerup', end);
+  view.addEventListener('pointercancel', end);
+  // iOS: Scrollen während des Ziehens verhindern
+  view.addEventListener('touchmove', (e) => drag && e.preventDefault(), { passive: false });
 
   // Wischen zum Blättern
   let sw = null;
@@ -1174,7 +1191,7 @@ function init() {
       app.tab = b.dataset.tab;
       history.replaceState(null, '', `#${app.tab}`);
       render();
-      window.scrollTo({ top: 0 });
+      $('#view').scrollTo({ top: 0 });
     }),
   );
   const view = $('#view');

@@ -29,11 +29,12 @@
   }
 }
 * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-html, body { margin: 0; background: var(--bg); color: var(--text); }
+html, body { margin: 0; background: var(--bg); color: var(--text); height: 100%; overflow: hidden; overscroll-behavior: none; }
+/* App-Shell: nur #view scrollt, Kopfzeile und Tab-Leiste stehen fest */
 body {
   font: 15px/1.4 -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif;
-  padding-bottom: calc(76px + var(--safe-b));
   -webkit-text-size-adjust: 100%;
+  display: flex; flex-direction: column; height: 100vh; height: 100dvh;
 }
 body.noscroll { overflow: hidden; }
 button { font: inherit; color: inherit; }
@@ -45,7 +46,7 @@ h3 { margin: 0 0 8px; font-size: 16px; }
 
 /* Topbar */
 #topbar {
-  position: sticky; top: 0; z-index: 20;
+  flex: none; position: relative; z-index: 20;
   display: flex; align-items: center; justify-content: space-between; gap: 10px;
   padding: calc(10px + var(--safe-t)) 16px 10px;
   background: color-mix(in srgb, var(--bg) 88%, transparent);
@@ -61,11 +62,14 @@ h3 { margin: 0 0 8px; font-size: 16px; }
 }
 .phase-pill.sm { padding: 2px 8px; font-size: 11.5px; }
 
-#view { padding: 12px 16px 24px; max-width: 760px; margin: 0 auto; }
+#view {
+  flex: 1; min-height: 0; overflow-y: auto; -webkit-overflow-scrolling: touch; overscroll-behavior: contain;
+  padding: 12px max(16px, calc((100% - 728px) / 2)) 24px;
+}
 
 /* Tabbar */
 #tabbar {
-  position: fixed; bottom: 0; left: 0; right: 0; z-index: 30;
+  flex: none; position: relative; z-index: 30;
   display: grid; grid-template-columns: repeat(4, 1fr);
   padding: 6px 8px calc(6px + var(--safe-b));
   background: color-mix(in srgb, var(--card) 90%, transparent);
@@ -160,6 +164,12 @@ h3 { margin: 0 0 8px; font-size: 16px; }
 .check.open { border-color: var(--warn); }
 
 .sess.dragging { opacity: 0.35; }
+.grip {
+  display: none; flex: none; width: 30px; height: 36px; margin: -2px -6px 0 -4px; align-items: center; justify-content: center;
+  color: var(--muted); font-size: 20px; touch-action: none; cursor: grab; border-radius: 8px;
+}
+.days .grip { display: flex; }
+.grip:active { background: var(--card2); }
 .drag-ghost {
   position: fixed; top: 0; left: 0; z-index: 100; pointer-events: none;
   background: var(--card); border-radius: 12px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25); border: 1px solid var(--accent);
@@ -312,7 +322,7 @@ code { background: var(--card2); padding: 2px 5px; border-radius: 5px; font-size
 
 /* Toast */
 #toast {
-  position: fixed; left: 50%; bottom: calc(86px + var(--safe-b)); transform: translate(-50%, 20px); z-index: 60;
+  position: fixed; left: 50%; bottom: calc(80px + var(--safe-b)); transform: translate(-50%, 20px); z-index: 60;
   background: #1f2937; color: #fff; padding: 10px 16px; border-radius: 12px; font-size: 14px; max-width: calc(100% - 32px);
   opacity: 0; transition: all 0.2s; pointer-events: none; text-align: center;
 }
@@ -322,3 +332,4 @@ code { background: var(--card2); padding: 2px 5px; border-radius: 5px; font-size
   .chips { grid-template-columns: repeat(7, 1fr); }
   .m-cell { min-height: 80px; }
 }
+[hidden] { display: none !important; }
