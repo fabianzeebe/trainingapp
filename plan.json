@@ -1,6 +1,6 @@
 {
  "planId": "hamburg-2027",
- "version": 1,
+ "version": 2,
  "generated": "2026-10-28",
  "goal": {
   "name": "Haspa Marathon Hamburg",
@@ -71,9 +71,9 @@
    "start": "2026-11-02",
    "phase": "transition",
    "deload": false,
-   "focus": "Erholung nach dem Isartal-HM, locker wieder reinkommen. Rad als Grundlage.",
-   "runKm": 43,
-   "bikeH": 5.4
+   "focus": "Erholung nach dem Isartal-HM. 5.–8.11. Gardasee: Fokus Rad, Laufen nur optional. Davor zwei lockere Läufe.",
+   "runKm": 30,
+   "bikeH": 12
   },
   {
    "start": "2026-11-09",
@@ -296,7 +296,7 @@
     {
      "t": "easy",
      "zone": "E",
-     "km": 8,
+     "km": 9.5,
      "label": "Locker"
     },
     {
@@ -317,26 +317,6 @@
      ]
     }
    ]
-  },
-  {
-   "id": "2026-11-03-2",
-   "date": "2026-11-03",
-   "sport": "bike",
-   "title": "Rad Grundlage 45'",
-   "load": "easy",
-   "desc": "Ruhige Grundlage, gleichmäßig treten, Kadenz 85–95. Locker genug, dass der Lauf am nächsten Tag nicht leidet.",
-   "steps": [
-    {
-     "t": "easy",
-     "min": 45,
-     "pct": [
-      62,
-      72
-     ],
-     "label": "Grundlage"
-    }
-   ],
-   "slot": "pm"
   },
   {
    "id": "2026-11-04-1",
@@ -361,114 +341,26 @@
   {
    "id": "2026-11-04-2",
    "date": "2026-11-04",
-   "sport": "bike",
-   "title": "Rad Grundlage 60'",
+   "sport": "run",
+   "title": "Lauf locker",
    "load": "easy",
-   "desc": "Ruhige Grundlage, gleichmäßig treten, Kadenz 85–95. Locker genug, dass der Lauf am nächsten Tag nicht leidet.",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Bewusst langsam, das ist die Basis für alles andere.",
    "steps": [
     {
      "t": "easy",
-     "min": 60,
-     "pct": [
-      62,
-      72
-     ],
-     "label": "Grundlage"
+     "zone": "E",
+     "km": 8.5,
+     "label": "Locker"
     }
    ]
   },
   {
    "id": "2026-11-05-1",
    "date": "2026-11-05",
-   "sport": "run",
-   "title": "Lauf locker",
-   "load": "easy",
-   "desc": "Lockerer Dauerlauf im Gesprächstempo. Bewusst langsam, das ist die Basis für alles andere.",
-   "steps": [
-    {
-     "t": "easy",
-     "zone": "E",
-     "km": 7,
-     "label": "Locker"
-    }
-   ],
-   "slot": "am"
-  },
-  {
-   "id": "2026-11-05-2",
-   "date": "2026-11-05",
    "sport": "bike",
-   "title": "Sweet Spot 3× 10'",
-   "load": "hard",
-   "desc": "Sweet Spot: hohe aerobe Last bei moderater Ermüdung. Gleichmäßig treten, Kadenz 85–95.",
-   "steps": [
-    {
-     "t": "wu",
-     "min": 15,
-     "pct": [
-      50,
-      70
-     ],
-     "label": "Einfahren (steigernd)"
-    },
-    {
-     "rep": 3,
-     "steps": [
-      {
-       "t": "work",
-       "min": 10,
-       "pct": [
-        86,
-        90
-       ],
-       "label": "Sweet Spot"
-      },
-      {
-       "t": "rec",
-       "min": 5,
-       "pct": [
-        45,
-        55
-       ],
-       "label": "Locker"
-      }
-     ]
-    },
-    {
-     "t": "cd",
-     "min": 10,
-     "pct": [
-      45,
-      55
-     ],
-     "label": "Ausfahren"
-    }
-   ],
-   "slot": "pm"
-  },
-  {
-   "id": "2026-11-06-1",
-   "date": "2026-11-06",
-   "sport": "run",
-   "title": "Lauf locker",
+   "title": "Gardasee Tag 1: Rad Grundlage 2:30 h",
    "load": "easy",
-   "desc": "Lockerer Dauerlauf im Gesprächstempo. Bewusst langsam, das ist die Basis für alles andere.",
-   "steps": [
-    {
-     "t": "easy",
-     "zone": "E",
-     "km": 9,
-     "label": "Locker"
-    }
-   ]
-  },
-  {
-   "id": "2026-11-07-1",
-   "date": "2026-11-07",
-   "sport": "bike",
-   "title": "Rad Grundlage 150'",
-   "load": "easy",
-   "desc": "Ruhige Grundlage. Bei trockenem Wetter gerne draußen mit dem Gravel – dann nach Gefühl/HF statt exakt Watt.",
+   "desc": "Locker einrollen, Gegend erkunden. Ist das der Anreisetag, gerne kürzer oder ganz weglassen.",
    "steps": [
     {
      "t": "easy",
@@ -482,21 +374,143 @@
    ]
   },
   {
-   "id": "2026-11-08-1",
-   "date": "2026-11-08",
+   "id": "2026-11-06-1",
+   "date": "2026-11-06",
    "sport": "run",
-   "long": true,
-   "load": "hard",
-   "title": "Langer Lauf 18 km",
-   "desc": "Locker und gleichmäßig. Ab 25 km Verpflegung mitnehmen und üben.",
+   "title": "Lauf locker 30′",
+   "load": "easy",
+   "desc": "Nur wenn Lust da ist: 30 min sehr locker am See, z. B. vor dem Frühstück.",
    "steps": [
     {
      "t": "easy",
      "zone": "E",
-     "km": 18,
+     "km": 6,
      "label": "Locker"
     }
+   ],
+   "optional": true,
+   "slot": "am"
+  },
+  {
+   "id": "2026-11-06-2",
+   "date": "2026-11-06",
+   "sport": "bike",
+   "title": "Gardasee Tag 2: lange Ausfahrt mit Anstiegen",
+   "load": "hard",
+   "desc": "Schlüsseltag der Radtage: die Anstiege gleichmäßig im Tempo-/unteren Sweet-Spot-Bereich hochfahren, nicht überziehen. Dazwischen locker. Ausreichend essen & trinken (60–80 g KH/h).",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 30,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Einrollen"
+    },
+    {
+     "rep": 3,
+     "steps": [
+      {
+       "t": "work",
+       "min": 20,
+       "pct": [
+        80,
+        88
+       ],
+       "label": "Anstieg gleichmäßig"
+      },
+      {
+       "t": "easy",
+       "min": 50,
+       "pct": [
+        62,
+        72
+       ],
+       "label": "Grundlage / Abfahrt"
+      }
+     ]
+    }
    ]
+  },
+  {
+   "id": "2026-11-07-1",
+   "date": "2026-11-07",
+   "sport": "bike",
+   "title": "Gardasee Tag 3: Grundlage lang 3:30 h",
+   "load": "moderate",
+   "desc": "Ruhige lange Runde. Anstiege im oberen Grundlagenbereich, keine Attacken – die Beine vom Vortag respektieren.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 30,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Einrollen"
+    },
+    {
+     "rep": 2,
+     "steps": [
+      {
+       "t": "work",
+       "min": 20,
+       "pct": [
+        70,
+        78
+       ],
+       "label": "Anstieg gleichmäßig"
+      },
+      {
+       "t": "easy",
+       "min": 70,
+       "pct": [
+        62,
+        72
+       ],
+       "label": "Grundlage / Abfahrt"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "2026-11-08-1",
+   "date": "2026-11-08",
+   "sport": "bike",
+   "title": "Gardasee Tag 4: Rad locker 2 h",
+   "load": "easy",
+   "desc": "Ausrollen, Kaffee-Runde. Rückreisetag? Dann gerne kürzer.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 120,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-08-2",
+   "date": "2026-11-08",
+   "sport": "run",
+   "title": "Koppellauf 25′",
+   "load": "easy",
+   "desc": "Optional nach dem Rad: 20–25 min ganz locker laufen. Ab Montag startet die Base-Phase.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 5,
+     "label": "Locker"
+    }
+   ],
+   "optional": true,
+   "slot": "pm"
   },
   {
    "id": "2026-11-10-1",

@@ -345,6 +345,15 @@ export const BIKE = {
       desc: 'Lange Tempo-Blöcke (Z3) – solide aerobe Arbeit ohne die Beine für den Lauf zu zerstören.',
       steps: [bwu(15), rep(n, bw(block, [80, 86], 'Tempo'), brec(5)), bcd(10)],
     }),
+  outdoor: ({ min = 180, title, desc, climbs = 0, block = 15, pct = [80, 88], load = 'easy' } = {}) =>
+    B({
+      title: title || `Ausfahrt ${fmtH(min)}`,
+      load,
+      desc,
+      steps: climbs
+        ? [bz2(30, 'Einrollen'), rep(climbs, bw(block, pct, 'Anstieg gleichmäßig'), bz2(Math.max(Math.round((min - 30 - climbs * block) / climbs), 10), 'Grundlage / Abfahrt'))]
+        : [bz2(min, 'Grundlage')],
+    }),
   openers: ({ min = 45 } = {}) =>
     B({
       title: `Rad locker ${min}' + Öffner`,

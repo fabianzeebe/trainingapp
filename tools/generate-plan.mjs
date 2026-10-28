@@ -11,7 +11,7 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const A = { ...DEFAULT_ATHLETE };
 
 const PLAN_ID = 'hamburg-2027';
-const VERSION = 1;
+const VERSION = 2;
 const START = '2026-11-02';
 
 const PHASES = {
@@ -34,14 +34,20 @@ const am = (s) => ({ ...s, slot: 'am' });
 // Wochen: d = [Mo, Di, Mi, Do, Fr, Sa, So]
 const WEEKS = [
   // ---------------- Übergang ----------------
-  { phase: 'transition', km: 42, focus: 'Erholung nach dem Isartal-HM, locker wieder reinkommen. Rad als Grundlage.', d: [
+  { phase: 'transition', km: 30, focus: 'Erholung nach dem Isartal-HM. 5.–8.11. Gardasee: Fokus Rad, Laufen nur optional. Davor zwei lockere Läufe.', d: [
     rest,
-    [fill(9, 11, { withStrides: true }), pm(BIKE.z2({ min: 45 }))],
-    [gym('A', 45), BIKE.z2({ min: 60 })],
-    [am(fill(7, 9)), pm(BIKE.sweetSpot({ n: 3, block: 10, pct: [86, 90] }))],
-    [fill(9, 11)],
-    [BIKE.z2({ min: 150, outdoor: true })],
-    [RUN.long({ km: 18 })],
+    [fill(9, 11, { withStrides: true })],
+    [gym('A', 45), fill(7, 9)],
+    [BIKE.outdoor({ min: 150, title: 'Gardasee Tag 1: Rad Grundlage 2:30 h', desc: 'Locker einrollen, Gegend erkunden. Ist das der Anreisetag, gerne kürzer oder ganz weglassen.' })],
+    [
+      am({ ...RUN.easy({ km: 6, title: 'Lauf locker 30′' }), optional: true, desc: 'Nur wenn Lust da ist: 30 min sehr locker am See, z. B. vor dem Frühstück.' }),
+      BIKE.outdoor({ min: 240, climbs: 3, block: 20, pct: [80, 88], load: 'hard', title: 'Gardasee Tag 2: lange Ausfahrt mit Anstiegen', desc: 'Schlüsseltag der Radtage: die Anstiege gleichmäßig im Tempo-/unteren Sweet-Spot-Bereich hochfahren, nicht überziehen. Dazwischen locker. Ausreichend essen & trinken (60–80 g KH/h).' }),
+    ],
+    [BIKE.outdoor({ min: 210, climbs: 2, block: 20, pct: [70, 78], load: 'moderate', title: 'Gardasee Tag 3: Grundlage lang 3:30 h', desc: 'Ruhige lange Runde. Anstiege im oberen Grundlagenbereich, keine Attacken – die Beine vom Vortag respektieren.' })],
+    [
+      BIKE.outdoor({ min: 120, title: 'Gardasee Tag 4: Rad locker 2 h', desc: 'Ausrollen, Kaffee-Runde. Rückreisetag? Dann gerne kürzer.' }),
+      pm({ ...RUN.easy({ km: 5, title: 'Koppellauf 25′' }), optional: true, desc: 'Optional nach dem Rad: 20–25 min ganz locker laufen. Ab Montag startet die Base-Phase.' }),
+    ],
   ] },
   // ---------------- Base ----------------
   { phase: 'base', km: 48, focus: 'Aerobe Basis: Laufumfang langsam steigern, erste lockere Fahrtspiele, Rad Sweet Spot.', d: [

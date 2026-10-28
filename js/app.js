@@ -94,12 +94,33 @@ function planSummary(s, a) {
   return parts.join(' · ');
 }
 
+// Pace-Eingabe "4:30", "4.30" oder "4,30" → Sekunden pro km
+function parsePaceInput(v) {
+  const m = String(v ?? '').trim().match(/^(\d{1,2})[:.,](\d{2})$/);
+  return m ? Number(m[1]) * 60 + Number(m[2]) : null;
+}
+// Lauf: fehlender Wert aus Dauer / Distanz / Pace wird aus den beiden anderen berechnet
+function solveRun(min, km, pace) {
+  if (min && km) return { min, km, pace: (min * 60) / km, calc: 'pace' };
+  if (pace && km) return { min: (pace * km) / 60, km, pace, calc: 'min' };
+  if (pace && min) return { min, km: (min * 60) / pace, pace, calc: 'km' };
+  return { min, km, pace, calc: null };
+}
+function runCalcText(r) {
+  if (r.calc === 'pace') return `Ø Pace ${C.fmtPace(r.pace)}/km`;
+  if (r.calc === 'min') return `Dauer ≈ ${C.fmtMin(r.min)} · Ø Pace ${C.fmtPace(r.pace)}/km`;
+  if (r.calc === 'km') return `Distanz ≈ ${C.fmtKm(r.km, 2)} km · Ø Pace ${C.fmtPace(r.pace)}/km`;
+  return 'Zwei von drei Werten reichen (Dauer, Distanz, Pace).';
+}
+const round2 = (x) => (x == null ? null : Math.round(x * 100) / 100);
+
 function actualSummary(act, sport, a) {
   if (!act?.done) return '';
   const p = [];
   if (act.km) p.push(`${C.fmtKm(act.km, 2)} km`);
   if (act.min) p.push(C.fmtMin(act.min));
-  if ((sport === 'run' || sport === 'race') && act.km && act.min) p.push(`${C.fmtPace((act.min * 60) / act.km)}/km`);
+  const pace = act.pace || (act.km && act.min ? (act.min * 60) / act.km : null);
+  if ((sport === 'run' || sport === 'race') && pace) p.push(`${C.fmtPace(pace)}/km`);
   if (act.watts) p.push(`${act.watts} W (${(act.watts / a.weight).toFixed(2).replace('.', ',')} W/kg)`);
   if (act.hr) p.push(`HF ${act.hr}`);
   if (act.rpe) p.push(`RPE ${act.rpe}`);
@@ -273,7 +294,7 @@ function sessRow(s, a) {
   return `<div class="sess s-${s.sport} st-${st}${s.modTag && !s.cancelled ? ' modded' : ''}" data-id="${s.id}">
     <div class="sess-ic">${SPORT[s.sport]?.icon || '•'}</div>
     <div class="sess-main">
-      <div class="sess-title">${h(s.title)} ${badge}${s.slot === 'pm' ? '<span class="slot">PM</span>' : s.slot === 'am' ? '<span class="slot">AM</span>' : ''}</div>
+      <div class="sess-title">${h(s.title)} ${badge}${s.optional ? '<span class="badge">optional</span>' : ''}${s.slot === 'pm' ? '<span class="slot">PM</span>' : s.slot === 'am' ? '<span class="slot">AM</span>' : ''}</div>
       <div class="sess-sub">${s.cancelled ? h(s.cancelReason || 'abgesagt') : h(planSummary(s, a))}${s.movedFrom ? ` · <span class="moved">verschoben von ${C.DAY_SHORT[C.weekday(s.movedFrom)]}</span>` : ''}</div>
       ${act?.done ? `<div class="sess-ist">✓ ${h(actualSummary(act, s.sport, a))}</div>` : ''}
       ${act?.note ? `<div class="sess-note">„${h(act.note)}“</div>` : ''}
@@ -547,6 +568,7 @@ function openSession(id) {
       <label>Dauer Std<input class="input" name="h" inputmode="numeric" value="${durH}" placeholder="${Math.floor(t.min / 60)}"></label>
       <label>Min<input class="input" name="m" inputmode="numeric" value="${durM}" placeholder="${Math.round(t.min % 60)}"></label>
       ${s.sport !== 'gym' ? `<label>Distanz km<input class="input" name="km" inputmode="decimal" value="${act.km != null ? String(act.km).replace('.', ',') : ''}" placeholder="${isRun ? C.fmtKm(t.km, 1) : 'optional'}"></label>` : ''}
+      ${isRun ? `<label>Ø Pace (min/km)<input class="input" name="pace" inputmode="decimal" value="${act.pace ? C.fmtPace(act.pace) : ''}" placeholder="z. B. 4:35"></label>` : ''}
       ${s.sport === 'bike' ? `<label>Ø Watt<input class="input" name="watts" inputmode="numeric" value="${act.watts ?? ''}" placeholder="z. B. 230"></label>` : ''}
       ${s.sport !== 'gym' ? `<label>Ø HF<input class="input" name="hr" inputmode="numeric" value="${act.hr ?? ''}" placeholder="bpm"></label>` : ''}
       <div class="calc" id="calc"></div>
@@ -579,13 +601,15 @@ function openSession(id) {
         const fd = new FormData(form);
         const hh = num(fd.get('h')) || 0;
         const mm = num(fd.get('m')) || 0;
-        return { min: hh * 60 + mm || null, km: num(fd.get('km')), watts: num(fd.get('watts')), hr: num(fd.get('hr')), note: (fd.get('note') || '').trim() };
+        const v = { min: hh * 60 + mm || null, km: num(fd.get('km')), watts: num(fd.get('watts')), hr: num(fd.get('hr')), note: (fd.get('note') || '').trim() };
+        if (isRun) Object.assign(v, solveRun(v.min, v.km, parsePaceInput(fd.get('pace'))));
+        return v;
       };
       const calc = () => {
         if (!form) return;
         const v = read();
         let txt = '';
-        if (isRun && v.min && v.km) txt = `Ø Pace ${C.fmtPace((v.min * 60) / v.km)}/km`;
+        if (isRun) txt = runCalcText(v);
         if (s.sport === 'bike' && v.watts) txt = `${(v.watts / a.weight).toFixed(2).replace('.', ',')} W/kg · ${pct(v.watts, a.ftp)} % FTP`;
         $('#calc', sheet).textContent = txt;
       };
@@ -601,7 +625,9 @@ function openSession(id) {
         form.addEventListener('submit', (e) => {
           e.preventDefault();
           const v = read();
-          app.state.actuals[id] = { done: true, date: s.date, min: v.min ?? Math.round(t.min), km: v.km ?? (isRun ? Math.round(t.km * 10) / 10 : null), watts: v.watts, hr: v.hr, rpe, note: v.note, ts: Date.now() };
+          const min = v.min ? Math.round(v.min) : Math.round(t.min);
+          const km = v.km ? round2(v.km) : isRun ? Math.round(t.km * 10) / 10 : null;
+          app.state.actuals[id] = { done: true, date: s.date, min, km, pace: isRun && km ? (v.km && v.pace ? v.pace : (min * 60) / km) : null, watts: v.watts, hr: v.hr, rpe, note: v.note, ts: Date.now() };
           save();
           closeSheet();
           render();
@@ -798,6 +824,7 @@ function openExtra(d, xid) {
         <label>Dauer Std<input class="input" name="h" inputmode="numeric" value="${x.min ? Math.floor(x.min / 60) : ''}"></label>
         <label>Min<input class="input" name="m" inputmode="numeric" value="${x.min ? Math.round(x.min % 60) : ''}"></label>
         <label data-for="run bike">Distanz km<input class="input" name="km" inputmode="decimal" value="${x.km != null ? String(x.km).replace('.', ',') : ''}"></label>
+        <label data-for="run">Ø Pace (min/km)<input class="input" name="pace" inputmode="decimal" value="${x.pace ? C.fmtPace(x.pace) : ''}" placeholder="z. B. 4:35"></label>
         <label data-for="bike">Ø Watt<input class="input" name="watts" inputmode="numeric" value="${x.watts ?? ''}"></label>
         <label data-for="run bike other">Ø HF<input class="input" name="hr" inputmode="numeric" value="${x.hr ?? ''}"></label>
         <div class="calc" id="x-calc"></div>
@@ -821,7 +848,7 @@ function openExtra(d, xid) {
           const km = num(fd.get('km'));
           const w = num(fd.get('watts'));
           let txt = '';
-          if (sp === 'run' && min && km) txt = `Ø Pace ${C.fmtPace((min * 60) / km)}/km`;
+          if (sp === 'run') txt = runCalcText(solveRun(min || null, km, parsePaceInput(fd.get('pace'))));
           if (sp === 'bike' && w) txt = `${(w / a.weight).toFixed(2).replace('.', ',')} W/kg · ${pct(w, a.ftp)} % FTP`;
           $('#x-calc', sheet).textContent = txt;
         };
@@ -839,7 +866,8 @@ function openExtra(d, xid) {
           const fd = new FormData(form);
           const min = (num(fd.get('h')) || 0) * 60 + (num(fd.get('m')) || 0);
           const sp = fd.get('sport');
-          const entry = { id: xid || `x${Date.now()}`, sport: sp, title: fd.get('title').trim(), min: min || null, km: sp === 'run' || sp === 'bike' ? num(fd.get('km')) : null, watts: sp === 'bike' ? num(fd.get('watts')) : null, hr: sp === 'gym' ? null : num(fd.get('hr')), rpe, note: fd.get('note').trim() };
+          const r = sp === 'run' ? solveRun(min || null, num(fd.get('km')), parsePaceInput(fd.get('pace'))) : { min: min || null, km: sp === 'bike' ? num(fd.get('km')) : null, pace: null };
+          const entry = { id: xid || `x${Date.now()}`, sport: sp, title: fd.get('title').trim(), min: r.min ? Math.round(r.min) : null, km: round2(r.km), pace: r.pace || null, watts: sp === 'bike' ? num(fd.get('watts')) : null, hr: sp === 'gym' ? null : num(fd.get('hr')), rpe, note: fd.get('note').trim() };
           const arr = (app.state.extras[d] ||= []);
           const i = arr.findIndex((e2) => e2.id === entry.id);
           if (i >= 0) arr[i] = entry;

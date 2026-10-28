@@ -335,6 +335,8 @@ export function dayStats(list, state, a) {
   const res = { plan: { runKm: 0, bikeMin: 0, min: 0, n: 0 }, ist: { runKm: 0, bikeMin: 0, min: 0, n: 0 } };
   for (const s of list) {
     if (s.cancelled) continue;
+    // optionale Einheiten zählen nur, wenn sie gemacht wurden
+    if (s.optional && !state.actuals?.[s.id]?.done) continue;
     const t = sessionTotals(s, a);
     res.plan.n++;
     res.plan.min += t.min;
