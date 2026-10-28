@@ -1,0 +1,6957 @@
+{
+ "planId": "hamburg-2027",
+ "version": 1,
+ "generated": "2026-10-28",
+ "goal": {
+  "name": "Haspa Marathon Hamburg",
+  "date": "2027-04-25",
+  "target": "2:55:00",
+  "targetPace": 249
+ },
+ "athlete": {
+  "ftp": 320,
+  "weight": 79,
+  "thrPace": 237,
+  "lthr": 169,
+  "hrMax": 188
+ },
+ "phases": [
+  {
+   "key": "transition",
+   "name": "Übergang",
+   "color": "#8E8E93",
+   "start": "2026-11-02",
+   "end": "2026-11-08"
+  },
+  {
+   "key": "base",
+   "name": "Base",
+   "color": "#2F7DF6",
+   "start": "2026-11-09",
+   "end": "2027-01-03"
+  },
+  {
+   "key": "build1",
+   "name": "Build 1",
+   "color": "#22A447",
+   "start": "2027-01-04",
+   "end": "2027-02-28"
+  },
+  {
+   "key": "build2",
+   "name": "Build 2 · Spezifisch",
+   "color": "#F08C00",
+   "start": "2027-03-01",
+   "end": "2027-04-04"
+  },
+  {
+   "key": "taper",
+   "name": "Taper",
+   "color": "#8B5CF6",
+   "start": "2027-04-05",
+   "end": "2027-04-18"
+  },
+  {
+   "key": "race",
+   "name": "Race",
+   "color": "#E5383B",
+   "start": "2027-04-19",
+   "end": "2027-04-25"
+  },
+  {
+   "key": "recovery",
+   "name": "Recovery",
+   "color": "#5E8C93",
+   "start": "2027-04-26",
+   "end": "2027-05-09"
+  }
+ ],
+ "weeks": [
+  {
+   "start": "2026-11-02",
+   "phase": "transition",
+   "deload": false,
+   "focus": "Erholung nach dem Isartal-HM, locker wieder reinkommen. Rad als Grundlage.",
+   "runKm": 43,
+   "bikeH": 5.4
+  },
+  {
+   "start": "2026-11-09",
+   "phase": "base",
+   "deload": false,
+   "focus": "Aerobe Basis: Laufumfang langsam steigern, erste lockere Fahrtspiele, Rad Sweet Spot.",
+   "runKm": 48,
+   "bikeH": 6
+  },
+  {
+   "start": "2026-11-16",
+   "phase": "base",
+   "deload": false,
+   "focus": "Kraft über Bergläufe und Kraftausdauer am Rad.",
+   "runKm": 53,
+   "bikeH": 5.9
+  },
+  {
+   "start": "2026-11-23",
+   "phase": "base",
+   "deload": false,
+   "focus": "Erster Progressionslauf, längere Sweet-Spot-Blöcke.",
+   "runKm": 58,
+   "bikeH": 6.3
+  },
+  {
+   "start": "2026-11-30",
+   "phase": "base",
+   "deload": true,
+   "focus": "Entlastungswoche: Umfang runter, Frische holen.",
+   "runKm": 45,
+   "bikeH": 4.1
+  },
+  {
+   "start": "2026-12-07",
+   "phase": "base",
+   "deload": false,
+   "focus": "Fahrtspiel-Pyramide und Over-Unders: Tempowechsel lernen.",
+   "runKm": 60,
+   "bikeH": 5.8
+  },
+  {
+   "start": "2026-12-14",
+   "phase": "base",
+   "deload": false,
+   "focus": "Erste Schwellenreize (Cruise Intervals), 40/20 am Rad, Koppellauf.",
+   "runKm": 66,
+   "bikeH": 5.8
+  },
+  {
+   "start": "2026-12-21",
+   "phase": "base",
+   "deload": false,
+   "focus": "Höchster Base-Umfang. Lange Bergläufe + Steady.",
+   "runKm": 70,
+   "bikeH": 6.4
+  },
+  {
+   "start": "2026-12-28",
+   "phase": "base",
+   "deload": true,
+   "focus": "Entlastung über die Feiertage. Lockeres HM-Fahrtspiel, Rad-Schwelle als Formcheck.",
+   "runKm": 54,
+   "bikeH": 4.2
+  },
+  {
+   "start": "2027-01-04",
+   "phase": "build1",
+   "deload": false,
+   "focus": "Start Build: 2 Lauf-Qualitäten pro Woche, Rad-Qualität nach dem Lauf-Schlüsseltag (Doppeltag).",
+   "runKm": 71,
+   "bikeH": 4.3
+  },
+  {
+   "start": "2027-01-11",
+   "phase": "build1",
+   "deload": false,
+   "focus": "Schwelle in längeren Stücken, erste Marathon-Pace-Blöcke.",
+   "runKm": 79,
+   "bikeH": 3.9
+  },
+  {
+   "start": "2027-01-18",
+   "phase": "build1",
+   "deload": false,
+   "focus": "Leiter-Intervalle, 14-km-Progression, 30 km locker.",
+   "runKm": 78,
+   "bikeH": 4
+  },
+  {
+   "start": "2027-01-25",
+   "phase": "build1",
+   "deload": true,
+   "focus": "Entlastungswoche. Kurze schnelle 400er halten die Spritzigkeit.",
+   "runKm": 60,
+   "bikeH": 3.8
+  },
+  {
+   "start": "2027-02-01",
+   "phase": "build1",
+   "deload": false,
+   "focus": "3× 3 km Schwelle, Schwelle + 10K-Mix, erster langer Lauf mit MP-Blöcken.",
+   "runKm": 82,
+   "bikeH": 4
+  },
+  {
+   "start": "2027-02-08",
+   "phase": "build1",
+   "deload": false,
+   "focus": "VO2-Reiz über 1200er, MP 2× 5 km, langer welliger Lauf.",
+   "runKm": 84,
+   "bikeH": 4.1
+  },
+  {
+   "start": "2027-02-15",
+   "phase": "build1",
+   "deload": false,
+   "focus": "Wechseltempo und 10 km im HM-Tempo – härteste Build-1-Woche.",
+   "runKm": 85,
+   "bikeH": 3.7
+  },
+  {
+   "start": "2027-02-22",
+   "phase": "build1",
+   "deload": true,
+   "focus": "Entlastung vor der spezifischen Phase.",
+   "runKm": 66,
+   "bikeH": 3.8
+  },
+  {
+   "start": "2027-03-01",
+   "phase": "build2",
+   "deload": false,
+   "focus": "Marathonspezifisch: HM-Pace-Intervalle, Float-Lauf, 32 km mit 3× 5 km MP.",
+   "runKm": 86,
+   "bikeH": 4
+  },
+  {
+   "start": "2027-03-08",
+   "phase": "build2",
+   "deload": false,
+   "focus": "HM-Formtest am Sonntag (14.03.). Ziel: unter 1:22 (≈3:53/km). Woche leicht reduziert.",
+   "runKm": 57,
+   "bikeH": 1
+  },
+  {
+   "start": "2027-03-15",
+   "phase": "build2",
+   "deload": false,
+   "focus": "Erholung nach dem HM (Di/Mi locker), dann zurück in die Spezifik.",
+   "runKm": 76,
+   "bikeH": 4.2
+  },
+  {
+   "start": "2027-03-22",
+   "phase": "build2",
+   "deload": false,
+   "focus": "Spitzenwoche: 4× 3 km Schwelle, 34 km mit 2× 8 km MP.",
+   "runKm": 90,
+   "bikeH": 3.4
+  },
+  {
+   "start": "2027-03-29",
+   "phase": "build2",
+   "deload": false,
+   "focus": "Letzte große Woche: Generalprobe 32 km mit 18 km MP am Stück (3 Wochen vor dem Rennen).",
+   "runKm": 88,
+   "bikeH": 3.5
+  },
+  {
+   "start": "2027-04-05",
+   "phase": "taper",
+   "deload": false,
+   "focus": "Taper Woche 1: Umfang ~80 %, Intensität bleibt.",
+   "runKm": 72,
+   "bikeH": 2.5
+  },
+  {
+   "start": "2027-04-12",
+   "phase": "taper",
+   "deload": false,
+   "focus": "Taper Woche 2: Umfang ~65 %, kurze schnelle Reize, Beine frisch werden lassen.",
+   "runKm": 59,
+   "bikeH": 2
+  },
+  {
+   "start": "2027-04-19",
+   "phase": "race",
+   "deload": false,
+   "focus": "Rennwoche Hamburg! Wenig Umfang, MP kurz abrufen, viel schlafen, Kohlenhydrate ab Donnerstag hoch.",
+   "runKm": 72,
+   "bikeH": 0.8
+  },
+  {
+   "start": "2027-04-26",
+   "phase": "recovery",
+   "deload": false,
+   "focus": "Erholung nach dem Marathon. Nur nach Lust und Laune, alles sehr locker.",
+   "runKm": 14,
+   "bikeH": 3.3
+  },
+  {
+   "start": "2027-05-03",
+   "phase": "recovery",
+   "deload": false,
+   "focus": "Langsam zurück. Danach: neues Ziel mit Claude besprechen!",
+   "runKm": 41,
+   "bikeH": 2.3
+  }
+ ],
+ "sessions": [
+  {
+   "id": "2026-11-03-1",
+   "date": "2026-11-03",
+   "sport": "run",
+   "title": "Lauf locker + Steigerungen",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Am Ende 6 Steigerungen über 20s: locker-schnell, saubere Technik, nicht sprinten.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 8,
+     "label": "Locker"
+    },
+    {
+     "rep": 6,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "STRIDE",
+       "min": 0.3333333333333333,
+       "label": "Steigerung 20s"
+      },
+      {
+       "t": "rec",
+       "zone": "WALK",
+       "min": 0.6666666666666666,
+       "label": "Gehen/Traben"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "2026-11-03-2",
+   "date": "2026-11-03",
+   "sport": "bike",
+   "title": "Rad Grundlage 45'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage, gleichmäßig treten, Kadenz 85–95. Locker genug, dass der Lauf am nächsten Tag nicht leidet.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 45,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ],
+   "slot": "pm"
+  },
+  {
+   "id": "2026-11-04-1",
+   "date": "2026-11-04",
+   "sport": "gym",
+   "title": "Stabi A – Rumpf & Hüfte",
+   "load": "easy",
+   "min": 45,
+   "desc": "Stabi- und Kraftprogramm: saubere Technik, 1–2 Wiederholungen „im Tank“ lassen. Pausen 45–60s.",
+   "exercises": [
+    "Aufwärmen: 5 min Rad/Rudern + Mobility Hüfte",
+    "Dead Bug – 3× 10/Seite",
+    "Unterarmstütz mit Beinheben – 3× 40s",
+    "Seitstütz mit Hüftheben – 3× 12/Seite",
+    "Pallof Press (Kabel/Band) – 3× 10/Seite",
+    "Glute Bridge einbeinig – 3× 12/Seite",
+    "Monster Walk mit Miniband – 3× 15 Schritte/Richtung",
+    "Bird Dog mit Halt – 3× 8/Seite",
+    "Wadenheben einbeinig – 3× 15/Seite"
+   ]
+  },
+  {
+   "id": "2026-11-04-2",
+   "date": "2026-11-04",
+   "sport": "bike",
+   "title": "Rad Grundlage 60'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage, gleichmäßig treten, Kadenz 85–95. Locker genug, dass der Lauf am nächsten Tag nicht leidet.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 60,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-05-1",
+   "date": "2026-11-05",
+   "sport": "run",
+   "title": "Lauf locker",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Bewusst langsam, das ist die Basis für alles andere.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 7,
+     "label": "Locker"
+    }
+   ],
+   "slot": "am"
+  },
+  {
+   "id": "2026-11-05-2",
+   "date": "2026-11-05",
+   "sport": "bike",
+   "title": "Sweet Spot 3× 10'",
+   "load": "hard",
+   "desc": "Sweet Spot: hohe aerobe Last bei moderater Ermüdung. Gleichmäßig treten, Kadenz 85–95.",
+   "steps": [
+    {
+     "t": "wu",
+     "min": 15,
+     "pct": [
+      50,
+      70
+     ],
+     "label": "Einfahren (steigernd)"
+    },
+    {
+     "rep": 3,
+     "steps": [
+      {
+       "t": "work",
+       "min": 10,
+       "pct": [
+        86,
+        90
+       ],
+       "label": "Sweet Spot"
+      },
+      {
+       "t": "rec",
+       "min": 5,
+       "pct": [
+        45,
+        55
+       ],
+       "label": "Locker"
+      }
+     ]
+    },
+    {
+     "t": "cd",
+     "min": 10,
+     "pct": [
+      45,
+      55
+     ],
+     "label": "Ausfahren"
+    }
+   ],
+   "slot": "pm"
+  },
+  {
+   "id": "2026-11-06-1",
+   "date": "2026-11-06",
+   "sport": "run",
+   "title": "Lauf locker",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Bewusst langsam, das ist die Basis für alles andere.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 9,
+     "label": "Locker"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-07-1",
+   "date": "2026-11-07",
+   "sport": "bike",
+   "title": "Rad Grundlage 150'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage. Bei trockenem Wetter gerne draußen mit dem Gravel – dann nach Gefühl/HF statt exakt Watt.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 150,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-08-1",
+   "date": "2026-11-08",
+   "sport": "run",
+   "long": true,
+   "load": "hard",
+   "title": "Langer Lauf 18 km",
+   "desc": "Locker und gleichmäßig. Ab 25 km Verpflegung mitnehmen und üben.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 18,
+     "label": "Locker"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-10-1",
+   "date": "2026-11-10",
+   "sport": "run",
+   "title": "Fahrtspiel 10× 1'/1'",
+   "load": "hard",
+   "desc": "Lockerer Einstieg in die Intensität: 1 min zügig (≈10-km-Tempo nach Gefühl), 1 min locker traben. Rhythmus finden, nicht verbeißen.",
+   "steps": [
+    {
+     "t": "wu",
+     "zone": "E",
+     "km": 3,
+     "label": "Einlaufen"
+    },
+    {
+     "rep": 10,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "10K",
+       "min": 1,
+       "label": "Zügig"
+      },
+      {
+       "t": "rec",
+       "zone": "JOG",
+       "min": 1,
+       "label": "Trabpause"
+      }
+     ]
+    },
+    {
+     "t": "cd",
+     "zone": "E",
+     "km": 3,
+     "label": "Auslaufen"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-10-2",
+   "date": "2026-11-10",
+   "sport": "bike",
+   "title": "Rad Grundlage 45'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage, gleichmäßig treten, Kadenz 85–95. Locker genug, dass der Lauf am nächsten Tag nicht leidet.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 45,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ],
+   "slot": "pm"
+  },
+  {
+   "id": "2026-11-11-1",
+   "date": "2026-11-11",
+   "sport": "gym",
+   "title": "Stabi B – Einbein-Kraft & Füße",
+   "load": "easy",
+   "min": 50,
+   "desc": "Stabi- und Kraftprogramm: saubere Technik, 1–2 Wiederholungen „im Tank“ lassen. Pausen 45–60s.",
+   "exercises": [
+    "Aufwärmen: 5 min + Fußgelenk- und Hüftmobilisation",
+    "Bulgarian Split Squat – 3× 8/Seite (moderat schwer)",
+    "Einbeiniges Kreuzheben (RDL) – 3× 8/Seite",
+    "Step-ups auf Box (Knie über Hüfte) – 3× 10/Seite",
+    "Exzentrisches Wadenheben (langsam ab) – 3× 12/Seite",
+    "Copenhagen Plank (kurzer Hebel) – 3× 20s/Seite",
+    "Hip Airplane – 3× 5/Seite",
+    "Fußgymnastik: Handtuch greifen, Short Foot – 3× 30s"
+   ]
+  },
+  {
+   "id": "2026-11-11-2",
+   "date": "2026-11-11",
+   "sport": "bike",
+   "title": "Rad Grundlage 60'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage, gleichmäßig treten, Kadenz 85–95. Locker genug, dass der Lauf am nächsten Tag nicht leidet.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 60,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-12-1",
+   "date": "2026-11-12",
+   "sport": "run",
+   "title": "Lauf locker",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Bewusst langsam, das ist die Basis für alles andere.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 7,
+     "label": "Locker"
+    }
+   ],
+   "slot": "am"
+  },
+  {
+   "id": "2026-11-12-2",
+   "date": "2026-11-12",
+   "sport": "bike",
+   "title": "Sweet Spot 3× 12'",
+   "load": "hard",
+   "desc": "Sweet Spot: hohe aerobe Last bei moderater Ermüdung. Gleichmäßig treten, Kadenz 85–95.",
+   "steps": [
+    {
+     "t": "wu",
+     "min": 15,
+     "pct": [
+      50,
+      70
+     ],
+     "label": "Einfahren (steigernd)"
+    },
+    {
+     "rep": 3,
+     "steps": [
+      {
+       "t": "work",
+       "min": 12,
+       "pct": [
+        88,
+        92
+       ],
+       "label": "Sweet Spot"
+      },
+      {
+       "t": "rec",
+       "min": 5,
+       "pct": [
+        45,
+        55
+       ],
+       "label": "Locker"
+      }
+     ]
+    },
+    {
+     "t": "easy",
+     "min": 15,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    },
+    {
+     "t": "cd",
+     "min": 10,
+     "pct": [
+      45,
+      55
+     ],
+     "label": "Ausfahren"
+    }
+   ],
+   "slot": "pm"
+  },
+  {
+   "id": "2026-11-13-1",
+   "date": "2026-11-13",
+   "sport": "run",
+   "title": "Lauf locker + Lauf-ABC",
+   "load": "easy",
+   "desc": "Locker laufen, nach 3 km 10–12 min Lauf-ABC (Skippings, Anfersen, Hopserlauf, Kniehebelauf, Prellsprünge), danach 4 Steigerungen.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 3,
+     "label": "Locker"
+    },
+    {
+     "t": "work",
+     "zone": "WALK",
+     "min": 12,
+     "label": "Lauf-ABC"
+    },
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 6,
+     "label": "Locker"
+    },
+    {
+     "rep": 4,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "STRIDE",
+       "min": 0.3333333333333333,
+       "label": "Steigerung 20s"
+      },
+      {
+       "t": "rec",
+       "zone": "WALK",
+       "min": 0.6666666666666666,
+       "label": "Gehen"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "2026-11-14-1",
+   "date": "2026-11-14",
+   "sport": "bike",
+   "title": "Rad Grundlage 165'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage. Bei trockenem Wetter gerne draußen mit dem Gravel – dann nach Gefühl/HF statt exakt Watt.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 165,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-15-1",
+   "date": "2026-11-15",
+   "sport": "run",
+   "long": true,
+   "load": "hard",
+   "title": "Langer Lauf 20 km",
+   "desc": "Locker und gleichmäßig. Ab 25 km Verpflegung mitnehmen und üben.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 20,
+     "label": "Locker"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-17-1",
+   "date": "2026-11-17",
+   "sport": "run",
+   "title": "Bergläufe 8× 60s",
+   "load": "hard",
+   "desc": "Kraftausdauer für Beine und Laufökonomie. 60s bergauf (4–6 %) kräftig mit hoher Frequenz und Armeinsatz, locker zurück traben.",
+   "steps": [
+    {
+     "t": "wu",
+     "zone": "E",
+     "km": 3,
+     "label": "Einlaufen"
+    },
+    {
+     "rep": 8,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "HILL",
+       "min": 1,
+       "label": "Bergauf"
+      },
+      {
+       "t": "rec",
+       "zone": "JOG",
+       "min": 1.5,
+       "label": "Trabpause"
+      }
+     ]
+    },
+    {
+     "t": "cd",
+     "zone": "E",
+     "km": 3,
+     "label": "Auslaufen"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-17-2",
+   "date": "2026-11-17",
+   "sport": "bike",
+   "title": "Rad Grundlage 50'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage, gleichmäßig treten, Kadenz 85–95. Locker genug, dass der Lauf am nächsten Tag nicht leidet.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 50,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ],
+   "slot": "pm"
+  },
+  {
+   "id": "2026-11-18-1",
+   "date": "2026-11-18",
+   "sport": "gym",
+   "title": "Stabi C – Athletik & Elastizität",
+   "load": "easy",
+   "min": 50,
+   "desc": "Stabi- und Kraftprogramm: saubere Technik, 1–2 Wiederholungen „im Tank“ lassen. Pausen 45–60s.",
+   "exercises": [
+    "Aufwärmen: 5 min + Lauf-ABC light",
+    "Goblet Squat – 3× 10",
+    "Hip Thrust (Langhantel) – 3× 10",
+    "Seitliche Ausfallschritte – 3× 8/Seite",
+    "Pogo Jumps (Fußgelenk-Sprünge) – 3× 20",
+    "Sprung-Ausfallschritte (Split Jumps) – 3× 6/Seite",
+    "Nordic Hamstring Curl (assistiert) – 3× 5",
+    "Ab-Wheel / Rollout – 3× 8",
+    "Seitstütz statisch – 2× 45s/Seite"
+   ]
+  },
+  {
+   "id": "2026-11-18-2",
+   "date": "2026-11-18",
+   "sport": "bike",
+   "title": "Rad Grundlage 60'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage, gleichmäßig treten, Kadenz 85–95. Locker genug, dass der Lauf am nächsten Tag nicht leidet.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 60,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-19-1",
+   "date": "2026-11-19",
+   "sport": "run",
+   "title": "Lauf locker",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Bewusst langsam, das ist die Basis für alles andere.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 10,
+     "label": "Locker"
+    }
+   ],
+   "slot": "am"
+  },
+  {
+   "id": "2026-11-19-2",
+   "date": "2026-11-19",
+   "sport": "bike",
+   "title": "Kraftausdauer 5× 5' (niedrige Kadenz)",
+   "load": "hard",
+   "desc": "Große Gänge, 55–65 rpm, Oberkörper ruhig. Muskuläre Kraftausdauer – gut kombinierbar mit der Laufvorbereitung.",
+   "steps": [
+    {
+     "t": "wu",
+     "min": 15,
+     "pct": [
+      50,
+      70
+     ],
+     "label": "Einfahren (steigernd)"
+    },
+    {
+     "rep": 5,
+     "steps": [
+      {
+       "t": "work",
+       "min": 5,
+       "pct": [
+        84,
+        90
+       ],
+       "label": "Kraftausdauer",
+       "cad": "55–65 rpm"
+      },
+      {
+       "t": "rec",
+       "min": 4,
+       "pct": [
+        45,
+        55
+       ],
+       "label": "Locker"
+      }
+     ]
+    },
+    {
+     "t": "easy",
+     "min": 10,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    },
+    {
+     "t": "cd",
+     "min": 10,
+     "pct": [
+      45,
+      55
+     ],
+     "label": "Ausfahren"
+    }
+   ],
+   "slot": "pm"
+  },
+  {
+   "id": "2026-11-20-1",
+   "date": "2026-11-20",
+   "sport": "run",
+   "title": "Lauf locker + Steigerungen",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Am Ende 6 Steigerungen über 20s: locker-schnell, saubere Technik, nicht sprinten.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 10,
+     "label": "Locker"
+    },
+    {
+     "rep": 6,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "STRIDE",
+       "min": 0.3333333333333333,
+       "label": "Steigerung 20s"
+      },
+      {
+       "t": "rec",
+       "zone": "WALK",
+       "min": 0.6666666666666666,
+       "label": "Gehen/Traben"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "2026-11-21-1",
+   "date": "2026-11-21",
+   "sport": "bike",
+   "title": "Grundlage 2:45 h mit 3× 12' Tempo",
+   "load": "moderate",
+   "desc": "Lange Ausfahrt mit Tempo-Blöcken (Z3) im mittleren Teil. Draußen möglich, Blöcke auf möglichst flachen Abschnitten.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 30,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Einfahren / Grundlage"
+    },
+    {
+     "rep": 3,
+     "steps": [
+      {
+       "t": "work",
+       "min": 12,
+       "pct": [
+        78,
+        85
+       ],
+       "label": "Tempo"
+      },
+      {
+       "t": "easy",
+       "min": 10,
+       "pct": [
+        62,
+        72
+       ],
+       "label": "Grundlage"
+      }
+     ]
+    },
+    {
+     "t": "easy",
+     "min": 69,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-22-1",
+   "date": "2026-11-22",
+   "sport": "run",
+   "long": true,
+   "load": "hard",
+   "title": "Langer Lauf 22 km",
+   "desc": "Locker und gleichmäßig. Ab 25 km Verpflegung mitnehmen und üben.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 22,
+     "label": "Locker"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-24-1",
+   "date": "2026-11-24",
+   "sport": "run",
+   "title": "Progressionslauf 12 km",
+   "load": "hard",
+   "desc": "Drei Stufen ohne Pause: locker → steady → Marathon-Pace. Lehrt, am Ende schneller zu werden, wenn die Beine müde sind.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 5,
+     "label": "Stufe 1 locker"
+    },
+    {
+     "t": "work",
+     "zone": "S",
+     "km": 4,
+     "label": "Stufe 2 Steady"
+    },
+    {
+     "t": "work",
+     "zone": "MP",
+     "km": 3,
+     "label": "Stufe 3 Marathon-Pace"
+    },
+    {
+     "t": "cd",
+     "zone": "E",
+     "km": 1,
+     "label": "Auslaufen"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-24-2",
+   "date": "2026-11-24",
+   "sport": "bike",
+   "title": "Rad Grundlage 50'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage, gleichmäßig treten, Kadenz 85–95. Locker genug, dass der Lauf am nächsten Tag nicht leidet.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 50,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ],
+   "slot": "pm"
+  },
+  {
+   "id": "2026-11-25-1",
+   "date": "2026-11-25",
+   "sport": "gym",
+   "title": "Stabi D – Rumpf-Zirkel & Balance",
+   "load": "easy",
+   "min": 50,
+   "desc": "Stabi- und Kraftprogramm: saubere Technik, 1–2 Wiederholungen „im Tank“ lassen. Pausen 45–60s.",
+   "exercises": [
+    "Aufwärmen: 5 min + Mobility",
+    "Zirkel 3 Runden, 40s Belastung / 20s Pause:",
+    "· Plank Shoulder Taps",
+    "· Russian Twist mit Gewicht",
+    "· Einbeinstand auf Kissen mit Ballwurf/Armbewegung",
+    "· Reverse Crunch",
+    "· Seitstütz rechts / links",
+    "· Superman / Rückenstrecker",
+    "· Clamshells mit Band",
+    "Abschluss: Wadenheben auf Stufe 3× 15"
+   ]
+  },
+  {
+   "id": "2026-11-25-2",
+   "date": "2026-11-25",
+   "sport": "bike",
+   "title": "Rad Grundlage 75'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage, gleichmäßig treten, Kadenz 85–95. Locker genug, dass der Lauf am nächsten Tag nicht leidet.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 75,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-26-1",
+   "date": "2026-11-26",
+   "sport": "run",
+   "title": "Lauf locker",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Bewusst langsam, das ist die Basis für alles andere.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 9.5,
+     "label": "Locker"
+    }
+   ],
+   "slot": "am"
+  },
+  {
+   "id": "2026-11-26-2",
+   "date": "2026-11-26",
+   "sport": "bike",
+   "title": "Sweet Spot 2× 20'",
+   "load": "hard",
+   "desc": "Sweet Spot: hohe aerobe Last bei moderater Ermüdung. Gleichmäßig treten, Kadenz 85–95.",
+   "steps": [
+    {
+     "t": "wu",
+     "min": 15,
+     "pct": [
+      50,
+      70
+     ],
+     "label": "Einfahren (steigernd)"
+    },
+    {
+     "rep": 2,
+     "steps": [
+      {
+       "t": "work",
+       "min": 20,
+       "pct": [
+        88,
+        93
+       ],
+       "label": "Sweet Spot"
+      },
+      {
+       "t": "rec",
+       "min": 5,
+       "pct": [
+        45,
+        55
+       ],
+       "label": "Locker"
+      }
+     ]
+    },
+    {
+     "t": "cd",
+     "min": 10,
+     "pct": [
+      45,
+      55
+     ],
+     "label": "Ausfahren"
+    }
+   ],
+   "slot": "pm"
+  },
+  {
+   "id": "2026-11-27-1",
+   "date": "2026-11-27",
+   "sport": "run",
+   "title": "Lauf locker + Steigerungen",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Am Ende 6 Steigerungen über 20s: locker-schnell, saubere Technik, nicht sprinten.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 10.5,
+     "label": "Locker"
+    },
+    {
+     "rep": 6,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "STRIDE",
+       "min": 0.3333333333333333,
+       "label": "Steigerung 20s"
+      },
+      {
+       "t": "rec",
+       "zone": "WALK",
+       "min": 0.6666666666666666,
+       "label": "Gehen/Traben"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "2026-11-28-1",
+   "date": "2026-11-28",
+   "sport": "bike",
+   "title": "Grundlage 3 h mit 2× 20' Tempo",
+   "load": "moderate",
+   "desc": "Lange Ausfahrt mit Tempo-Blöcken (Z3) im mittleren Teil. Draußen möglich, Blöcke auf möglichst flachen Abschnitten.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 30,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Einfahren / Grundlage"
+    },
+    {
+     "rep": 2,
+     "steps": [
+      {
+       "t": "work",
+       "min": 20,
+       "pct": [
+        78,
+        85
+       ],
+       "label": "Tempo"
+      },
+      {
+       "t": "easy",
+       "min": 10,
+       "pct": [
+        62,
+        72
+       ],
+       "label": "Grundlage"
+      }
+     ]
+    },
+    {
+     "t": "easy",
+     "min": 90,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-29-1",
+   "date": "2026-11-29",
+   "sport": "run",
+   "long": true,
+   "load": "hard",
+   "title": "Langer Lauf 24 km wellig",
+   "desc": "Locker auf welliger Strecke (Isarhochufer, Perlacher Forst, …). Kraft durch Gelände statt Tempo.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 24,
+     "label": "Locker, wellig"
+    }
+   ]
+  },
+  {
+   "id": "2026-12-01-1",
+   "date": "2026-12-01",
+   "sport": "run",
+   "title": "Lauf locker + 8× Bergsprints",
+   "load": "moderate",
+   "desc": "Neuromuskulärer Reiz und Kraft: kurze, maximale Sprints an einem steilen Hügel (6–10 %). Volle Erholung (gehen), Qualität vor Quantität.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 8,
+     "label": "Locker"
+    },
+    {
+     "rep": 8,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "SPRINT",
+       "min": 0.16666666666666666,
+       "label": "Bergsprint 10s"
+      },
+      {
+       "t": "rec",
+       "zone": "WALK",
+       "min": 2,
+       "label": "Gehpause"
+      }
+     ]
+    },
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 1.5,
+     "label": "Auslaufen"
+    }
+   ]
+  },
+  {
+   "id": "2026-12-02-1",
+   "date": "2026-12-02",
+   "sport": "gym",
+   "title": "Stabi A – Rumpf & Hüfte",
+   "load": "easy",
+   "min": 45,
+   "desc": "Stabi- und Kraftprogramm: saubere Technik, 1–2 Wiederholungen „im Tank“ lassen. Pausen 45–60s.",
+   "exercises": [
+    "Aufwärmen: 5 min Rad/Rudern + Mobility Hüfte",
+    "Dead Bug – 3× 10/Seite",
+    "Unterarmstütz mit Beinheben – 3× 40s",
+    "Seitstütz mit Hüftheben – 3× 12/Seite",
+    "Pallof Press (Kabel/Band) – 3× 10/Seite",
+    "Glute Bridge einbeinig – 3× 12/Seite",
+    "Monster Walk mit Miniband – 3× 15 Schritte/Richtung",
+    "Bird Dog mit Halt – 3× 8/Seite",
+    "Wadenheben einbeinig – 3× 15/Seite"
+   ]
+  },
+  {
+   "id": "2026-12-02-2",
+   "date": "2026-12-02",
+   "sport": "bike",
+   "title": "Rad Grundlage 60'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage, gleichmäßig treten, Kadenz 85–95. Locker genug, dass der Lauf am nächsten Tag nicht leidet.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 60,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ]
+  },
+  {
+   "id": "2026-12-03-1",
+   "date": "2026-12-03",
+   "sport": "run",
+   "title": "Lauf locker",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Bewusst langsam, das ist die Basis für alles andere.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 7.5,
+     "label": "Locker"
+    }
+   ],
+   "slot": "am"
+  },
+  {
+   "id": "2026-12-03-2",
+   "date": "2026-12-03",
+   "sport": "bike",
+   "title": "Tempo 2× 15'",
+   "load": "moderate",
+   "desc": "Lange Tempo-Blöcke (Z3) – solide aerobe Arbeit ohne die Beine für den Lauf zu zerstören.",
+   "steps": [
+    {
+     "t": "wu",
+     "min": 15,
+     "pct": [
+      50,
+      70
+     ],
+     "label": "Einfahren (steigernd)"
+    },
+    {
+     "rep": 2,
+     "steps": [
+      {
+       "t": "work",
+       "min": 15,
+       "pct": [
+        80,
+        86
+       ],
+       "label": "Tempo"
+      },
+      {
+       "t": "rec",
+       "min": 5,
+       "pct": [
+        45,
+        55
+       ],
+       "label": "Locker"
+      }
+     ]
+    },
+    {
+     "t": "cd",
+     "min": 10,
+     "pct": [
+      45,
+      55
+     ],
+     "label": "Ausfahren"
+    }
+   ],
+   "slot": "pm"
+  },
+  {
+   "id": "2026-12-04-1",
+   "date": "2026-12-04",
+   "sport": "run",
+   "title": "Lauf locker",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Bewusst langsam, das ist die Basis für alles andere.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 8,
+     "label": "Locker"
+    }
+   ]
+  },
+  {
+   "id": "2026-12-05-1",
+   "date": "2026-12-05",
+   "sport": "bike",
+   "title": "Rad Grundlage 120'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage. Bei trockenem Wetter gerne draußen mit dem Gravel – dann nach Gefühl/HF statt exakt Watt.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 120,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ]
+  },
+  {
+   "id": "2026-12-06-1",
+   "date": "2026-12-06",
+   "sport": "run",
+   "long": true,
+   "load": "hard",
+   "title": "Langer Lauf 18 km",
+   "desc": "Locker und gleichmäßig. Ab 25 km Verpflegung mitnehmen und üben.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 18,
+     "label": "Locker"
+    }
+   ]
+  },
+  {
+   "id": "2026-12-08-1",
+   "date": "2026-12-08",
+   "sport": "run",
+   "title": "Pyramiden-Fahrtspiel 1-2-3-4-3-2-1'",
+   "load": "hard",
+   "desc": "Kurze Abschnitte (1–2 min) im 10-km-Tempo, lange (3–4 min) im HM-Tempo. Pause jeweils halb so lang locker traben.",
+   "steps": [
+    {
+     "t": "wu",
+     "zone": "E",
+     "km": 3,
+     "label": "Einlaufen"
+    },
+    {
+     "t": "work",
+     "zone": "10K",
+     "min": 1
+    },
+    {
+     "t": "rec",
+     "zone": "JOG",
+     "min": 0.5,
+     "label": "Trabpause"
+    },
+    {
+     "t": "work",
+     "zone": "10K",
+     "min": 2
+    },
+    {
+     "t": "rec",
+     "zone": "JOG",
+     "min": 1,
+     "label": "Trabpause"
+    },
+    {
+     "t": "work",
+     "zone": "HM",
+     "min": 3
+    },
+    {
+     "t": "rec",
+     "zone": "JOG",
+     "min": 1.5,
+     "label": "Trabpause"
+    },
+    {
+     "t": "work",
+     "zone": "HM",
+     "min": 4
+    },
+    {
+     "t": "rec",
+     "zone": "JOG",
+     "min": 2,
+     "label": "Trabpause"
+    },
+    {
+     "t": "work",
+     "zone": "HM",
+     "min": 3
+    },
+    {
+     "t": "rec",
+     "zone": "JOG",
+     "min": 1.5,
+     "label": "Trabpause"
+    },
+    {
+     "t": "work",
+     "zone": "10K",
+     "min": 2
+    },
+    {
+     "t": "rec",
+     "zone": "JOG",
+     "min": 1,
+     "label": "Trabpause"
+    },
+    {
+     "t": "work",
+     "zone": "10K",
+     "min": 1
+    },
+    {
+     "t": "cd",
+     "zone": "E",
+     "km": 3,
+     "label": "Auslaufen"
+    }
+   ]
+  },
+  {
+   "id": "2026-12-08-2",
+   "date": "2026-12-08",
+   "sport": "bike",
+   "title": "Rad Grundlage 50'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage, gleichmäßig treten, Kadenz 85–95. Locker genug, dass der Lauf am nächsten Tag nicht leidet.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 50,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ],
+   "slot": "pm"
+  },
+  {
+   "id": "2026-12-09-1",
+   "date": "2026-12-09",
+   "sport": "gym",
+   "title": "Stabi B – Einbein-Kraft & Füße",
+   "load": "easy",
+   "min": 50,
+   "desc": "Stabi- und Kraftprogramm: saubere Technik, 1–2 Wiederholungen „im Tank“ lassen. Pausen 45–60s.",
+   "exercises": [
+    "Aufwärmen: 5 min + Fußgelenk- und Hüftmobilisation",
+    "Bulgarian Split Squat – 3× 8/Seite (moderat schwer)",
+    "Einbeiniges Kreuzheben (RDL) – 3× 8/Seite",
+    "Step-ups auf Box (Knie über Hüfte) – 3× 10/Seite",
+    "Exzentrisches Wadenheben (langsam ab) – 3× 12/Seite",
+    "Copenhagen Plank (kurzer Hebel) – 3× 20s/Seite",
+    "Hip Airplane – 3× 5/Seite",
+    "Fußgymnastik: Handtuch greifen, Short Foot – 3× 30s"
+   ]
+  },
+  {
+   "id": "2026-12-09-2",
+   "date": "2026-12-09",
+   "sport": "bike",
+   "title": "Rad Grundlage 60'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage, gleichmäßig treten, Kadenz 85–95. Locker genug, dass der Lauf am nächsten Tag nicht leidet.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 60,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ]
+  },
+  {
+   "id": "2026-12-10-1",
+   "date": "2026-12-10",
+   "sport": "run",
+   "title": "Lauf locker",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Bewusst langsam, das ist die Basis für alles andere.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 11,
+     "label": "Locker"
+    }
+   ],
+   "slot": "am"
+  },
+  {
+   "id": "2026-12-10-2",
+   "date": "2026-12-10",
+   "sport": "bike",
+   "title": "Over-Unders 3× (3× 2'/1')",
+   "load": "hard",
+   "desc": "2 min knapp unter FTP, 1 min knapp darüber – ohne Pause. Lehrt, Laktat unter Last abzubauen. 6 min locker zwischen den Sätzen.",
+   "steps": [
+    {
+     "t": "wu",
+     "min": 15,
+     "pct": [
+      50,
+      70
+     ],
+     "label": "Einfahren (steigernd)"
+    },
+    {
+     "rep": 3,
+     "steps": [
+      {
+       "rep": 3,
+       "steps": [
+        {
+         "t": "work",
+         "min": 2,
+         "pct": [
+          93,
+          96
+         ],
+         "label": "Under"
+        },
+        {
+         "t": "work",
+         "min": 1,
+         "pct": [
+          104,
+          108
+         ],
+         "label": "Over"
+        }
+       ]
+      },
+      {
+       "t": "rec",
+       "min": 6,
+       "pct": [
+        45,
+        55
+       ],
+       "label": "Locker"
+      }
+     ]
+    },
+    {
+     "t": "cd",
+     "min": 10,
+     "pct": [
+      45,
+      55
+     ],
+     "label": "Ausfahren"
+    }
+   ],
+   "slot": "pm"
+  },
+  {
+   "id": "2026-12-11-1",
+   "date": "2026-12-11",
+   "sport": "run",
+   "title": "Lauf locker + Lauf-ABC",
+   "load": "easy",
+   "desc": "Locker laufen, nach 3 km 10–12 min Lauf-ABC (Skippings, Anfersen, Hopserlauf, Kniehebelauf, Prellsprünge), danach 4 Steigerungen.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 3,
+     "label": "Locker"
+    },
+    {
+     "t": "work",
+     "zone": "WALK",
+     "min": 12,
+     "label": "Lauf-ABC"
+    },
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 8,
+     "label": "Locker"
+    },
+    {
+     "rep": 4,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "STRIDE",
+       "min": 0.3333333333333333,
+       "label": "Steigerung 20s"
+      },
+      {
+       "t": "rec",
+       "zone": "WALK",
+       "min": 0.6666666666666666,
+       "label": "Gehen"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "2026-12-12-1",
+   "date": "2026-12-12",
+   "sport": "bike",
+   "title": "Grundlage 2:45 h mit Kadenz-Drills",
+   "load": "easy",
+   "desc": "Grundlage mit 6× 3 min hoher Trittfrequenz (105–115 rpm) – runder Tritt, lockere Hüfte, hilft auch beim Laufen.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 25,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    },
+    {
+     "rep": 6,
+     "steps": [
+      {
+       "t": "work",
+       "min": 3,
+       "pct": [
+        65,
+        75
+       ],
+       "label": "Hohe Kadenz",
+       "cad": "105–115 rpm"
+      },
+      {
+       "t": "easy",
+       "min": 4,
+       "pct": [
+        62,
+        72
+       ],
+       "label": "Grundlage"
+      }
+     ]
+    },
+    {
+     "t": "easy",
+     "min": 98,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ]
+  },
+  {
+   "id": "2026-12-13-1",
+   "date": "2026-12-13",
+   "sport": "run",
+   "long": true,
+   "load": "hard",
+   "title": "Langer Lauf 25 km",
+   "desc": "Locker und gleichmäßig. Ab 25 km Verpflegung mitnehmen und üben.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 25,
+     "label": "Locker"
+    }
+   ]
+  },
+  {
+   "id": "2026-12-15-1",
+   "date": "2026-12-15",
+   "sport": "run",
+   "title": "Cruise Intervals 5× 1 km",
+   "load": "hard",
+   "desc": "Schwellen-Wiederholungen mit kurzer Trabpause. Locker-hart: Du könntest am Ende noch 1–2 mehr. Nicht schneller als vorgegeben!",
+   "steps": [
+    {
+     "t": "wu",
+     "zone": "E",
+     "km": 3,
+     "label": "Einlaufen"
+    },
+    {
+     "rep": 5,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "T",
+       "km": 1,
+       "label": "Schwelle"
+      },
+      {
+       "t": "rec",
+       "zone": "JOG",
+       "min": 1.25,
+       "label": "Trabpause"
+      }
+     ]
+    },
+    {
+     "t": "cd",
+     "zone": "E",
+     "km": 2.5,
+     "label": "Auslaufen"
+    }
+   ]
+  },
+  {
+   "id": "2026-12-15-2",
+   "date": "2026-12-15",
+   "sport": "bike",
+   "title": "Rad Grundlage 45'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage, gleichmäßig treten, Kadenz 85–95. Locker genug, dass der Lauf am nächsten Tag nicht leidet.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 45,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ],
+   "slot": "pm"
+  },
+  {
+   "id": "2026-12-16-1",
+   "date": "2026-12-16",
+   "sport": "gym",
+   "title": "Stabi C – Athletik & Elastizität",
+   "load": "easy",
+   "min": 50,
+   "desc": "Stabi- und Kraftprogramm: saubere Technik, 1–2 Wiederholungen „im Tank“ lassen. Pausen 45–60s.",
+   "exercises": [
+    "Aufwärmen: 5 min + Lauf-ABC light",
+    "Goblet Squat – 3× 10",
+    "Hip Thrust (Langhantel) – 3× 10",
+    "Seitliche Ausfallschritte – 3× 8/Seite",
+    "Pogo Jumps (Fußgelenk-Sprünge) – 3× 20",
+    "Sprung-Ausfallschritte (Split Jumps) – 3× 6/Seite",
+    "Nordic Hamstring Curl (assistiert) – 3× 5",
+    "Ab-Wheel / Rollout – 3× 8",
+    "Seitstütz statisch – 2× 45s/Seite"
+   ]
+  },
+  {
+   "id": "2026-12-16-2",
+   "date": "2026-12-16",
+   "sport": "bike",
+   "title": "Rad Grundlage 60'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage, gleichmäßig treten, Kadenz 85–95. Locker genug, dass der Lauf am nächsten Tag nicht leidet.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 60,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ]
+  },
+  {
+   "id": "2026-12-17-1",
+   "date": "2026-12-17",
+   "sport": "run",
+   "title": "Lauf locker",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Bewusst langsam, das ist die Basis für alles andere.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 10,
+     "label": "Locker"
+    }
+   ],
+   "slot": "am"
+  },
+  {
+   "id": "2026-12-17-2",
+   "date": "2026-12-17",
+   "sport": "bike",
+   "title": "40/20 3× 8'",
+   "load": "hard",
+   "desc": "40s hart (~120 %), 20s locker – im Satz durchgehend. Hohe VO2-Zeit bei überschaubarer Belastung. 5 min locker zwischen den Sätzen.",
+   "steps": [
+    {
+     "t": "wu",
+     "min": 15,
+     "pct": [
+      50,
+      70
+     ],
+     "label": "Einfahren (steigernd)"
+    },
+    {
+     "rep": 3,
+     "steps": [
+      {
+       "rep": 8,
+       "steps": [
+        {
+         "t": "work",
+         "min": 0.6666666666666666,
+         "pct": [
+          118,
+          125
+         ],
+         "label": "40s hart"
+        },
+        {
+         "t": "rec",
+         "min": 0.3333333333333333,
+         "pct": [
+          45,
+          55
+         ],
+         "label": "20s locker"
+        }
+       ]
+      },
+      {
+       "t": "rec",
+       "min": 5,
+       "pct": [
+        45,
+        55
+       ],
+       "label": "Locker"
+      }
+     ]
+    },
+    {
+     "t": "cd",
+     "min": 10,
+     "pct": [
+      45,
+      55
+     ],
+     "label": "Ausfahren"
+    }
+   ],
+   "slot": "pm"
+  },
+  {
+   "id": "2026-12-18-1",
+   "date": "2026-12-18",
+   "sport": "run",
+   "title": "Lauf locker + Steigerungen",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Am Ende 6 Steigerungen über 20s: locker-schnell, saubere Technik, nicht sprinten.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 11,
+     "label": "Locker"
+    },
+    {
+     "rep": 6,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "STRIDE",
+       "min": 0.3333333333333333,
+       "label": "Steigerung 20s"
+      },
+      {
+       "t": "rec",
+       "zone": "WALK",
+       "min": 0.6666666666666666,
+       "label": "Gehen/Traben"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "2026-12-19-1",
+   "date": "2026-12-19",
+   "sport": "bike",
+   "title": "Grundlage 3 h mit 3× 15' Tempo",
+   "load": "moderate",
+   "desc": "Lange Ausfahrt mit Tempo-Blöcken (Z3) im mittleren Teil. Draußen möglich, Blöcke auf möglichst flachen Abschnitten.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 30,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Einfahren / Grundlage"
+    },
+    {
+     "rep": 3,
+     "steps": [
+      {
+       "t": "work",
+       "min": 15,
+       "pct": [
+        78,
+        85
+       ],
+       "label": "Tempo"
+      },
+      {
+       "t": "easy",
+       "min": 10,
+       "pct": [
+        62,
+        72
+       ],
+       "label": "Grundlage"
+      }
+     ]
+    },
+    {
+     "t": "easy",
+     "min": 75,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ]
+  },
+  {
+   "id": "2026-12-19-2",
+   "date": "2026-12-19",
+   "sport": "run",
+   "title": "Koppellauf locker",
+   "load": "easy",
+   "desc": "Direkt nach dem Rad 15–20 Minuten später locker laufen. Gewöhnt die Beine an Lauf auf Vorermüdung.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 6.5,
+     "label": "Locker"
+    }
+   ]
+  },
+  {
+   "id": "2026-12-20-1",
+   "date": "2026-12-20",
+   "sport": "run",
+   "long": true,
+   "load": "hard",
+   "title": "Langer Lauf 26 km (Steady-Finish)",
+   "desc": "Locker, die letzten 20 min steady. Gut verpflegen (Gel/Getränk testen).",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 21.5,
+     "label": "Locker"
+    },
+    {
+     "t": "work",
+     "zone": "S",
+     "min": 20,
+     "label": "Steady"
+    }
+   ]
+  },
+  {
+   "id": "2026-12-22-1",
+   "date": "2026-12-22",
+   "sport": "run",
+   "title": "Bergläufe 6× 2' + 15' Steady",
+   "load": "hard",
+   "desc": "Lange Bergläufe kontrolliert kräftig, danach ins flache und 15 min Steady laufen – Kraft in Tempo übertragen.",
+   "steps": [
+    {
+     "t": "wu",
+     "zone": "E",
+     "km": 3,
+     "label": "Einlaufen"
+    },
+    {
+     "rep": 6,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "HILL",
+       "min": 2,
+       "label": "Bergauf"
+      },
+      {
+       "t": "rec",
+       "zone": "JOG",
+       "min": 2,
+       "label": "Trabpause"
+      }
+     ]
+    },
+    {
+     "t": "work",
+     "zone": "S",
+     "min": 15,
+     "label": "Steady"
+    },
+    {
+     "t": "cd",
+     "zone": "E",
+     "km": 2,
+     "label": "Auslaufen"
+    }
+   ]
+  },
+  {
+   "id": "2026-12-22-2",
+   "date": "2026-12-22",
+   "sport": "bike",
+   "title": "Rad Grundlage 45'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage, gleichmäßig treten, Kadenz 85–95. Locker genug, dass der Lauf am nächsten Tag nicht leidet.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 45,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ],
+   "slot": "pm"
+  },
+  {
+   "id": "2026-12-23-1",
+   "date": "2026-12-23",
+   "sport": "gym",
+   "title": "Stabi D – Rumpf-Zirkel & Balance",
+   "load": "easy",
+   "min": 50,
+   "desc": "Stabi- und Kraftprogramm: saubere Technik, 1–2 Wiederholungen „im Tank“ lassen. Pausen 45–60s.",
+   "exercises": [
+    "Aufwärmen: 5 min + Mobility",
+    "Zirkel 3 Runden, 40s Belastung / 20s Pause:",
+    "· Plank Shoulder Taps",
+    "· Russian Twist mit Gewicht",
+    "· Einbeinstand auf Kissen mit Ballwurf/Armbewegung",
+    "· Reverse Crunch",
+    "· Seitstütz rechts / links",
+    "· Superman / Rückenstrecker",
+    "· Clamshells mit Band",
+    "Abschluss: Wadenheben auf Stufe 3× 15"
+   ]
+  },
+  {
+   "id": "2026-12-23-2",
+   "date": "2026-12-23",
+   "sport": "bike",
+   "title": "Rad Grundlage 75'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage, gleichmäßig treten, Kadenz 85–95. Locker genug, dass der Lauf am nächsten Tag nicht leidet.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 75,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ]
+  },
+  {
+   "id": "2026-12-24-1",
+   "date": "2026-12-24",
+   "sport": "run",
+   "title": "Lauf locker",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Bewusst langsam, das ist die Basis für alles andere.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 10.5,
+     "label": "Locker"
+    }
+   ],
+   "slot": "am"
+  },
+  {
+   "id": "2026-12-24-2",
+   "date": "2026-12-24",
+   "sport": "bike",
+   "title": "Sweet Spot steigend 3× (5/5/5')",
+   "load": "hard",
+   "desc": "Jeder Block in drei Stufen: 5 min 88 %, 5 min 91 %, 5 min 94 %. 5 min locker zwischen den Blöcken.",
+   "steps": [
+    {
+     "t": "wu",
+     "min": 15,
+     "pct": [
+      50,
+      70
+     ],
+     "label": "Einfahren (steigernd)"
+    },
+    {
+     "rep": 3,
+     "steps": [
+      {
+       "t": "work",
+       "min": 5,
+       "pct": [
+        87,
+        89
+       ],
+       "label": "Stufe 1"
+      },
+      {
+       "t": "work",
+       "min": 5,
+       "pct": [
+        90,
+        92
+       ],
+       "label": "Stufe 2"
+      },
+      {
+       "t": "work",
+       "min": 5,
+       "pct": [
+        93,
+        95
+       ],
+       "label": "Stufe 3"
+      },
+      {
+       "t": "rec",
+       "min": 5,
+       "pct": [
+        45,
+        55
+       ],
+       "label": "Locker"
+      }
+     ]
+    },
+    {
+     "t": "cd",
+     "min": 10,
+     "pct": [
+      45,
+      55
+     ],
+     "label": "Ausfahren"
+    }
+   ],
+   "slot": "pm"
+  },
+  {
+   "id": "2026-12-25-1",
+   "date": "2026-12-25",
+   "sport": "run",
+   "title": "Lauf locker + Steigerungen",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Am Ende 6 Steigerungen über 20s: locker-schnell, saubere Technik, nicht sprinten.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 10.5,
+     "label": "Locker"
+    },
+    {
+     "rep": 6,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "STRIDE",
+       "min": 0.3333333333333333,
+       "label": "Steigerung 20s"
+      },
+      {
+       "t": "rec",
+       "zone": "WALK",
+       "min": 0.6666666666666666,
+       "label": "Gehen/Traben"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "2026-12-26-1",
+   "date": "2026-12-26",
+   "sport": "bike",
+   "title": "Rad Grundlage 180'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage. Bei trockenem Wetter gerne draußen mit dem Gravel – dann nach Gefühl/HF statt exakt Watt.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 180,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ]
+  },
+  {
+   "id": "2026-12-26-2",
+   "date": "2026-12-26",
+   "sport": "run",
+   "title": "Koppellauf locker",
+   "load": "easy",
+   "desc": "Direkt nach dem Rad 15–20 Minuten später locker laufen. Gewöhnt die Beine an Lauf auf Vorermüdung.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 6.5,
+     "label": "Locker"
+    }
+   ]
+  },
+  {
+   "id": "2026-12-27-1",
+   "date": "2026-12-27",
+   "sport": "run",
+   "long": true,
+   "load": "hard",
+   "title": "Langer Lauf 28 km",
+   "desc": "Locker und gleichmäßig. Ab 25 km Verpflegung mitnehmen und üben.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 28,
+     "label": "Locker"
+    }
+   ]
+  },
+  {
+   "id": "2026-12-29-1",
+   "date": "2026-12-29",
+   "sport": "run",
+   "title": "Fahrtspiel 6× 2' HM-Tempo",
+   "load": "moderate",
+   "desc": "Lockeres Fahrtspiel zum Formerhalt: Abschnitte im HM-Tempo, 1 min traben. Kontrolliert, nicht ausbelasten.",
+   "steps": [
+    {
+     "t": "wu",
+     "zone": "E",
+     "km": 3,
+     "label": "Einlaufen"
+    },
+    {
+     "rep": 6,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "HM",
+       "min": 2,
+       "label": "HM-Tempo"
+      },
+      {
+       "t": "rec",
+       "zone": "JOG",
+       "min": 1,
+       "label": "Trabpause"
+      }
+     ]
+    },
+    {
+     "t": "cd",
+     "zone": "E",
+     "km": 3,
+     "label": "Auslaufen"
+    }
+   ]
+  },
+  {
+   "id": "2026-12-30-1",
+   "date": "2026-12-30",
+   "sport": "gym",
+   "title": "Stabi A – Rumpf & Hüfte",
+   "load": "easy",
+   "min": 45,
+   "desc": "Stabi- und Kraftprogramm: saubere Technik, 1–2 Wiederholungen „im Tank“ lassen. Pausen 45–60s.",
+   "exercises": [
+    "Aufwärmen: 5 min Rad/Rudern + Mobility Hüfte",
+    "Dead Bug – 3× 10/Seite",
+    "Unterarmstütz mit Beinheben – 3× 40s",
+    "Seitstütz mit Hüftheben – 3× 12/Seite",
+    "Pallof Press (Kabel/Band) – 3× 10/Seite",
+    "Glute Bridge einbeinig – 3× 12/Seite",
+    "Monster Walk mit Miniband – 3× 15 Schritte/Richtung",
+    "Bird Dog mit Halt – 3× 8/Seite",
+    "Wadenheben einbeinig – 3× 15/Seite"
+   ]
+  },
+  {
+   "id": "2026-12-30-2",
+   "date": "2026-12-30",
+   "sport": "bike",
+   "title": "Rad Grundlage 60'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage, gleichmäßig treten, Kadenz 85–95. Locker genug, dass der Lauf am nächsten Tag nicht leidet.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 60,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ]
+  },
+  {
+   "id": "2026-12-31-1",
+   "date": "2026-12-31",
+   "sport": "run",
+   "title": "Lauf locker",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Bewusst langsam, das ist die Basis für alles andere.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 10,
+     "label": "Locker"
+    }
+   ],
+   "slot": "am"
+  },
+  {
+   "id": "2026-12-31-2",
+   "date": "2026-12-31",
+   "sport": "bike",
+   "title": "Schwelle 4× 8'",
+   "load": "hard",
+   "desc": "Klassische FTP-Intervalle. Kontrolliert anfahren, nicht über 100 %.",
+   "steps": [
+    {
+     "t": "wu",
+     "min": 15,
+     "pct": [
+      50,
+      70
+     ],
+     "label": "Einfahren (steigernd)"
+    },
+    {
+     "rep": 4,
+     "steps": [
+      {
+       "t": "work",
+       "min": 8,
+       "pct": [
+        97,
+        102
+       ],
+       "label": "Schwelle"
+      },
+      {
+       "t": "rec",
+       "min": 4,
+       "pct": [
+        45,
+        55
+       ],
+       "label": "Locker"
+      }
+     ]
+    },
+    {
+     "t": "cd",
+     "min": 10,
+     "pct": [
+      45,
+      55
+     ],
+     "label": "Ausfahren"
+    }
+   ],
+   "slot": "pm"
+  },
+  {
+   "id": "2027-01-01-1",
+   "date": "2027-01-01",
+   "sport": "run",
+   "title": "Lauf locker",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Bewusst langsam, das ist die Basis für alles andere.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 12,
+     "label": "Locker"
+    }
+   ]
+  },
+  {
+   "id": "2027-01-02-1",
+   "date": "2027-01-02",
+   "sport": "bike",
+   "title": "Rad Grundlage 120'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage. Bei trockenem Wetter gerne draußen mit dem Gravel – dann nach Gefühl/HF statt exakt Watt.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 120,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ]
+  },
+  {
+   "id": "2027-01-03-1",
+   "date": "2027-01-03",
+   "sport": "run",
+   "long": true,
+   "load": "hard",
+   "title": "Langer Lauf 22 km wellig",
+   "desc": "Locker auf welliger Strecke (Isarhochufer, Perlacher Forst, …). Kraft durch Gelände statt Tempo.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 22,
+     "label": "Locker, wellig"
+    }
+   ]
+  },
+  {
+   "id": "2027-01-05-1",
+   "date": "2027-01-05",
+   "sport": "run",
+   "title": "6× 1 km @ 10-km-Pace",
+   "load": "hard",
+   "desc": "VO2max-orientierte Intervalle: gleichmäßig, das letzte darf das schnellste sein. Trabpause aktiv halten.",
+   "steps": [
+    {
+     "t": "wu",
+     "zone": "E",
+     "km": 3,
+     "label": "Einlaufen"
+    },
+    {
+     "rep": 6,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "10K",
+       "km": 1
+      },
+      {
+       "t": "rec",
+       "zone": "JOG",
+       "min": 2,
+       "label": "Trabpause"
+      }
+     ]
+    },
+    {
+     "t": "cd",
+     "zone": "E",
+     "km": 2.5,
+     "label": "Auslaufen"
+    }
+   ]
+  },
+  {
+   "id": "2027-01-06-1",
+   "date": "2027-01-06",
+   "sport": "gym",
+   "title": "Stabi B – Einbein-Kraft & Füße",
+   "load": "easy",
+   "min": 50,
+   "desc": "Stabi- und Kraftprogramm: saubere Technik, 1–2 Wiederholungen „im Tank“ lassen. Pausen 45–60s.",
+   "exercises": [
+    "Aufwärmen: 5 min + Fußgelenk- und Hüftmobilisation",
+    "Bulgarian Split Squat – 3× 8/Seite (moderat schwer)",
+    "Einbeiniges Kreuzheben (RDL) – 3× 8/Seite",
+    "Step-ups auf Box (Knie über Hüfte) – 3× 10/Seite",
+    "Exzentrisches Wadenheben (langsam ab) – 3× 12/Seite",
+    "Copenhagen Plank (kurzer Hebel) – 3× 20s/Seite",
+    "Hip Airplane – 3× 5/Seite",
+    "Fußgymnastik: Handtuch greifen, Short Foot – 3× 30s"
+   ]
+  },
+  {
+   "id": "2027-01-06-2",
+   "date": "2027-01-06",
+   "sport": "bike",
+   "title": "Rad Grundlage 60'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage, gleichmäßig treten, Kadenz 85–95. Locker genug, dass der Lauf am nächsten Tag nicht leidet.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 60,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ]
+  },
+  {
+   "id": "2027-01-07-1",
+   "date": "2027-01-07",
+   "sport": "run",
+   "title": "Tempodauerlauf 8 km",
+   "load": "hard",
+   "desc": "Durchgehend an der Schwelle bzw. knapp darunter. Gleichmäßig anlaufen – die zweite Hälfte entscheidet.",
+   "steps": [
+    {
+     "t": "wu",
+     "zone": "E",
+     "km": 3,
+     "label": "Einlaufen"
+    },
+    {
+     "t": "work",
+     "zone": "T",
+     "km": 8,
+     "label": "Schwelle"
+    },
+    {
+     "t": "cd",
+     "zone": "E",
+     "km": 2,
+     "label": "Auslaufen"
+    }
+   ]
+  },
+  {
+   "id": "2027-01-07-2",
+   "date": "2027-01-07",
+   "sport": "bike",
+   "title": "Sweet Spot 4× 10'",
+   "load": "hard",
+   "desc": "Sweet Spot: hohe aerobe Last bei moderater Ermüdung. Gleichmäßig treten, Kadenz 85–95.",
+   "steps": [
+    {
+     "t": "wu",
+     "min": 15,
+     "pct": [
+      50,
+      70
+     ],
+     "label": "Einfahren (steigernd)"
+    },
+    {
+     "rep": 4,
+     "steps": [
+      {
+       "t": "work",
+       "min": 10,
+       "pct": [
+        88,
+        92
+       ],
+       "label": "Sweet Spot"
+      },
+      {
+       "t": "rec",
+       "min": 4,
+       "pct": [
+        45,
+        55
+       ],
+       "label": "Locker"
+      }
+     ]
+    },
+    {
+     "t": "cd",
+     "min": 10,
+     "pct": [
+      45,
+      55
+     ],
+     "label": "Ausfahren"
+    }
+   ],
+   "slot": "pm"
+  },
+  {
+   "id": "2027-01-08-1",
+   "date": "2027-01-08",
+   "sport": "run",
+   "title": "Lauf locker + Steigerungen",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Am Ende 6 Steigerungen über 20s: locker-schnell, saubere Technik, nicht sprinten.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 9,
+     "label": "Locker"
+    },
+    {
+     "rep": 6,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "STRIDE",
+       "min": 0.3333333333333333,
+       "label": "Steigerung 20s"
+      },
+      {
+       "t": "rec",
+       "zone": "WALK",
+       "min": 0.6666666666666666,
+       "label": "Gehen/Traben"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "2027-01-09-1",
+   "date": "2027-01-09",
+   "sport": "run",
+   "title": "Lauf locker",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Bewusst langsam, das ist die Basis für alles andere.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 8,
+     "label": "Locker"
+    }
+   ]
+  },
+  {
+   "id": "2027-01-09-2",
+   "date": "2027-01-09",
+   "sport": "bike",
+   "title": "Rad Grundlage 120'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage. Bei trockenem Wetter gerne draußen mit dem Gravel – dann nach Gefühl/HF statt exakt Watt.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 120,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ],
+   "slot": "pm"
+  },
+  {
+   "id": "2027-01-10-1",
+   "date": "2027-01-10",
+   "sport": "run",
+   "long": true,
+   "load": "hard",
+   "title": "Langer Lauf 26 km",
+   "desc": "Locker und gleichmäßig. Ab 25 km Verpflegung mitnehmen und üben.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 26,
+     "label": "Locker"
+    }
+   ]
+  },
+  {
+   "id": "2027-01-12-1",
+   "date": "2027-01-12",
+   "sport": "run",
+   "title": "4× 2 km @ Schwelle",
+   "load": "hard",
+   "desc": "Gleichmäßige Wiederholungen an der Schwelle bzw. im HM-Tempo. Rhythmus und Atmung kontrollieren.",
+   "steps": [
+    {
+     "t": "wu",
+     "zone": "E",
+     "km": 3,
+     "label": "Einlaufen"
+    },
+    {
+     "rep": 4,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "T",
+       "km": 2
+      },
+      {
+       "t": "rec",
+       "zone": "JOG",
+       "min": 1.5,
+       "label": "Trabpause"
+      }
+     ]
+    },
+    {
+     "t": "cd",
+     "zone": "E",
+     "km": 2.5,
+     "label": "Auslaufen"
+    }
+   ]
+  },
+  {
+   "id": "2027-01-13-1",
+   "date": "2027-01-13",
+   "sport": "gym",
+   "title": "Stabi C – Athletik & Elastizität",
+   "load": "easy",
+   "min": 50,
+   "desc": "Stabi- und Kraftprogramm: saubere Technik, 1–2 Wiederholungen „im Tank“ lassen. Pausen 45–60s.",
+   "exercises": [
+    "Aufwärmen: 5 min + Lauf-ABC light",
+    "Goblet Squat – 3× 10",
+    "Hip Thrust (Langhantel) – 3× 10",
+    "Seitliche Ausfallschritte – 3× 8/Seite",
+    "Pogo Jumps (Fußgelenk-Sprünge) – 3× 20",
+    "Sprung-Ausfallschritte (Split Jumps) – 3× 6/Seite",
+    "Nordic Hamstring Curl (assistiert) – 3× 5",
+    "Ab-Wheel / Rollout – 3× 8",
+    "Seitstütz statisch – 2× 45s/Seite"
+   ]
+  },
+  {
+   "id": "2027-01-13-2",
+   "date": "2027-01-13",
+   "sport": "bike",
+   "title": "Rad Grundlage 60'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage, gleichmäßig treten, Kadenz 85–95. Locker genug, dass der Lauf am nächsten Tag nicht leidet.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 60,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ]
+  },
+  {
+   "id": "2027-01-14-1",
+   "date": "2027-01-14",
+   "sport": "run",
+   "title": "Marathon-Pace 3× 3 km",
+   "load": "hard",
+   "desc": "Wettkampftempo verinnerlichen: 4:09/km fühlen, ohne auf die Uhr zu starren. Zwischen den Blöcken steady (nicht traben!).",
+   "steps": [
+    {
+     "t": "wu",
+     "zone": "E",
+     "km": 3,
+     "label": "Einlaufen"
+    },
+    {
+     "rep": 3,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "MP",
+       "km": 3,
+       "label": "Marathon-Pace"
+      },
+      {
+       "t": "work",
+       "zone": "S",
+       "km": 1,
+       "label": "Steady"
+      }
+     ]
+    },
+    {
+     "t": "cd",
+     "zone": "E",
+     "km": 2,
+     "label": "Auslaufen"
+    }
+   ]
+  },
+  {
+   "id": "2027-01-14-2",
+   "date": "2027-01-14",
+   "sport": "bike",
+   "title": "VO2max 5× 4'",
+   "load": "hard",
+   "desc": "Harte Intervalle: ab Minute 2 tief atmen, bis zum Ende gleichmäßig halten. Pause aktiv locker.",
+   "steps": [
+    {
+     "t": "wu",
+     "min": 15,
+     "pct": [
+      50,
+      70
+     ],
+     "label": "Einfahren (steigernd)"
+    },
+    {
+     "rep": 3,
+     "steps": [
+      {
+       "t": "work",
+       "min": 0.5,
+       "pct": [
+        110,
+        120
+       ],
+       "label": "Aktivierung 30s"
+      },
+      {
+       "t": "rec",
+       "min": 1,
+       "pct": [
+        45,
+        55
+       ],
+       "label": "Locker"
+      }
+     ]
+    },
+    {
+     "rep": 5,
+     "steps": [
+      {
+       "t": "work",
+       "min": 4,
+       "pct": [
+        108,
+        113
+       ],
+       "label": "VO2max"
+      },
+      {
+       "t": "rec",
+       "min": 4,
+       "pct": [
+        45,
+        55
+       ],
+       "label": "Locker"
+      }
+     ]
+    },
+    {
+     "t": "cd",
+     "min": 10,
+     "pct": [
+      45,
+      55
+     ],
+     "label": "Ausfahren"
+    }
+   ],
+   "slot": "pm"
+  },
+  {
+   "id": "2027-01-15-1",
+   "date": "2027-01-15",
+   "sport": "run",
+   "title": "Lauf locker",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Bewusst langsam, das ist die Basis für alles andere.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 10,
+     "label": "Locker"
+    }
+   ]
+  },
+  {
+   "id": "2027-01-16-1",
+   "date": "2027-01-16",
+   "sport": "run",
+   "title": "Lauf locker + Steigerungen",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Am Ende 6 Steigerungen über 20s: locker-schnell, saubere Technik, nicht sprinten.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 8,
+     "label": "Locker"
+    },
+    {
+     "rep": 6,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "STRIDE",
+       "min": 0.3333333333333333,
+       "label": "Steigerung 20s"
+      },
+      {
+       "t": "rec",
+       "zone": "WALK",
+       "min": 0.6666666666666666,
+       "label": "Gehen/Traben"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "2027-01-16-2",
+   "date": "2027-01-16",
+   "sport": "bike",
+   "title": "Rad Grundlage 105'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage, gleichmäßig treten, Kadenz 85–95. Locker genug, dass der Lauf am nächsten Tag nicht leidet.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 105,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ],
+   "slot": "pm"
+  },
+  {
+   "id": "2027-01-17-1",
+   "date": "2027-01-17",
+   "sport": "run",
+   "long": true,
+   "load": "hard",
+   "title": "Langer Lauf 28 km, letzte 5 km MP",
+   "desc": "Lange locker, dann auf Marathon-Pace beschleunigen. Simuliert die zweite Rennhälfte auf müden Beinen.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 23,
+     "label": "Locker"
+    },
+    {
+     "t": "work",
+     "zone": "MP",
+     "km": 5,
+     "label": "Marathon-Pace"
+    }
+   ]
+  },
+  {
+   "id": "2027-01-19-1",
+   "date": "2027-01-19",
+   "sport": "run",
+   "title": "Leiter 400-800-1200-1600-1200-800-400",
+   "load": "hard",
+   "desc": "Kurze Stücke im 5-km-Tempo, 800/1200 im 10-km-Tempo, 1600 an der Schwelle. Pause: 90s Trab (nach 1600: 2 min).",
+   "steps": [
+    {
+     "t": "wu",
+     "zone": "E",
+     "km": 3,
+     "label": "Einlaufen"
+    },
+    {
+     "t": "work",
+     "zone": "5K",
+     "km": 0.4
+    },
+    {
+     "t": "rec",
+     "zone": "JOG",
+     "min": 1.5,
+     "label": "Trabpause"
+    },
+    {
+     "t": "work",
+     "zone": "10K",
+     "km": 0.8
+    },
+    {
+     "t": "rec",
+     "zone": "JOG",
+     "min": 1.5,
+     "label": "Trabpause"
+    },
+    {
+     "t": "work",
+     "zone": "10K",
+     "km": 1.2
+    },
+    {
+     "t": "rec",
+     "zone": "JOG",
+     "min": 1.5,
+     "label": "Trabpause"
+    },
+    {
+     "t": "work",
+     "zone": "T",
+     "km": 1.6
+    },
+    {
+     "t": "rec",
+     "zone": "JOG",
+     "min": 2,
+     "label": "Trabpause"
+    },
+    {
+     "t": "work",
+     "zone": "10K",
+     "km": 1.2
+    },
+    {
+     "t": "rec",
+     "zone": "JOG",
+     "min": 1.5,
+     "label": "Trabpause"
+    },
+    {
+     "t": "work",
+     "zone": "10K",
+     "km": 0.8
+    },
+    {
+     "t": "rec",
+     "zone": "JOG",
+     "min": 1.5,
+     "label": "Trabpause"
+    },
+    {
+     "t": "work",
+     "zone": "5K",
+     "km": 0.4
+    },
+    {
+     "t": "cd",
+     "zone": "E",
+     "km": 2.5,
+     "label": "Auslaufen"
+    }
+   ]
+  },
+  {
+   "id": "2027-01-20-1",
+   "date": "2027-01-20",
+   "sport": "gym",
+   "title": "Stabi D – Rumpf-Zirkel & Balance",
+   "load": "easy",
+   "min": 50,
+   "desc": "Stabi- und Kraftprogramm: saubere Technik, 1–2 Wiederholungen „im Tank“ lassen. Pausen 45–60s.",
+   "exercises": [
+    "Aufwärmen: 5 min + Mobility",
+    "Zirkel 3 Runden, 40s Belastung / 20s Pause:",
+    "· Plank Shoulder Taps",
+    "· Russian Twist mit Gewicht",
+    "· Einbeinstand auf Kissen mit Ballwurf/Armbewegung",
+    "· Reverse Crunch",
+    "· Seitstütz rechts / links",
+    "· Superman / Rückenstrecker",
+    "· Clamshells mit Band",
+    "Abschluss: Wadenheben auf Stufe 3× 15"
+   ]
+  },
+  {
+   "id": "2027-01-20-2",
+   "date": "2027-01-20",
+   "sport": "bike",
+   "title": "Rad Grundlage 60'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage, gleichmäßig treten, Kadenz 85–95. Locker genug, dass der Lauf am nächsten Tag nicht leidet.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 60,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ]
+  },
+  {
+   "id": "2027-01-21-1",
+   "date": "2027-01-21",
+   "sport": "run",
+   "title": "Progressionslauf 14 km (locker → HM)",
+   "load": "hard",
+   "desc": "5 km locker, 5 km steady, 3 km Marathon-Pace, 1 km HM-Pace. Kontrolle bis zum Schluss.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 5,
+     "label": "Locker"
+    },
+    {
+     "t": "work",
+     "zone": "S",
+     "km": 5,
+     "label": "Steady"
+    },
+    {
+     "t": "work",
+     "zone": "MP",
+     "km": 3,
+     "label": "Marathon-Pace"
+    },
+    {
+     "t": "work",
+     "zone": "HM",
+     "km": 1,
+     "label": "HM-Pace"
+    },
+    {
+     "t": "cd",
+     "zone": "E",
+     "km": 1.5,
+     "label": "Auslaufen"
+    }
+   ]
+  },
+  {
+   "id": "2027-01-21-2",
+   "date": "2027-01-21",
+   "sport": "bike",
+   "title": "30/30 2× 12",
+   "load": "hard",
+   "desc": "30s ~115 %, 30s locker. Saubere, schnelle Kadenz in den harten Teilen. 6 min locker zwischen den Sätzen.",
+   "steps": [
+    {
+     "t": "wu",
+     "min": 15,
+     "pct": [
+      50,
+      70
+     ],
+     "label": "Einfahren (steigernd)"
+    },
+    {
+     "rep": 2,
+     "steps": [
+      {
+       "rep": 12,
+       "steps": [
+        {
+         "t": "work",
+         "min": 0.5,
+         "pct": [
+          112,
+          118
+         ],
+         "label": "30s hart"
+        },
+        {
+         "t": "rec",
+         "min": 0.5,
+         "pct": [
+          45,
+          55
+         ],
+         "label": "30s locker"
+        }
+       ]
+      },
+      {
+       "t": "rec",
+       "min": 6,
+       "pct": [
+        45,
+        55
+       ],
+       "label": "Locker"
+      }
+     ]
+    },
+    {
+     "t": "cd",
+     "min": 10,
+     "pct": [
+      45,
+      55
+     ],
+     "label": "Ausfahren"
+    }
+   ],
+   "slot": "pm"
+  },
+  {
+   "id": "2027-01-22-1",
+   "date": "2027-01-22",
+   "sport": "run",
+   "title": "Lauf locker + Steigerungen",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Am Ende 6 Steigerungen über 20s: locker-schnell, saubere Technik, nicht sprinten.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 9,
+     "label": "Locker"
+    },
+    {
+     "rep": 6,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "STRIDE",
+       "min": 0.3333333333333333,
+       "label": "Steigerung 20s"
+      },
+      {
+       "t": "rec",
+       "zone": "WALK",
+       "min": 0.6666666666666666,
+       "label": "Gehen/Traben"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "2027-01-23-1",
+   "date": "2027-01-23",
+   "sport": "run",
+   "title": "Lauf locker",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Bewusst langsam, das ist die Basis für alles andere.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 9,
+     "label": "Locker"
+    }
+   ]
+  },
+  {
+   "id": "2027-01-23-2",
+   "date": "2027-01-23",
+   "sport": "bike",
+   "title": "Rad Grundlage 120'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage. Bei trockenem Wetter gerne draußen mit dem Gravel – dann nach Gefühl/HF statt exakt Watt.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 120,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ],
+   "slot": "pm"
+  },
+  {
+   "id": "2027-01-24-1",
+   "date": "2027-01-24",
+   "sport": "run",
+   "long": true,
+   "load": "hard",
+   "title": "Langer Lauf 30 km",
+   "desc": "Locker und gleichmäßig. Ab 25 km Verpflegung mitnehmen und üben.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 30,
+     "label": "Locker"
+    }
+   ]
+  },
+  {
+   "id": "2027-01-26-1",
+   "date": "2027-01-26",
+   "sport": "run",
+   "title": "8× 400 m @ 5-km-Pace",
+   "load": "hard",
+   "desc": "VO2max-orientierte Intervalle: gleichmäßig, das letzte darf das schnellste sein. Trabpause aktiv halten.",
+   "steps": [
+    {
+     "t": "wu",
+     "zone": "E",
+     "km": 3,
+     "label": "Einlaufen"
+    },
+    {
+     "rep": 8,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "5K",
+       "km": 0.4
+      },
+      {
+       "t": "rec",
+       "zone": "JOG",
+       "min": 1.5,
+       "label": "Trabpause"
+      }
+     ]
+    },
+    {
+     "t": "cd",
+     "zone": "E",
+     "km": 2.5,
+     "label": "Auslaufen"
+    }
+   ]
+  },
+  {
+   "id": "2027-01-27-1",
+   "date": "2027-01-27",
+   "sport": "gym",
+   "title": "Stabi A – Rumpf & Hüfte",
+   "load": "easy",
+   "min": 45,
+   "desc": "Stabi- und Kraftprogramm: saubere Technik, 1–2 Wiederholungen „im Tank“ lassen. Pausen 45–60s.",
+   "exercises": [
+    "Aufwärmen: 5 min Rad/Rudern + Mobility Hüfte",
+    "Dead Bug – 3× 10/Seite",
+    "Unterarmstütz mit Beinheben – 3× 40s",
+    "Seitstütz mit Hüftheben – 3× 12/Seite",
+    "Pallof Press (Kabel/Band) – 3× 10/Seite",
+    "Glute Bridge einbeinig – 3× 12/Seite",
+    "Monster Walk mit Miniband – 3× 15 Schritte/Richtung",
+    "Bird Dog mit Halt – 3× 8/Seite",
+    "Wadenheben einbeinig – 3× 15/Seite"
+   ]
+  },
+  {
+   "id": "2027-01-27-2",
+   "date": "2027-01-27",
+   "sport": "bike",
+   "title": "Rad Grundlage 60'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage, gleichmäßig treten, Kadenz 85–95. Locker genug, dass der Lauf am nächsten Tag nicht leidet.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 60,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ]
+  },
+  {
+   "id": "2027-01-28-1",
+   "date": "2027-01-28",
+   "sport": "run",
+   "title": "Steady-Lauf 30'",
+   "load": "moderate",
+   "desc": "Zügiger, aber komfortabler Dauerlauf („comfortably hard“ minus eine Stufe). Aerobe Leistungsfähigkeit ohne große Ermüdung.",
+   "steps": [
+    {
+     "t": "wu",
+     "zone": "E",
+     "km": 3,
+     "label": "Einlaufen"
+    },
+    {
+     "t": "work",
+     "zone": "S",
+     "min": 30,
+     "label": "Steady"
+    },
+    {
+     "t": "cd",
+     "zone": "E",
+     "km": 2,
+     "label": "Auslaufen"
+    }
+   ]
+  },
+  {
+   "id": "2027-01-28-2",
+   "date": "2027-01-28",
+   "sport": "bike",
+   "title": "Rad locker 45'",
+   "load": "easy",
+   "desc": "Aktive Erholung, sehr locker kurbeln.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 45,
+     "pct": [
+      45,
+      58
+     ],
+     "label": "Sehr locker"
+    }
+   ],
+   "slot": "pm"
+  },
+  {
+   "id": "2027-01-29-1",
+   "date": "2027-01-29",
+   "sport": "run",
+   "title": "Lauf locker",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Bewusst langsam, das ist die Basis für alles andere.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 9,
+     "label": "Locker"
+    }
+   ]
+  },
+  {
+   "id": "2027-01-30-1",
+   "date": "2027-01-30",
+   "sport": "run",
+   "title": "Lauf locker",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Bewusst langsam, das ist die Basis für alles andere.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 7,
+     "label": "Locker"
+    }
+   ]
+  },
+  {
+   "id": "2027-01-30-2",
+   "date": "2027-01-30",
+   "sport": "bike",
+   "title": "Rad Grundlage 120'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage. Bei trockenem Wetter gerne draußen mit dem Gravel – dann nach Gefühl/HF statt exakt Watt.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 120,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ],
+   "slot": "pm"
+  },
+  {
+   "id": "2027-01-31-1",
+   "date": "2027-01-31",
+   "sport": "run",
+   "long": true,
+   "load": "hard",
+   "title": "Langer Lauf 22 km",
+   "desc": "Locker und gleichmäßig. Ab 25 km Verpflegung mitnehmen und üben.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 22,
+     "label": "Locker"
+    }
+   ]
+  },
+  {
+   "id": "2027-02-02-1",
+   "date": "2027-02-02",
+   "sport": "run",
+   "title": "3× 3 km @ Schwelle",
+   "load": "hard",
+   "desc": "Gleichmäßige Wiederholungen an der Schwelle bzw. im HM-Tempo. Rhythmus und Atmung kontrollieren.",
+   "steps": [
+    {
+     "t": "wu",
+     "zone": "E",
+     "km": 3,
+     "label": "Einlaufen"
+    },
+    {
+     "rep": 3,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "T",
+       "km": 3
+      },
+      {
+       "t": "rec",
+       "zone": "JOG",
+       "min": 2,
+       "label": "Trabpause"
+      }
+     ]
+    },
+    {
+     "t": "cd",
+     "zone": "E",
+     "km": 2.5,
+     "label": "Auslaufen"
+    }
+   ]
+  },
+  {
+   "id": "2027-02-03-1",
+   "date": "2027-02-03",
+   "sport": "gym",
+   "title": "Stabi B – Einbein-Kraft & Füße",
+   "load": "easy",
+   "min": 50,
+   "desc": "Stabi- und Kraftprogramm: saubere Technik, 1–2 Wiederholungen „im Tank“ lassen. Pausen 45–60s.",
+   "exercises": [
+    "Aufwärmen: 5 min + Fußgelenk- und Hüftmobilisation",
+    "Bulgarian Split Squat – 3× 8/Seite (moderat schwer)",
+    "Einbeiniges Kreuzheben (RDL) – 3× 8/Seite",
+    "Step-ups auf Box (Knie über Hüfte) – 3× 10/Seite",
+    "Exzentrisches Wadenheben (langsam ab) – 3× 12/Seite",
+    "Copenhagen Plank (kurzer Hebel) – 3× 20s/Seite",
+    "Hip Airplane – 3× 5/Seite",
+    "Fußgymnastik: Handtuch greifen, Short Foot – 3× 30s"
+   ]
+  },
+  {
+   "id": "2027-02-03-2",
+   "date": "2027-02-03",
+   "sport": "bike",
+   "title": "Rad Grundlage 60'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage, gleichmäßig treten, Kadenz 85–95. Locker genug, dass der Lauf am nächsten Tag nicht leidet.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 60,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ]
+  },
+  {
+   "id": "2027-02-04-1",
+   "date": "2027-02-04",
+   "sport": "run",
+   "title": "20' Schwelle + 4× 1 km 10K",
+   "load": "hard",
+   "desc": "Erst 20 min an der Schwelle, 3 min traben, dann 1-km-Stücke im 10-km-Tempo auf Vorbelastung (2 min Trab).",
+   "steps": [
+    {
+     "t": "wu",
+     "zone": "E",
+     "km": 3,
+     "label": "Einlaufen"
+    },
+    {
+     "t": "work",
+     "zone": "T",
+     "min": 20,
+     "label": "Schwelle"
+    },
+    {
+     "t": "rec",
+     "zone": "JOG",
+     "min": 3,
+     "label": "Trabpause"
+    },
+    {
+     "rep": 4,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "10K",
+       "km": 1
+      },
+      {
+       "t": "rec",
+       "zone": "JOG",
+       "min": 2,
+       "label": "Trabpause"
+      }
+     ]
+    },
+    {
+     "t": "cd",
+     "zone": "E",
+     "km": 2,
+     "label": "Auslaufen"
+    }
+   ]
+  },
+  {
+   "id": "2027-02-04-2",
+   "date": "2027-02-04",
+   "sport": "bike",
+   "title": "Sweet Spot 3× 12'",
+   "load": "hard",
+   "desc": "Sweet Spot: hohe aerobe Last bei moderater Ermüdung. Gleichmäßig treten, Kadenz 85–95.",
+   "steps": [
+    {
+     "t": "wu",
+     "min": 15,
+     "pct": [
+      50,
+      70
+     ],
+     "label": "Einfahren (steigernd)"
+    },
+    {
+     "rep": 3,
+     "steps": [
+      {
+       "t": "work",
+       "min": 12,
+       "pct": [
+        88,
+        92
+       ],
+       "label": "Sweet Spot"
+      },
+      {
+       "t": "rec",
+       "min": 5,
+       "pct": [
+        45,
+        55
+       ],
+       "label": "Locker"
+      }
+     ]
+    },
+    {
+     "t": "cd",
+     "min": 10,
+     "pct": [
+      45,
+      55
+     ],
+     "label": "Ausfahren"
+    }
+   ],
+   "slot": "pm"
+  },
+  {
+   "id": "2027-02-05-1",
+   "date": "2027-02-05",
+   "sport": "run",
+   "title": "Lauf locker + Steigerungen",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Am Ende 6 Steigerungen über 20s: locker-schnell, saubere Technik, nicht sprinten.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 9,
+     "label": "Locker"
+    },
+    {
+     "rep": 6,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "STRIDE",
+       "min": 0.3333333333333333,
+       "label": "Steigerung 20s"
+      },
+      {
+       "t": "rec",
+       "zone": "WALK",
+       "min": 0.6666666666666666,
+       "label": "Gehen/Traben"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "2027-02-06-1",
+   "date": "2027-02-06",
+   "sport": "run",
+   "title": "Lauf locker",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Bewusst langsam, das ist die Basis für alles andere.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 9,
+     "label": "Locker"
+    }
+   ]
+  },
+  {
+   "id": "2027-02-06-2",
+   "date": "2027-02-06",
+   "sport": "bike",
+   "title": "Rad Grundlage 105'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage, gleichmäßig treten, Kadenz 85–95. Locker genug, dass der Lauf am nächsten Tag nicht leidet.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 105,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ],
+   "slot": "pm"
+  },
+  {
+   "id": "2027-02-07-1",
+   "date": "2027-02-07",
+   "sport": "run",
+   "long": true,
+   "load": "hard",
+   "title": "Langer Lauf 30 km mit 3× 4 km MP",
+   "desc": "Schlüsseleinheit Marathon: MP-Blöcke im langen Lauf, dazwischen 1 km steady. Rennverpflegung üben (alle 25–30 min).",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 14,
+     "label": "Locker"
+    },
+    {
+     "rep": 3,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "MP",
+       "km": 4,
+       "label": "Marathon-Pace"
+      },
+      {
+       "t": "work",
+       "zone": "S",
+       "km": 1,
+       "label": "Steady"
+      }
+     ]
+    },
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 2,
+     "label": "Auslaufen"
+    }
+   ]
+  },
+  {
+   "id": "2027-02-09-1",
+   "date": "2027-02-09",
+   "sport": "run",
+   "title": "5× 1.2 km @ 10-km-Pace",
+   "load": "hard",
+   "desc": "VO2max-orientierte Intervalle: gleichmäßig, das letzte darf das schnellste sein. Trabpause aktiv halten.",
+   "steps": [
+    {
+     "t": "wu",
+     "zone": "E",
+     "km": 3,
+     "label": "Einlaufen"
+    },
+    {
+     "rep": 5,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "10K",
+       "km": 1.2
+      },
+      {
+       "t": "rec",
+       "zone": "JOG",
+       "min": 2.5,
+       "label": "Trabpause"
+      }
+     ]
+    },
+    {
+     "t": "cd",
+     "zone": "E",
+     "km": 2.5,
+     "label": "Auslaufen"
+    }
+   ]
+  },
+  {
+   "id": "2027-02-10-1",
+   "date": "2027-02-10",
+   "sport": "gym",
+   "title": "Stabi C – Athletik & Elastizität",
+   "load": "easy",
+   "min": 50,
+   "desc": "Stabi- und Kraftprogramm: saubere Technik, 1–2 Wiederholungen „im Tank“ lassen. Pausen 45–60s.",
+   "exercises": [
+    "Aufwärmen: 5 min + Lauf-ABC light",
+    "Goblet Squat – 3× 10",
+    "Hip Thrust (Langhantel) – 3× 10",
+    "Seitliche Ausfallschritte – 3× 8/Seite",
+    "Pogo Jumps (Fußgelenk-Sprünge) – 3× 20",
+    "Sprung-Ausfallschritte (Split Jumps) – 3× 6/Seite",
+    "Nordic Hamstring Curl (assistiert) – 3× 5",
+    "Ab-Wheel / Rollout – 3× 8",
+    "Seitstütz statisch – 2× 45s/Seite"
+   ]
+  },
+  {
+   "id": "2027-02-10-2",
+   "date": "2027-02-10",
+   "sport": "bike",
+   "title": "Rad Grundlage 60'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage, gleichmäßig treten, Kadenz 85–95. Locker genug, dass der Lauf am nächsten Tag nicht leidet.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 60,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ]
+  },
+  {
+   "id": "2027-02-11-1",
+   "date": "2027-02-11",
+   "sport": "run",
+   "title": "Marathon-Pace 2× 5 km",
+   "load": "hard",
+   "desc": "Wettkampftempo verinnerlichen: 4:09/km fühlen, ohne auf die Uhr zu starren. Zwischen den Blöcken steady (nicht traben!).",
+   "steps": [
+    {
+     "t": "wu",
+     "zone": "E",
+     "km": 3,
+     "label": "Einlaufen"
+    },
+    {
+     "rep": 2,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "MP",
+       "km": 5,
+       "label": "Marathon-Pace"
+      },
+      {
+       "t": "work",
+       "zone": "S",
+       "km": 1,
+       "label": "Steady"
+      }
+     ]
+    },
+    {
+     "t": "cd",
+     "zone": "E",
+     "km": 2,
+     "label": "Auslaufen"
+    }
+   ]
+  },
+  {
+   "id": "2027-02-11-2",
+   "date": "2027-02-11",
+   "sport": "bike",
+   "title": "40/20 3× 8'",
+   "load": "hard",
+   "desc": "40s hart (~120 %), 20s locker – im Satz durchgehend. Hohe VO2-Zeit bei überschaubarer Belastung. 5 min locker zwischen den Sätzen.",
+   "steps": [
+    {
+     "t": "wu",
+     "min": 15,
+     "pct": [
+      50,
+      70
+     ],
+     "label": "Einfahren (steigernd)"
+    },
+    {
+     "rep": 3,
+     "steps": [
+      {
+       "rep": 8,
+       "steps": [
+        {
+         "t": "work",
+         "min": 0.6666666666666666,
+         "pct": [
+          118,
+          125
+         ],
+         "label": "40s hart"
+        },
+        {
+         "t": "rec",
+         "min": 0.3333333333333333,
+         "pct": [
+          45,
+          55
+         ],
+         "label": "20s locker"
+        }
+       ]
+      },
+      {
+       "t": "rec",
+       "min": 5,
+       "pct": [
+        45,
+        55
+       ],
+       "label": "Locker"
+      }
+     ]
+    },
+    {
+     "t": "cd",
+     "min": 10,
+     "pct": [
+      45,
+      55
+     ],
+     "label": "Ausfahren"
+    }
+   ],
+   "slot": "pm"
+  },
+  {
+   "id": "2027-02-12-1",
+   "date": "2027-02-12",
+   "sport": "run",
+   "title": "Lauf locker + Steigerungen",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Am Ende 6 Steigerungen über 20s: locker-schnell, saubere Technik, nicht sprinten.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 11,
+     "label": "Locker"
+    },
+    {
+     "rep": 6,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "STRIDE",
+       "min": 0.3333333333333333,
+       "label": "Steigerung 20s"
+      },
+      {
+       "t": "rec",
+       "zone": "WALK",
+       "min": 0.6666666666666666,
+       "label": "Gehen/Traben"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "2027-02-13-1",
+   "date": "2027-02-13",
+   "sport": "run",
+   "title": "Lauf locker",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Bewusst langsam, das ist die Basis für alles andere.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 9.5,
+     "label": "Locker"
+    }
+   ]
+  },
+  {
+   "id": "2027-02-13-2",
+   "date": "2027-02-13",
+   "sport": "bike",
+   "title": "Rad Grundlage 120'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage. Bei trockenem Wetter gerne draußen mit dem Gravel – dann nach Gefühl/HF statt exakt Watt.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 120,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ],
+   "slot": "pm"
+  },
+  {
+   "id": "2027-02-14-1",
+   "date": "2027-02-14",
+   "sport": "run",
+   "long": true,
+   "load": "hard",
+   "title": "Langer Lauf 32 km wellig",
+   "desc": "Locker auf welliger Strecke (Isarhochufer, Perlacher Forst, …). Kraft durch Gelände statt Tempo.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 32,
+     "label": "Locker, wellig"
+    }
+   ]
+  },
+  {
+   "id": "2027-02-16-1",
+   "date": "2027-02-16",
+   "sport": "run",
+   "title": "Wechseltempo 4× (1 km 10K / 1 km MP)",
+   "load": "hard",
+   "desc": "Ohne Pause: 1 km im 10-km-Tempo, direkt 1 km in Marathon-Pace als „aktive Erholung“. Trainiert Laktat-Abbau unter Last.",
+   "steps": [
+    {
+     "t": "wu",
+     "zone": "E",
+     "km": 3,
+     "label": "Einlaufen"
+    },
+    {
+     "rep": 4,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "10K",
+       "km": 1,
+       "label": "10-km-Pace"
+      },
+      {
+       "t": "work",
+       "zone": "MP",
+       "km": 1,
+       "label": "Marathon-Pace (Float)"
+      }
+     ]
+    },
+    {
+     "t": "cd",
+     "zone": "E",
+     "km": 2,
+     "label": "Auslaufen"
+    }
+   ]
+  },
+  {
+   "id": "2027-02-17-1",
+   "date": "2027-02-17",
+   "sport": "gym",
+   "title": "Stabi D – Rumpf-Zirkel & Balance",
+   "load": "easy",
+   "min": 50,
+   "desc": "Stabi- und Kraftprogramm: saubere Technik, 1–2 Wiederholungen „im Tank“ lassen. Pausen 45–60s.",
+   "exercises": [
+    "Aufwärmen: 5 min + Mobility",
+    "Zirkel 3 Runden, 40s Belastung / 20s Pause:",
+    "· Plank Shoulder Taps",
+    "· Russian Twist mit Gewicht",
+    "· Einbeinstand auf Kissen mit Ballwurf/Armbewegung",
+    "· Reverse Crunch",
+    "· Seitstütz rechts / links",
+    "· Superman / Rückenstrecker",
+    "· Clamshells mit Band",
+    "Abschluss: Wadenheben auf Stufe 3× 15"
+   ]
+  },
+  {
+   "id": "2027-02-17-2",
+   "date": "2027-02-17",
+   "sport": "bike",
+   "title": "Rad Grundlage 60'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage, gleichmäßig treten, Kadenz 85–95. Locker genug, dass der Lauf am nächsten Tag nicht leidet.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 60,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ]
+  },
+  {
+   "id": "2027-02-18-1",
+   "date": "2027-02-18",
+   "sport": "run",
+   "title": "Tempodauerlauf 10 km (HM-Pace)",
+   "load": "hard",
+   "desc": "Durchgehend an der Schwelle bzw. knapp darunter. Gleichmäßig anlaufen – die zweite Hälfte entscheidet.",
+   "steps": [
+    {
+     "t": "wu",
+     "zone": "E",
+     "km": 3,
+     "label": "Einlaufen"
+    },
+    {
+     "t": "work",
+     "zone": "HM",
+     "km": 10,
+     "label": "HM-Pace"
+    },
+    {
+     "t": "cd",
+     "zone": "E",
+     "km": 2,
+     "label": "Auslaufen"
+    }
+   ]
+  },
+  {
+   "id": "2027-02-18-2",
+   "date": "2027-02-18",
+   "sport": "bike",
+   "title": "Over-Unders 2× (3× 2'/1')",
+   "load": "hard",
+   "desc": "2 min knapp unter FTP, 1 min knapp darüber – ohne Pause. Lehrt, Laktat unter Last abzubauen. 6 min locker zwischen den Sätzen.",
+   "steps": [
+    {
+     "t": "wu",
+     "min": 15,
+     "pct": [
+      50,
+      70
+     ],
+     "label": "Einfahren (steigernd)"
+    },
+    {
+     "rep": 2,
+     "steps": [
+      {
+       "rep": 3,
+       "steps": [
+        {
+         "t": "work",
+         "min": 2,
+         "pct": [
+          93,
+          96
+         ],
+         "label": "Under"
+        },
+        {
+         "t": "work",
+         "min": 1,
+         "pct": [
+          104,
+          108
+         ],
+         "label": "Over"
+        }
+       ]
+      },
+      {
+       "t": "rec",
+       "min": 6,
+       "pct": [
+        45,
+        55
+       ],
+       "label": "Locker"
+      }
+     ]
+    },
+    {
+     "t": "cd",
+     "min": 10,
+     "pct": [
+      45,
+      55
+     ],
+     "label": "Ausfahren"
+    }
+   ],
+   "slot": "pm"
+  },
+  {
+   "id": "2027-02-19-1",
+   "date": "2027-02-19",
+   "sport": "run",
+   "title": "Lauf locker",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Bewusst langsam, das ist die Basis für alles andere.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 14,
+     "label": "Locker"
+    }
+   ]
+  },
+  {
+   "id": "2027-02-20-1",
+   "date": "2027-02-20",
+   "sport": "run",
+   "title": "Lauf locker + Steigerungen",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Am Ende 6 Steigerungen über 20s: locker-schnell, saubere Technik, nicht sprinten.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 11,
+     "label": "Locker"
+    },
+    {
+     "rep": 6,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "STRIDE",
+       "min": 0.3333333333333333,
+       "label": "Steigerung 20s"
+      },
+      {
+       "t": "rec",
+       "zone": "WALK",
+       "min": 0.6666666666666666,
+       "label": "Gehen/Traben"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "2027-02-20-2",
+   "date": "2027-02-20",
+   "sport": "bike",
+   "title": "Rad Grundlage 105'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage, gleichmäßig treten, Kadenz 85–95. Locker genug, dass der Lauf am nächsten Tag nicht leidet.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 105,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ],
+   "slot": "pm"
+  },
+  {
+   "id": "2027-02-21-1",
+   "date": "2027-02-21",
+   "sport": "run",
+   "long": true,
+   "load": "hard",
+   "title": "Langer Lauf 30 km mit 2× 6 km MP",
+   "desc": "Schlüsseleinheit Marathon: MP-Blöcke im langen Lauf, dazwischen 1 km steady. Rennverpflegung üben (alle 25–30 min).",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 15,
+     "label": "Locker"
+    },
+    {
+     "rep": 2,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "MP",
+       "km": 6,
+       "label": "Marathon-Pace"
+      },
+      {
+       "t": "work",
+       "zone": "S",
+       "km": 1,
+       "label": "Steady"
+      }
+     ]
+    },
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 2,
+     "label": "Auslaufen"
+    }
+   ]
+  },
+  {
+   "id": "2027-02-23-1",
+   "date": "2027-02-23",
+   "sport": "run",
+   "title": "Bergläufe 10× 60s",
+   "load": "hard",
+   "desc": "Kraftausdauer für Beine und Laufökonomie. 60s bergauf (4–6 %) kräftig mit hoher Frequenz und Armeinsatz, locker zurück traben.",
+   "steps": [
+    {
+     "t": "wu",
+     "zone": "E",
+     "km": 3,
+     "label": "Einlaufen"
+    },
+    {
+     "rep": 10,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "HILL",
+       "min": 1,
+       "label": "Bergauf"
+      },
+      {
+       "t": "rec",
+       "zone": "JOG",
+       "min": 1.5,
+       "label": "Trabpause"
+      }
+     ]
+    },
+    {
+     "t": "cd",
+     "zone": "E",
+     "km": 3,
+     "label": "Auslaufen"
+    }
+   ]
+  },
+  {
+   "id": "2027-02-24-1",
+   "date": "2027-02-24",
+   "sport": "gym",
+   "title": "Stabi A – Rumpf & Hüfte",
+   "load": "easy",
+   "min": 45,
+   "desc": "Stabi- und Kraftprogramm: saubere Technik, 1–2 Wiederholungen „im Tank“ lassen. Pausen 45–60s.",
+   "exercises": [
+    "Aufwärmen: 5 min Rad/Rudern + Mobility Hüfte",
+    "Dead Bug – 3× 10/Seite",
+    "Unterarmstütz mit Beinheben – 3× 40s",
+    "Seitstütz mit Hüftheben – 3× 12/Seite",
+    "Pallof Press (Kabel/Band) – 3× 10/Seite",
+    "Glute Bridge einbeinig – 3× 12/Seite",
+    "Monster Walk mit Miniband – 3× 15 Schritte/Richtung",
+    "Bird Dog mit Halt – 3× 8/Seite",
+    "Wadenheben einbeinig – 3× 15/Seite"
+   ]
+  },
+  {
+   "id": "2027-02-24-2",
+   "date": "2027-02-24",
+   "sport": "bike",
+   "title": "Rad Grundlage 60'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage, gleichmäßig treten, Kadenz 85–95. Locker genug, dass der Lauf am nächsten Tag nicht leidet.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 60,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ]
+  },
+  {
+   "id": "2027-02-25-1",
+   "date": "2027-02-25",
+   "sport": "run",
+   "title": "Steady-Lauf 35'",
+   "load": "moderate",
+   "desc": "Zügiger, aber komfortabler Dauerlauf („comfortably hard“ minus eine Stufe). Aerobe Leistungsfähigkeit ohne große Ermüdung.",
+   "steps": [
+    {
+     "t": "wu",
+     "zone": "E",
+     "km": 3,
+     "label": "Einlaufen"
+    },
+    {
+     "t": "work",
+     "zone": "S",
+     "min": 35,
+     "label": "Steady"
+    },
+    {
+     "t": "cd",
+     "zone": "E",
+     "km": 2,
+     "label": "Auslaufen"
+    }
+   ]
+  },
+  {
+   "id": "2027-02-25-2",
+   "date": "2027-02-25",
+   "sport": "bike",
+   "title": "Rad locker 45'",
+   "load": "easy",
+   "desc": "Aktive Erholung, sehr locker kurbeln.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 45,
+     "pct": [
+      45,
+      58
+     ],
+     "label": "Sehr locker"
+    }
+   ],
+   "slot": "pm"
+  },
+  {
+   "id": "2027-02-26-1",
+   "date": "2027-02-26",
+   "sport": "run",
+   "title": "Lauf locker",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Bewusst langsam, das ist die Basis für alles andere.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 10,
+     "label": "Locker"
+    }
+   ]
+  },
+  {
+   "id": "2027-02-27-1",
+   "date": "2027-02-27",
+   "sport": "run",
+   "title": "Lauf locker",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Bewusst langsam, das ist die Basis für alles andere.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 8,
+     "label": "Locker"
+    }
+   ]
+  },
+  {
+   "id": "2027-02-27-2",
+   "date": "2027-02-27",
+   "sport": "bike",
+   "title": "Rad Grundlage 120'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage. Bei trockenem Wetter gerne draußen mit dem Gravel – dann nach Gefühl/HF statt exakt Watt.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 120,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ],
+   "slot": "pm"
+  },
+  {
+   "id": "2027-02-28-1",
+   "date": "2027-02-28",
+   "sport": "run",
+   "long": true,
+   "load": "hard",
+   "title": "Langer Lauf 24 km",
+   "desc": "Locker und gleichmäßig. Ab 25 km Verpflegung mitnehmen und üben.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 24,
+     "label": "Locker"
+    }
+   ]
+  },
+  {
+   "id": "2027-03-02-1",
+   "date": "2027-03-02",
+   "sport": "run",
+   "title": "5× 2 km @ HM-Pace",
+   "load": "hard",
+   "desc": "Gleichmäßige Wiederholungen an der Schwelle bzw. im HM-Tempo. Rhythmus und Atmung kontrollieren.",
+   "steps": [
+    {
+     "t": "wu",
+     "zone": "E",
+     "km": 3,
+     "label": "Einlaufen"
+    },
+    {
+     "rep": 5,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "HM",
+       "km": 2
+      },
+      {
+       "t": "rec",
+       "zone": "JOG",
+       "min": 2,
+       "label": "Trabpause"
+      }
+     ]
+    },
+    {
+     "t": "cd",
+     "zone": "E",
+     "km": 2.5,
+     "label": "Auslaufen"
+    }
+   ]
+  },
+  {
+   "id": "2027-03-03-1",
+   "date": "2027-03-03",
+   "sport": "gym",
+   "title": "Stabi B – Einbein-Kraft & Füße",
+   "load": "easy",
+   "min": 50,
+   "desc": "Stabi- und Kraftprogramm: saubere Technik, 1–2 Wiederholungen „im Tank“ lassen. Pausen 45–60s.",
+   "exercises": [
+    "Aufwärmen: 5 min + Fußgelenk- und Hüftmobilisation",
+    "Bulgarian Split Squat – 3× 8/Seite (moderat schwer)",
+    "Einbeiniges Kreuzheben (RDL) – 3× 8/Seite",
+    "Step-ups auf Box (Knie über Hüfte) – 3× 10/Seite",
+    "Exzentrisches Wadenheben (langsam ab) – 3× 12/Seite",
+    "Copenhagen Plank (kurzer Hebel) – 3× 20s/Seite",
+    "Hip Airplane – 3× 5/Seite",
+    "Fußgymnastik: Handtuch greifen, Short Foot – 3× 30s"
+   ]
+  },
+  {
+   "id": "2027-03-03-2",
+   "date": "2027-03-03",
+   "sport": "bike",
+   "title": "Rad Grundlage 60'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage, gleichmäßig treten, Kadenz 85–95. Locker genug, dass der Lauf am nächsten Tag nicht leidet.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 60,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ]
+  },
+  {
+   "id": "2027-03-04-1",
+   "date": "2027-03-04",
+   "sport": "run",
+   "title": "Float 6× (1 km HM / 1 km MP)",
+   "load": "hard",
+   "desc": "Durchgehend schnell: 1 km HM-Tempo, 1 km Marathon-Pace im Wechsel. Sehr marathonspezifisch – Pace-Gefühl und Ermüdungsresistenz.",
+   "steps": [
+    {
+     "t": "wu",
+     "zone": "E",
+     "km": 3,
+     "label": "Einlaufen"
+    },
+    {
+     "rep": 6,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "HM",
+       "km": 1,
+       "label": "HM-Pace"
+      },
+      {
+       "t": "work",
+       "zone": "MP",
+       "km": 1,
+       "label": "Marathon-Pace"
+      }
+     ]
+    },
+    {
+     "t": "cd",
+     "zone": "E",
+     "km": 2,
+     "label": "Auslaufen"
+    }
+   ]
+  },
+  {
+   "id": "2027-03-04-2",
+   "date": "2027-03-04",
+   "sport": "bike",
+   "title": "Tempo 2× 20'",
+   "load": "moderate",
+   "desc": "Lange Tempo-Blöcke (Z3) – solide aerobe Arbeit ohne die Beine für den Lauf zu zerstören.",
+   "steps": [
+    {
+     "t": "wu",
+     "min": 15,
+     "pct": [
+      50,
+      70
+     ],
+     "label": "Einfahren (steigernd)"
+    },
+    {
+     "rep": 2,
+     "steps": [
+      {
+       "t": "work",
+       "min": 20,
+       "pct": [
+        80,
+        86
+       ],
+       "label": "Tempo"
+      },
+      {
+       "t": "rec",
+       "min": 5,
+       "pct": [
+        45,
+        55
+       ],
+       "label": "Locker"
+      }
+     ]
+    },
+    {
+     "t": "cd",
+     "min": 10,
+     "pct": [
+      45,
+      55
+     ],
+     "label": "Ausfahren"
+    }
+   ],
+   "slot": "pm"
+  },
+  {
+   "id": "2027-03-05-1",
+   "date": "2027-03-05",
+   "sport": "run",
+   "title": "Lauf locker + Steigerungen",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Am Ende 6 Steigerungen über 20s: locker-schnell, saubere Technik, nicht sprinten.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 9,
+     "label": "Locker"
+    },
+    {
+     "rep": 6,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "STRIDE",
+       "min": 0.3333333333333333,
+       "label": "Steigerung 20s"
+      },
+      {
+       "t": "rec",
+       "zone": "WALK",
+       "min": 0.6666666666666666,
+       "label": "Gehen/Traben"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "2027-03-06-1",
+   "date": "2027-03-06",
+   "sport": "run",
+   "title": "Lauf locker",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Bewusst langsam, das ist die Basis für alles andere.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 9,
+     "label": "Locker"
+    }
+   ]
+  },
+  {
+   "id": "2027-03-06-2",
+   "date": "2027-03-06",
+   "sport": "bike",
+   "title": "Rad Grundlage 105'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage, gleichmäßig treten, Kadenz 85–95. Locker genug, dass der Lauf am nächsten Tag nicht leidet.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 105,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ],
+   "slot": "pm"
+  },
+  {
+   "id": "2027-03-07-1",
+   "date": "2027-03-07",
+   "sport": "run",
+   "long": true,
+   "load": "hard",
+   "title": "Langer Lauf 32 km mit 3× 5 km MP",
+   "desc": "Schlüsseleinheit Marathon: MP-Blöcke im langen Lauf, dazwischen 1 km steady. Rennverpflegung üben (alle 25–30 min).",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 13,
+     "label": "Locker"
+    },
+    {
+     "rep": 3,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "MP",
+       "km": 5,
+       "label": "Marathon-Pace"
+      },
+      {
+       "t": "work",
+       "zone": "S",
+       "km": 1,
+       "label": "Steady"
+      }
+     ]
+    },
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 2,
+     "label": "Auslaufen"
+    }
+   ]
+  },
+  {
+   "id": "2027-03-09-1",
+   "date": "2027-03-09",
+   "sport": "run",
+   "title": "2× (2 km Schwelle + 4× 200 m schnell)",
+   "load": "hard",
+   "desc": "Kombi: 2 km an der Schwelle, 90s traben, dann 4× 200 m flott (200 m Trab). Satzpause 3 min.",
+   "steps": [
+    {
+     "t": "wu",
+     "zone": "E",
+     "km": 3,
+     "label": "Einlaufen"
+    },
+    {
+     "rep": 2,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "T",
+       "km": 2,
+       "label": "Schwelle"
+      },
+      {
+       "t": "rec",
+       "zone": "JOG",
+       "min": 1.5,
+       "label": "Trabpause"
+      },
+      {
+       "rep": 4,
+       "steps": [
+        {
+         "t": "work",
+         "zone": "5K",
+         "km": 0.2,
+         "label": "200 m flott"
+        },
+        {
+         "t": "rec",
+         "zone": "JOG",
+         "km": 0.2,
+         "label": "Trabpause"
+        }
+       ]
+      },
+      {
+       "t": "rec",
+       "zone": "JOG",
+       "min": 3,
+       "label": "Trabpause"
+      }
+     ]
+    },
+    {
+     "t": "cd",
+     "zone": "E",
+     "km": 2,
+     "label": "Auslaufen"
+    }
+   ]
+  },
+  {
+   "id": "2027-03-10-1",
+   "date": "2027-03-10",
+   "sport": "gym",
+   "title": "Stabi Light – Aktivierung",
+   "load": "easy",
+   "min": 30,
+   "desc": "Kurze Aktivierung im Gym.",
+   "exercises": [
+    "Nur leichte Aktivierung, nichts Neues, kein Muskelkater!",
+    "Dead Bug – 2× 8/Seite",
+    "Seitstütz – 2× 30s/Seite",
+    "Glute Bridge – 2× 12",
+    "Monster Walk – 2× 10 Schritte",
+    "Wadenheben – 2× 12",
+    "Mobility Hüfte & Waden 10 min"
+   ]
+  },
+  {
+   "id": "2027-03-10-2",
+   "date": "2027-03-10",
+   "sport": "bike",
+   "title": "Rad Grundlage 60'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage, gleichmäßig treten, Kadenz 85–95. Locker genug, dass der Lauf am nächsten Tag nicht leidet.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 60,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ]
+  },
+  {
+   "id": "2027-03-11-1",
+   "date": "2027-03-11",
+   "sport": "run",
+   "title": "Locker + 3× 1 km HM-Pace",
+   "load": "moderate",
+   "desc": "Vorbelastung vor dem Wettkampf: kurz HM-Tempo antesten, Beine wach machen.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 4,
+     "label": "Locker"
+    },
+    {
+     "rep": 3,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "HM",
+       "km": 1,
+       "label": "HM-Pace"
+      },
+      {
+       "t": "rec",
+       "zone": "JOG",
+       "min": 2,
+       "label": "Trabpause"
+      }
+     ]
+    },
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 2,
+     "label": "Auslaufen"
+    }
+   ]
+  },
+  {
+   "id": "2027-03-12-1",
+   "date": "2027-03-12",
+   "sport": "run",
+   "title": "Lauf locker",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Bewusst langsam, das ist die Basis für alles andere.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 7,
+     "label": "Locker"
+    }
+   ]
+  },
+  {
+   "id": "2027-03-13-1",
+   "date": "2027-03-13",
+   "sport": "run",
+   "title": "Shake-out + Steigerungen",
+   "load": "easy",
+   "desc": "Sehr locker, 3–4 kurze Steigerungen. Beine lockern.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 4.5,
+     "label": "Sehr locker"
+    },
+    {
+     "rep": 4,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "STRIDE",
+       "min": 0.25,
+       "label": "Steigerung 15s"
+      },
+      {
+       "t": "rec",
+       "zone": "WALK",
+       "min": 1,
+       "label": "Gehen"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "2027-03-14-1",
+   "date": "2027-03-14",
+   "sport": "race",
+   "title": "Halbmarathon – Formtest",
+   "load": "hard",
+   "raceKm": 21.0975,
+   "racePace": 232,
+   "desc": "Ziel unter 1:22 (3:53/km). Erste 5 km kontrolliert auf ~3:55, ab km 15 laufen lassen. 3 km einlaufen + Steigerungen vorher. Danach: wie fühlt sich 4:09 im Vergleich an?",
+   "steps": []
+  },
+  {
+   "id": "2027-03-16-1",
+   "date": "2027-03-16",
+   "sport": "run",
+   "title": "Regenerationslauf",
+   "load": "easy",
+   "desc": "Sehr locker, kurz. Nur Durchblutung, kein Training.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "REC",
+     "km": 8,
+     "label": "Sehr locker"
+    }
+   ]
+  },
+  {
+   "id": "2027-03-17-1",
+   "date": "2027-03-17",
+   "sport": "gym",
+   "title": "Stabi A – Rumpf & Hüfte",
+   "load": "easy",
+   "min": 45,
+   "desc": "Stabi- und Kraftprogramm: saubere Technik, 1–2 Wiederholungen „im Tank“ lassen. Pausen 45–60s.",
+   "exercises": [
+    "Aufwärmen: 5 min Rad/Rudern + Mobility Hüfte",
+    "Dead Bug – 3× 10/Seite",
+    "Unterarmstütz mit Beinheben – 3× 40s",
+    "Seitstütz mit Hüftheben – 3× 12/Seite",
+    "Pallof Press (Kabel/Band) – 3× 10/Seite",
+    "Glute Bridge einbeinig – 3× 12/Seite",
+    "Monster Walk mit Miniband – 3× 15 Schritte/Richtung",
+    "Bird Dog mit Halt – 3× 8/Seite",
+    "Wadenheben einbeinig – 3× 15/Seite"
+   ]
+  },
+  {
+   "id": "2027-03-17-2",
+   "date": "2027-03-17",
+   "sport": "bike",
+   "title": "Rad Grundlage 60'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage, gleichmäßig treten, Kadenz 85–95. Locker genug, dass der Lauf am nächsten Tag nicht leidet.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 60,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ]
+  },
+  {
+   "id": "2027-03-18-1",
+   "date": "2027-03-18",
+   "sport": "run",
+   "title": "Marathon-Pace 2× 6 km",
+   "load": "hard",
+   "desc": "Wettkampftempo verinnerlichen: 4:09/km fühlen, ohne auf die Uhr zu starren. Zwischen den Blöcken steady (nicht traben!).",
+   "steps": [
+    {
+     "t": "wu",
+     "zone": "E",
+     "km": 3,
+     "label": "Einlaufen"
+    },
+    {
+     "rep": 2,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "MP",
+       "km": 6,
+       "label": "Marathon-Pace"
+      },
+      {
+       "t": "work",
+       "zone": "S",
+       "km": 1,
+       "label": "Steady"
+      }
+     ]
+    },
+    {
+     "t": "cd",
+     "zone": "E",
+     "km": 2,
+     "label": "Auslaufen"
+    }
+   ]
+  },
+  {
+   "id": "2027-03-18-2",
+   "date": "2027-03-18",
+   "sport": "bike",
+   "title": "Pyramide 2-4-6-8-6-4-2'",
+   "load": "hard",
+   "desc": "Kurze Blöcke härter (110 %), lange Blöcke an der Schwelle (98 %). Pause = halbe Blocklänge.",
+   "steps": [
+    {
+     "t": "wu",
+     "min": 15,
+     "pct": [
+      50,
+      70
+     ],
+     "label": "Einfahren (steigernd)"
+    },
+    {
+     "t": "work",
+     "min": 2,
+     "pct": [
+      108,
+      112
+     ]
+    },
+    {
+     "t": "rec",
+     "min": 1,
+     "pct": [
+      45,
+      55
+     ],
+     "label": "Locker"
+    },
+    {
+     "t": "work",
+     "min": 4,
+     "pct": [
+      103,
+      106
+     ]
+    },
+    {
+     "t": "rec",
+     "min": 2,
+     "pct": [
+      45,
+      55
+     ],
+     "label": "Locker"
+    },
+    {
+     "t": "work",
+     "min": 6,
+     "pct": [
+      98,
+      101
+     ]
+    },
+    {
+     "t": "rec",
+     "min": 3,
+     "pct": [
+      45,
+      55
+     ],
+     "label": "Locker"
+    },
+    {
+     "t": "work",
+     "min": 8,
+     "pct": [
+      95,
+      98
+     ]
+    },
+    {
+     "t": "rec",
+     "min": 4,
+     "pct": [
+      45,
+      55
+     ],
+     "label": "Locker"
+    },
+    {
+     "t": "work",
+     "min": 6,
+     "pct": [
+      98,
+      101
+     ]
+    },
+    {
+     "t": "rec",
+     "min": 3,
+     "pct": [
+      45,
+      55
+     ],
+     "label": "Locker"
+    },
+    {
+     "t": "work",
+     "min": 4,
+     "pct": [
+      103,
+      106
+     ]
+    },
+    {
+     "t": "rec",
+     "min": 2,
+     "pct": [
+      45,
+      55
+     ],
+     "label": "Locker"
+    },
+    {
+     "t": "work",
+     "min": 2,
+     "pct": [
+      108,
+      112
+     ]
+    },
+    {
+     "t": "cd",
+     "min": 10,
+     "pct": [
+      45,
+      55
+     ],
+     "label": "Ausfahren"
+    }
+   ],
+   "slot": "pm"
+  },
+  {
+   "id": "2027-03-19-1",
+   "date": "2027-03-19",
+   "sport": "run",
+   "title": "Lauf locker + Steigerungen",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Am Ende 6 Steigerungen über 20s: locker-schnell, saubere Technik, nicht sprinten.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 9,
+     "label": "Locker"
+    },
+    {
+     "rep": 6,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "STRIDE",
+       "min": 0.3333333333333333,
+       "label": "Steigerung 20s"
+      },
+      {
+       "t": "rec",
+       "zone": "WALK",
+       "min": 0.6666666666666666,
+       "label": "Gehen/Traben"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "2027-03-20-1",
+   "date": "2027-03-20",
+   "sport": "run",
+   "title": "Lauf locker",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Bewusst langsam, das ist die Basis für alles andere.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 9,
+     "label": "Locker"
+    }
+   ]
+  },
+  {
+   "id": "2027-03-20-2",
+   "date": "2027-03-20",
+   "sport": "bike",
+   "title": "Rad Grundlage 120'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage. Bei trockenem Wetter gerne draußen mit dem Gravel – dann nach Gefühl/HF statt exakt Watt.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 120,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ],
+   "slot": "pm"
+  },
+  {
+   "id": "2027-03-21-1",
+   "date": "2027-03-21",
+   "sport": "run",
+   "long": true,
+   "load": "hard",
+   "title": "Langer Lauf 30 km progressiv",
+   "desc": "In drei Dritteln steigern: locker → oberes locker/steady → letztes Viertel Marathon-Pace.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 14,
+     "label": "Locker"
+    },
+    {
+     "t": "work",
+     "zone": "S",
+     "km": 9,
+     "label": "Steady"
+    },
+    {
+     "t": "work",
+     "zone": "MP",
+     "km": 7,
+     "label": "Marathon-Pace"
+    }
+   ]
+  },
+  {
+   "id": "2027-03-23-1",
+   "date": "2027-03-23",
+   "sport": "run",
+   "title": "4× 3 km @ Schwelle",
+   "load": "hard",
+   "desc": "Gleichmäßige Wiederholungen an der Schwelle bzw. im HM-Tempo. Rhythmus und Atmung kontrollieren.",
+   "steps": [
+    {
+     "t": "wu",
+     "zone": "E",
+     "km": 3,
+     "label": "Einlaufen"
+    },
+    {
+     "rep": 4,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "T",
+       "km": 3
+      },
+      {
+       "t": "rec",
+       "zone": "JOG",
+       "min": 2,
+       "label": "Trabpause"
+      }
+     ]
+    },
+    {
+     "t": "cd",
+     "zone": "E",
+     "km": 2.5,
+     "label": "Auslaufen"
+    }
+   ]
+  },
+  {
+   "id": "2027-03-24-1",
+   "date": "2027-03-24",
+   "sport": "gym",
+   "title": "Stabi C – Athletik & Elastizität",
+   "load": "easy",
+   "min": 50,
+   "desc": "Stabi- und Kraftprogramm: saubere Technik, 1–2 Wiederholungen „im Tank“ lassen. Pausen 45–60s.",
+   "exercises": [
+    "Aufwärmen: 5 min + Lauf-ABC light",
+    "Goblet Squat – 3× 10",
+    "Hip Thrust (Langhantel) – 3× 10",
+    "Seitliche Ausfallschritte – 3× 8/Seite",
+    "Pogo Jumps (Fußgelenk-Sprünge) – 3× 20",
+    "Sprung-Ausfallschritte (Split Jumps) – 3× 6/Seite",
+    "Nordic Hamstring Curl (assistiert) – 3× 5",
+    "Ab-Wheel / Rollout – 3× 8",
+    "Seitstütz statisch – 2× 45s/Seite"
+   ]
+  },
+  {
+   "id": "2027-03-24-2",
+   "date": "2027-03-24",
+   "sport": "bike",
+   "title": "Rad Grundlage 60'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage, gleichmäßig treten, Kadenz 85–95. Locker genug, dass der Lauf am nächsten Tag nicht leidet.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 60,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ]
+  },
+  {
+   "id": "2027-03-25-1",
+   "date": "2027-03-25",
+   "sport": "run",
+   "title": "25' Schwelle + 3× 1 km 10K",
+   "load": "hard",
+   "desc": "Erst 20 min an der Schwelle, 3 min traben, dann 1-km-Stücke im 10-km-Tempo auf Vorbelastung (2 min Trab).",
+   "steps": [
+    {
+     "t": "wu",
+     "zone": "E",
+     "km": 3,
+     "label": "Einlaufen"
+    },
+    {
+     "t": "work",
+     "zone": "T",
+     "min": 25,
+     "label": "Schwelle"
+    },
+    {
+     "t": "rec",
+     "zone": "JOG",
+     "min": 3,
+     "label": "Trabpause"
+    },
+    {
+     "rep": 3,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "10K",
+       "km": 1
+      },
+      {
+       "t": "rec",
+       "zone": "JOG",
+       "min": 2,
+       "label": "Trabpause"
+      }
+     ]
+    },
+    {
+     "t": "cd",
+     "zone": "E",
+     "km": 2,
+     "label": "Auslaufen"
+    }
+   ]
+  },
+  {
+   "id": "2027-03-25-2",
+   "date": "2027-03-25",
+   "sport": "bike",
+   "title": "40/20 2× 8'",
+   "load": "hard",
+   "desc": "40s hart (~120 %), 20s locker – im Satz durchgehend. Hohe VO2-Zeit bei überschaubarer Belastung. 5 min locker zwischen den Sätzen.",
+   "steps": [
+    {
+     "t": "wu",
+     "min": 15,
+     "pct": [
+      50,
+      70
+     ],
+     "label": "Einfahren (steigernd)"
+    },
+    {
+     "rep": 2,
+     "steps": [
+      {
+       "rep": 8,
+       "steps": [
+        {
+         "t": "work",
+         "min": 0.6666666666666666,
+         "pct": [
+          118,
+          125
+         ],
+         "label": "40s hart"
+        },
+        {
+         "t": "rec",
+         "min": 0.3333333333333333,
+         "pct": [
+          45,
+          55
+         ],
+         "label": "20s locker"
+        }
+       ]
+      },
+      {
+       "t": "rec",
+       "min": 5,
+       "pct": [
+        45,
+        55
+       ],
+       "label": "Locker"
+      }
+     ]
+    },
+    {
+     "t": "cd",
+     "min": 10,
+     "pct": [
+      45,
+      55
+     ],
+     "label": "Ausfahren"
+    }
+   ],
+   "slot": "pm"
+  },
+  {
+   "id": "2027-03-26-1",
+   "date": "2027-03-26",
+   "sport": "run",
+   "title": "Lauf locker + Steigerungen",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Am Ende 6 Steigerungen über 20s: locker-schnell, saubere Technik, nicht sprinten.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 10.5,
+     "label": "Locker"
+    },
+    {
+     "rep": 6,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "STRIDE",
+       "min": 0.3333333333333333,
+       "label": "Steigerung 20s"
+      },
+      {
+       "t": "rec",
+       "zone": "WALK",
+       "min": 0.6666666666666666,
+       "label": "Gehen/Traben"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "2027-03-27-1",
+   "date": "2027-03-27",
+   "sport": "run",
+   "title": "Lauf locker",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Bewusst langsam, das ist die Basis für alles andere.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 9,
+     "label": "Locker"
+    }
+   ]
+  },
+  {
+   "id": "2027-03-27-2",
+   "date": "2027-03-27",
+   "sport": "bike",
+   "title": "Rad Grundlage 90'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage, gleichmäßig treten, Kadenz 85–95. Locker genug, dass der Lauf am nächsten Tag nicht leidet.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 90,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ],
+   "slot": "pm"
+  },
+  {
+   "id": "2027-03-28-1",
+   "date": "2027-03-28",
+   "sport": "run",
+   "long": true,
+   "load": "hard",
+   "title": "Langer Lauf 34 km mit 2× 8 km MP",
+   "desc": "Schlüsseleinheit Marathon: MP-Blöcke im langen Lauf, dazwischen 1 km steady. Rennverpflegung üben (alle 25–30 min).",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 15,
+     "label": "Locker"
+    },
+    {
+     "rep": 2,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "MP",
+       "km": 8,
+       "label": "Marathon-Pace"
+      },
+      {
+       "t": "work",
+       "zone": "S",
+       "km": 1,
+       "label": "Steady"
+      }
+     ]
+    },
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 2,
+     "label": "Auslaufen"
+    }
+   ]
+  },
+  {
+   "id": "2027-03-30-1",
+   "date": "2027-03-30",
+   "sport": "run",
+   "title": "Cruise Intervals 6× 1.6 km",
+   "load": "hard",
+   "desc": "Schwellen-Wiederholungen mit kurzer Trabpause. Locker-hart: Du könntest am Ende noch 1–2 mehr. Nicht schneller als vorgegeben!",
+   "steps": [
+    {
+     "t": "wu",
+     "zone": "E",
+     "km": 3,
+     "label": "Einlaufen"
+    },
+    {
+     "rep": 6,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "T",
+       "km": 1.6,
+       "label": "Schwelle"
+      },
+      {
+       "t": "rec",
+       "zone": "JOG",
+       "min": 1,
+       "label": "Trabpause"
+      }
+     ]
+    },
+    {
+     "t": "cd",
+     "zone": "E",
+     "km": 2.5,
+     "label": "Auslaufen"
+    }
+   ]
+  },
+  {
+   "id": "2027-03-31-1",
+   "date": "2027-03-31",
+   "sport": "gym",
+   "title": "Stabi D – Rumpf-Zirkel & Balance",
+   "load": "easy",
+   "min": 50,
+   "desc": "Stabi- und Kraftprogramm: saubere Technik, 1–2 Wiederholungen „im Tank“ lassen. Pausen 45–60s.",
+   "exercises": [
+    "Aufwärmen: 5 min + Mobility",
+    "Zirkel 3 Runden, 40s Belastung / 20s Pause:",
+    "· Plank Shoulder Taps",
+    "· Russian Twist mit Gewicht",
+    "· Einbeinstand auf Kissen mit Ballwurf/Armbewegung",
+    "· Reverse Crunch",
+    "· Seitstütz rechts / links",
+    "· Superman / Rückenstrecker",
+    "· Clamshells mit Band",
+    "Abschluss: Wadenheben auf Stufe 3× 15"
+   ]
+  },
+  {
+   "id": "2027-03-31-2",
+   "date": "2027-03-31",
+   "sport": "bike",
+   "title": "Rad Grundlage 60'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage, gleichmäßig treten, Kadenz 85–95. Locker genug, dass der Lauf am nächsten Tag nicht leidet.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 60,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ]
+  },
+  {
+   "id": "2027-04-01-1",
+   "date": "2027-04-01",
+   "sport": "run",
+   "title": "Steady-Lauf 40'",
+   "load": "moderate",
+   "desc": "Zügiger, aber komfortabler Dauerlauf („comfortably hard“ minus eine Stufe). Aerobe Leistungsfähigkeit ohne große Ermüdung.",
+   "steps": [
+    {
+     "t": "wu",
+     "zone": "E",
+     "km": 3,
+     "label": "Einlaufen"
+    },
+    {
+     "t": "work",
+     "zone": "S",
+     "min": 40,
+     "label": "Steady"
+    },
+    {
+     "t": "cd",
+     "zone": "E",
+     "km": 2,
+     "label": "Auslaufen"
+    }
+   ]
+  },
+  {
+   "id": "2027-04-01-2",
+   "date": "2027-04-01",
+   "sport": "bike",
+   "title": "VO2max 5× 3'",
+   "load": "hard",
+   "desc": "Harte Intervalle: ab Minute 2 tief atmen, bis zum Ende gleichmäßig halten. Pause aktiv locker.",
+   "steps": [
+    {
+     "t": "wu",
+     "min": 15,
+     "pct": [
+      50,
+      70
+     ],
+     "label": "Einfahren (steigernd)"
+    },
+    {
+     "rep": 3,
+     "steps": [
+      {
+       "t": "work",
+       "min": 0.5,
+       "pct": [
+        110,
+        120
+       ],
+       "label": "Aktivierung 30s"
+      },
+      {
+       "t": "rec",
+       "min": 1,
+       "pct": [
+        45,
+        55
+       ],
+       "label": "Locker"
+      }
+     ]
+    },
+    {
+     "rep": 5,
+     "steps": [
+      {
+       "t": "work",
+       "min": 3,
+       "pct": [
+        112,
+        118
+       ],
+       "label": "VO2max"
+      },
+      {
+       "t": "rec",
+       "min": 3,
+       "pct": [
+        45,
+        55
+       ],
+       "label": "Locker"
+      }
+     ]
+    },
+    {
+     "t": "cd",
+     "min": 10,
+     "pct": [
+      45,
+      55
+     ],
+     "label": "Ausfahren"
+    }
+   ],
+   "slot": "pm"
+  },
+  {
+   "id": "2027-04-02-1",
+   "date": "2027-04-02",
+   "sport": "run",
+   "title": "Lauf locker + Steigerungen",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Am Ende 6 Steigerungen über 20s: locker-schnell, saubere Technik, nicht sprinten.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 13,
+     "label": "Locker"
+    },
+    {
+     "rep": 6,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "STRIDE",
+       "min": 0.3333333333333333,
+       "label": "Steigerung 20s"
+      },
+      {
+       "t": "rec",
+       "zone": "WALK",
+       "min": 0.6666666666666666,
+       "label": "Gehen/Traben"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "2027-04-03-1",
+   "date": "2027-04-03",
+   "sport": "run",
+   "title": "Lauf locker",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Bewusst langsam, das ist die Basis für alles andere.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 12,
+     "label": "Locker"
+    }
+   ]
+  },
+  {
+   "id": "2027-04-03-2",
+   "date": "2027-04-03",
+   "sport": "bike",
+   "title": "Rad Grundlage 90'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage, gleichmäßig treten, Kadenz 85–95. Locker genug, dass der Lauf am nächsten Tag nicht leidet.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 90,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ],
+   "slot": "pm"
+  },
+  {
+   "id": "2027-04-04-1",
+   "date": "2027-04-04",
+   "sport": "run",
+   "long": true,
+   "load": "hard",
+   "title": "Langer Lauf 32 km mit 18 km MP am Stück",
+   "desc": "Generalprobe: Schuhe, Verpflegung, Renn-Outfit. Marathon-Pace kontrolliert, nicht schneller.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 12,
+     "label": "Locker"
+    },
+    {
+     "t": "work",
+     "zone": "MP",
+     "km": 18,
+     "label": "Marathon-Pace"
+    },
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 2,
+     "label": "Auslaufen"
+    }
+   ]
+  },
+  {
+   "id": "2027-04-06-1",
+   "date": "2027-04-06",
+   "sport": "run",
+   "title": "5× 2 km @ Schwelle",
+   "load": "hard",
+   "desc": "Gleichmäßige Wiederholungen an der Schwelle bzw. im HM-Tempo. Rhythmus und Atmung kontrollieren.",
+   "steps": [
+    {
+     "t": "wu",
+     "zone": "E",
+     "km": 3,
+     "label": "Einlaufen"
+    },
+    {
+     "rep": 5,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "T",
+       "km": 2
+      },
+      {
+       "t": "rec",
+       "zone": "JOG",
+       "min": 1.5,
+       "label": "Trabpause"
+      }
+     ]
+    },
+    {
+     "t": "cd",
+     "zone": "E",
+     "km": 2.5,
+     "label": "Auslaufen"
+    }
+   ]
+  },
+  {
+   "id": "2027-04-07-1",
+   "date": "2027-04-07",
+   "sport": "gym",
+   "title": "Stabi B – Einbein-Kraft & Füße",
+   "load": "easy",
+   "min": 45,
+   "desc": "Stabi- und Kraftprogramm: saubere Technik, 1–2 Wiederholungen „im Tank“ lassen. Pausen 45–60s.",
+   "exercises": [
+    "Aufwärmen: 5 min + Fußgelenk- und Hüftmobilisation",
+    "Bulgarian Split Squat – 3× 8/Seite (moderat schwer)",
+    "Einbeiniges Kreuzheben (RDL) – 3× 8/Seite",
+    "Step-ups auf Box (Knie über Hüfte) – 3× 10/Seite",
+    "Exzentrisches Wadenheben (langsam ab) – 3× 12/Seite",
+    "Copenhagen Plank (kurzer Hebel) – 3× 20s/Seite",
+    "Hip Airplane – 3× 5/Seite",
+    "Fußgymnastik: Handtuch greifen, Short Foot – 3× 30s"
+   ]
+  },
+  {
+   "id": "2027-04-07-2",
+   "date": "2027-04-07",
+   "sport": "bike",
+   "title": "Rad Grundlage 60'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage, gleichmäßig treten, Kadenz 85–95. Locker genug, dass der Lauf am nächsten Tag nicht leidet.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 60,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ]
+  },
+  {
+   "id": "2027-04-08-1",
+   "date": "2027-04-08",
+   "sport": "run",
+   "title": "Marathon-Pace 3× 3 km",
+   "load": "hard",
+   "desc": "Wettkampftempo verinnerlichen: 4:09/km fühlen, ohne auf die Uhr zu starren. Zwischen den Blöcken steady (nicht traben!).",
+   "steps": [
+    {
+     "t": "wu",
+     "zone": "E",
+     "km": 3,
+     "label": "Einlaufen"
+    },
+    {
+     "rep": 3,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "MP",
+       "km": 3,
+       "label": "Marathon-Pace"
+      },
+      {
+       "t": "work",
+       "zone": "S",
+       "km": 1,
+       "label": "Steady"
+      }
+     ]
+    },
+    {
+     "t": "cd",
+     "zone": "E",
+     "km": 2,
+     "label": "Auslaufen"
+    }
+   ]
+  },
+  {
+   "id": "2027-04-09-1",
+   "date": "2027-04-09",
+   "sport": "run",
+   "title": "Lauf locker + Steigerungen",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Am Ende 6 Steigerungen über 20s: locker-schnell, saubere Technik, nicht sprinten.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 7,
+     "label": "Locker"
+    },
+    {
+     "rep": 6,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "STRIDE",
+       "min": 0.3333333333333333,
+       "label": "Steigerung 20s"
+      },
+      {
+       "t": "rec",
+       "zone": "WALK",
+       "min": 0.6666666666666666,
+       "label": "Gehen/Traben"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "2027-04-10-1",
+   "date": "2027-04-10",
+   "sport": "run",
+   "title": "Lauf locker",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Bewusst langsam, das ist die Basis für alles andere.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 6,
+     "label": "Locker"
+    }
+   ]
+  },
+  {
+   "id": "2027-04-10-2",
+   "date": "2027-04-10",
+   "sport": "bike",
+   "title": "Rad Grundlage 90'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage, gleichmäßig treten, Kadenz 85–95. Locker genug, dass der Lauf am nächsten Tag nicht leidet.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 90,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ],
+   "slot": "pm"
+  },
+  {
+   "id": "2027-04-11-1",
+   "date": "2027-04-11",
+   "sport": "run",
+   "long": true,
+   "load": "hard",
+   "title": "Langer Lauf 24 km mit 10 km MP am Stück",
+   "desc": "Generalprobe: Schuhe, Verpflegung, Renn-Outfit. Marathon-Pace kontrolliert, nicht schneller.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 12,
+     "label": "Locker"
+    },
+    {
+     "t": "work",
+     "zone": "MP",
+     "km": 10,
+     "label": "Marathon-Pace"
+    },
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 2,
+     "label": "Auslaufen"
+    }
+   ]
+  },
+  {
+   "id": "2027-04-13-1",
+   "date": "2027-04-13",
+   "sport": "run",
+   "title": "6× 1 km @ 10-km-Pace",
+   "load": "hard",
+   "desc": "VO2max-orientierte Intervalle: gleichmäßig, das letzte darf das schnellste sein. Trabpause aktiv halten.",
+   "steps": [
+    {
+     "t": "wu",
+     "zone": "E",
+     "km": 3,
+     "label": "Einlaufen"
+    },
+    {
+     "rep": 6,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "10K",
+       "km": 1
+      },
+      {
+       "t": "rec",
+       "zone": "JOG",
+       "min": 2,
+       "label": "Trabpause"
+      }
+     ]
+    },
+    {
+     "t": "cd",
+     "zone": "E",
+     "km": 2.5,
+     "label": "Auslaufen"
+    }
+   ]
+  },
+  {
+   "id": "2027-04-14-1",
+   "date": "2027-04-14",
+   "sport": "gym",
+   "title": "Stabi Light – Aktivierung",
+   "load": "easy",
+   "min": 30,
+   "desc": "Kurze Aktivierung im Gym.",
+   "exercises": [
+    "Nur leichte Aktivierung, nichts Neues, kein Muskelkater!",
+    "Dead Bug – 2× 8/Seite",
+    "Seitstütz – 2× 30s/Seite",
+    "Glute Bridge – 2× 12",
+    "Monster Walk – 2× 10 Schritte",
+    "Wadenheben – 2× 12",
+    "Mobility Hüfte & Waden 10 min"
+   ]
+  },
+  {
+   "id": "2027-04-14-2",
+   "date": "2027-04-14",
+   "sport": "bike",
+   "title": "Rad Grundlage 60'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage, gleichmäßig treten, Kadenz 85–95. Locker genug, dass der Lauf am nächsten Tag nicht leidet.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 60,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ]
+  },
+  {
+   "id": "2027-04-15-1",
+   "date": "2027-04-15",
+   "sport": "run",
+   "title": "Marathon-Pace 2× 4 km",
+   "load": "hard",
+   "desc": "Wettkampftempo verinnerlichen: 4:09/km fühlen, ohne auf die Uhr zu starren. Zwischen den Blöcken steady (nicht traben!).",
+   "steps": [
+    {
+     "t": "wu",
+     "zone": "E",
+     "km": 3,
+     "label": "Einlaufen"
+    },
+    {
+     "rep": 2,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "MP",
+       "km": 4,
+       "label": "Marathon-Pace"
+      },
+      {
+       "t": "work",
+       "zone": "S",
+       "km": 1,
+       "label": "Steady"
+      }
+     ]
+    },
+    {
+     "t": "cd",
+     "zone": "E",
+     "km": 2,
+     "label": "Auslaufen"
+    }
+   ]
+  },
+  {
+   "id": "2027-04-16-1",
+   "date": "2027-04-16",
+   "sport": "run",
+   "title": "Lauf locker + Steigerungen",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Am Ende 6 Steigerungen über 20s: locker-schnell, saubere Technik, nicht sprinten.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 6,
+     "label": "Locker"
+    },
+    {
+     "rep": 6,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "STRIDE",
+       "min": 0.3333333333333333,
+       "label": "Steigerung 20s"
+      },
+      {
+       "t": "rec",
+       "zone": "WALK",
+       "min": 0.6666666666666666,
+       "label": "Gehen/Traben"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "2027-04-17-1",
+   "date": "2027-04-17",
+   "sport": "run",
+   "title": "Lauf locker",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Bewusst langsam, das ist die Basis für alles andere.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 5,
+     "label": "Locker"
+    }
+   ]
+  },
+  {
+   "id": "2027-04-17-2",
+   "date": "2027-04-17",
+   "sport": "bike",
+   "title": "Rad locker 60' + Öffner",
+   "load": "easy",
+   "desc": "Locker mit 3× 1 min zügig (~105 %), 2 min Pause. Nur aktivieren.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 15,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Locker"
+    },
+    {
+     "rep": 3,
+     "steps": [
+      {
+       "t": "work",
+       "min": 1,
+       "pct": [
+        100,
+        108
+       ],
+       "label": "Öffner"
+      },
+      {
+       "t": "rec",
+       "min": 2,
+       "pct": [
+        45,
+        55
+       ],
+       "label": "Locker"
+      }
+     ]
+    },
+    {
+     "t": "easy",
+     "min": 36,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Locker"
+    }
+   ],
+   "slot": "pm"
+  },
+  {
+   "id": "2027-04-18-1",
+   "date": "2027-04-18",
+   "sport": "run",
+   "long": true,
+   "load": "hard",
+   "title": "Langer Lauf 18 km, letzte 4 km MP",
+   "desc": "Lange locker, dann auf Marathon-Pace beschleunigen. Simuliert die zweite Rennhälfte auf müden Beinen.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 14,
+     "label": "Locker"
+    },
+    {
+     "t": "work",
+     "zone": "MP",
+     "km": 4,
+     "label": "Marathon-Pace"
+    }
+   ]
+  },
+  {
+   "id": "2027-04-20-1",
+   "date": "2027-04-20",
+   "sport": "run",
+   "title": "Locker + 3× 2 km MP",
+   "load": "moderate",
+   "desc": "Rennwoche: Marathon-Pace abrufen, entspannt und kontrolliert. Nicht schneller!",
+   "steps": [
+    {
+     "t": "wu",
+     "zone": "E",
+     "km": 3,
+     "label": "Einlaufen"
+    },
+    {
+     "rep": 3,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "MP",
+       "km": 2,
+       "label": "Marathon-Pace"
+      },
+      {
+       "t": "rec",
+       "zone": "JOG",
+       "min": 2,
+       "label": "Trabpause"
+      }
+     ]
+    },
+    {
+     "t": "cd",
+     "zone": "E",
+     "km": 1.5,
+     "label": "Auslaufen"
+    }
+   ]
+  },
+  {
+   "id": "2027-04-21-1",
+   "date": "2027-04-21",
+   "sport": "gym",
+   "title": "Stabi Light – Aktivierung",
+   "load": "easy",
+   "min": 25,
+   "desc": "Kurze Aktivierung im Gym.",
+   "exercises": [
+    "Nur leichte Aktivierung, nichts Neues, kein Muskelkater!",
+    "Dead Bug – 2× 8/Seite",
+    "Seitstütz – 2× 30s/Seite",
+    "Glute Bridge – 2× 12",
+    "Monster Walk – 2× 10 Schritte",
+    "Wadenheben – 2× 12",
+    "Mobility Hüfte & Waden 10 min"
+   ]
+  },
+  {
+   "id": "2027-04-21-2",
+   "date": "2027-04-21",
+   "sport": "bike",
+   "title": "Rad locker 45'",
+   "load": "easy",
+   "desc": "Aktive Erholung, sehr locker kurbeln.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 45,
+     "pct": [
+      45,
+      58
+     ],
+     "label": "Sehr locker"
+    }
+   ]
+  },
+  {
+   "id": "2027-04-22-1",
+   "date": "2027-04-22",
+   "sport": "run",
+   "title": "Lauf locker + Steigerungen",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Am Ende 6 Steigerungen über 20s: locker-schnell, saubere Technik, nicht sprinten.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 7,
+     "label": "Locker"
+    },
+    {
+     "rep": 6,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "STRIDE",
+       "min": 0.3333333333333333,
+       "label": "Steigerung 20s"
+      },
+      {
+       "t": "rec",
+       "zone": "WALK",
+       "min": 0.6666666666666666,
+       "label": "Gehen/Traben"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "2027-04-23-1",
+   "date": "2027-04-23",
+   "sport": "run",
+   "title": "Regenerationslauf",
+   "load": "easy",
+   "desc": "Sehr locker, kurz. Nur Durchblutung, kein Training.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "REC",
+     "km": 5,
+     "label": "Sehr locker"
+    }
+   ]
+  },
+  {
+   "id": "2027-04-24-1",
+   "date": "2027-04-24",
+   "sport": "run",
+   "title": "Shake-out + Steigerungen",
+   "load": "easy",
+   "desc": "Sehr locker, 3–4 kurze Steigerungen. Beine lockern.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 4.5,
+     "label": "Sehr locker"
+    },
+    {
+     "rep": 4,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "STRIDE",
+       "min": 0.25,
+       "label": "Steigerung 15s"
+      },
+      {
+       "t": "rec",
+       "zone": "WALK",
+       "min": 1,
+       "label": "Gehen"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "2027-04-25-1",
+   "date": "2027-04-25",
+   "sport": "race",
+   "title": "Haspa Marathon Hamburg 🏁",
+   "load": "hard",
+   "raceKm": 42.195,
+   "racePace": 249,
+   "desc": "Ziel 2:55:00 = 4:09/km. Erste Hälfte 1:27:30 (eher 4:10), nicht von der Euphorie mitreißen lassen. Gels alle 25–30 min. Ab km 30 wird gelaufen!",
+   "steps": []
+  },
+  {
+   "id": "2027-04-27-1",
+   "date": "2027-04-27",
+   "sport": "bike",
+   "title": "Rad locker 45'",
+   "load": "easy",
+   "desc": "Aktive Erholung, sehr locker kurbeln.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 45,
+     "pct": [
+      45,
+      58
+     ],
+     "label": "Sehr locker"
+    }
+   ]
+  },
+  {
+   "id": "2027-04-28-1",
+   "date": "2027-04-28",
+   "sport": "gym",
+   "title": "Stabi Light – Aktivierung",
+   "load": "easy",
+   "min": 30,
+   "desc": "Kurze Aktivierung im Gym.",
+   "exercises": [
+    "Nur leichte Aktivierung, nichts Neues, kein Muskelkater!",
+    "Dead Bug – 2× 8/Seite",
+    "Seitstütz – 2× 30s/Seite",
+    "Glute Bridge – 2× 12",
+    "Monster Walk – 2× 10 Schritte",
+    "Wadenheben – 2× 12",
+    "Mobility Hüfte & Waden 10 min"
+   ]
+  },
+  {
+   "id": "2027-04-29-1",
+   "date": "2027-04-29",
+   "sport": "run",
+   "title": "Regenerationslauf",
+   "load": "easy",
+   "desc": "Sehr locker, kurz. Nur Durchblutung, kein Training.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "REC",
+     "km": 6,
+     "label": "Sehr locker"
+    }
+   ]
+  },
+  {
+   "id": "2027-04-30-1",
+   "date": "2027-04-30",
+   "sport": "bike",
+   "title": "Rad Grundlage 60'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage, gleichmäßig treten, Kadenz 85–95. Locker genug, dass der Lauf am nächsten Tag nicht leidet.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 60,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ]
+  },
+  {
+   "id": "2027-05-01-1",
+   "date": "2027-05-01",
+   "sport": "run",
+   "title": "Regenerationslauf",
+   "load": "easy",
+   "desc": "Sehr locker, kurz. Nur Durchblutung, kein Training.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "REC",
+     "km": 8,
+     "label": "Sehr locker"
+    }
+   ]
+  },
+  {
+   "id": "2027-05-02-1",
+   "date": "2027-05-02",
+   "sport": "bike",
+   "title": "Rad Grundlage 90'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage. Bei trockenem Wetter gerne draußen mit dem Gravel – dann nach Gefühl/HF statt exakt Watt.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 90,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ]
+  },
+  {
+   "id": "2027-05-04-1",
+   "date": "2027-05-04",
+   "sport": "run",
+   "title": "Lauf locker",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Bewusst langsam, das ist die Basis für alles andere.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 8,
+     "label": "Locker"
+    }
+   ]
+  },
+  {
+   "id": "2027-05-05-1",
+   "date": "2027-05-05",
+   "sport": "gym",
+   "title": "Stabi A – Rumpf & Hüfte",
+   "load": "easy",
+   "min": 45,
+   "desc": "Stabi- und Kraftprogramm: saubere Technik, 1–2 Wiederholungen „im Tank“ lassen. Pausen 45–60s.",
+   "exercises": [
+    "Aufwärmen: 5 min Rad/Rudern + Mobility Hüfte",
+    "Dead Bug – 3× 10/Seite",
+    "Unterarmstütz mit Beinheben – 3× 40s",
+    "Seitstütz mit Hüftheben – 3× 12/Seite",
+    "Pallof Press (Kabel/Band) – 3× 10/Seite",
+    "Glute Bridge einbeinig – 3× 12/Seite",
+    "Monster Walk mit Miniband – 3× 15 Schritte/Richtung",
+    "Bird Dog mit Halt – 3× 8/Seite",
+    "Wadenheben einbeinig – 3× 15/Seite"
+   ]
+  },
+  {
+   "id": "2027-05-05-2",
+   "date": "2027-05-05",
+   "sport": "bike",
+   "title": "Rad Grundlage 60'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage, gleichmäßig treten, Kadenz 85–95. Locker genug, dass der Lauf am nächsten Tag nicht leidet.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 60,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ]
+  },
+  {
+   "id": "2027-05-06-1",
+   "date": "2027-05-06",
+   "sport": "run",
+   "title": "Lauf locker + Steigerungen",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Am Ende 6 Steigerungen über 20s: locker-schnell, saubere Technik, nicht sprinten.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 8,
+     "label": "Locker"
+    },
+    {
+     "rep": 6,
+     "steps": [
+      {
+       "t": "work",
+       "zone": "STRIDE",
+       "min": 0.3333333333333333,
+       "label": "Steigerung 20s"
+      },
+      {
+       "t": "rec",
+       "zone": "WALK",
+       "min": 0.6666666666666666,
+       "label": "Gehen/Traben"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "2027-05-07-1",
+   "date": "2027-05-07",
+   "sport": "bike",
+   "title": "Rad Grundlage 75'",
+   "load": "easy",
+   "desc": "Ruhige Grundlage, gleichmäßig treten, Kadenz 85–95. Locker genug, dass der Lauf am nächsten Tag nicht leidet.",
+   "steps": [
+    {
+     "t": "easy",
+     "min": 75,
+     "pct": [
+      62,
+      72
+     ],
+     "label": "Grundlage"
+    }
+   ]
+  },
+  {
+   "id": "2027-05-08-1",
+   "date": "2027-05-08",
+   "sport": "run",
+   "title": "Lauf locker",
+   "load": "easy",
+   "desc": "Lockerer Dauerlauf im Gesprächstempo. Bewusst langsam, das ist die Basis für alles andere.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 8,
+     "label": "Locker"
+    }
+   ]
+  },
+  {
+   "id": "2027-05-09-1",
+   "date": "2027-05-09",
+   "sport": "run",
+   "long": true,
+   "load": "hard",
+   "title": "Langer Lauf 16 km",
+   "desc": "Locker und gleichmäßig. Ab 25 km Verpflegung mitnehmen und üben.",
+   "steps": [
+    {
+     "t": "easy",
+     "zone": "E",
+     "km": 16,
+     "label": "Locker"
+    }
+   ]
+  }
+ ]
+}

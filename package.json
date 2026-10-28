@@ -1,0 +1,1 @@
+{ "name": "trainingapp", "private": true, "type": "module", "scripts": { "plan": "node tools/generate-plan.mjs", "test": "node tools/test-engine.mjs" } }

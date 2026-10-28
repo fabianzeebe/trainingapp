@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Trainingsplan</title>
+  <meta name="theme-color" content="#0E1116" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#F4F5F7" media="(prefers-color-scheme: light)">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Training">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/icon-180.png">
+  <link rel="icon" type="image/png" href="icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header id="topbar"></header>
+  <main id="view"><div class="loading">Lade Plan …</div></main>
+  <nav id="tabbar">
+    <button data-tab="week" class="active"><span>📅</span>Woche</button>
+    <button data-tab="month"><span>🗓️</span>Monat</button>
+    <button data-tab="review"><span>📋</span>Bilanz</button>
+    <button data-tab="more"><span>⚙️</span>Mehr</button>
+  </nav>
+  <div id="sheet-root"></div>
+  <div id="toast" role="status"></div>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
