@@ -1,7 +1,29 @@
 {
- "updated": "2026-10-29T09:12:34.194Z",
+ "updated": "2026-10-29T13:13:33.200Z",
  "actuals": {},
- "extras": {},
+ "extras": {
+  "2026-10-29": [
+   {
+    "source": "strava",
+    "sport": "run",
+    "title": "Mittagslauf (locker)",
+    "min": 52,
+    "km": 10.46,
+    "pace": 301,
+    "hr": 138,
+    "maxHr": 144,
+    "elev": 13,
+    "stravaId": "20777723380",
+    "laps": [
+     "km 1–5 · Ø 5:05/km · HF 136–139",
+     "km 6–10 · Ø 4:57/km · HF 137–140",
+     "Rest 0,46 km · 4:59/km · HF 137"
+    ],
+    "coach": "Sauberer lockerer Lauf 4 Tage nach dem HM: Ø 5:01/km bei HF 138 (Ziel < 145). Zweite Hälfte 4:57/km bei gleicher HF – keine Drift, die Erholung läuft gut. Genau so sollen die lockeren Läufe aussehen. Bis zum Planstart am 2.11. weiter nur locker.",
+    "id": "s20777723380"
+   }
+  ]
+ },
  "notes": {},
  "weekNotes": {},
  "adjustments": {}
