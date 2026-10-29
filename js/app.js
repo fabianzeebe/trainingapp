@@ -208,7 +208,8 @@ function statBox(label, ist, soll, unit) {
 
 function weekTotals(mon, map) {
   const a = A();
-  const tot = { plan: { runKm: 0, bikeMin: 0, min: 0, n: 0 }, ist: { runKm: 0, bikeMin: 0, min: 0, n: 0 } };
+  // ist.n = alle absolvierten Einheiten (geplant + Zusatz), ist.planDone = nur erledigte geplante
+  const tot = { plan: { runKm: 0, bikeMin: 0, min: 0, n: 0 }, ist: { runKm: 0, bikeMin: 0, min: 0, n: 0, planDone: 0, extraN: 0 } };
   for (const d of C.weekDates(mon)) {
     const st = E.dayStats(map.get(d) || [], app.state, a);
     const ex = E.extraStats(app.state.extras[d]);
@@ -216,6 +217,9 @@ function weekTotals(mon, map) {
       tot.plan[k] += st.plan[k];
       tot.ist[k] += st.ist[k];
     }
+    tot.ist.planDone += st.ist.n;
+    tot.ist.extraN += ex.n;
+    tot.ist.n += ex.n;
     tot.ist.runKm += ex.runKm;
     tot.ist.bikeMin += ex.bikeMin;
     tot.ist.min += ex.min;
@@ -332,7 +336,7 @@ function renderMonth() {
         mTot.plan.bikeMin += st.plan.bikeMin;
         mTot.ist.bikeMin += st.ist.bikeMin + ex.bikeMin;
         mTot.plan.n += st.plan.n;
-        mTot.ist.n += st.ist.n;
+        mTot.ist.n += st.ist.n + ex.n;
       }
       const icons = list
         .map((s) => `<span class="mi ${status(s)}${C.isHard(s) ? ' hard' : ''}">${SPORT[s.sport]?.icon}</span>`)
@@ -393,7 +397,7 @@ function renderReview() {
     if (!cells.length) cells.push('<div class="rv-row"><div class="rv-soll muted">😴 Ruhetag</div><div class="rv-ist"></div></div>');
     rows += `<div class="rv-day"><div class="rv-date" data-open-day="${d}"><b>${C.DAY_SHORT[C.weekday(d)]}</b> ${C.fmtDayMonth(d)}${app.state.notes[d] ? ' 💬' : ''}</div>${cells.join('')}${app.state.notes[d] ? `<div class="rv-note">${h(app.state.notes[d])}</div>` : ''}</div>`;
   }
-  const comp = pct(tot.ist.n, tot.plan.n);
+  const comp = pct(tot.ist.planDone, tot.plan.n);
   const volComp = pct(tot.ist.min, tot.plan.min);
   const avgRpe = rpes.length ? (rpes.reduce((x, y) => x + y, 0) / rpes.length).toFixed(1).replace('.', ',') : '–';
 
@@ -403,13 +407,13 @@ function renderReview() {
     const wk = C.addDays(mon, -7 * i);
     const t = weekTotals(wk, map);
     if (!t.plan.n && !t.ist.n) continue;
-    hist += `<tr${wk === mon ? ' class="cur"' : ''}><td>KW ${C.isoWeek(wk)}</td><td>${C.fmtKm(t.ist.runKm, 0)} / ${C.fmtKm(t.plan.runKm, 0)}</td><td>${C.fmtKm(t.ist.bikeMin / 60, 1)} / ${C.fmtKm(t.plan.bikeMin / 60, 1)}</td><td>${pct(t.ist.n, t.plan.n)} %</td></tr>`;
+    hist += `<tr${wk === mon ? ' class="cur"' : ''}><td>KW ${C.isoWeek(wk)}</td><td>${C.fmtKm(t.ist.runKm, 0)} / ${C.fmtKm(t.plan.runKm, 0)}</td><td>${C.fmtKm(t.ist.bikeMin / 60, 1)} / ${C.fmtKm(t.plan.bikeMin / 60, 1)}</td><td>${t.plan.n ? `${pct(t.ist.planDone, t.plan.n)} %` : '–'}</td></tr>`;
   }
 
   return `${navHeader(`Bilanz KW ${C.isoWeek(mon)}`, `${C.fmtDayMonth(mon)}–${C.fmtDayMonth(dates[6])}${ph ? ` · ${h(ph.name)}` : ''}`, 'review')}
   <div class="kpis">
-    <div class="kpi"><b>${comp} %</b><span>Einheiten<br>${tot.ist.n}/${tot.plan.n}</span></div>
-    <div class="kpi"><b>${volComp} %</b><span>Umfang (Zeit)<br>${C.fmtMin(tot.ist.min)} / ${C.fmtMin(tot.plan.min)}</span></div>
+    <div class="kpi"><b>${tot.plan.n ? `${comp} %` : '–'}</b><span>Plan erfüllt<br>${tot.ist.planDone}/${tot.plan.n}${tot.ist.extraN ? ` + ${tot.ist.extraN} Zusatz` : ''}</span></div>
+    <div class="kpi"><b>${tot.plan.min ? `${volComp} %` : "–"}</b><span>Umfang (Zeit)<br>${C.fmtMin(tot.ist.min)} / ${C.fmtMin(tot.plan.min)}</span></div>
     <div class="kpi"><b>${avgRpe}</b><span>Ø RPE</span></div>
   </div>
   <div class="stats">
