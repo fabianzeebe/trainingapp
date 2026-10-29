@@ -3,10 +3,12 @@ import { addDays, mondayOf, weekDates, daysBetween, sessionTotals, isHard, isRun
 
 // ---------- Effektiver Plan ----------
 // state.overrides[sessionId] = { date?, cancelled?, cancelReason?, replaced?, modTag?, modNote? }
+// state.coach.adjustments[sessionId] = gleiche Struktur, vom Coach (coach.json); lokale Änderungen haben Vorrang
 export function effectiveSessions(plan, state) {
   const ov = state.overrides || {};
+  const ca = state.coach?.adjustments || {};
   return plan.sessions.map((s) => {
-    const o = ov[s.id];
+    const o = ca[s.id] || ov[s.id] ? { ...(ca[s.id] && { modTag: 'coach' }), ...ca[s.id], ...ov[s.id] } : null;
     if (!o) return s;
     const e = o.replaced ? { ...o.replaced, id: s.id, date: s.date, slot: s.slot, original: s } : { ...s };
     if (o.date) {
@@ -34,7 +36,14 @@ export function byDate(sessions) {
   return map;
 }
 
-export const isDone = (state, id) => !!state.actuals?.[id]?.done;
+// Ist-Werte: lokale Eingabe in der App hat Vorrang vor importierten Strava-Daten (coach.json)
+export const actualOf = (state, id) => state.actuals?.[id] || state.coach?.actuals?.[id] || null;
+export const isDone = (state, id) => !!actualOf(state, id)?.done;
+export function extrasOf(state, d) {
+  const hidden = state.hiddenCoach || {};
+  const coach = (state.coach?.extras?.[d] || []).filter((x) => !hidden[x.id]).map((x) => ({ ...x, fromCoach: true }));
+  return [...(state.extras?.[d] || []), ...coach];
+}
 
 // ---------- Bewertung einer Woche ----------
 // arr: 7 Listen mit Einheiten (Mo..So); ctx: { prevHard, nextHard }
@@ -336,13 +345,13 @@ export function dayStats(list, state, a) {
   for (const s of list) {
     if (s.cancelled) continue;
     // optionale Einheiten zählen nur, wenn sie gemacht wurden
-    if (s.optional && !state.actuals?.[s.id]?.done) continue;
+    if (s.optional && !isDone(state, s.id)) continue;
     const t = sessionTotals(s, a);
     res.plan.n++;
     res.plan.min += t.min;
     if (isRunLike(s)) res.plan.runKm += t.km;
     if (s.sport === 'bike') res.plan.bikeMin += t.min;
-    const act = state.actuals?.[s.id];
+    const act = actualOf(state, s.id);
     if (act?.done) {
       res.ist.n++;
       const min = act.min ?? t.min;

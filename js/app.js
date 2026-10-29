@@ -43,7 +43,7 @@ const pct = (a, b) => (b > 0 ? Math.round((a / b) * 100) : 0);
 
 function status(s) {
   if (s.cancelled) return 'cancelled';
-  const act = app.state.actuals[s.id];
+  const act = E.actualOf(app.state, s.id);
   if (act?.done) return 'done';
   if (act?.missed) return 'missed';
   if (s.date < today()) return 'open';
@@ -212,7 +212,7 @@ function weekTotals(mon, map) {
   const tot = { plan: { runKm: 0, bikeMin: 0, min: 0, n: 0 }, ist: { runKm: 0, bikeMin: 0, min: 0, n: 0, planDone: 0, extraN: 0 } };
   for (const d of C.weekDates(mon)) {
     const st = E.dayStats(map.get(d) || [], app.state, a);
-    const ex = E.extraStats(app.state.extras[d]);
+    const ex = E.extraStats(E.extrasOf(app.state, d));
     for (const k of ['runKm', 'bikeMin', 'min', 'n']) {
       tot.plan[k] += st.plan[k];
       tot.ist[k] += st.ist[k];
@@ -275,8 +275,9 @@ function illnessOn(d) {
 function dayCard(d, list, a) {
   const wd = C.weekday(d);
   const isToday = d === today();
-  const extras = app.state.extras[d] || [];
+  const extras = E.extrasOf(app.state, d);
   const note = app.state.notes[d];
+  const coachNote = app.state.coach?.notes?.[d];
   const ill = illnessOn(d);
   const ph = phaseOf(d);
   return `<section class="day${isToday ? ' today' : ''}${d < today() ? ' past' : ''}" data-date="${d}" style="--pc:${ph?.color || '#999'}">
@@ -286,22 +287,29 @@ function dayCard(d, list, a) {
     </div>
     ${list.map((s) => sessRow(s, a)).join('')}
     ${!list.length && !extras.length ? `<div class="rest" data-open-day="${d}">😴 Ruhetag</div>` : ''}
-    ${extras.map((x) => `<div class="sess extra" data-extra="${d}|${x.id}"><div class="sess-ic">${SPORT[x.sport]?.icon || '✨'}</div><div class="sess-main"><div class="sess-title">${h(x.title || SPORT[x.sport]?.name)} <span class="badge">Zusatz</span></div><div class="sess-ist">${h(actualSummary({ ...x, done: true }, x.sport, a))}</div></div></div>`).join('')}
+    ${extras.map((x) => extraRow(d, x, a)).join('')}
     ${note ? `<div class="note" data-open-day="${d}">${h(note)}</div>` : ''}
+    ${coachNote ? `<div class="note coach" data-open-day="${d}">🧑‍🏫 ${h(coachNote)}</div>` : ''}
   </section>`;
+}
+
+function extraRow(d, x, a) {
+  return `<div class="sess extra" data-extra="${d}|${x.id}"><div class="sess-ic">${SPORT[x.sport]?.icon || '✨'}</div><div class="sess-main"><div class="sess-title">${h(x.title || SPORT[x.sport]?.name)} <span class="badge">Zusatz</span>${x.source === 'strava' ? '<span class="badge strava">Strava</span>' : ''}</div><div class="sess-ist">${h(actualSummary({ ...x, done: true }, x.sport, a))}</div>${x.coach ? `<div class="sess-coach">🧑‍🏫 ${h(x.coach)}</div>` : ''}</div></div>`;
 }
 
 function sessRow(s, a) {
   const st = status(s);
-  const act = app.state.actuals[s.id];
+  const act = E.actualOf(app.state, s.id);
+  const coach = app.state.coach?.actuals?.[s.id]?.coach;
   const badge = s.sport === 'race' ? '<span class="badge race">Rennen</span>' : s.long ? '<span class="badge hard">Lang</span>' : s.load === 'hard' ? '<span class="badge hard">Q</span>' : s.load === 'moderate' ? '<span class="badge mod">M</span>' : '';
   return `<div class="sess s-${s.sport} st-${st}${s.modTag && !s.cancelled ? ' modded' : ''}" data-id="${s.id}">
     <div class="sess-ic">${SPORT[s.sport]?.icon || '•'}</div>
     <div class="sess-main">
       <div class="sess-title">${h(s.title)} ${badge}${s.optional ? '<span class="badge">optional</span>' : ''}${s.slot === 'pm' ? '<span class="slot">PM</span>' : s.slot === 'am' ? '<span class="slot">AM</span>' : ''}</div>
       <div class="sess-sub">${s.cancelled ? h(s.cancelReason || 'abgesagt') : h(planSummary(s, a))}${s.movedFrom ? ` · <span class="moved">verschoben von ${C.DAY_SHORT[C.weekday(s.movedFrom)]}</span>` : ''}</div>
-      ${act?.done ? `<div class="sess-ist">✓ ${h(actualSummary(act, s.sport, a))}</div>` : ''}
+      ${act?.done ? `<div class="sess-ist">✓ ${h(actualSummary(act, s.sport, a))}${act.source === 'strava' ? ' <span class="badge strava">Strava</span>' : ''}</div>` : ''}
       ${act?.note ? `<div class="sess-note">„${h(act.note)}“</div>` : ''}
+      ${coach ? `<div class="sess-coach">🧑‍🏫 ${h(coach)}</div>` : ''}
     </div>
     ${!s.cancelled && s.sport !== 'race' && st !== 'done' ? '<span class="grip" data-grip aria-label="Ziehen zum Verschieben">⠿</span>' : ''}
     ${s.cancelled ? '' : `<button class="check ${st}" data-check="${s.id}" aria-label="Abhaken">${st === 'done' ? '✓' : st === 'missed' ? '✕' : ''}</button>`}
@@ -330,7 +338,7 @@ function renderMonth() {
       const ph = phaseOf(d);
       if (inMonth) {
         const st = E.dayStats(map.get(d) || [], app.state, a);
-        const ex = E.extraStats(app.state.extras[d]);
+        const ex = E.extraStats(E.extrasOf(app.state, d));
         mTot.plan.runKm += st.plan.runKm;
         mTot.ist.runKm += st.ist.runKm + ex.runKm;
         mTot.plan.bikeMin += st.plan.bikeMin;
@@ -341,7 +349,7 @@ function renderMonth() {
       const icons = list
         .map((s) => `<span class="mi ${status(s)}${C.isHard(s) ? ' hard' : ''}">${SPORT[s.sport]?.icon}</span>`)
         .join('');
-      const extra = (app.state.extras[d] || []).length ? '<span class="mi done">＋</span>' : '';
+      const extra = E.extrasOf(app.state, d).length ? '<span class="mi done">＋</span>' : '';
       cells += `<div class="m-cell${inMonth ? '' : ' out'}${d === today() ? ' today' : ''}" data-open-day="${d}" style="--pc:${ph?.color || 'transparent'}">
         <div class="m-d">${C.parseDate(d).getDate()}${illnessOn(d) ? ' 🤒' : ''}${app.state.notes[d] ? ' 💬' : ''}</div>
         <div class="m-icons">${icons || (cancelled ? '<span class="mi cancelled">✕</span>' : '<span class="m-rest">Ruhe</span>')}${extra}</div>
@@ -379,11 +387,11 @@ function renderReview() {
   let rows = '';
   for (const d of dates) {
     const list = map.get(d) || [];
-    const extras = app.state.extras[d] || [];
+    const extras = E.extrasOf(app.state, d);
     const cells = [];
     for (const s of list) {
       const st = status(s);
-      const act = app.state.actuals[s.id];
+      const act = E.actualOf(app.state, s.id);
       if (act?.rpe) rpes.push(act.rpe);
       cells.push(`<div class="rv-row st-${st}" data-id="${s.id}">
         <div class="rv-soll">${SPORT[s.sport]?.icon} ${h(s.title)}<small>${s.cancelled ? h(s.cancelReason || '') : h(planSummary(s, a))}</small></div>
@@ -395,7 +403,7 @@ function renderReview() {
       cells.push(`<div class="rv-row st-done" data-extra="${d}|${x.id}"><div class="rv-soll">${SPORT[x.sport]?.icon} <i>Zusatz</i><small>${h(x.title || '')}</small></div><div class="rv-ist">✓ ${h(actualSummary({ ...x, done: true }, x.sport, a))}</div></div>`);
     }
     if (!cells.length) cells.push('<div class="rv-row"><div class="rv-soll muted">😴 Ruhetag</div><div class="rv-ist"></div></div>');
-    rows += `<div class="rv-day"><div class="rv-date" data-open-day="${d}"><b>${C.DAY_SHORT[C.weekday(d)]}</b> ${C.fmtDayMonth(d)}${app.state.notes[d] ? ' 💬' : ''}</div>${cells.join('')}${app.state.notes[d] ? `<div class="rv-note">${h(app.state.notes[d])}</div>` : ''}</div>`;
+    rows += `<div class="rv-day"><div class="rv-date" data-open-day="${d}"><b>${C.DAY_SHORT[C.weekday(d)]}</b> ${C.fmtDayMonth(d)}${app.state.notes[d] ? ' 💬' : ''}</div>${cells.join('')}${app.state.notes[d] ? `<div class="rv-note">${h(app.state.notes[d])}</div>` : ''}${app.state.coach?.notes?.[d] ? `<div class="rv-note coach">🧑‍🏫 ${h(app.state.coach.notes[d])}</div>` : ''}</div>`;
   }
   const comp = pct(tot.ist.planDone, tot.plan.n);
   const volComp = pct(tot.ist.min, tot.plan.min);
@@ -420,6 +428,7 @@ function renderReview() {
     ${statBox('Lauf', C.fmtKm(tot.ist.runKm, 1), C.fmtKm(tot.plan.runKm, 0), 'km')}
     ${statBox('Rad', C.fmtKm(tot.ist.bikeMin / 60, 1), C.fmtKm(tot.plan.bikeMin / 60, 1), 'h')}
   </div>
+  ${app.state.coach?.weekNotes?.[mon] ? `<div class="coach-box"><b>🧑‍🏫 Coach-Analyse</b><p>${h(app.state.coach.weekNotes[mon])}</p></div>` : ''}
   <h3 class="sec">Soll / Ist pro Tag</h3>
   <div class="review">${rows}</div>
   <h3 class="sec">Wochenkommentar</h3>
@@ -532,7 +541,8 @@ function openSession(id) {
   if (!s) return;
   const a = A();
   const t = C.sessionTotals(s, a);
-  const act = app.state.actuals[id] || {};
+  const act = E.actualOf(app.state, id) || {};
+  const coachAct = app.state.coach?.actuals?.[id];
   const ph = phaseOf(s.date);
   const st = status(s);
   const isRun = s.sport === 'run' || s.sport === 'race';
@@ -561,6 +571,11 @@ function openSession(id) {
   <div class="ss-total">${s.sport === 'gym' ? `${Math.round(t.min)} min` : `${isRun ? `<b>${C.fmtKm(t.km, 1)} km</b> · ` : ''}<b>${C.fmtMin(t.min)}</b>`}</div>
   <p class="desc">${h(s.desc || '')}</p>
   ${details}
+  ${
+    coachAct
+      ? `<div class="coach-box"><b>🧑‍🏫 Coach</b>${coachAct.coach ? `<p>${h(coachAct.coach)}</p>` : ''}${coachAct.laps?.length ? `<div class="laps"><small>Abschnitte (Strava)</small>${coachAct.laps.map((l) => `<div>${h(l)}</div>`).join('')}</div>` : ''}${coachAct.stravaId ? `<a class="link" href="https://www.strava.com/activities/${h(coachAct.stravaId)}" target="_blank" rel="noopener">In Strava öffnen ↗</a>` : ''}${app.state.actuals[id] ? '<p class="muted small">Deine eigenen Ist-Werte in der App haben Vorrang.</p>' : ''}</div>`
+      : ''
+  }
   ${s.original ? `<details class="orig"><summary>Ursprünglich geplant: ${h(s.original.title)}</summary><p class="muted small">${h(planSummary(s.original, a))}</p></details>` : ''}
 
   ${
@@ -778,15 +793,16 @@ function openMoveProposal(id, toDate) {
 function openDay(d) {
   const a = A();
   const list = E.byDate(eff()).get(d) || [];
-  const extras = app.state.extras[d] || [];
+  const extras = E.extrasOf(app.state, d);
   const ph = phaseOf(d);
   openSheet(
     `<div class="ss-date">${ph ? `<span class="phase-pill sm" style="--pc:${ph.color}">${h(ph.name)}</span> ` : ''}</div>
     <h2>${C.fmtLongDate(d)}</h2>
     <div class="day-list">
       ${list.map((s) => sessRow(s, a)).join('') || '<div class="rest">😴 Ruhetag</div>'}
-      ${extras.map((x) => `<div class="sess extra" data-extra="${d}|${x.id}"><div class="sess-ic">${SPORT[x.sport]?.icon}</div><div class="sess-main"><div class="sess-title">${h(x.title || SPORT[x.sport]?.name)} <span class="badge">Zusatz</span></div><div class="sess-ist">${h(actualSummary({ ...x, done: true }, x.sport, a))}</div></div></div>`).join('')}
+      ${extras.map((x) => extraRow(d, x, a)).join('')}
     </div>
+    ${app.state.coach?.notes?.[d] ? `<div class="coach-box"><b>🧑‍🏫 Coach</b><p>${h(app.state.coach.notes[d])}</p></div>` : ''}
     <button class="btn block" id="add-extra">＋ Zusatzeinheit eintragen</button>
     <h3 class="sec">Kommentar zum Tag</h3>
     <textarea class="input" id="day-note" rows="3" placeholder="Schlaf, Beine, Stress, Wetter …">${h(app.state.notes[d] || '')}</textarea>
@@ -814,7 +830,32 @@ function openDay(d) {
 }
 
 // ---------- Zusatzeinheit ----------
+function openCoachExtra(d, x) {
+  const a = A();
+  openSheet(
+    `<h2>${SPORT[x.sport]?.icon || ''} ${h(x.title || 'Zusatzeinheit')}</h2>
+    <p class="muted">${C.fmtLongDate(d)} · aus Strava übernommen</p>
+    <div class="move-main">${h(actualSummary({ ...x, done: true }, x.sport, a))}</div>
+    ${x.coach ? `<div class="coach-box"><b>🧑‍🏫 Coach</b><p>${h(x.coach)}</p></div>` : ''}
+    ${x.laps?.length ? `<div class="coach-box laps"><small>Abschnitte (Strava)</small>${x.laps.map((l) => `<div>${h(l)}</div>`).join('')}</div>` : ''}
+    ${x.stravaId ? `<a class="link" href="https://www.strava.com/activities/${h(x.stravaId)}" target="_blank" rel="noopener">In Strava öffnen ↗</a>` : ''}
+    <button class="btn ghost block" id="hide-coach">Ausblenden (z. B. doppelt eingetragen)</button>`,
+    {
+      onMount(sheet) {
+        $('#hide-coach', sheet).onclick = () => {
+          (app.state.hiddenCoach ||= {})[x.id] = true;
+          save();
+          closeSheet();
+          render();
+        };
+      },
+    },
+  );
+}
+
 function openExtra(d, xid) {
+  const coachX = xid && (app.state.coach?.extras?.[d] || []).find((e) => e.id === xid);
+  if (coachX) return openCoachExtra(d, coachX);
   const list = app.state.extras[d] || [];
   const x = list.find((e) => e.id === xid) || { sport: 'run' };
   const a = A();
@@ -1091,6 +1132,7 @@ async function doImport(file) {
   try {
     const st = await S.readBackup(file);
     if (!confirm('Backup einspielen? Aktuelle Daten auf diesem Gerät werden ersetzt.')) return;
+    st.coach = app.state.coach;
     app.state = st;
     if (app.plan) S.migrateToPlan(app.plan, app.state);
     save();
@@ -1111,7 +1153,7 @@ function setupDrag() {
     if (app.tab !== 'week') return;
     const id = row.dataset.id;
     const s = eff().find((q) => q.id === id);
-    if (!s || s.cancelled || s.sport === 'race' || app.state.actuals[id]?.done) return;
+    if (!s || s.cancelled || s.sport === 'race' || E.isDone(app.state, id)) return;
     const rect = row.getBoundingClientRect();
     const ghost = row.cloneNode(true);
     ghost.classList.add('drag-ghost');
@@ -1201,10 +1243,23 @@ async function loadPlan(manual) {
     if (isNew || manual) render();
     if (mig) toast(`Neuer Plan geladen (Version ${plan.version}). Ist-Werte & Kommentare bleiben erhalten.`, 4000);
     else if (manual) toast('Plan ist aktuell ✓');
+    await loadCoach();
   } catch (e) {
     if (!app.plan) $('#view').innerHTML = `<div class="card"><h3>Offline</h3><p>Plan konnte nicht geladen werden. Bitte einmal mit Internet öffnen.</p></div>`;
     else if (manual) toast('Keine Verbindung – Plan bleibt wie er ist');
   }
+}
+
+// Strava-Ist-Werte, Coach-Kommentare und -Anpassungen aus coach.json
+async function loadCoach() {
+  try {
+    const coach = await S.fetchCoach();
+    if (!coach || coach.updated === app.state.coach?.updated) return;
+    const first = !app.state.coach;
+    app.state.coach = coach;
+    render();
+    if (!first) toast('🧑‍🏫 Neue Ist-Daten & Coach-Kommentare geladen', 3500);
+  } catch {}
 }
 
 function init() {
@@ -1243,6 +1298,7 @@ function init() {
   setupDrag();
 
   app.plan = S.cachedPlan();
+  app.state.coach = S.cachedCoach();
   if (app.plan) {
     S.migrateToPlan(app.plan, app.state);
     render();

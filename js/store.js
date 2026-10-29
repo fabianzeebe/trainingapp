@@ -4,6 +4,7 @@ import { reapplyIllnesses } from './engine.js';
 
 const KEY = 'trainingapp:state:v1';
 const PLAN_KEY = 'trainingapp:plan:v1';
+const COACH_KEY = 'trainingapp:coach:v1';
 
 const empty = () => ({
   settings: {}, // FTP, Gewicht, Schwelle … (überschreibt Plan-Werte)
@@ -27,7 +28,8 @@ export function loadState() {
 }
 export function saveState(state) {
   try {
-    localStorage.setItem(KEY, JSON.stringify(state));
+    // coach.json kommt vom Server und wird separat zwischengespeichert
+    localStorage.setItem(KEY, JSON.stringify({ ...state, coach: undefined }));
     return true;
   } catch {
     return false;
@@ -58,6 +60,24 @@ export async function fetchPlan() {
   return plan;
 }
 
+// Coach-Daten (Strava-Ist-Werte, Kommentare, Anpassungen) – optional
+export function cachedCoach() {
+  try {
+    return JSON.parse(localStorage.getItem(COACH_KEY) || 'null');
+  } catch {
+    return null;
+  }
+}
+export async function fetchCoach() {
+  const res = await fetch(`coach.json?t=${Date.now()}`, { cache: 'no-store' });
+  if (!res.ok) return null;
+  const coach = await res.json();
+  try {
+    localStorage.setItem(COACH_KEY, JSON.stringify(coach));
+  } catch {}
+  return coach;
+}
+
 // Neuer Plan / neue Version: alte Verschiebungen in der Zukunft verwerfen,
 // Ist-Daten & Kommentare behalten, Krankheiten neu anwenden.
 export function migrateToPlan(plan, state) {
@@ -86,7 +106,7 @@ export async function requestPersistence() {
 }
 
 export function exportBackup(state) {
-  const data = JSON.stringify({ app: 'trainingapp', exported: new Date().toISOString(), state }, null, 1);
+  const data = JSON.stringify({ app: 'trainingapp', exported: new Date().toISOString(), state: { ...state, coach: undefined } }, null, 1);
   return new Blob([data], { type: 'application/json' });
 }
 export async function readBackup(file) {

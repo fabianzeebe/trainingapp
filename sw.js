@@ -1,7 +1,7 @@
 // Service Worker: App offline verfügbar machen. Bei Änderungen VERSION erhöhen.
-const VERSION = 'v4';
+const VERSION = 'v5';
 const CACHE = `trainingapp-${VERSION}`;
-const SHELL = ['./', 'index.html', 'styles.css', 'js/app.js', 'js/core.js', 'js/engine.js', 'js/store.js', 'manifest.webmanifest', 'icons/icon-180.png', 'icons/icon-192.png', 'icons/icon-512.png', 'plan.json'];
+const SHELL = ['./', 'index.html', 'styles.css', 'js/app.js', 'js/core.js', 'js/engine.js', 'js/store.js', 'manifest.webmanifest', 'icons/icon-180.png', 'icons/icon-192.png', 'icons/icon-512.png', 'plan.json', 'coach.json'];
 
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(SHELL)));

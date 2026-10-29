@@ -333,3 +333,12 @@ code { background: var(--card2); padding: 2px 5px; border-radius: 5px; font-size
   .m-cell { min-height: 80px; }
 }
 [hidden] { display: none !important; }
+
+/* Coach / Strava */
+.badge.strava { background: #fc4c02; color: #fff; }
+.sess-coach { font-size: 12.5px; color: var(--text); opacity: 0.85; margin-top: 3px; background: color-mix(in srgb, var(--accent) 9%, transparent); border-radius: 8px; padding: 4px 8px; }
+.note.coach, .rv-note.coach { background: color-mix(in srgb, var(--accent) 10%, transparent); }
+.coach-box { background: color-mix(in srgb, var(--accent) 9%, var(--card)); border-radius: 12px; padding: 10px 12px; margin: 10px 0; font-size: 14px; }
+.coach-box p { margin: 4px 0 6px; white-space: pre-wrap; }
+.laps { font-size: 13px; margin-top: 6px; font-variant-numeric: tabular-nums; }
+.laps small { color: var(--muted); display: block; margin-bottom: 2px; }

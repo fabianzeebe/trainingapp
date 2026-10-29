@@ -11,7 +11,9 @@ Aktuelles Ziel: **Haspa Marathon Hamburg, 25.04.2027, 2:55:00**.
 - **Bilanz**: Sonntagabend-Abgleich Soll / Ist mit Wochenkommentar.
 - **Mehr**: FTP, Gewicht, Schwelle, HF → alle Pace-/Watt-/HF-Vorgaben werden neu berechnet. Backup Export/Import.
 
-Ist-Daten, Kommentare und Änderungen liegen **nur lokal auf dem Gerät** (localStorage). Der Plan selbst liegt in `plan.json`.
+Eigene Ist-Daten, Kommentare und Änderungen liegen **nur lokal auf dem Gerät** (localStorage). Der Plan liegt in `plan.json`.
+
+**Strava & Coach:** Claude importiert Ist-Daten aus Strava (täglich ~21:30 oder auf Zuruf), schreibt Coach-Kommentare und kleine Plananpassungen in `coach.json` (Ablauf: `coach/README.md`, Verlauf: `coach/log.md`). Die App lädt sie automatisch; eigene Einträge in der App haben Vorrang.
 
 ## Aufbau
 | Datei | Inhalt |
@@ -25,6 +27,8 @@ Ist-Daten, Kommentare und Änderungen liegen **nur lokal auf dem Gerät** (local
 | `plan.json` | Generierter Plan |
 | `tools/library.mjs` | Trainings-Bibliothek (Lauf, Rad, Gym) |
 | `tools/generate-plan.mjs` | Wochenstruktur des Plans → `plan.json` |
+| `tools/coach.mjs` | Coach-Werkzeug: Woche anzeigen, `coach.json` pflegen |
+| `coach.json` | Strava-Ist-Werte, Coach-Kommentare, Anpassungen |
 
 ## Neues Ziel / Plan ändern
 1. `tools/generate-plan.mjs` anpassen (Ziel, Startdatum, Wochen) und `VERSION` erhöhen bzw. neue `PLAN_ID`.
