@@ -341,7 +341,7 @@ export function reapplyIllnesses(plan, state, a) {
 
 // ---------- Kennzahlen ----------
 export function dayStats(list, state, a) {
-  const res = { plan: { runKm: 0, bikeMin: 0, min: 0, n: 0 }, ist: { runKm: 0, bikeMin: 0, min: 0, n: 0 } };
+  const res = { plan: { runKm: 0, runMin: 0, bikeMin: 0, bikeKm: 0, min: 0, n: 0 }, ist: { runKm: 0, runMin: 0, bikeMin: 0, bikeKm: 0, min: 0, n: 0 } };
   for (const s of list) {
     if (s.cancelled) continue;
     // optionale Einheiten zählen nur, wenn sie gemacht wurden
@@ -349,26 +349,41 @@ export function dayStats(list, state, a) {
     const t = sessionTotals(s, a);
     res.plan.n++;
     res.plan.min += t.min;
-    if (isRunLike(s)) res.plan.runKm += t.km;
+    if (isRunLike(s)) {
+      res.plan.runKm += t.km;
+      res.plan.runMin += t.min;
+    }
     if (s.sport === 'bike') res.plan.bikeMin += t.min;
     const act = actualOf(state, s.id);
     if (act?.done) {
       res.ist.n++;
       const min = act.min ?? t.min;
       res.ist.min += min;
-      if (isRunLike(s)) res.ist.runKm += act.km ?? t.km;
-      if (s.sport === 'bike') res.ist.bikeMin += min;
+      if (isRunLike(s)) {
+        res.ist.runKm += act.km ?? t.km;
+        res.ist.runMin += min;
+      }
+      if (s.sport === 'bike') {
+        res.ist.bikeMin += min;
+        res.ist.bikeKm += act.km || 0;
+      }
     }
   }
   return res;
 }
 export function extraStats(extras) {
-  const r = { runKm: 0, bikeMin: 0, min: 0, n: 0 };
+  const r = { runKm: 0, runMin: 0, bikeMin: 0, bikeKm: 0, min: 0, n: 0 };
   for (const e of extras || []) {
     r.n++;
     r.min += e.min || 0;
-    if (e.sport === 'run') r.runKm += e.km || 0;
-    if (e.sport === 'bike') r.bikeMin += e.min || 0;
+    if (e.sport === 'run') {
+      r.runKm += e.km || 0;
+      r.runMin += e.min || 0;
+    }
+    if (e.sport === 'bike') {
+      r.bikeMin += e.min || 0;
+      r.bikeKm += e.km || 0;
+    }
   }
   return r;
 }

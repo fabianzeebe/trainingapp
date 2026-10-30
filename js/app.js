@@ -201,19 +201,26 @@ function navHeader(label, sub, kind) {
   <div class="nav-today"><button data-nav="${kind}" data-dir="0">Heute</button></div>`;
 }
 
-function statBox(label, ist, soll, unit) {
-  const p = soll > 0 ? Math.min(pct(ist, soll), 130) : 0;
-  return `<div class="stat"><div class="stat-l">${label}</div><div class="stat-v"><b>${ist}</b><span>/ ${soll} ${unit}</span></div><div class="bar"><i style="width:${Math.min(p, 100)}%"></i></div></div>`;
+function statBox(label, ist, soll, unit, sub = '') {
+  const p = soll > 0 ? Math.min(pct(num(ist), num(soll)), 130) : 0;
+  return `<div class="stat"><div class="stat-l">${label}</div><div class="stat-v"><b>${ist}</b><span>/ ${soll} ${unit}</span></div>${sub ? `<div class="stat-s">${sub}</div>` : ''}<div class="bar"><i style="width:${Math.min(p, 100)}%"></i></div></div>`;
 }
+// Zweite Zeile der Kacheln: Lauf-Zeit bzw. Rad-Kilometer
+const hm = (min) => {
+  const m = Math.round(min || 0);
+  return `${Math.floor(m / 60)}:${String(m % 60).padStart(2, '0')}`;
+};
+const runSub = (t) => `${hm(t.ist.runMin)} / ${hm(t.plan.runMin)} h`;
+const bikeSub = (t) => `${C.fmtKm(t.ist.bikeKm, 0)} km`;
 
 function weekTotals(mon, map) {
   const a = A();
   // ist.n = alle absolvierten Einheiten (geplant + Zusatz), ist.planDone = nur erledigte geplante
-  const tot = { plan: { runKm: 0, bikeMin: 0, min: 0, n: 0 }, ist: { runKm: 0, bikeMin: 0, min: 0, n: 0, planDone: 0, extraN: 0 } };
+  const tot = { plan: { runKm: 0, runMin: 0, bikeMin: 0, bikeKm: 0, min: 0, n: 0 }, ist: { runKm: 0, runMin: 0, bikeMin: 0, bikeKm: 0, min: 0, n: 0, planDone: 0, extraN: 0 } };
   for (const d of C.weekDates(mon)) {
     const st = E.dayStats(map.get(d) || [], app.state, a);
     const ex = E.extraStats(E.extrasOf(app.state, d));
-    for (const k of ['runKm', 'bikeMin', 'min', 'n']) {
+    for (const k of ['runKm', 'runMin', 'bikeMin', 'bikeKm', 'min', 'n']) {
       tot.plan[k] += st.plan[k];
       tot.ist[k] += st.ist[k];
     }
@@ -221,6 +228,8 @@ function weekTotals(mon, map) {
     tot.ist.extraN += ex.n;
     tot.ist.n += ex.n;
     tot.ist.runKm += ex.runKm;
+    tot.ist.runMin += ex.runMin;
+    tot.ist.bikeKm += ex.bikeKm;
     tot.ist.bikeMin += ex.bikeMin;
     tot.ist.min += ex.min;
   }
@@ -258,8 +267,8 @@ function renderWeek() {
   ${banner}
   ${wi?.focus ? `<div class="focus" style="--pc:${ph?.color || '#888'}">${h(wi.focus)}</div>` : ''}
   <div class="stats">
-    ${statBox('Lauf', C.fmtKm(tot.ist.runKm, 0), C.fmtKm(tot.plan.runKm, 0), 'km')}
-    ${statBox('Rad', C.fmtKm(tot.ist.bikeMin / 60, 1), C.fmtKm(tot.plan.bikeMin / 60, 1), 'h')}
+    ${statBox('Lauf', C.fmtKm(tot.ist.runKm, 0), C.fmtKm(tot.plan.runKm, 0), 'km', runSub(tot))}
+    ${statBox('Rad', C.fmtKm(tot.ist.bikeMin / 60, 1), C.fmtKm(tot.plan.bikeMin / 60, 1), 'h', bikeSub(tot))}
     ${statBox('Einheiten', tot.ist.n, tot.plan.n, '')}
   </div>
   <div class="days" id="days">
@@ -327,7 +336,7 @@ function renderMonth() {
   const map = E.byDate(eff());
   const a = A();
   let cells = '';
-  let mTot = { plan: { runKm: 0, bikeMin: 0, n: 0 }, ist: { runKm: 0, bikeMin: 0, n: 0 } };
+  let mTot = { plan: { runKm: 0, runMin: 0, bikeMin: 0, bikeKm: 0, n: 0 }, ist: { runKm: 0, runMin: 0, bikeMin: 0, bikeKm: 0, n: 0 } };
   for (let wk = start; wk <= end; wk = C.addDays(wk, 7)) {
     const tot = weekTotals(wk, map);
     cells += `<div class="m-kw" data-go-week="${wk}"><b>${C.isoWeek(wk)}</b><span>${C.fmtKm(tot.plan.runKm, 0)}</span></div>`;
@@ -343,6 +352,9 @@ function renderMonth() {
         mTot.ist.runKm += st.ist.runKm + ex.runKm;
         mTot.plan.bikeMin += st.plan.bikeMin;
         mTot.ist.bikeMin += st.ist.bikeMin + ex.bikeMin;
+        mTot.plan.runMin += st.plan.runMin;
+        mTot.ist.runMin += st.ist.runMin + ex.runMin;
+        mTot.ist.bikeKm += st.ist.bikeKm + ex.bikeKm;
         mTot.plan.n += st.plan.n;
         mTot.ist.n += st.ist.n + ex.n;
       }
@@ -362,8 +374,8 @@ function renderMonth() {
     .join('');
   return `${navHeader(label, '', 'month')}
   <div class="stats">
-    ${statBox('Lauf', C.fmtKm(mTot.ist.runKm, 0), C.fmtKm(mTot.plan.runKm, 0), 'km')}
-    ${statBox('Rad', C.fmtKm(mTot.ist.bikeMin / 60, 1), C.fmtKm(mTot.plan.bikeMin / 60, 1), 'h')}
+    ${statBox('Lauf', C.fmtKm(mTot.ist.runKm, 0), C.fmtKm(mTot.plan.runKm, 0), 'km', runSub(mTot))}
+    ${statBox('Rad', C.fmtKm(mTot.ist.bikeMin / 60, 1), C.fmtKm(mTot.plan.bikeMin / 60, 1), 'h', bikeSub(mTot))}
     ${statBox('Einheiten', mTot.ist.n, mTot.plan.n, '')}
   </div>
   <div class="month">
@@ -425,8 +437,8 @@ function renderReview() {
     <div class="kpi"><b>${avgRpe}</b><span>Ø RPE</span></div>
   </div>
   <div class="stats">
-    ${statBox('Lauf', C.fmtKm(tot.ist.runKm, 1), C.fmtKm(tot.plan.runKm, 0), 'km')}
-    ${statBox('Rad', C.fmtKm(tot.ist.bikeMin / 60, 1), C.fmtKm(tot.plan.bikeMin / 60, 1), 'h')}
+    ${statBox('Lauf', C.fmtKm(tot.ist.runKm, 1), C.fmtKm(tot.plan.runKm, 0), 'km', runSub(tot))}
+    ${statBox('Rad', C.fmtKm(tot.ist.bikeMin / 60, 1), C.fmtKm(tot.plan.bikeMin / 60, 1), 'h', bikeSub(tot))}
   </div>
   ${app.state.coach?.weekNotes?.[mon] ? `<div class="coach-box"><b>🧑‍🏫 Coach-Analyse</b><p>${h(app.state.coach.weekNotes[mon])}</p></div>` : ''}
   <h3 class="sec">Soll / Ist pro Tag</h3>
