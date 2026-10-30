@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29T13:13:33.200Z",
+ "updated": "2026-10-30T08:51:59.951Z",
  "actuals": {},
  "extras": {
   "2026-10-29": [
@@ -21,6 +21,28 @@
     ],
     "coach": "Sauberer lockerer Lauf 4 Tage nach dem HM: Ø 5:01/km bei HF 138 (Ziel < 145). Zweite Hälfte 4:57/km bei gleicher HF – keine Drift, die Erholung läuft gut. Genau so sollen die lockeren Läufe aussehen. Bis zum Planstart am 2.11. weiter nur locker.",
     "id": "s20777723380"
+   }
+  ],
+  "2026-10-30": [
+   {
+    "source": "strava",
+    "sport": "run",
+    "title": "Long Run mit den Buben",
+    "min": 122,
+    "km": 24.53,
+    "pace": 299,
+    "hr": 141,
+    "maxHr": 154,
+    "elev": 42,
+    "stravaId": "20787822267",
+    "note": "Etwas schlecht geschlafen, sonst gut gefühlt.",
+    "laps": [
+     "km 1–8 · Ø 5:05/km · HF 137–144",
+     "km 9–19 · Ø 4:54/km · HF 141–144",
+     "km 20–24,5 · Ø 4:59/km · HF 136–142 (mit Stopps)"
+    ],
+    "coach": "Sehr ordentlicher Long Run: 24,5 km in 4:59/km bei HF Ø 141, komplett im Grundlagenbereich (< 145) – und das trotz schlechtem Schlaf. Der Mittelteil (4:54/km, HF bis 144) lag am oberen Rand von locker (Gruppentempo), aber ohne HF-Drift: die aerobe Basis ist gut. 5 Tage nach dem HM und am Tag nach 10,5 km ist das trotzdem ein ordentlicher Reiz. Am Wochenende einen Tag komplett frei, am anderen höchstens 30–40' sehr locker laufen oder Rad fahren, viel schlafen. Plan ab Montag bleibt unverändert.",
+    "id": "s20787822267"
    }
   ]
  },

@@ -294,7 +294,7 @@ function dayCard(d, list, a) {
 }
 
 function extraRow(d, x, a) {
-  return `<div class="sess extra" data-extra="${d}|${x.id}"><div class="sess-ic">${SPORT[x.sport]?.icon || '✨'}</div><div class="sess-main"><div class="sess-title">${h(x.title || SPORT[x.sport]?.name)} <span class="badge">Zusatz</span>${x.source === 'strava' ? '<span class="badge strava">Strava</span>' : ''}</div><div class="sess-ist">${h(actualSummary({ ...x, done: true }, x.sport, a))}</div>${x.coach ? `<div class="sess-coach">🧑‍🏫 ${h(x.coach)}</div>` : ''}</div></div>`;
+  return `<div class="sess extra" data-extra="${d}|${x.id}"><div class="sess-ic">${SPORT[x.sport]?.icon || '✨'}</div><div class="sess-main"><div class="sess-title">${h(x.title || SPORT[x.sport]?.name)} <span class="badge">Zusatz</span>${x.source === 'strava' ? '<span class="badge strava">Strava</span>' : ''}</div><div class="sess-ist">${h(actualSummary({ ...x, done: true }, x.sport, a))}</div>${x.note ? `<div class="sess-note">„${h(x.note)}“</div>` : ''}${x.coach ? `<div class="sess-coach">🧑‍🏫 ${h(x.coach)}</div>` : ''}</div></div>`;
 }
 
 function sessRow(s, a) {
@@ -835,7 +835,7 @@ function openCoachExtra(d, x) {
   openSheet(
     `<h2>${SPORT[x.sport]?.icon || ''} ${h(x.title || 'Zusatzeinheit')}</h2>
     <p class="muted">${C.fmtLongDate(d)} · aus Strava übernommen</p>
-    <div class="move-main">${h(actualSummary({ ...x, done: true }, x.sport, a))}</div>
+    <div class="move-main">${h(actualSummary({ ...x, done: true }, x.sport, a))}${x.note ? `<div class="sess-note">„${h(x.note)}“</div>` : ''}</div>
     ${x.coach ? `<div class="coach-box"><b>🧑‍🏫 Coach</b><p>${h(x.coach)}</p></div>` : ''}
     ${x.laps?.length ? `<div class="coach-box laps"><small>Abschnitte (Strava)</small>${x.laps.map((l) => `<div>${h(l)}</div>`).join('')}</div>` : ''}
     ${x.stravaId ? `<a class="link" href="https://www.strava.com/activities/${h(x.stravaId)}" target="_blank" rel="noopener">In Strava öffnen ↗</a>` : ''}
