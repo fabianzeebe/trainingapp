@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T17:49:12.729Z",
+ "updated": "2026-11-01T17:49:24.611Z",
  "actuals": {},
  "extras": {
   "2026-10-29": [
@@ -79,7 +79,7 @@
     "sport": "run",
     "title": "Lauf ganz locker 8 km",
     "load": "easy",
-    "desc": "Ganz locker, HF unter 140, Pace gerne 5:05–5:20/km. Die 4 Steigerungen am Ende sind optional – nur wenn die Beine frisch sind.",
+    "desc": "Ganz locker, HF unter 140, Pace gerne 5:05–5:20/km. Die Steigerungen am Ende sind optional – nur wenn die Beine frisch sind.",
     "steps": [
      {
       "t": "easy",
