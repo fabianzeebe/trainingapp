@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T16:10:38.196Z",
+ "updated": "2026-11-01T17:49:12.729Z",
  "actuals": {},
  "extras": {
   "2026-10-29": [
@@ -72,5 +72,41 @@
  "weekNotes": {
   "2026-10-26": "Erholungswoche nach dem Isartal-HM (vor Planstart): 2 Läufe mit 35 km (10,5 km locker + 24,5 km Long Run), 2 Gravel-Ausfahrten mit ~4:45 h und 1× Beine & Stabi. Alle Läufe im Grundlagenbereich (HF Ø 138–141) ohne nennenswerte HF-Drift – die Erholung vom HM ist gut verlaufen und die aerobe Basis stimmt. Einziger Punkt: der Long Run 5 Tage nach dem HM war früh, durch den Ruhetag am Samstag aber gut abgefangen. Ausblick KW 45: Mo Ruhetag, Di/Mi locker laufen + Stabi, ab Do Gardasee mit Fokus Rad. Ab Montag ordne ich alles dem Plan zu."
  },
- "adjustments": {}
+ "adjustments": {
+  "2026-11-03-1": {
+   "modNote": "Coach: Auf Wunsch locker laufen am Montag; dafür ist Dienstag Ruhetag (vor den 4 Radtagen am Gardasee).",
+   "replaced": {
+    "sport": "run",
+    "title": "Lauf ganz locker 8 km",
+    "load": "easy",
+    "desc": "Ganz locker, HF unter 140, Pace gerne 5:05–5:20/km. Die 4 Steigerungen am Ende sind optional – nur wenn die Beine frisch sind.",
+    "steps": [
+     {
+      "t": "easy",
+      "zone": "E",
+      "km": 7,
+      "label": "Locker"
+     },
+     {
+      "rep": 6,
+      "steps": [
+       {
+        "t": "work",
+        "zone": "STRIDE",
+        "min": 0.3333333333333333,
+        "label": "Steigerung 20s"
+       },
+       {
+        "t": "rec",
+        "zone": "WALK",
+        "min": 0.6666666666666666,
+        "label": "Gehen/Traben"
+       }
+      ]
+     }
+    ]
+   },
+   "date": "2026-11-02"
+  }
+ }
 }
