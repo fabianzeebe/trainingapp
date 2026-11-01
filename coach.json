@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-30T08:51:59.951Z",
+ "updated": "2026-11-01T16:10:38.196Z",
  "actuals": {},
  "extras": {
   "2026-10-29": [
@@ -44,9 +44,33 @@
     "coach": "Sehr ordentlicher Long Run: 24,5 km in 4:59/km bei HF Ø 141, komplett im Grundlagenbereich (< 145) – und das trotz schlechtem Schlaf. Der Mittelteil (4:54/km, HF bis 144) lag am oberen Rand von locker (Gruppentempo), aber ohne HF-Drift: die aerobe Basis ist gut. 5 Tage nach dem HM und am Tag nach 10,5 km ist das trotzdem ein ordentlicher Reiz. Am Wochenende einen Tag komplett frei, am anderen höchstens 30–40' sehr locker laufen oder Rad fahren, viel schlafen. Plan ab Montag bleibt unverändert.",
     "id": "s20787822267"
    }
+  ],
+  "2026-11-01": [
+   {
+    "source": "strava",
+    "sport": "bike",
+    "title": "Gravel mit Niko",
+    "min": 119,
+    "km": 54.3,
+    "watts": 196,
+    "hr": 127,
+    "maxHr": 149,
+    "elev": 281,
+    "stravaId": "20818879902",
+    "note": "Ganz entspannt, gut gefühlt.",
+    "laps": [
+     "Gesamt · Ø 196 W (61 % FTP, 2,5 W/kg) · HF 127",
+     "Beste 20 min · 225 W (70 % FTP)",
+     "Kurze Anstiege · 230–270 W · HF bis 137"
+    ],
+    "coach": "Entspannte Grundlage: knapp 2 h mit Ø 196 W (61 % FTP, 2,5 W/kg) bei HF 127 – lockere Z2. Die kurzen Anstiege mit 230–270 W waren nur kurz im Tempo-Bereich, völlig ok. Nach Long Run (Fr) und Ruhetag (Sa) ein guter aktiver Abschluss der Woche. Morgen Ruhetag, der Plan startet wie vorgesehen.",
+    "id": "s20818879902"
+   }
   ]
  },
  "notes": {},
- "weekNotes": {},
+ "weekNotes": {
+  "2026-10-26": "Erholungswoche nach dem Isartal-HM (vor Planstart): 2 Läufe mit 35 km (10,5 km locker + 24,5 km Long Run), 2 Gravel-Ausfahrten mit ~4:45 h und 1× Beine & Stabi. Alle Läufe im Grundlagenbereich (HF Ø 138–141) ohne nennenswerte HF-Drift – die Erholung vom HM ist gut verlaufen und die aerobe Basis stimmt. Einziger Punkt: der Long Run 5 Tage nach dem HM war früh, durch den Ruhetag am Samstag aber gut abgefangen. Ausblick KW 45: Mo Ruhetag, Di/Mi locker laufen + Stabi, ab Do Gardasee mit Fokus Rad. Ab Montag ordne ich alles dem Plan zu."
+ },
  "adjustments": {}
 }
