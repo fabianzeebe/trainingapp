@@ -9,3 +9,4 @@ Chronologisches Protokoll der Importe, Analysen und Plananpassungen (neueste unt
 - 2026-11-01 16:10 UTC – 01.11. Gravel 54 km, 1:59 h, 196 W (61 % FTP), HF 127 als Zusatzeinheit (auf Zuruf). Ausrollen-Fahrt nicht importiert. Keine Planänderung.
 - 2026-11-01 17:49 UTC – Anpassung KW 45: Lauf vom Di 03.11. auf Mo 02.11. verschoben und auf 8 km ganz locker gekürzt (Wunsch des Athleten); Di 03.11. wird Ruhetag.
 - 2026-11-01 17:55 UTC – KW 45: Anreise Gardasee Mi abend bestätigt – Plan bleibt (Mo Lauf, Di Ruhetag, Mi Stabi+Lauf, Do–So Rad). Hinweis am Mi hinterlegt.
+- 2026-11-02 11:18 UTC – 02.11. Mo-Lauf (verschobene Einheit 2026-11-03-1): 9,1 km, 5:00/km, HF 137, 6× Strides ~3:50/km. Plan erfüllt, Hinweis: Strides etwas flotter. Keine Anpassung.
