@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02T11:18:08.485Z",
+ "updated": "2026-11-03T12:27:42.290Z",
  "actuals": {
   "2026-11-03-1": {
    "done": true,
@@ -19,6 +19,17 @@
     "Auslaufen 1,2 km · 5:07/km · HF 139"
    ],
    "coach": "Genau richtig umgesetzt: der lockere Teil lag bei Ø 5:02/km und HF 128–139 – konsequent unter 140, ohne Anstieg zum Ende. Gleiche Pace wie letzte Woche bei etwas niedrigerer HF, das passt zum starken Gefühl. Die 6 Steigerungen waren sauber gegliedert; sie dürfen künftig etwas flotter werden (gegen Ende ~3:20–3:30/km, locker und aufrecht, nicht sprinten) – heute lagen sie bei ~3:50/km. 9,1 statt 8 km ist kein Problem. Morgen Ruhetag, Mittwoch Stabi + 8,5 km locker."
+  },
+  "2026-11-04-1": {
+   "done": true,
+   "source": "strava",
+   "date": "2026-11-03",
+   "min": 49,
+   "hr": 109,
+   "maxHr": 168,
+   "stravaId": "20841488079",
+   "note": "Alle Übungen wie geplant, ohne Zusatzgewicht außer Wadenheben. Sehr gut gefühlt.",
+   "coach": "Stabi A komplett absolviert – sauber so. Ø HF 109 zeigt: kaum Kreislaufbelastung, der Dienstag bleibt damit ein echter Erholungstag für die Beine. Körpergewicht reicht in dieser Phase völlig; Zusatzgewicht beim Wadenheben ist gut für Achilles und Wade. Die Spitze von HF 168 ist vermutlich ein kurzer Ausreißer (Aufwärmen bzw. Messung am Handgelenk). Morgen 8,5 km locker, dann ab an den Gardasee."
   }
  },
  "extras": {
@@ -129,6 +140,10 @@
     ]
    },
    "date": "2026-11-02"
+  },
+  "2026-11-04-1": {
+   "modNote": "Coach: Stabi auf Dienstag vorgezogen – Mittwoch vor der Anreise nur noch der lockere Lauf.",
+   "date": "2026-11-03"
   }
  }
 }
