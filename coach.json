@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T12:29:05.587Z",
+ "updated": "2026-11-04T11:23:00.072Z",
  "actuals": {
   "2026-11-03-1": {
    "done": true,
@@ -30,6 +30,35 @@
    "stravaId": "20841488079",
    "note": "Alle Übungen wie geplant, ohne Zusatzgewicht außer Wadenheben. Sehr gut gefühlt.",
    "coach": "Stabi A komplett absolviert – sauber so. Ø HF 109 zeigt: kaum Kreislaufbelastung, der Dienstag bleibt damit ein echter Erholungstag für die Beine. Körpergewicht reicht in dieser Phase völlig; Zusatzgewicht beim Wadenheben ist gut für Achilles und Wade. Die Spitze von HF 168 ist vermutlich ein kurzer Ausreißer (Aufwärmen bzw. Messung am Handgelenk). Morgen 8,5 km locker, dann ab an den Gardasee."
+  },
+  "2026-11-04-2": {
+   "done": true,
+   "source": "strava",
+   "date": "2026-11-04",
+   "min": 56,
+   "km": 11.2,
+   "pace": 300,
+   "hr": 138,
+   "maxHr": 147,
+   "watts": null,
+   "np": null,
+   "elev": 30,
+   "stravaId": "20854832008",
+   "note": "Sehr gut gefühlt, nur nach HF gelaufen. Pace und HF sehr ausgeglichen, etwas länger gelaufen.",
+   "laps": [
+    "km 1 5:00 · HF 130",
+    "km 2 4:59 · HF 137",
+    "km 3 4:56 · HF 137",
+    "km 4 4:56 · HF 137",
+    "km 5 4:56 · HF 140",
+    "km 6 5:03 · HF 140",
+    "km 7 5:04 · HF 140",
+    "km 8 4:58 · HF 140",
+    "km 9 5:02 · HF 138",
+    "km 10 5:01 · HF 139",
+    "km 11 5:04 · HF 136"
+   ],
+   "coach": "Sehr kontrollierter Lauf: alle Kilometer zwischen 4:56 und 5:04/km, die HF steigt nach dem Einlaufen nur auf 137–140 und bleibt dort stehen – kaum Drift trotz Wind und 5 °C, ein gutes Zeichen für die Grundlagenausdauer. 11,2 statt 8,5 km sind bei dieser Intensität in Ordnung. Ab morgen 4 Radtage am Gardasee; der optionale Lauf am Freitag fällt im Zweifel weg, wenn die Beine nach Tag 1 schwer sind."
   }
  },
  "extras": {
