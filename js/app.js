@@ -303,13 +303,12 @@ function dayCard(d, list, a) {
 }
 
 function extraRow(d, x, a) {
-  return `<div class="sess extra" data-extra="${d}|${x.id}"><div class="sess-ic">${SPORT[x.sport]?.icon || '✨'}</div><div class="sess-main"><div class="sess-title">${h(x.title || SPORT[x.sport]?.name)} <span class="badge">Zusatz</span>${x.source === 'strava' ? '<span class="badge strava">Strava</span>' : ''}</div><div class="sess-ist">${h(actualSummary({ ...x, done: true }, x.sport, a))}</div>${x.note ? `<div class="sess-note">„${h(x.note)}“</div>` : ''}${x.coach ? `<div class="sess-coach">🧑‍🏫 ${h(x.coach)}</div>` : ''}</div></div>`;
+  return `<div class="sess extra" data-extra="${d}|${x.id}"><div class="sess-ic">${SPORT[x.sport]?.icon || '✨'}</div><div class="sess-main"><div class="sess-title">${h(x.title || SPORT[x.sport]?.name)} <span class="badge">Zusatz</span>${x.source === 'strava' ? '<span class="badge strava">Strava</span>' : ''}</div><div class="sess-ist">${h(actualSummary({ ...x, done: true }, x.sport, a))}</div></div></div>`;
 }
 
 function sessRow(s, a) {
   const st = status(s);
   const act = E.actualOf(app.state, s.id);
-  const coach = app.state.coach?.actuals?.[s.id]?.coach;
   const badge = s.sport === 'race' ? '<span class="badge race">Rennen</span>' : s.long ? '<span class="badge hard">Lang</span>' : s.load === 'hard' ? '<span class="badge hard">Q</span>' : s.load === 'moderate' ? '<span class="badge mod">M</span>' : '';
   return `<div class="sess s-${s.sport} st-${st}${s.modTag && !s.cancelled ? ' modded' : ''}" data-id="${s.id}">
     <div class="sess-ic">${SPORT[s.sport]?.icon || '•'}</div>
@@ -317,8 +316,6 @@ function sessRow(s, a) {
       <div class="sess-title">${h(s.title)} ${badge}${s.optional ? '<span class="badge">optional</span>' : ''}${s.slot === 'pm' ? '<span class="slot">PM</span>' : s.slot === 'am' ? '<span class="slot">AM</span>' : ''}</div>
       <div class="sess-sub">${s.cancelled ? h(s.cancelReason || 'abgesagt') : h(planSummary(s, a))}${s.movedFrom ? ` · <span class="moved">verschoben von ${C.DAY_SHORT[C.weekday(s.movedFrom)]}</span>` : ''}</div>
       ${act?.done ? `<div class="sess-ist">✓ ${h(actualSummary(act, s.sport, a))}${act.source === 'strava' ? ' <span class="badge strava">Strava</span>' : ''}</div>` : ''}
-      ${act?.note ? `<div class="sess-note">„${h(act.note)}“</div>` : ''}
-      ${coach ? `<div class="sess-coach">🧑‍🏫 ${h(coach)}</div>` : ''}
     </div>
     ${!s.cancelled && s.sport !== 'race' && st !== 'done' ? '<span class="grip" data-grip aria-label="Ziehen zum Verschieben">⠿</span>' : ''}
     ${s.cancelled ? '' : `<button class="check ${st}" data-check="${s.id}" aria-label="Abhaken">${st === 'done' ? '✓' : st === 'missed' ? '✕' : ''}</button>`}
