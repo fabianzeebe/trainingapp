@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T11:23:00.072Z",
+ "updated": "2026-11-05T11:57:29.419Z",
  "actuals": {
   "2026-11-03-1": {
    "done": true,
@@ -59,6 +59,27 @@
     "km 11 5:04 · HF 136"
    ],
    "coach": "Sehr kontrollierter Lauf: alle Kilometer zwischen 4:56 und 5:04/km, die HF steigt nach dem Einlaufen nur auf 137–140 und bleibt dort stehen – kaum Drift trotz Wind und 5 °C, ein gutes Zeichen für die Grundlagenausdauer. 11,2 statt 8,5 km sind bei dieser Intensität in Ordnung. Ab morgen 4 Radtage am Gardasee; der optionale Lauf am Freitag fällt im Zweifel weg, wenn die Beine nach Tag 1 schwer sind."
+  },
+  "2026-11-05-1": {
+   "done": true,
+   "source": "strava",
+   "date": "2026-11-05",
+   "min": 175,
+   "km": 69.5,
+   "pace": null,
+   "hr": 133,
+   "maxHr": 154,
+   "watts": 192,
+   "np": null,
+   "elev": 1379,
+   "stravaId": "20867945359",
+   "note": "Sehr gut gefühlt.",
+   "laps": [
+    "Anfahrt 39' · 197 W · HF 132",
+    "Anstieg 60' · 253 W (79 % FTP) · HF 144 · 858 hm",
+    "Abfahrt/Rückweg 76' · 141 W · HF 127"
+   ],
+   "coach": "Gesamt Ø 192 W (60 % FTP) und HF 133 – als Grundlage gewertet, aber mit 2:55 h und fast 1.400 hm deutlich mehr als geplant. Der 60-min-Anstieg mit 253 W (79 % FTP) war eher Tempo als Grundlage; die HF blieb dabei stabil bei 143–145 und ohne Drift, das spricht für gute Form. Für morgen heißt das: Anstiege am unteren Ende der Vorgabe (256–265 W) fahren, die Gesamtbelastung der vier Tage ist der eigentliche Reiz."
   }
  },
  "extras": {
@@ -129,7 +150,8 @@
   ]
  },
  "notes": {
-  "2026-11-04": "Abends Anreise zum Gardasee: den lockeren Lauf am besten vormittags/mittags, damit noch Zeit zum Essen und Packen bleibt. Im Auto ab und zu Beine bewegen, viel trinken."
+  "2026-11-04": "Abends Anreise zum Gardasee: den lockeren Lauf am besten vormittags/mittags, damit noch Zeit zum Essen und Packen bleibt. Im Auto ab und zu Beine bewegen, viel trinken.",
+  "2026-11-06": "Nach dem langen Anstieg am Donnerstag (60' mit 79 % FTP): die 3×20' am unteren Ende der Vorgabe fahren (256–265 W), dazwischen wirklich locker. Den optionalen Lauf am Morgen nur bei frischen Beinen – im Zweifel weglassen."
  },
  "weekNotes": {
   "2026-10-26": "Erholungswoche nach dem Isartal-HM (vor Planstart): 2 Läufe mit 35 km (10,5 km locker + 24,5 km Long Run), 2 Gravel-Ausfahrten mit ~4:45 h und 1× Beine & Stabi. Alle Läufe im Grundlagenbereich (HF Ø 138–141) ohne nennenswerte HF-Drift – die Erholung vom HM ist gut verlaufen und die aerobe Basis stimmt. Einziger Punkt: der Long Run 5 Tage nach dem HM war früh, durch den Ruhetag am Samstag aber gut abgefangen. Ausblick KW 45: Mo Ruhetag, Di/Mi locker laufen + Stabi, ab Do Gardasee mit Fokus Rad. Ab Montag ordne ich alles dem Plan zu."

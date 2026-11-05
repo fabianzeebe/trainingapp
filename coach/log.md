@@ -12,3 +12,4 @@ Chronologisches Protokoll der Importe, Analysen und Plananpassungen (neueste unt
 - 2026-11-02 11:18 UTC – 02.11. Mo-Lauf (verschobene Einheit 2026-11-03-1): 9,1 km, 5:00/km, HF 137, 6× Strides ~3:50/km. Plan erfüllt, Hinweis: Strides etwas flotter. Keine Anpassung.
 - 2026-11-03 12:27 UTC – 03.11. Stabi A (49', HF 109) auf Di vorgezogen und als erledigt eingetragen. Mi bleibt nur Lauf locker. Keine weitere Anpassung.
 - 2026-11-04 11:23 UTC – 04.11. Lauf locker importiert: 11,2 km, 5:00/km, HF 138 (Soll 8,5 km). Keine Anpassung.
+- 2026-11-05 11:57 UTC – 05.11. Gardasee Tag 1 importiert: 2:55 h, 69,5 km, 1379 hm, 192 W (60 % FTP), HF 133; 60' Anstieg mit 253 W. Soll 2:30 h Grundlage. Hinweis für Fr hinterlegt.
