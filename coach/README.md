@@ -1,6 +1,7 @@
 # Coaching-Ablauf (für Claude)
 
-Athlet: Fabian. Ziel: Haspa Marathon Hamburg, 25.04.2027, 2:55:00 (4:09/km).
+Athlet: Fabian. Ziel: Haspa Marathon Hamburg, 25.04.2027, **Sub 2:50** (4:01/km, Plan v3 ab 05.11.2026; vorher 2:55:00).
+MP-Zone kommt aus dem Ziel (`mpPace` 241 s/km), alle anderen Lauf-Zonen weiter aus der Schwelle. Für Sub 2:50 muss die Schwelle Richtung ~3:50/km kommen: Schwellen-Update anhand der Qualitätseinheiten (Cruise/Schwelle Dez./Jan.) dem Athleten vorschlagen. HM-Test 14.03. (< 1:20:30) ist der Gradmesser; bei > 1:22 Ziel mit dem Athleten neu besprechen.
 Werte: Schwelle Lauf 3:57/km, LTHR 169, HFmax 188, FTP 320 W, 79 kg (4,05 W/kg).
 Marathon hat Vorrang, Rad zum Fitnesserhalt/-aufbau, 1× Gym (Stabi) pro Woche, 1 Ruhetag (Mo).
 

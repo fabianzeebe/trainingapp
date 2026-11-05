@@ -169,7 +169,7 @@ export const RUN = {
     R({
       title: `Marathon-Pace ${n}× ${km} km`,
       load: 'hard',
-      desc: 'Wettkampftempo verinnerlichen: 4:09/km fühlen, ohne auf die Uhr zu starren. Zwischen den Blöcken steady (nicht traben!).',
+      desc: 'Wettkampftempo verinnerlichen: 4:01/km fühlen, ohne auf die Uhr zu starren. Zwischen den Blöcken steady (nicht traben!).',
       steps: [wu(3), rep(n, run('MP', { km }, 'Marathon-Pace'), run('S', { km: floatKm }, 'Steady')), cd(2)],
     }),
   progression14: () =>

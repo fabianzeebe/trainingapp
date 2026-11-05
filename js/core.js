@@ -107,7 +107,8 @@ export const BIKE_ZONES = [
 export function runTarget(zone, a) {
   const z = RUN_ZONES[zone];
   if (!z) return null;
-  const pace = z.f ? [a.thrPace * z.f[0], a.thrPace * z.f[1]] : null;
+  // Marathon-Pace richtet sich nach dem Zielrennen (falls gesetzt), sonst nach der Schwelle.
+  const pace = zone === 'MP' && a.mpPace ? [a.mpPace - 1, a.mpPace + 2] : z.f ? [a.thrPace * z.f[0], a.thrPace * z.f[1]] : null;
   let hr = null;
   if (z.hr) {
     const lo = Math.round(a.lthr * z.hr[0]);

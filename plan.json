@@ -1,19 +1,20 @@
 {
  "planId": "hamburg-2027",
- "version": 2,
- "generated": "2026-10-28",
+ "version": 3,
+ "generated": "2026-11-05",
  "goal": {
   "name": "Haspa Marathon Hamburg",
   "date": "2027-04-25",
-  "target": "2:55:00",
-  "targetPace": 249
+  "target": "Sub 2:50",
+  "targetPace": 241
  },
  "athlete": {
   "ftp": 320,
   "weight": 79,
   "thrPace": 237,
   "lthr": 169,
-  "hrMax": 188
+  "hrMax": 188,
+  "mpPace": 241
  },
  "phases": [
   {
@@ -160,7 +161,7 @@
    "phase": "build1",
    "deload": false,
    "focus": "Leiter-Intervalle, 14-km-Progression, 30 km locker.",
-   "runKm": 78,
+   "runKm": 80,
    "bikeH": 4
   },
   {
@@ -184,7 +185,7 @@
    "phase": "build1",
    "deload": false,
    "focus": "VO2-Reiz über 1200er, MP 2× 5 km, langer welliger Lauf.",
-   "runKm": 84,
+   "runKm": 87,
    "bikeH": 4.1
   },
   {
@@ -207,15 +208,15 @@
    "start": "2027-03-01",
    "phase": "build2",
    "deload": false,
-   "focus": "Marathonspezifisch: HM-Pace-Intervalle, Float-Lauf, 32 km mit 3× 5 km MP.",
-   "runKm": 86,
+   "focus": "Marathonspezifisch: HM-Pace-Intervalle, Float-Lauf, 32 km mit 3× 6 km MP.",
+   "runKm": 90,
    "bikeH": 4
   },
   {
    "start": "2027-03-08",
    "phase": "build2",
    "deload": false,
-   "focus": "HM-Formtest am Sonntag (14.03.). Ziel: unter 1:22 (≈3:53/km). Woche leicht reduziert.",
+   "focus": "HM-Formtest am Sonntag (14.03.). Ziel: unter 1:20:30 (≈3:49/km) – Gradmesser für Sub 2:50. Woche leicht reduziert.",
    "runKm": 57,
    "bikeH": 1
   },
@@ -231,15 +232,15 @@
    "start": "2027-03-22",
    "phase": "build2",
    "deload": false,
-   "focus": "Spitzenwoche: 4× 3 km Schwelle, 34 km mit 2× 8 km MP.",
-   "runKm": 90,
+   "focus": "Spitzenwoche: 4× 3 km Schwelle, 34 km mit 2× 9 km MP.",
+   "runKm": 95,
    "bikeH": 3.4
   },
   {
    "start": "2027-03-29",
    "phase": "build2",
    "deload": false,
-   "focus": "Letzte große Woche: Generalprobe 32 km mit 18 km MP am Stück (3 Wochen vor dem Rennen).",
+   "focus": "Letzte große Woche: Generalprobe 32 km mit 20 km MP am Stück (3 Wochen vor dem Rennen).",
    "runKm": 88,
    "bikeH": 3.5
   },
@@ -2962,7 +2963,7 @@
    "sport": "run",
    "title": "Marathon-Pace 3× 3 km",
    "load": "hard",
-   "desc": "Wettkampftempo verinnerlichen: 4:09/km fühlen, ohne auf die Uhr zu starren. Zwischen den Blöcken steady (nicht traben!).",
+   "desc": "Wettkampftempo verinnerlichen: 4:01/km fühlen, ohne auf die Uhr zu starren. Zwischen den Blöcken steady (nicht traben!).",
    "steps": [
     {
      "t": "wu",
@@ -3412,7 +3413,7 @@
     {
      "t": "easy",
      "zone": "E",
-     "km": 9,
+     "km": 10,
      "label": "Locker"
     },
     {
@@ -3445,7 +3446,7 @@
     {
      "t": "easy",
      "zone": "E",
-     "km": 9,
+     "km": 10,
      "label": "Locker"
     }
    ]
@@ -3870,7 +3871,7 @@
     {
      "t": "easy",
      "zone": "E",
-     "km": 9,
+     "km": 9.5,
      "label": "Locker"
     },
     {
@@ -4051,7 +4052,7 @@
    "sport": "run",
    "title": "Marathon-Pace 2× 5 km",
    "load": "hard",
-   "desc": "Wettkampftempo verinnerlichen: 4:09/km fühlen, ohne auf die Uhr zu starren. Zwischen den Blöcken steady (nicht traben!).",
+   "desc": "Wettkampftempo verinnerlichen: 4:01/km fühlen, ohne auf die Uhr zu starren. Zwischen den Blöcken steady (nicht traben!).",
    "steps": [
     {
      "t": "wu",
@@ -4161,7 +4162,7 @@
     {
      "t": "easy",
      "zone": "E",
-     "km": 11,
+     "km": 12.5,
      "label": "Locker"
     },
     {
@@ -4194,7 +4195,7 @@
     {
      "t": "easy",
      "zone": "E",
-     "km": 9.5,
+     "km": 11,
      "label": "Locker"
     }
    ]
@@ -4891,7 +4892,7 @@
     {
      "t": "easy",
      "zone": "E",
-     "km": 9,
+     "km": 11,
      "label": "Locker"
     },
     {
@@ -4924,7 +4925,7 @@
     {
      "t": "easy",
      "zone": "E",
-     "km": 9,
+     "km": 11,
      "label": "Locker"
     }
    ]
@@ -4955,13 +4956,13 @@
    "sport": "run",
    "long": true,
    "load": "hard",
-   "title": "Langer Lauf 32 km mit 3× 5 km MP",
+   "title": "Langer Lauf 32 km mit 3× 6 km MP",
    "desc": "Schlüsseleinheit Marathon: MP-Blöcke im langen Lauf, dazwischen 1 km steady. Rennverpflegung üben (alle 25–30 min).",
    "steps": [
     {
      "t": "easy",
      "zone": "E",
-     "km": 13,
+     "km": 10,
      "label": "Locker"
     },
     {
@@ -4970,7 +4971,7 @@
       {
        "t": "work",
        "zone": "MP",
-       "km": 5,
+       "km": 6,
        "label": "Marathon-Pace"
       },
       {
@@ -5183,8 +5184,8 @@
    "title": "Halbmarathon – Formtest",
    "load": "hard",
    "raceKm": 21.0975,
-   "racePace": 232,
-   "desc": "Ziel unter 1:22 (3:53/km). Erste 5 km kontrolliert auf ~3:55, ab km 15 laufen lassen. 3 km einlaufen + Steigerungen vorher. Danach: wie fühlt sich 4:09 im Vergleich an?",
+   "racePace": 229,
+   "desc": "Ziel unter 1:20:30 (3:49/km) – das ist der Gradmesser für Sub 2:50. Erste 5 km kontrolliert auf ~3:50, ab km 15 laufen lassen. 3 km einlaufen + Steigerungen vorher. Danach: wie fühlt sich 4:01 im Vergleich an? Liegt die Zeit deutlich darüber (> 1:22), passen wir das Marathonziel an.",
    "steps": []
   },
   {
@@ -5248,7 +5249,7 @@
    "sport": "run",
    "title": "Marathon-Pace 2× 6 km",
    "load": "hard",
-   "desc": "Wettkampftempo verinnerlichen: 4:09/km fühlen, ohne auf die Uhr zu starren. Zwischen den Blöcken steady (nicht traben!).",
+   "desc": "Wettkampftempo verinnerlichen: 4:01/km fühlen, ohne auf die Uhr zu starren. Zwischen den Blöcken steady (nicht traben!).",
    "steps": [
     {
      "t": "wu",
@@ -5722,7 +5723,7 @@
     {
      "t": "easy",
      "zone": "E",
-     "km": 10.5,
+     "km": 13,
      "label": "Locker"
     },
     {
@@ -5755,7 +5756,7 @@
     {
      "t": "easy",
      "zone": "E",
-     "km": 9,
+     "km": 11.5,
      "label": "Locker"
     }
    ]
@@ -5786,13 +5787,13 @@
    "sport": "run",
    "long": true,
    "load": "hard",
-   "title": "Langer Lauf 34 km mit 2× 8 km MP",
+   "title": "Langer Lauf 34 km mit 2× 9 km MP",
    "desc": "Schlüsseleinheit Marathon: MP-Blöcke im langen Lauf, dazwischen 1 km steady. Rennverpflegung üben (alle 25–30 min).",
    "steps": [
     {
      "t": "easy",
      "zone": "E",
-     "km": 15,
+     "km": 13,
      "label": "Locker"
     },
     {
@@ -5801,7 +5802,7 @@
       {
        "t": "work",
        "zone": "MP",
-       "km": 8,
+       "km": 9,
        "label": "Marathon-Pace"
       },
       {
@@ -6077,19 +6078,19 @@
    "sport": "run",
    "long": true,
    "load": "hard",
-   "title": "Langer Lauf 32 km mit 18 km MP am Stück",
+   "title": "Langer Lauf 32 km mit 20 km MP am Stück",
    "desc": "Generalprobe: Schuhe, Verpflegung, Renn-Outfit. Marathon-Pace kontrolliert, nicht schneller.",
    "steps": [
     {
      "t": "easy",
      "zone": "E",
-     "km": 12,
+     "km": 10,
      "label": "Locker"
     },
     {
      "t": "work",
      "zone": "MP",
-     "km": 18,
+     "km": 20,
      "label": "Marathon-Pace"
     },
     {
@@ -6182,7 +6183,7 @@
    "sport": "run",
    "title": "Marathon-Pace 3× 3 km",
    "load": "hard",
-   "desc": "Wettkampftempo verinnerlichen: 4:09/km fühlen, ohne auf die Uhr zu starren. Zwischen den Blöcken steady (nicht traben!).",
+   "desc": "Wettkampftempo verinnerlichen: 4:01/km fühlen, ohne auf die Uhr zu starren. Zwischen den Blöcken steady (nicht traben!).",
    "steps": [
     {
      "t": "wu",
@@ -6394,7 +6395,7 @@
    "sport": "run",
    "title": "Marathon-Pace 2× 4 km",
    "load": "hard",
-   "desc": "Wettkampftempo verinnerlichen: 4:09/km fühlen, ohne auf die Uhr zu starren. Zwischen den Blöcken steady (nicht traben!).",
+   "desc": "Wettkampftempo verinnerlichen: 4:01/km fühlen, ohne auf die Uhr zu starren. Zwischen den Blöcken steady (nicht traben!).",
    "steps": [
     {
      "t": "wu",
@@ -6716,8 +6717,8 @@
    "title": "Haspa Marathon Hamburg 🏁",
    "load": "hard",
    "raceKm": 42.195,
-   "racePace": 249,
-   "desc": "Ziel 2:55:00 = 4:09/km. Erste Hälfte 1:27:30 (eher 4:10), nicht von der Euphorie mitreißen lassen. Gels alle 25–30 min. Ab km 30 wird gelaufen!",
+   "racePace": 241,
+   "desc": "Ziel Sub 2:50 = 4:01/km (2:49:30). Erste Hälfte 1:24:45 (eher 4:02), nicht von der Euphorie mitreißen lassen. Gels alle 25–30 min. Ab km 30 wird gelaufen!",
    "steps": []
   },
   {

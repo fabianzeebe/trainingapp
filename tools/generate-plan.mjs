@@ -8,10 +8,11 @@ import { RUN, BIKE, gym } from './library.mjs';
 import { addDays, sessionTotals, DEFAULT_ATHLETE } from '../js/core.js';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
-const A = { ...DEFAULT_ATHLETE };
+// mpPace: Zielpace Marathon (Sub 2:50 → 4:01/km). Steuert die MP-Zone in allen Einheiten.
+const A = { ...DEFAULT_ATHLETE, mpPace: 241 };
 
 const PLAN_ID = 'hamburg-2027';
-const VERSION = 2;
+const VERSION = 3;
 const START = '2026-11-02';
 
 const PHASES = {
@@ -132,7 +133,7 @@ const WEEKS = [
     [fill(8, 10), pm(BIKE.z2({ min: 120, outdoor: true }))],
     [RUN.long({ km: 26 })],
   ] },
-  { phase: 'build1', km: 74, focus: 'Schwelle in längeren Stücken, erste Marathon-Pace-Blöcke.', d: [
+  { phase: 'build1', km: 76, focus: 'Schwelle in längeren Stücken, erste Marathon-Pace-Blöcke.', d: [
     rest,
     [RUN.intervals({ n: 4, km: 2, zone: 'T', recMin: 1.5 })],
     [gym('C'), BIKE.z2({ min: 60 })],
@@ -141,7 +142,7 @@ const WEEKS = [
     [fill(9, 12, { withStrides: true }), pm(BIKE.z2({ min: 105 }))],
     [RUN.long({ km: 28, variant: 'fastFinish', mpKm: 5 })],
   ] },
-  { phase: 'build1', km: 78, focus: 'Leiter-Intervalle, 14-km-Progression, 30 km locker.', d: [
+  { phase: 'build1', km: 80, focus: 'Leiter-Intervalle, 14-km-Progression, 30 km locker.', d: [
     rest,
     [RUN.ladder()],
     [gym('D'), BIKE.z2({ min: 60 })],
@@ -159,7 +160,7 @@ const WEEKS = [
     [fill(7, 10), pm(BIKE.z2({ min: 120, outdoor: true }))],
     [RUN.long({ km: 22 })],
   ] },
-  { phase: 'build1', km: 80, focus: '3× 3 km Schwelle, Schwelle + 10K-Mix, erster langer Lauf mit MP-Blöcken.', d: [
+  { phase: 'build1', km: 82, focus: '3× 3 km Schwelle, Schwelle + 10K-Mix, erster langer Lauf mit MP-Blöcken.', d: [
     rest,
     [RUN.intervals({ n: 3, km: 3, zone: 'T', recMin: 2 })],
     [gym('B'), BIKE.z2({ min: 60 })],
@@ -168,7 +169,7 @@ const WEEKS = [
     [fill(9, 12), pm(BIKE.z2({ min: 105 }))],
     [RUN.long({ km: 30, variant: 'mpBlocks', n: 3, blockKm: 4 })],
   ] },
-  { phase: 'build1', km: 84, focus: 'VO2-Reiz über 1200er, MP 2× 5 km, langer welliger Lauf.', d: [
+  { phase: 'build1', km: 87, focus: 'VO2-Reiz über 1200er, MP 2× 5 km, langer welliger Lauf.', d: [
     rest,
     [RUN.intervals({ n: 5, km: 1.2, zone: '10K', recMin: 2.5 })],
     [gym('C'), BIKE.z2({ min: 60 })],
@@ -177,7 +178,7 @@ const WEEKS = [
     [fill(9, 12), pm(BIKE.z2({ min: 120, outdoor: true }))],
     [RUN.long({ km: 32, variant: 'hilly' })],
   ] },
-  { phase: 'build1', km: 86, focus: 'Wechseltempo und 10 km im HM-Tempo – härteste Build-1-Woche.', d: [
+  { phase: 'build1', km: 89, focus: 'Wechseltempo und 10 km im HM-Tempo – härteste Build-1-Woche.', d: [
     rest,
     [RUN.wechsel({ n: 4 })],
     [gym('D'), BIKE.z2({ min: 60 })],
@@ -196,25 +197,25 @@ const WEEKS = [
     [RUN.long({ km: 24 })],
   ] },
   // ---------------- Build 2 / spezifisch ----------------
-  { phase: 'build2', km: 86, focus: 'Marathonspezifisch: HM-Pace-Intervalle, Float-Lauf, 32 km mit 3× 5 km MP.', d: [
+  { phase: 'build2', km: 90, focus: 'Marathonspezifisch: HM-Pace-Intervalle, Float-Lauf, 32 km mit 3× 6 km MP.', d: [
     rest,
     [RUN.intervals({ n: 5, km: 2, zone: 'HM', recMin: 2 })],
     [gym('B'), BIKE.z2({ min: 60 })],
     [RUN.float({ n: 6 }), pm(BIKE.tempoBlocks({ n: 2, block: 20 }))],
     [fill(10, 14, { withStrides: true })],
     [fill(9, 12), pm(BIKE.z2({ min: 105 }))],
-    [RUN.long({ km: 32, variant: 'mpBlocks', n: 3, blockKm: 5 })],
+    [RUN.long({ km: 32, variant: 'mpBlocks', n: 3, blockKm: 6 })],
   ] },
-  { phase: 'build2', km: 52, focus: 'HM-Formtest am Sonntag (14.03.). Ziel: unter 1:22 (≈3:53/km). Woche leicht reduziert.', d: [
+  { phase: 'build2', km: 52, focus: 'HM-Formtest am Sonntag (14.03.). Ziel: unter 1:20:30 (≈3:49/km) – Gradmesser für Sub 2:50. Woche leicht reduziert.', d: [
     rest,
     [RUN.thresholdMix({ sets: 2 })],
     [gym('L', 30), BIKE.z2({ min: 60 })],
     [RUN.hmSharpen({ n: 3 })],
     [fill(7, 9)],
     [RUN.shakeout({ km: 5 })],
-    [RUN.race({ title: 'Halbmarathon – Formtest', km: 21.0975, targetPace: 232, desc: 'Ziel unter 1:22 (3:53/km). Erste 5 km kontrolliert auf ~3:55, ab km 15 laufen lassen. 3 km einlaufen + Steigerungen vorher. Danach: wie fühlt sich 4:09 im Vergleich an?' })],
+    [RUN.race({ title: 'Halbmarathon – Formtest', km: 21.0975, targetPace: 229, desc: 'Ziel unter 1:20:30 (3:49/km) – das ist der Gradmesser für Sub 2:50. Erste 5 km kontrolliert auf ~3:50, ab km 15 laufen lassen. 3 km einlaufen + Steigerungen vorher. Danach: wie fühlt sich 4:01 im Vergleich an? Liegt die Zeit deutlich darüber (> 1:22), passen wir das Marathonziel an.' })],
   ] },
-  { phase: 'build2', km: 74, focus: 'Erholung nach dem HM (Di/Mi locker), dann zurück in die Spezifik.', d: [
+  { phase: 'build2', km: 76, focus: 'Erholung nach dem HM (Di/Mi locker), dann zurück in die Spezifik.', d: [
     rest,
     [RUN.recovery({ km: 8 })],
     [gym('A', 45), BIKE.z2({ min: 60 })],
@@ -223,23 +224,23 @@ const WEEKS = [
     [fill(9, 12), pm(BIKE.z2({ min: 120, outdoor: true }))],
     [RUN.long({ km: 30, variant: 'progressive' })],
   ] },
-  { phase: 'build2', km: 90, focus: 'Spitzenwoche: 4× 3 km Schwelle, 34 km mit 2× 8 km MP.', d: [
+  { phase: 'build2', km: 95, focus: 'Spitzenwoche: 4× 3 km Schwelle, 34 km mit 2× 9 km MP.', d: [
     rest,
     [RUN.intervals({ n: 4, km: 3, zone: 'T', recMin: 2 })],
     [gym('C'), BIKE.z2({ min: 60 })],
     [RUN.tempoPlus({ min: 25, n: 3 }), pm(BIKE.fortyTwenty({ sets: 2, setMin: 8 }))],
     [fill(11, 14, { withStrides: true })],
     [fill(9, 12), pm(BIKE.z2({ min: 90 }))],
-    [RUN.long({ km: 34, variant: 'mpBlocks', n: 2, blockKm: 8 })],
+    [RUN.long({ km: 34, variant: 'mpBlocks', n: 2, blockKm: 9 })],
   ] },
-  { phase: 'build2', km: 88, focus: 'Letzte große Woche: Generalprobe 32 km mit 18 km MP am Stück (3 Wochen vor dem Rennen).', d: [
+  { phase: 'build2', km: 92, focus: 'Letzte große Woche: Generalprobe 32 km mit 20 km MP am Stück (3 Wochen vor dem Rennen).', d: [
     rest,
     [RUN.cruise({ n: 6, km: 1.6, recMin: 1 })],
     [gym('D'), BIKE.z2({ min: 60 })],
     [RUN.steady({ min: 40 }), pm(BIKE.vo2({ n: 5, block: 3, pct: [112, 118], rec: 3 }))],
     [fill(11, 14, { withStrides: true })],
     [fill(9, 12), pm(BIKE.z2({ min: 90 }))],
-    [RUN.long({ km: 32, variant: 'mpContinuous', mpKm: 18 })],
+    [RUN.long({ km: 32, variant: 'mpContinuous', mpKm: 20 })],
   ] },
   // ---------------- Taper ----------------
   { phase: 'taper', km: 72, focus: 'Taper Woche 1: Umfang ~80 %, Intensität bleibt.', d: [
@@ -268,7 +269,7 @@ const WEEKS = [
     [RUN.easy({ km: 8, withStrides: true })],
     [RUN.recovery({ km: 5 })],
     [RUN.shakeout({ km: 5 })],
-    [RUN.race({ title: 'Haspa Marathon Hamburg 🏁', km: 42.195, targetPace: 249, desc: 'Ziel 2:55:00 = 4:09/km. Erste Hälfte 1:27:30 (eher 4:10), nicht von der Euphorie mitreißen lassen. Gels alle 25–30 min. Ab km 30 wird gelaufen!' })],
+    [RUN.race({ title: 'Haspa Marathon Hamburg 🏁', km: 42.195, targetPace: 241, desc: 'Ziel Sub 2:50 = 4:01/km (2:49:30). Erste Hälfte 1:24:45 (eher 4:02), nicht von der Euphorie mitreißen lassen. Gels alle 25–30 min. Ab km 30 wird gelaufen!' })],
   ] },
   // ---------------- Recovery ----------------
   { phase: 'recovery', km: 14, focus: 'Erholung nach dem Marathon. Nur nach Lust und Laune, alles sehr locker.', d: [
@@ -349,7 +350,7 @@ const plan = {
   planId: PLAN_ID,
   version: VERSION,
   generated: new Date().toISOString().slice(0, 10),
-  goal: { name: 'Haspa Marathon Hamburg', date: '2027-04-25', target: '2:55:00', targetPace: 249 },
+  goal: { name: 'Haspa Marathon Hamburg', date: '2027-04-25', target: 'Sub 2:50', targetPace: 241 },
   athlete: A,
   phases,
   weeks,
