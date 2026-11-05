@@ -228,7 +228,7 @@ h3 { margin: 0 0 8px; font-size: 16px; }
   width: 100%; border: 1px solid var(--line); background: var(--card2); color: var(--text); border-radius: 10px;
   padding: 10px 12px; font-size: 16px; font-family: inherit;
 }
-textarea.input { resize: vertical; margin-top: 8px; }
+textarea.input { resize: vertical; margin-top: 8px; overflow: hidden; min-height: 64px; }
 .form-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px 10px; }
 .form-grid label { font-size: 12.5px; color: var(--muted); display: flex; flex-direction: column; gap: 3px; }
 .calc { grid-column: 1 / -1; font-weight: 600; color: var(--accent); font-size: 14px; min-height: 1px; }

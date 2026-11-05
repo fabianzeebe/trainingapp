@@ -137,6 +137,16 @@ function toast(msg, ms = 2600) {
   toastTimer = setTimeout(() => el.classList.remove('show'), ms);
 }
 
+// Textfelder wachsen mit dem Inhalt mit (kein Scrollen im Feld).
+function autosize(ta) {
+  ta.style.height = 'auto';
+  ta.style.height = `${ta.scrollHeight + 2}px`;
+}
+const autosizeAll = (root) => $$('textarea.input', root).forEach(autosize);
+document.addEventListener('input', (e) => {
+  if (e.target.matches?.('textarea.input')) autosize(e.target);
+});
+
 let closeTimer;
 function openSheet(html, { onMount, wide } = {}) {
   clearTimeout(closeTimer);
@@ -150,6 +160,7 @@ function openSheet(html, { onMount, wide } = {}) {
   const sheet = $('.sheet', root);
   requestAnimationFrame(() => sheet.classList.add('in'));
   onMount?.(sheet);
+  autosizeAll(sheet);
   return sheet;
 }
 function closeSheet(immediate) {
@@ -177,6 +188,7 @@ function render() {
   else if (app.tab === 'month') view.innerHTML = renderMonth();
   else if (app.tab === 'review') view.innerHTML = renderReview();
   else view.innerHTML = renderMore();
+  autosizeAll(view);
   renderTopbar();
 }
 
