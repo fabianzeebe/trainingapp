@@ -15,3 +15,5 @@ Chronologisches Protokoll der Importe, Analysen und Plananpassungen (neueste unt
 - 2026-11-05 11:57 UTC – 05.11. Gardasee Tag 1 importiert: 2:55 h, 69,5 km, 1379 hm, 192 W (60 % FTP), HF 133; 60' Anstieg mit 253 W. Soll 2:30 h Grundlage. Hinweis für Fr hinterlegt.- 2026-11-05 14:56 UTC – Zieländerung auf Wunsch des Athleten: Marathon Sub 2:50 (4:01/km) statt 2:55. Plan v3: MP-Zone aus Zielpace (4:00–4:03), HM-Test-Ziel < 1:20:30, MP-Anteil im langen Lauf erhöht (3× 6 km, 2× 9 km, Generalprobe 20 km MP), Laufumfang Build/Build 2 leicht erhöht (Spitze 95 km). Rad unverändert. Schwelle (3:57) vorerst unverändert – Update nach Qualitätseinheiten vorschlagen.
 
 - 2026-11-06 09:44 UTC – 06.11. Regen: Fr-Rad (4 h mit 3×20') abgesagt, dafür Lauf locker 70′ (14 km, wellig, + Steigerungen).
+- 2026-11-06 14:20 UTC – 06.11. Gardasee Tag 2 importiert: 2:15 h, 1287 hm, 3× ~20' mit 282/283/279 W (88 % FTP), HF 147–148. Regen-Alternative zurückgenommen. Sa auf Grundlage 2:30 h ohne Anstiegsintervalle geändert.
+- 2026-11-06 14:20 UTC – Anpassung 2026-11-07-1: Grundlage 2:30 h statt 3:30 h mit 2×20′.

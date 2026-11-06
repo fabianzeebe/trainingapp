@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T09:44:47.385Z",
+ "updated": "2026-11-06T14:20:55.270Z",
  "actuals": {
   "2026-11-03-1": {
    "done": true,
@@ -80,6 +80,31 @@
     "Abfahrt/Rückweg 76' · 141 W · HF 127"
    ],
    "coach": "Gesamt Ø 192 W (60 % FTP) und HF 133 – als Grundlage gewertet, aber mit 2:55 h und fast 1.400 hm deutlich mehr als geplant. Der 60-min-Anstieg mit 253 W (79 % FTP) war eher Tempo als Grundlage; die HF blieb dabei stabil bei 143–145 und ohne Drift, das spricht für gute Form. Für morgen heißt das: Anstiege am unteren Ende der Vorgabe (256–265 W) fahren, die Gesamtbelastung der vier Tage ist der eigentliche Reiz."
+  },
+  "2026-11-06-2": {
+   "done": true,
+   "source": "strava",
+   "date": "2026-11-06",
+   "min": 135,
+   "km": 50.9,
+   "pace": null,
+   "hr": 129,
+   "maxHr": 155,
+   "watts": 196,
+   "np": null,
+   "elev": 1287,
+   "stravaId": "20882575482",
+   "note": "Intervalle gingen gut. Den letzten nicht volle 20 min, weil der Anstieg zu Ende war.",
+   "laps": [
+    "Einrollen 16' · 160 W · HF 118",
+    "Anstieg 1 20:00 · 282 W (88 %) · HF 147",
+    "Pause 7' · 178 W · HF 127",
+    "Anstieg 2 20:00 · 283 W (88 %) · HF 148",
+    "Pause 5' · 196 W · HF 135",
+    "Anstieg 3 18:16 · 279 W (87 %) · HF 148",
+    "Abfahrt/Rückweg 48' · 108 W · HF 111"
+   ],
+   "coach": "Starke Intervalle: 282 / 283 / 279 W (87–88 % FTP) bei HF 147–148, über alle drei Stücke kein HF-Anstieg – sehr gleichmäßig und kontrolliert. 18 statt 20 min beim letzten ist egal. Allerdings am oberen Ende der Vorgabe (256–282 W), mit nur 5–7 min Pause statt 50 min Grundlage dazwischen, und am zweiten harten Tag in Folge. Deshalb wird Samstag reine Grundlage."
   }
  },
  "extras": {
@@ -151,7 +176,7 @@
  },
  "notes": {
   "2026-11-04": "Abends Anreise zum Gardasee: den lockeren Lauf am besten vormittags/mittags, damit noch Zeit zum Essen und Packen bleibt. Im Auto ab und zu Beine bewegen, viel trinken.",
-  "2026-11-07": "Wenn es trocken ist: die Anstiege vom Freitag hier einbauen – 3×20′ am unteren Ende (256–265 W), Rest locker, gesamt ca. 3:30 h. Regnet es weiter: 75–90 min locker auf der Rolle/im Hotel-Gym oder 60′ locker laufen, nicht beides hart."
+  "2026-11-07": "Heute nur Grundlage: bergauf höchstens ~230 W, HF möglichst unter 135. Nach zwei harten Tagen holst du dir den Trainingseffekt durch Erholung – am Montag startet die Base-Phase."
  },
  "weekNotes": {
   "2026-10-26": "Erholungswoche nach dem Isartal-HM (vor Planstart): 2 Läufe mit 35 km (10,5 km locker + 24,5 km Long Run), 2 Gravel-Ausfahrten mit ~4:45 h und 1× Beine & Stabi. Alle Läufe im Grundlagenbereich (HF Ø 138–141) ohne nennenswerte HF-Drift – die Erholung vom HM ist gut verlaufen und die aerobe Basis stimmt. Einziger Punkt: der Long Run 5 Tage nach dem HM war früh, durch den Ruhetag am Samstag aber gut abgefangen. Ausblick KW 45: Mo Ruhetag, Di/Mi locker laufen + Stabi, ab Do Gardasee mit Fokus Rad. Ab Montag ordne ich alles dem Plan zu."
@@ -196,44 +221,25 @@
    "modNote": "Coach: Stabi auf Dienstag vorgezogen – Mittwoch vor der Anreise nur noch der lockere Lauf.",
    "date": "2026-11-03"
   },
-  "2026-11-06-1": {
-   "modNote": "Coach: Regen am Gardasee: Lauf statt 4-h-Ausfahrt. Nach dem langen Anstieg am Donnerstag locker, keine Intensität.",
+  "2026-11-07-1": {
+   "modNote": "Coach: Zwei harte Radtage in Folge (Do 60′ @ 79 %, Fr 3×20′ @ 88 % FTP) – Samstag nur Grundlage, keine Anstiegsblöcke.",
    "replaced": {
-    "sport": "run",
-    "title": "Lauf locker 70′ (Regen-Alternative)",
+    "sport": "bike",
+    "title": "Gardasee Tag 3: Grundlage 2:30 h",
     "load": "easy",
-    "desc": "Statt der langen Ausfahrt im Regen: 65–75 min locker, gern wellig. Bergauf kürzere Schritte und Tempo rausnehmen, damit die HF unter 145 bleibt; bergab locker laufen lassen, nicht bremsen. Am Ende 6 Steigerungen auf flachem Stück. Regenjacke/Kappe, danach sofort trockene Sachen.",
+    "desc": "Nach zwei harten Tagen (Do 60′ mit 79 %, Fr 3×20′ mit 88 % FTP): ruhige Runde, auch bergauf höchstens ~230 W (72 %), HF möglichst unter 135. Flachere Strecke am See wählen, Kaffeepause erlaubt. Gut essen und trinken.",
     "steps": [
      {
       "t": "easy",
-      "zone": "E",
-      "km": 13,
-      "label": "Locker"
-     },
-     {
-      "rep": 6,
-      "steps": [
-       {
-        "t": "work",
-        "zone": "STRIDE",
-        "min": 0.3333333333333333,
-        "label": "Steigerung 20s"
-       },
-       {
-        "t": "rec",
-        "zone": "WALK",
-        "min": 0.6666666666666666,
-        "label": "Gehen/Traben"
-       }
-      ]
+      "min": 150,
+      "pct": [
+       62,
+       72
+      ],
+      "label": "Grundlage"
      }
     ]
    }
-  },
-  "2026-11-06-2": {
-   "modNote": "Coach: Regen – dafür Lauf locker 70′. Die Anstiege (3×20′) wandern auf Samstag, wenn es trocken ist.",
-   "cancelled": true,
-   "cancelReason": "Coach: Regen – dafür Lauf locker 70′. Die Anstiege (3×20′) wandern auf Samstag, wenn es trocken ist."
   }
  }
 }
