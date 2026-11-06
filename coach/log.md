@@ -13,3 +13,5 @@ Chronologisches Protokoll der Importe, Analysen und Plananpassungen (neueste unt
 - 2026-11-03 12:27 UTC – 03.11. Stabi A (49', HF 109) auf Di vorgezogen und als erledigt eingetragen. Mi bleibt nur Lauf locker. Keine weitere Anpassung.
 - 2026-11-04 11:23 UTC – 04.11. Lauf locker importiert: 11,2 km, 5:00/km, HF 138 (Soll 8,5 km). Keine Anpassung.
 - 2026-11-05 11:57 UTC – 05.11. Gardasee Tag 1 importiert: 2:55 h, 69,5 km, 1379 hm, 192 W (60 % FTP), HF 133; 60' Anstieg mit 253 W. Soll 2:30 h Grundlage. Hinweis für Fr hinterlegt.- 2026-11-05 14:56 UTC – Zieländerung auf Wunsch des Athleten: Marathon Sub 2:50 (4:01/km) statt 2:55. Plan v3: MP-Zone aus Zielpace (4:00–4:03), HM-Test-Ziel < 1:20:30, MP-Anteil im langen Lauf erhöht (3× 6 km, 2× 9 km, Generalprobe 20 km MP), Laufumfang Build/Build 2 leicht erhöht (Spitze 95 km). Rad unverändert. Schwelle (3:57) vorerst unverändert – Update nach Qualitätseinheiten vorschlagen.
+
+- 2026-11-06 09:44 UTC – 06.11. Regen: Fr-Rad (4 h mit 3×20') abgesagt, dafür Lauf locker 70′ (14 km, wellig, + Steigerungen).

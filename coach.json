@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05T11:57:29.419Z",
+ "updated": "2026-11-06T09:44:47.385Z",
  "actuals": {
   "2026-11-03-1": {
    "done": true,
@@ -151,7 +151,7 @@
  },
  "notes": {
   "2026-11-04": "Abends Anreise zum Gardasee: den lockeren Lauf am besten vormittags/mittags, damit noch Zeit zum Essen und Packen bleibt. Im Auto ab und zu Beine bewegen, viel trinken.",
-  "2026-11-06": "Nach dem langen Anstieg am Donnerstag (60' mit 79 % FTP): die 3×20' am unteren Ende der Vorgabe fahren (256–265 W), dazwischen wirklich locker. Den optionalen Lauf am Morgen nur bei frischen Beinen – im Zweifel weglassen."
+  "2026-11-07": "Wenn es trocken ist: die Anstiege vom Freitag hier einbauen – 3×20′ am unteren Ende (256–265 W), Rest locker, gesamt ca. 3:30 h. Regnet es weiter: 75–90 min locker auf der Rolle/im Hotel-Gym oder 60′ locker laufen, nicht beides hart."
  },
  "weekNotes": {
   "2026-10-26": "Erholungswoche nach dem Isartal-HM (vor Planstart): 2 Läufe mit 35 km (10,5 km locker + 24,5 km Long Run), 2 Gravel-Ausfahrten mit ~4:45 h und 1× Beine & Stabi. Alle Läufe im Grundlagenbereich (HF Ø 138–141) ohne nennenswerte HF-Drift – die Erholung vom HM ist gut verlaufen und die aerobe Basis stimmt. Einziger Punkt: der Long Run 5 Tage nach dem HM war früh, durch den Ruhetag am Samstag aber gut abgefangen. Ausblick KW 45: Mo Ruhetag, Di/Mi locker laufen + Stabi, ab Do Gardasee mit Fokus Rad. Ab Montag ordne ich alles dem Plan zu."
@@ -195,6 +195,45 @@
   "2026-11-04-1": {
    "modNote": "Coach: Stabi auf Dienstag vorgezogen – Mittwoch vor der Anreise nur noch der lockere Lauf.",
    "date": "2026-11-03"
+  },
+  "2026-11-06-1": {
+   "modNote": "Coach: Regen am Gardasee: Lauf statt 4-h-Ausfahrt. Nach dem langen Anstieg am Donnerstag locker, keine Intensität.",
+   "replaced": {
+    "sport": "run",
+    "title": "Lauf locker 70′ (Regen-Alternative)",
+    "load": "easy",
+    "desc": "Statt der langen Ausfahrt im Regen: 65–75 min locker, gern wellig. Bergauf kürzere Schritte und Tempo rausnehmen, damit die HF unter 145 bleibt; bergab locker laufen lassen, nicht bremsen. Am Ende 6 Steigerungen auf flachem Stück. Regenjacke/Kappe, danach sofort trockene Sachen.",
+    "steps": [
+     {
+      "t": "easy",
+      "zone": "E",
+      "km": 13,
+      "label": "Locker"
+     },
+     {
+      "rep": 6,
+      "steps": [
+       {
+        "t": "work",
+        "zone": "STRIDE",
+        "min": 0.3333333333333333,
+        "label": "Steigerung 20s"
+       },
+       {
+        "t": "rec",
+        "zone": "WALK",
+        "min": 0.6666666666666666,
+        "label": "Gehen/Traben"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "2026-11-06-2": {
+   "modNote": "Coach: Regen – dafür Lauf locker 70′. Die Anstiege (3×20′) wandern auf Samstag, wenn es trocken ist.",
+   "cancelled": true,
+   "cancelReason": "Coach: Regen – dafür Lauf locker 70′. Die Anstiege (3×20′) wandern auf Samstag, wenn es trocken ist."
   }
  }
 }
