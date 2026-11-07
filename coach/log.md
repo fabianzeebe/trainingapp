@@ -17,3 +17,5 @@ Chronologisches Protokoll der Importe, Analysen und Plananpassungen (neueste unt
 - 2026-11-06 09:44 UTC – 06.11. Regen: Fr-Rad (4 h mit 3×20') abgesagt, dafür Lauf locker 70′ (14 km, wellig, + Steigerungen).
 - 2026-11-06 14:20 UTC – 06.11. Gardasee Tag 2 importiert: 2:15 h, 1287 hm, 3× ~20' mit 282/283/279 W (88 % FTP), HF 147–148. Regen-Alternative zurückgenommen. Sa auf Grundlage 2:30 h ohne Anstiegsintervalle geändert.
 - 2026-11-06 14:20 UTC – Anpassung 2026-11-07-1: Grundlage 2:30 h statt 3:30 h mit 2×20′.
+- 2026-11-07 18:24 UTC – 07.11. Gardasee Tag 3 importiert: 3:41 h, 99,7 km, 1488 hm, 185 W (58 % FTP), HF 127 (Soll 2:30 h Grundlage). So auf 90' locker gekürzt.
+- 2026-11-07 18:24 UTC – Anpassung 2026-11-08-1: Rad locker 90′ statt 2 h.

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T14:20:55.270Z",
+ "updated": "2026-11-07T18:24:54.742Z",
  "actuals": {
   "2026-11-03-1": {
    "done": true,
@@ -105,6 +105,27 @@
     "Abfahrt/Rückweg 48' · 108 W · HF 111"
    ],
    "coach": "Starke Intervalle: 282 / 283 / 279 W (87–88 % FTP) bei HF 147–148, über alle drei Stücke kein HF-Anstieg – sehr gleichmäßig und kontrolliert. 18 statt 20 min beim letzten ist egal. Allerdings am oberen Ende der Vorgabe (256–282 W), mit nur 5–7 min Pause statt 50 min Grundlage dazwischen, und am zweiten harten Tag in Folge. Deshalb wird Samstag reine Grundlage."
+  },
+  "2026-11-07-1": {
+   "done": true,
+   "source": "strava",
+   "date": "2026-11-07",
+   "min": 221,
+   "km": 99.7,
+   "pace": null,
+   "hr": 127,
+   "maxHr": 148,
+   "watts": 185,
+   "np": null,
+   "elev": 1488,
+   "stravaId": "20898758643",
+   "note": "Länger als geplant.",
+   "laps": [
+    "Gesamt 3:41 h · 99,7 km · 1.488 hm · 185 W (58 %) · HF 127",
+    "Langer Anstieg 47' · 236 W (74 %) · HF 135",
+    "Bester 20'-Wert 253 W (79 %), beste Stunde 229 W (72 %)"
+   ],
+   "coach": "Intensität gut getroffen: Ø 185 W (58 % FTP) und HF 127, der lange Anstieg mit 236 W nur knapp über der Obergrenze, HF dabei ruhig bei 135. Aber 3:41 h statt 2:30 h – nach Do (2:55 h) und Fr (3x20' mit 88 %) sind das gut 9 h in drei Tagen. Die Beine wirken noch frisch (niedrige HF bergauf), trotzdem: Sonntag kurz und ganz locker, Montag Ruhetag, dann startet die Base-Phase."
   }
  },
  "extras": {
@@ -176,7 +197,8 @@
  },
  "notes": {
   "2026-11-04": "Abends Anreise zum Gardasee: den lockeren Lauf am besten vormittags/mittags, damit noch Zeit zum Essen und Packen bleibt. Im Auto ab und zu Beine bewegen, viel trinken.",
-  "2026-11-07": "Heute nur Grundlage: bergauf höchstens ~230 W, HF möglichst unter 135. Nach zwei harten Tagen holst du dir den Trainingseffekt durch Erholung – am Montag startet die Base-Phase."
+  "2026-11-07": "Heute nur Grundlage: bergauf höchstens ~230 W, HF möglichst unter 135. Nach zwei harten Tagen holst du dir den Trainingseffekt durch Erholung – am Montag startet die Base-Phase.",
+  "2026-11-08": "Nur ausrollen. Den optionalen Koppellauf (20–25′) nur, wenn die Beine sich wirklich frisch anfühlen – sonst weglassen. Montag ist Ruhetag, Dienstag startet die Base-Phase mit dem Fahrtspiel."
  },
  "weekNotes": {
   "2026-10-26": "Erholungswoche nach dem Isartal-HM (vor Planstart): 2 Läufe mit 35 km (10,5 km locker + 24,5 km Long Run), 2 Gravel-Ausfahrten mit ~4:45 h und 1× Beine & Stabi. Alle Läufe im Grundlagenbereich (HF Ø 138–141) ohne nennenswerte HF-Drift – die Erholung vom HM ist gut verlaufen und die aerobe Basis stimmt. Einziger Punkt: der Long Run 5 Tage nach dem HM war früh, durch den Ruhetag am Samstag aber gut abgefangen. Ausblick KW 45: Mo Ruhetag, Di/Mi locker laufen + Stabi, ab Do Gardasee mit Fokus Rad. Ab Montag ordne ich alles dem Plan zu."
@@ -232,6 +254,26 @@
      {
       "t": "easy",
       "min": 150,
+      "pct": [
+       62,
+       72
+      ],
+      "label": "Grundlage"
+     }
+    ]
+   }
+  },
+  "2026-11-08-1": {
+   "modNote": "Coach: Drei lange Radtage (Do 2:55 h, Fr 2:15 h hart, Sa 3:41 h) – Sonntag nur noch kurz ausrollen.",
+   "replaced": {
+    "sport": "bike",
+    "title": "Gardasee Tag 4: Rad locker 90′",
+    "load": "easy",
+    "desc": "Nach gut 9 h Rad in drei Tagen: nur noch ausrollen, flach, unter 200 W, HF unter 125. Rückreisetag? Dann gern auch kürzer oder ganz weglassen.",
+    "steps": [
+     {
+      "t": "easy",
+      "min": 90,
       "pct": [
        62,
        72
