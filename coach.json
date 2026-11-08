@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T18:24:54.742Z",
+ "updated": "2026-11-08T11:43:45.833Z",
  "actuals": {
   "2026-11-03-1": {
    "done": true,
@@ -126,6 +126,32 @@
     "Bester 20'-Wert 253 W (79 %), beste Stunde 229 W (72 %)"
    ],
    "coach": "Intensität gut getroffen: Ø 185 W (58 % FTP) und HF 127, der lange Anstieg mit 236 W nur knapp über der Obergrenze, HF dabei ruhig bei 135. Aber 3:41 h statt 2:30 h – nach Do (2:55 h) und Fr (3x20' mit 88 %) sind das gut 9 h in drei Tagen. Die Beine wirken noch frisch (niedrige HF bergauf), trotzdem: Sonntag kurz und ganz locker, Montag Ruhetag, dann startet die Base-Phase."
+  },
+  "2026-11-08-1": {
+   "done": true,
+   "source": "strava",
+   "date": "2026-11-08",
+   "min": 184,
+   "km": 71.1,
+   "pace": null,
+   "hr": 124,
+   "maxHr": 161,
+   "watts": 171,
+   "np": null,
+   "elev": 1425,
+   "stravaId": "20906451211",
+   "note": "In der Gruppe 5×5 min progressiv mitgefahren, zum Abschluss etwas länger. Sehr gut gefühlt.",
+   "laps": [
+    "Anfahrt 53' · 173 W · HF 124",
+    "5' #1 · 308 W (96 %) · HF 150",
+    "5' #2 · 312 W (98 %) · HF 150",
+    "5' #3 · 318 W (99 %) · HF 153",
+    "5' #4 · 324 W (101 %) · HF 155",
+    "5' #5 · 333 W (104 %) · HF 157",
+    "Pausen je 2' · 190–224 W",
+    "Rückweg 1:41 h · 129 W · HF 116"
+   ],
+   "coach": "Sauber progressiv: 308 → 333 W (96–104 % FTP), jedes Stück stärker, HF nur von 150 auf 157 – am vierten Radtag in Folge ist das ein starkes Zeichen. Zusammen mit den 3×20' vom Freitag (283 W bei HF 148) spricht einiges dafür, dass die FTP über 320 W liegt. Geplant war allerdings Ausrollen: mit 3:04 h und Schwellenarbeit wurde die Gardasee-Woche deutlich härter als für eine Übergangswoche vorgesehen. Montag Ruhetag ist jetzt wirklich Pflicht, Dienstag etwas entschärft."
   }
  },
  "extras": {
@@ -201,7 +227,8 @@
   "2026-11-08": "Nur ausrollen. Den optionalen Koppellauf (20–25′) nur, wenn die Beine sich wirklich frisch anfühlen – sonst weglassen. Montag ist Ruhetag, Dienstag startet die Base-Phase mit dem Fahrtspiel."
  },
  "weekNotes": {
-  "2026-10-26": "Erholungswoche nach dem Isartal-HM (vor Planstart): 2 Läufe mit 35 km (10,5 km locker + 24,5 km Long Run), 2 Gravel-Ausfahrten mit ~4:45 h und 1× Beine & Stabi. Alle Läufe im Grundlagenbereich (HF Ø 138–141) ohne nennenswerte HF-Drift – die Erholung vom HM ist gut verlaufen und die aerobe Basis stimmt. Einziger Punkt: der Long Run 5 Tage nach dem HM war früh, durch den Ruhetag am Samstag aber gut abgefangen. Ausblick KW 45: Mo Ruhetag, Di/Mi locker laufen + Stabi, ab Do Gardasee mit Fokus Rad. Ab Montag ordne ich alles dem Plan zu."
+  "2026-10-26": "Erholungswoche nach dem Isartal-HM (vor Planstart): 2 Läufe mit 35 km (10,5 km locker + 24,5 km Long Run), 2 Gravel-Ausfahrten mit ~4:45 h und 1× Beine & Stabi. Alle Läufe im Grundlagenbereich (HF Ø 138–141) ohne nennenswerte HF-Drift – die Erholung vom HM ist gut verlaufen und die aerobe Basis stimmt. Einziger Punkt: der Long Run 5 Tage nach dem HM war früh, durch den Ruhetag am Samstag aber gut abgefangen. Ausblick KW 45: Mo Ruhetag, Di/Mi locker laufen + Stabi, ab Do Gardasee mit Fokus Rad. Ab Montag ordne ich alles dem Plan zu.",
+  "2026-11-02": "KW 45 (Übergang): Laufen 20,3 km in 2 Einheiten (Soll ~30 km, geplant reduziert wegen Gardasee), beide sehr kontrolliert bei Ø 5:00/km und HF 137–138 ohne Drift. Stabi 1× erledigt. Rad 4 Tage, rund 12 h und ~5.600 hm – Umfang wie geplant, Intensität deutlich höher: Do 60' @ 79 %, Fr 3×20' @ 88 %, Sa 3:41 h Grundlage, So 5×5' progressiv bis 104 % FTP. Für eine Übergangswoche nach dem HM war das zu viel Qualität, die Daten zeigen aber keine Ermüdung (HF bergauf niedrig, Leistung am vierten Tag noch steigend). Auffällig stark auf dem Rad: 283 W über 20' bei HF 148 und 333 W über 5' – Vorschlag: FTP-Check (z. B. 20'-Test) in einer der nächsten Wochen, möglicherweise liegt die FTP bei ~330–335 W. Ausblick KW 46 (Base, 48 km Lauf): Montag komplett frei, Dienstag Fahrtspiel 8×1'/1' nach Gefühl, Rad unter der Woche ruhig halten. Ab jetzt hat der Lauf wieder Vorrang."
  },
  "adjustments": {
   "2026-11-03-1": {
@@ -282,6 +309,51 @@
      }
     ]
    }
+  },
+  "2026-11-10-1": {
+   "modNote": "Coach: Nach vier intensiven Radtagen (u. a. 3×20′ @ 88 % und 5×5′ bis 104 % FTP) erster Laufreiz der Base-Phase etwas kleiner: 8 statt 10 Wiederholungen. Zügig nach Gefühl, nicht nach Uhr.",
+   "replaced": {
+    "sport": "run",
+    "title": "Fahrtspiel 8× 1'/1'",
+    "load": "hard",
+    "desc": "Lockerer Einstieg in die Intensität: 1 min zügig (≈10-km-Tempo nach Gefühl), 1 min locker traben. Rhythmus finden, nicht verbeißen.",
+    "steps": [
+     {
+      "t": "wu",
+      "zone": "E",
+      "km": 3,
+      "label": "Einlaufen"
+     },
+     {
+      "rep": 8,
+      "steps": [
+       {
+        "t": "work",
+        "zone": "10K",
+        "min": 1,
+        "label": "Zügig"
+       },
+       {
+        "t": "rec",
+        "zone": "JOG",
+        "min": 1,
+        "label": "Trabpause"
+       }
+      ]
+     },
+     {
+      "t": "cd",
+      "zone": "E",
+      "km": 3,
+      "label": "Auslaufen"
+     }
+    ]
+   }
+  },
+  "2026-11-10-2": {
+   "modNote": "Coach: Fast 12 h Rad in der Gardasee-Woche – der zusätzliche Grundlagenblock am Dienstag entfällt, Beine erholen lassen.",
+   "cancelled": true,
+   "cancelReason": "Coach: Fast 12 h Rad in der Gardasee-Woche – der zusätzliche Grundlagenblock am Dienstag entfällt, Beine erholen lassen."
   }
  }
 }

@@ -19,3 +19,4 @@ Chronologisches Protokoll der Importe, Analysen und Plananpassungen (neueste unt
 - 2026-11-06 14:20 UTC – Anpassung 2026-11-07-1: Grundlage 2:30 h statt 3:30 h mit 2×20′.
 - 2026-11-07 18:24 UTC – 07.11. Gardasee Tag 3 importiert: 3:41 h, 99,7 km, 1488 hm, 185 W (58 % FTP), HF 127 (Soll 2:30 h Grundlage). So auf 90' locker gekürzt.
 - 2026-11-07 18:24 UTC – Anpassung 2026-11-08-1: Rad locker 90′ statt 2 h.
+- 2026-11-08 11:43 UTC – 08.11. Gardasee Tag 4 importiert: 3:04 h, 71 km, 1425 hm, 171 W, HF 124; 5×5' progressiv 308–333 W (96–104 % FTP), HF 150–157 (Soll 90' locker). Di Fahrtspiel 10→8×, Di-Rad abgesagt. FTP-Check vorschlagen.
