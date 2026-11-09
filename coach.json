@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T11:43:45.833Z",
+ "updated": "2026-11-09T18:45:13.216Z",
  "actuals": {
   "2026-11-03-1": {
    "done": true,
@@ -219,12 +219,40 @@
     "coach": "Entspannte Grundlage: knapp 2 h mit Ø 196 W (61 % FTP, 2,5 W/kg) bei HF 127 – lockere Z2. Die kurzen Anstiege mit 230–270 W waren nur kurz im Tempo-Bereich, völlig ok. Nach Long Run (Fr) und Ruhetag (Sa) ein guter aktiver Abschluss der Woche. Morgen Ruhetag, der Plan startet wie vorgesehen.",
     "id": "s20818879902"
    }
+  ],
+  "2026-11-09": [
+   {
+    "source": "strava",
+    "sport": "run",
+    "title": "Lauf locker (statt Ruhetag)",
+    "min": 43,
+    "km": 8,
+    "pace": 318,
+    "hr": 136,
+    "maxHr": 142,
+    "elev": 6,
+    "stravaId": "20922727528",
+    "note": "Sehr gut erholt gefühlt, kleine Runde gelaufen.",
+    "laps": [
+     "km 1 5:17 · HF 131",
+     "km 2 5:12 · HF 138",
+     "km 3 5:17 · HF 137",
+     "km 4 5:19 · HF 137",
+     "km 5 5:19 · HF 137",
+     "km 6 5:20 · HF 138",
+     "km 7 5:21 · HF 136",
+     "km 8 5:17 · HF 135"
+    ],
+    "coach": "Wirklich locker gelaufen: 5:12–5:21/km, HF 136–138 ohne Drift – genau richtig für einen Tag nach der Gardasee-Woche. Kleiner Hinweis: Am 04.11. lagst du bei 5:00/km mit derselben HF, heute 18 s/km langsamer. Das ist ein leichtes Signal, dass die vier Radtage noch in den Beinen stecken (Regen und Abend spielen auch mit rein). Morgen beim Fahrtspiel deshalb nach Gefühl laufen; sind die Beine schwer, einfach locker durchlaufen.",
+    "id": "s20922727528"
+   }
   ]
  },
  "notes": {
   "2026-11-04": "Abends Anreise zum Gardasee: den lockeren Lauf am besten vormittags/mittags, damit noch Zeit zum Essen und Packen bleibt. Im Auto ab und zu Beine bewegen, viel trinken.",
   "2026-11-07": "Heute nur Grundlage: bergauf höchstens ~230 W, HF möglichst unter 135. Nach zwei harten Tagen holst du dir den Trainingseffekt durch Erholung – am Montag startet die Base-Phase.",
-  "2026-11-08": "Nur ausrollen. Den optionalen Koppellauf (20–25′) nur, wenn die Beine sich wirklich frisch anfühlen – sonst weglassen. Montag ist Ruhetag, Dienstag startet die Base-Phase mit dem Fahrtspiel."
+  "2026-11-08": "Nur ausrollen. Den optionalen Koppellauf (20–25′) nur, wenn die Beine sich wirklich frisch anfühlen – sonst weglassen. Montag ist Ruhetag, Dienstag startet die Base-Phase mit dem Fahrtspiel.",
+  "2026-11-10": "Montag schon 8 km gelaufen, deshalb heute nach Gefühl: die schnellen Minuten zügig, aber nicht verbissen. Fühlen sich die Beine beim Einlaufen schwer an, die Steigerungen weglassen und 8–10 km locker laufen."
  },
  "weekNotes": {
   "2026-10-26": "Erholungswoche nach dem Isartal-HM (vor Planstart): 2 Läufe mit 35 km (10,5 km locker + 24,5 km Long Run), 2 Gravel-Ausfahrten mit ~4:45 h und 1× Beine & Stabi. Alle Läufe im Grundlagenbereich (HF Ø 138–141) ohne nennenswerte HF-Drift – die Erholung vom HM ist gut verlaufen und die aerobe Basis stimmt. Einziger Punkt: der Long Run 5 Tage nach dem HM war früh, durch den Ruhetag am Samstag aber gut abgefangen. Ausblick KW 45: Mo Ruhetag, Di/Mi locker laufen + Stabi, ab Do Gardasee mit Fokus Rad. Ab Montag ordne ich alles dem Plan zu.",
