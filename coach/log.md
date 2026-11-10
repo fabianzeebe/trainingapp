@@ -21,3 +21,4 @@ Chronologisches Protokoll der Importe, Analysen und Plananpassungen (neueste unt
 - 2026-11-07 18:24 UTC – Anpassung 2026-11-08-1: Rad locker 90′ statt 2 h.
 - 2026-11-08 11:43 UTC – 08.11. Gardasee Tag 4 importiert: 3:04 h, 71 km, 1425 hm, 171 W, HF 124; 5×5' progressiv 308–333 W (96–104 % FTP), HF 150–157 (Soll 90' locker). Di Fahrtspiel 10→8×, Di-Rad abgesagt. FTP-Check vorschlagen.
 - 2026-11-09 18:45 UTC – 09.11. Zusatzlauf am Ruhetag importiert: 8,0 km, 5:18/km, HF 136. Di Fahrtspiel bleibt (8×), Hinweis hinterlegt.
+- 2026-11-10 12:22 UTC – 10.11. Fahrtspiel 8×1'/1' importiert: 10,7 km, Reps 3:16–3:45/km (meist ~3:29), HF 153–161 (Soll 10K-Pace 3:40–3:45). Auf Wunsch: 1-min-Stücke künftig 5K-Pace (Plan v4, Pyramide 08.12.).

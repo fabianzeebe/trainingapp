@@ -12,7 +12,7 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const A = { ...DEFAULT_ATHLETE, mpPace: 241 };
 
 const PLAN_ID = 'hamburg-2027';
-const VERSION = 3;
+const VERSION = 4;
 const START = '2026-11-02';
 
 const PHASES = {

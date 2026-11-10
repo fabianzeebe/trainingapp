@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T18:45:24.872Z",
+ "updated": "2026-11-10T12:22:58.646Z",
  "actuals": {
   "2026-11-03-1": {
    "done": true,
@@ -152,6 +152,35 @@
     "Rückweg 1:41 h · 129 W · HF 116"
    ],
    "coach": "Sauber progressiv: 308 → 333 W (96–104 % FTP), jedes Stück stärker, HF nur von 150 auf 157 – am vierten Radtag in Folge ist das ein starkes Zeichen. Zusammen mit den 3×20' vom Freitag (283 W bei HF 148) spricht einiges dafür, dass die FTP über 320 W liegt. Geplant war allerdings Ausrollen: mit 3:04 h und Schwellenarbeit wurde die Gardasee-Woche deutlich härter als für eine Übergangswoche vorgesehen. Montag Ruhetag ist jetzt wirklich Pflicht, Dienstag etwas entschärft."
+  },
+  "2026-11-10-1": {
+   "done": true,
+   "source": "strava",
+   "date": "2026-11-10",
+   "min": 53,
+   "km": 10.7,
+   "pace": 295,
+   "hr": 142,
+   "maxHr": 170,
+   "watts": null,
+   "np": null,
+   "elev": 18,
+   "stravaId": "20931913304",
+   "note": "Beine sehr gut. Intervalle schneller als geplant, hätte noch 2 mehr laufen können.",
+   "laps": [
+    "Einlaufen 3 km · 5:04/km · HF 135",
+    "1' #1 3:45/km · HF 153",
+    "1' #2 3:30/km · HF 156",
+    "1' #3 3:30/km · HF 157",
+    "1' #4 3:28/km · HF 157",
+    "1' #5 3:29/km · HF 158",
+    "1' #6 3:27/km · HF 160",
+    "1' #7 3:16/km · HF 161",
+    "1' #8 3:20/km · HF 158",
+    "Trabpausen 6:00–6:55/km · HF 147–156",
+    "Auslaufen 4 km · 5:12/km · HF 138"
+   ],
+   "coach": "Erster Einstieg in die Intensität und gleich sehr souverän: nach einem Anlauf-Stück (3:45) gleichmäßig 3:27–3:30/km, zum Schluss 3:16–3:20 – das ist eher 5-km- als 10-km-Tempo. Die HF bleibt mit 153–161 unter der Schwelle (LTHR 169), die Beine waren also nicht am Limit, das passt zu deinem Gefühl. Die 1-min-Stücke sind künftig auf 5-km-Pace (3:31–3:36) geplant; schneller als ~3:25 bringt bei 1 min in der Base-Phase keinen Zusatznutzen, sondern nur mehr Belastung."
   }
  },
  "extras": {

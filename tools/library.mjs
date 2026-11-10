@@ -45,8 +45,8 @@ export const RUN = {
     R({
       title: `Fahrtspiel ${n}× 1'/1'`,
       load: 'hard',
-      desc: 'Lockerer Einstieg in die Intensität: 1 min zügig (≈10-km-Tempo nach Gefühl), 1 min locker traben. Rhythmus finden, nicht verbeißen.',
-      steps: [wu(3), rep(n, run('10K', { min: 1 }, 'Zügig'), jog({ min: 1 })), cd(3)],
+      desc: 'Lockerer Einstieg in die Intensität: 1 min zügig (≈5-km-Tempo), 1 min locker traben. Rhythmus finden, nicht verbeißen. Die HF erreicht in 1 min nicht ihren Zielwert – nach Pace und Gefühl laufen.',
+      steps: [wu(3), rep(n, run('5K', { min: 1 }, 'Zügig'), jog({ min: 1 })), cd(3)],
     }),
   hills60: ({ n = 8 } = {}) =>
     R({
@@ -73,16 +73,16 @@ export const RUN = {
     R({
       title: "Pyramiden-Fahrtspiel 1-2-3-4-3-2-1'",
       load: 'hard',
-      desc: 'Kurze Abschnitte (1–2 min) im 10-km-Tempo, lange (3–4 min) im HM-Tempo. Pause jeweils halb so lang locker traben.',
+      desc: 'Die 1-min-Abschnitte im 5-km-Tempo, die 2-min-Abschnitte im 10-km-Tempo, die langen (3–4 min) im HM-Tempo. Pause jeweils halb so lang locker traben. Bei den kurzen Stücken nach Pace laufen, die HF hinkt hinterher.',
       steps: [
         wu(3),
-        run('10K', { min: 1 }), jog({ min: 0.5 }),
+        run('5K', { min: 1 }), jog({ min: 0.5 }),
         run('10K', { min: 2 }), jog({ min: 1 }),
         run('HM', { min: 3 }), jog({ min: 1.5 }),
         run('HM', { min: 4 }), jog({ min: 2 }),
         run('HM', { min: 3 }), jog({ min: 1.5 }),
         run('10K', { min: 2 }), jog({ min: 1 }),
-        run('10K', { min: 1 }),
+        run('5K', { min: 1 }),
         cd(3),
       ],
     }),

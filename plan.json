@@ -1,7 +1,7 @@
 {
  "planId": "hamburg-2027",
- "version": 3,
- "generated": "2026-11-05",
+ "version": 4,
+ "generated": "2026-11-10",
  "goal": {
   "name": "Haspa Marathon Hamburg",
   "date": "2027-04-25",
@@ -519,7 +519,7 @@
    "sport": "run",
    "title": "Fahrtspiel 10× 1'/1'",
    "load": "hard",
-   "desc": "Lockerer Einstieg in die Intensität: 1 min zügig (≈10-km-Tempo nach Gefühl), 1 min locker traben. Rhythmus finden, nicht verbeißen.",
+   "desc": "Lockerer Einstieg in die Intensität: 1 min zügig (≈5-km-Tempo), 1 min locker traben. Rhythmus finden, nicht verbeißen. Die HF erreicht in 1 min nicht ihren Zielwert – nach Pace und Gefühl laufen.",
    "steps": [
     {
      "t": "wu",
@@ -532,7 +532,7 @@
      "steps": [
       {
        "t": "work",
-       "zone": "10K",
+       "zone": "5K",
        "min": 1,
        "label": "Zügig"
       },
@@ -1516,7 +1516,7 @@
    "sport": "run",
    "title": "Pyramiden-Fahrtspiel 1-2-3-4-3-2-1'",
    "load": "hard",
-   "desc": "Kurze Abschnitte (1–2 min) im 10-km-Tempo, lange (3–4 min) im HM-Tempo. Pause jeweils halb so lang locker traben.",
+   "desc": "Die 1-min-Abschnitte im 5-km-Tempo, die 2-min-Abschnitte im 10-km-Tempo, die langen (3–4 min) im HM-Tempo. Pause jeweils halb so lang locker traben. Bei den kurzen Stücken nach Pace laufen, die HF hinkt hinterher.",
    "steps": [
     {
      "t": "wu",
@@ -1526,7 +1526,7 @@
     },
     {
      "t": "work",
-     "zone": "10K",
+     "zone": "5K",
      "min": 1
     },
     {
@@ -1592,7 +1592,7 @@
     },
     {
      "t": "work",
-     "zone": "10K",
+     "zone": "5K",
      "min": 1
     },
     {
