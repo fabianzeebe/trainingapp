@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11T09:24:59.028Z",
+ "updated": "2026-11-11T18:25:48.231Z",
  "actuals": {
   "2026-11-03-1": {
    "done": true,
@@ -200,6 +200,32 @@
     "Einbeiniges Kreuzheben (RDL)": "20 kg KB",
     "Exzentrisches Wadenheben (langsam ab)": "10 kg KB"
    }
+  },
+  "2026-11-11-2": {
+   "done": true,
+   "source": "strava",
+   "date": "2026-11-11",
+   "min": 60,
+   "km": 30.9,
+   "pace": null,
+   "hr": 131,
+   "maxHr": 145,
+   "watts": 210,
+   "np": null,
+   "elev": 0,
+   "stravaId": "20950050517",
+   "note": "Rolle, GA1-Pyramide. Sehr gut und rund angefühlt.",
+   "laps": [
+    "10' · 185 W · HF 118",
+    "5' · 208 W · HF 125",
+    "6' · 217 W · HF 130",
+    "7' · 230 W · HF 135",
+    "8' · 238 W · HF 139",
+    "7' · 230 W · HF 140",
+    "6' · 208 W · HF 135",
+    "10' · 182 W · HF 129"
+   ],
+   "coach": "Schön aufgebaute Grundlagen-Pyramide: Ø 210 W (66 % FTP), Spitze 238 W (74 %) – knapp über dem Grundlagenbereich, aber kontrolliert. Trittfrequenz 83–87 rpm, sehr rund. Die HF ist auf der zweiten Hälfte bei gleichen Watt ~5 Schläge höher (230 W: 135 → 140), normales Driften auf der Rolle (Wärme). Morgen 7 km locker + Sweet Spot 3×12'."
   }
  },
  "extras": {
