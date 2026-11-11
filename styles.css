@@ -343,3 +343,7 @@ code { background: var(--card2); padding: 2px 5px; border-radius: 5px; font-size
 .coach-box p { margin: 4px 0 6px; white-space: pre-wrap; }
 .laps { font-size: 13px; margin-top: 6px; font-variant-numeric: tabular-nums; }
 .laps small { color: var(--muted); display: block; margin-bottom: 2px; }
+.ex-row { display: flex; align-items: center; gap: 10px; }
+.ex-row > span { flex: 1; min-width: 0; }
+.ex-row .ex-w { width: 96px; flex: none; padding: 6px 8px; font-size: 16px; }
+.ex-last { display: block; color: var(--muted); font-size: 12px; }

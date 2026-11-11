@@ -49,4 +49,4 @@ Marathon hat Vorrang, Rad zum Fitnesserhalt/-aufbau, 1× Gym (Stabi) pro Woche, 
   { "type": "unadjust", "sessionId": "2026-11-05-2" }
 ]
 ```
-`pace` in Sekunden/km, `min` in Minuten, `km` in km. Für `expr` stehen `RUN`, `BIKE`, `gym` aus `tools/library.mjs` zur Verfügung.
+`pace` in Sekunden/km, `min` in Minuten, `km` in km. Bei Stabi optional `"weights": { "Bulgarian Split Squat": "20 kg KB" }` – Schlüssel = Übungsname vor „ – “ (wie in `tools/library.mjs`); die App zeigt den letzten Wert bei der nächsten gleichen Übung als „zuletzt …“. Für `expr` stehen `RUN`, `BIKE`, `gym` aus `tools/library.mjs` zur Verfügung.

@@ -26,6 +26,20 @@ const app = {
 };
 
 // ---------- Hilfen ----------
+// Gewichte bei Stabi-Übungen: Schlüssel = Übungsname ohne Satz-/Wdh.-Angabe
+const exKey = (e) => e.split(' – ')[0].replace(/^·\s*/, '').trim();
+const exWeightable = (e) => !/^(Aufwärmen|Nur leichte|Abschluss|Mobility|Zirkel)/.test(e) && !e.trim().endsWith(':');
+function lastWeight(key, exceptId) {
+  let best = null;
+  for (const src of [app.state.coach?.actuals || {}, app.state.actuals || {}]) {
+    for (const [id, act] of Object.entries(src)) {
+      if (id === exceptId || !act?.weights?.[key]) continue;
+      const d = act.date || id.slice(0, 10);
+      if (!best || d >= best.date) best = { w: act.weights[key], date: d };
+    }
+  }
+  return best;
+}
 const today = () => C.todayStr();
 const A = () => S.athleteOf(app.plan, app.state);
 const save = () => {
@@ -572,7 +586,14 @@ function openSession(id) {
 
   const details =
     s.sport === 'gym'
-      ? `<ul class="ex">${(s.exercises || []).map((e) => `<li>${h(e)}</li>`).join('')}</ul>`
+      ? `<ul class="ex">${(s.exercises || [])
+          .map((e) => {
+            if (!exWeightable(e)) return `<li>${h(e)}</li>`;
+            const key = exKey(e);
+            const last = lastWeight(key, id);
+            return `<li class="ex-row"><span>${h(e)}${last ? `<small class="ex-last">zuletzt ${h(last.w)} · ${C.fmtDayMonth(last.date)}</small>` : ''}</span><input class="input ex-w" data-ex="${h(key)}" value="${h(act.weights?.[key] || '')}" placeholder="kg" aria-label="Gewicht ${h(key)}"></li>`;
+          })
+          .join('')}</ul>`
       : s.sport === 'race'
         ? `<div class="race-box">🏁 ${C.fmtKm(s.raceKm, 3)} km · Zielpace <b>${C.fmtPace(s.racePace)}/km</b> · Zielzeit <b>${C.fmtMin(t.min)}</b></div>`
         : `<div class="steps">${s.steps.map((x) => stepHtml(x, s.sport, a)).join('')}</div>`;
@@ -643,6 +664,9 @@ function openSession(id) {
         const mm = num(fd.get('m')) || 0;
         const v = { min: hh * 60 + mm || null, km: num(fd.get('km')), watts: num(fd.get('watts')), hr: num(fd.get('hr')), note: (fd.get('note') || '').trim() };
         if (isRun) Object.assign(v, solveRun(v.min, v.km, parsePaceInput(fd.get('pace'))));
+        const w = {};
+        $$('.ex-w', sheet).forEach((i) => i.value.trim() && (w[i.dataset.ex] = i.value.trim()));
+        v.weights = Object.keys(w).length ? w : undefined;
         return v;
       };
       const calc = () => {
@@ -667,7 +691,7 @@ function openSession(id) {
           const v = read();
           const min = v.min ? Math.round(v.min) : Math.round(t.min);
           const km = v.km ? round2(v.km) : isRun ? Math.round(t.km * 10) / 10 : null;
-          app.state.actuals[id] = { done: true, date: s.date, min, km, pace: isRun && km ? (v.km && v.pace ? v.pace : (min * 60) / km) : null, watts: v.watts, hr: v.hr, rpe, note: v.note, ts: Date.now() };
+          app.state.actuals[id] = { done: true, date: s.date, min, km, pace: isRun && km ? (v.km && v.pace ? v.pace : (min * 60) / km) : null, watts: v.watts, hr: v.hr, rpe, note: v.note, weights: v.weights, ts: Date.now() };
           save();
           closeSheet();
           render();
@@ -675,7 +699,7 @@ function openSession(id) {
         });
         $('#as-planned', sheet).onclick = () => {
           const v = read();
-          app.state.actuals[id] = { done: true, date: s.date, min: Math.round(t.min), km: isRun ? Math.round(t.km * 10) / 10 : null, watts: v.watts, hr: v.hr, rpe, note: v.note, ts: Date.now() };
+          app.state.actuals[id] = { done: true, date: s.date, min: Math.round(t.min), km: isRun ? Math.round(t.km * 10) / 10 : null, watts: v.watts, hr: v.hr, rpe, note: v.note, weights: v.weights, ts: Date.now() };
           save();
           closeSheet();
           render();

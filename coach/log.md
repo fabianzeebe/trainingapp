@@ -23,3 +23,4 @@ Chronologisches Protokoll der Importe, Analysen und Plananpassungen (neueste unt
 - 2026-11-09 18:45 UTC – 09.11. Zusatzlauf am Ruhetag importiert: 8,0 km, 5:18/km, HF 136. Di Fahrtspiel bleibt (8×), Hinweis hinterlegt.
 - 2026-11-10 12:22 UTC – 10.11. Fahrtspiel 8×1'/1' importiert: 10,7 km, Reps 3:16–3:45/km (meist ~3:29), HF 153–161 (Soll 10K-Pace 3:40–3:45). Auf Wunsch: 1-min-Stücke künftig 5K-Pace (Plan v4, Pyramide 08.12.).
 - 2026-11-11 08:24 UTC – 11.11. Stabi B importiert (60', HF 109).
+- 2026-11-11 09:24 UTC – 11.11. Stabi-Gewichte ergänzt: Bulgarian Split Squat 20 kg KB, RDL 20 kg KB, exz. Wadenheben 10 kg KB.

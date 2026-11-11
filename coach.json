@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11T08:24:08.108Z",
+ "updated": "2026-11-11T09:24:59.028Z",
  "actuals": {
   "2026-11-03-1": {
    "done": true,
@@ -194,7 +194,12 @@
    "watts": null,
    "np": null,
    "stravaId": "20943081177",
-   "coach": "Stabi B komplett, 60 statt 50 min – gut investierte Zeit. Ø HF 109 zeigt, dass es reine Kraft-/Stabilitätsarbeit war, keine Ausdauerbelastung. Einbein-Kraft und Fußarbeit sind die Versicherung für die steigenden Laufumfänge der nächsten Wochen."
+   "coach": "Stabi B komplett, 60 statt 50 min – gut investierte Zeit. Ø HF 109 zeigt, dass es reine Kraft-/Stabilitätsarbeit war, keine Ausdauerbelastung. Einbein-Kraft und Fußarbeit sind die Versicherung für die steigenden Laufumfänge der nächsten Wochen.",
+   "weights": {
+    "Bulgarian Split Squat": "20 kg KB",
+    "Einbeiniges Kreuzheben (RDL)": "20 kg KB",
+    "Exzentrisches Wadenheben (langsam ab)": "10 kg KB"
+   }
   }
  },
  "extras": {
