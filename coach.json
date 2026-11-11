@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T12:22:58.646Z",
+ "updated": "2026-11-11T08:24:08.108Z",
  "actuals": {
   "2026-11-03-1": {
    "done": true,
@@ -181,6 +181,20 @@
     "Auslaufen 4 km · 5:12/km · HF 138"
    ],
    "coach": "Erster Einstieg in die Intensität und gleich sehr souverän: nach einem Anlauf-Stück (3:45) gleichmäßig 3:27–3:30/km, zum Schluss 3:16–3:20 – das ist eher 5-km- als 10-km-Tempo. Die HF bleibt mit 153–161 unter der Schwelle (LTHR 169), die Beine waren also nicht am Limit, das passt zu deinem Gefühl. Die 1-min-Stücke sind künftig auf 5-km-Pace (3:31–3:36) geplant; schneller als ~3:25 bringt bei 1 min in der Base-Phase keinen Zusatznutzen, sondern nur mehr Belastung."
+  },
+  "2026-11-11-1": {
+   "done": true,
+   "source": "strava",
+   "date": "2026-11-11",
+   "min": 60,
+   "km": null,
+   "pace": null,
+   "hr": 109,
+   "maxHr": 145,
+   "watts": null,
+   "np": null,
+   "stravaId": "20943081177",
+   "coach": "Stabi B komplett, 60 statt 50 min – gut investierte Zeit. Ø HF 109 zeigt, dass es reine Kraft-/Stabilitätsarbeit war, keine Ausdauerbelastung. Einbein-Kraft und Fußarbeit sind die Versicherung für die steigenden Laufumfänge der nächsten Wochen."
   }
  },
  "extras": {
