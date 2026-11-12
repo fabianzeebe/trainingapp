@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11T18:25:48.231Z",
+ "updated": "2026-11-12T10:58:24.257Z",
  "actuals": {
   "2026-11-03-1": {
    "done": true,
@@ -226,6 +226,35 @@
     "10' · 182 W · HF 129"
    ],
    "coach": "Schön aufgebaute Grundlagen-Pyramide: Ø 210 W (66 % FTP), Spitze 238 W (74 %) – knapp über dem Grundlagenbereich, aber kontrolliert. Trittfrequenz 83–87 rpm, sehr rund. Die HF ist auf der zweiten Hälfte bei gleichen Watt ~5 Schläge höher (230 W: 135 → 140), normales Driften auf der Rolle (Wärme). Morgen 7 km locker + Sweet Spot 3×12'."
+  },
+  "2026-11-12-1": {
+   "done": true,
+   "source": "strava",
+   "date": "2026-11-12",
+   "min": 55,
+   "km": 10.8,
+   "pace": 303,
+   "hr": 138,
+   "maxHr": 148,
+   "watts": null,
+   "np": null,
+   "elev": 12,
+   "stravaId": "20956260697",
+   "note": "Etwas länger gelaufen, auf niedrige HF geachtet. Nicht so gut geschlafen.",
+   "laps": [
+    "km 1 5:18 · HF 132",
+    "km 2 5:09 · HF 139",
+    "km 3 5:03 · HF 141",
+    "km 4 5:09 · HF 136",
+    "km 5 5:01 · HF 138",
+    "km 6 4:58 · HF 141",
+    "km 7 4:55 · HF 140",
+    "km 8 4:52 · HF 142",
+    "km 9 4:56 · HF 138",
+    "km 10 5:01 · HF 138",
+    "0,8 km 5:07 · HF 136"
+   ],
+   "coach": "Locker und kontrolliert: Ø 5:03/km bei HF 138, nie über 148 – trotz schlechter Nacht. Die Pace kommt wieder Richtung 5:00 bei gleicher HF wie am 04.11., die Gardasee-Müdigkeit ist raus. 10,8 statt 7 km sind ok, weil der Freitag-Lauf ohnehin locker ist. Rad am Nachmittag gekürzt (siehe Absprache)."
   }
  },
  "extras": {

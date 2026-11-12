@@ -25,3 +25,4 @@ Chronologisches Protokoll der Importe, Analysen und Plananpassungen (neueste unt
 - 2026-11-11 08:24 UTC – 11.11. Stabi B importiert (60', HF 109).
 - 2026-11-11 09:24 UTC – 11.11. Stabi-Gewichte ergänzt: Bulgarian Split Squat 20 kg KB, RDL 20 kg KB, exz. Wadenheben 10 kg KB.
 - 2026-11-11 18:25 UTC – 11.11. Rad Grundlage 60' (Rolle, Pyramide) importiert: 210 W (66 % FTP), HF 131.
+- 2026-11-12 10:58 UTC – 12.11. Lauf locker importiert: 10,8 km, 5:03/km, HF 138 (Soll 7 km).
