@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T10:58:24.257Z",
+ "updated": "2026-11-12T11:08:48.963Z",
  "actuals": {
   "2026-11-03-1": {
    "done": true,
@@ -254,7 +254,7 @@
     "km 10 5:01 · HF 138",
     "0,8 km 5:07 · HF 136"
    ],
-   "coach": "Locker und kontrolliert: Ø 5:03/km bei HF 138, nie über 148 – trotz schlechter Nacht. Die Pace kommt wieder Richtung 5:00 bei gleicher HF wie am 04.11., die Gardasee-Müdigkeit ist raus. 10,8 statt 7 km sind ok, weil der Freitag-Lauf ohnehin locker ist. Rad am Nachmittag gekürzt (siehe Absprache)."
+   "coach": "Locker und kontrolliert: Ø 5:03/km bei HF 138, nie über 148 – trotz schlechter Nacht. Die Pace kommt wieder Richtung 5:00 bei gleicher HF wie am 04.11., die Gardasee-Müdigkeit ist raus. 10,8 statt 7 km sind ok, weil der Freitag-Lauf ohnehin locker ist. Rad am Nachmittag wegen der Nacht auf 2×12′ (ca. 50 min) gekürzt."
   }
  },
  "extras": {
@@ -485,6 +485,62 @@
    "modNote": "Coach: Fast 12 h Rad in der Gardasee-Woche – der zusätzliche Grundlagenblock am Dienstag entfällt, Beine erholen lassen.",
    "cancelled": true,
    "cancelReason": "Coach: Fast 12 h Rad in der Gardasee-Woche – der zusätzliche Grundlagenblock am Dienstag entfällt, Beine erholen lassen."
+  },
+  "2026-11-12-2": {
+   "modNote": "Coach: Schlecht geschlafen – auf Wunsch gekürzt: 2×12′ statt 3×12′, ca. 50 statt 91 min, Watt am unteren Ende.",
+   "replaced": {
+    "sport": "bike",
+    "title": "Sweet Spot 2× 12' (gekürzt)",
+    "load": "hard",
+    "desc": "Nach schlechter Nacht gekürzt: 2 statt 3 Blöcke, Watt am unteren Ende (282–288 W). Abbruchregel: HF im ersten Block dauerhaft über 150 oder 282 W fühlen sich zäh an → Rest locker in der Grundlage fahren.",
+    "steps": [
+     {
+      "t": "wu",
+      "min": 12,
+      "pct": [
+       50,
+       69
+      ],
+      "label": "Einfahren (steigernd)"
+     },
+     {
+      "t": "work",
+      "min": 12,
+      "pct": [
+       88,
+       90
+      ],
+      "label": "Sweet Spot"
+     },
+     {
+      "t": "rec",
+      "min": 5,
+      "pct": [
+       47,
+       53
+      ],
+      "label": "Locker"
+     },
+     {
+      "t": "work",
+      "min": 12,
+      "pct": [
+       88,
+       90
+      ],
+      "label": "Sweet Spot"
+     },
+     {
+      "t": "cd",
+      "min": 9,
+      "pct": [
+       45,
+       55
+      ],
+      "label": "Ausfahren"
+     }
+    ]
+   }
   }
  }
 }
