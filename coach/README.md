@@ -11,6 +11,10 @@ Marathon hat Vorrang, Rad zum Fitnesserhalt/-aufbau, 1× Gym (Stabi) pro Woche, 
   Die App lädt `coach.json` beim Öffnen. Einträge, die der Athlet in der App selbst macht, haben Vorrang.
 - Das Repository ist **öffentlich** (bewusst so entschieden). Keine sensiblen Details (Gesundheit über Trainingsbezug hinaus, Orte, Dritte) in Kommentare schreiben.
 
+## Lokale Änderungen des Athleten („An Coach senden“)
+Verschiebungen, eigene Ist-Werte und Notizen speichert die App nur auf dem iPhone. Der Athlet schickt sie über **Mehr → An Coach senden** (oder Button unter der Woche) als Text in den Chat.
+Text in eine Datei im Scratchpad speichern und `node tools/coach.mjs sync <datei>` ausführen → schreibt `coach/app-state.json` (Verschiebungen/Absagen + Ist-Werte **ohne Notizen**, Repo ist öffentlich). `week`/`day` berücksichtigen diesen Stand automatisch. Notizen nur im Chat lesen, nicht ins Repo übernehmen. Danach committen.
+
 ## Täglicher Abgleich (auf Zuruf oder automatisch gegen 21:30)
 1. `git pull`, dann `node tools/coach.mjs week <heute>`: Soll der Woche und bereits importierte Einheiten ansehen.
 2. Strava: `list_activities` für den Tag (bzw. seit dem letzten Import, siehe `coach/log.md`).

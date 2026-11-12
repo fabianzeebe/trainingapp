@@ -347,3 +347,4 @@ code { background: var(--card2); padding: 2px 5px; border-radius: 5px; font-size
 .ex-row > span { flex: 1; min-width: 0; }
 .ex-row .ex-w { width: 96px; flex: none; padding: 6px 8px; font-size: 16px; }
 .ex-last { display: block; color: var(--muted); font-size: 12px; }
+#sync-text { max-height: 40vh; overflow: auto !important; font-size: 13px; }

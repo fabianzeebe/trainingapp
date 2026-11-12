@@ -6,6 +6,7 @@
 //   node tools/coach.mjs adjust <id> '<expr>' "Begründung"   Einheit ersetzen, z. B. 'RUN.easy({ km: 10 })'
 //   node tools/coach.mjs cancel <id> "Begründung"
 //   node tools/coach.mjs unadjust <id>            Coach-Anpassung zurücknehmen
+//   node tools/coach.mjs sync datei.txt           „An Coach senden“-Text aus der App einlesen (→ coach/app-state.json)
 import { readFileSync, writeFileSync, existsSync, appendFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
@@ -17,6 +18,9 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const PLAN = JSON.parse(readFileSync(join(ROOT, 'plan.json'), 'utf8'));
 const COACH_FILE = join(ROOT, 'coach.json');
 const LOG_FILE = join(ROOT, 'coach', 'log.md');
+const APP_STATE_FILE = join(ROOT, 'coach', 'app-state.json');
+// Stand der App des Athleten (Verschiebungen/Absagen + eigene Ist-Werte, ohne Notizen), per „An Coach senden“
+const appState = () => (existsSync(APP_STATE_FILE) ? JSON.parse(readFileSync(APP_STATE_FILE, 'utf8')) : { overrides: {}, actuals: {} });
 const A = { ...C.DEFAULT_ATHLETE, ...PLAN.athlete };
 
 const emptyCoach = () => ({ updated: null, actuals: {}, extras: {}, notes: {}, weekNotes: {}, adjustments: {} });
@@ -49,14 +53,18 @@ function printDay(d, map, coach) {
     if (s.steps?.length) console.log(`      ${s.steps.map((x) => stepText(x, s.sport)).join(' → ')}`);
     const act = coach.actuals[s.id];
     if (act) console.log(`      IST: ${JSON.stringify({ ...act, laps: act.laps?.length })}`);
+    const own = appState().actuals?.[s.id];
+    if (own) console.log(`      IST (App): ${JSON.stringify(own)}`);
   }
   for (const x of coach.extras[d] || []) console.log(`  [Zusatz ${x.id}] ${x.sport} – ${x.title}: ${JSON.stringify({ ...x, laps: x.laps?.length })}`);
   if (coach.notes[d]) console.log(`  Coach-Notiz: ${coach.notes[d]}`);
 }
 function printWeek(day) {
   const coach = load();
-  const map = byDate(effectiveSessions(PLAN, { overrides: {}, coach }));
+  const app = appState();
+  const map = byDate(effectiveSessions(PLAN, { overrides: app.overrides || {}, coach }));
   const mon = C.mondayOf(day);
+  if (app.at) console.log(`(App-Stand vom ${app.at.slice(0, 16).replace('T', ' ')} UTC berücksichtigt)`);
   const w = PLAN.weeks.find((x) => x.start === mon);
   console.log(`KW ${C.isoWeek(mon)} ab ${mon} – Phase ${w?.phase ?? '–'}${w?.deload ? ' (Entlastung)' : ''} – Ziel ${w?.runKm ?? '?'} km Lauf, ${w?.bikeH ?? '?'} h Rad`);
   if (w?.focus) console.log(`Fokus: ${w.focus}`);
@@ -125,10 +133,20 @@ const [cmd, ...args] = process.argv.slice(2);
 if (cmd === 'week') printWeek(args[0] || C.todayStr());
 else if (cmd === 'day') {
   const coach = load();
-  printDay(args[0], byDate(effectiveSessions(PLAN, { overrides: {}, coach })), coach);
+  printDay(args[0], byDate(effectiveSessions(PLAN, { overrides: appState().overrides || {}, coach })), coach);
 } else if (cmd === 'apply') apply(JSON.parse(readFileSync(args[0], 'utf8')));
 else if (cmd === 'adjust') apply([{ type: 'adjust', sessionId: args[0], expr: args[1], reason: args[2], log: `Anpassung ${args[0]}: ${args[2]}` }]);
 else if (cmd === 'cancel') apply([{ type: 'adjust', sessionId: args[0], cancel: true, reason: args[1], log: `Abgesagt ${args[0]}: ${args[1]}` }]);
 else if (cmd === 'unadjust') apply([{ type: 'unadjust', sessionId: args[0], log: `Anpassung ${args[0]} zurückgenommen` }]);
-else if (cmd === 'init') existsSync(COACH_FILE) ? console.log('coach.json existiert') : store(emptyCoach());
+else if (cmd === 'sync') {
+  const txt = readFileSync(args[0], 'utf8');
+  const i = txt.lastIndexOf('#coachsync ');
+  if (i < 0) throw new Error('Keine #coachsync-Zeile gefunden');
+  const data = JSON.parse(txt.slice(i + 11).trim());
+  const keep = ({ note, ...rest }) => rest; // Notizen nicht ins öffentliche Repo
+  const actuals = Object.fromEntries(Object.entries(data.actuals || {}).map(([k, v]) => [k, keep(v)]));
+  writeFileSync(APP_STATE_FILE, JSON.stringify({ at: data.at, planVersion: data.planVersion, overrides: data.overrides || {}, actuals }, null, 1) + '\n');
+  console.log(txt.slice(0, i).trim());
+  console.log(`\ncoach/app-state.json aktualisiert: ${Object.keys(data.overrides || {}).length} Änderungen, ${Object.keys(actuals).length} Ist-Einträge`);
+} else if (cmd === 'init') existsSync(COACH_FILE) ? console.log('coach.json existiert') : store(emptyCoach());
 else console.log(readFileSync(fileURLToPath(import.meta.url), 'utf8').split('\n').slice(0, 9).join('\n'));

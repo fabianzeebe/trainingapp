@@ -300,7 +300,8 @@ function renderWeek() {
   <div class="days" id="days">
     ${dates.map((d) => dayCard(d, map.get(d) || [], a)).join('')}
   </div>
-  <p class="hint">Tipp: Einheit am Griff ⠿ festhalten und auf einen anderen Tag ziehen, um sie zu verschieben.</p>`;
+  <p class="hint">Tipp: Einheit am Griff ⠿ festhalten und auf einen anderen Tag ziehen, um sie zu verschieben.</p>
+  <button class="btn ghost block" id="send-coach">🧑‍🏫 Änderungen an Coach senden</button>`;
 }
 
 function illnessOn(d) {
@@ -527,6 +528,12 @@ function renderMore() {
       <li>Optional zusätzlich die Aktion <b>„Mitteilung zeigen“</b>: „Zeit für den Wochenabgleich 📋“.</li>
     </ol>
     <p class="muted small">Sonntags ab 16 Uhr erscheint außerdem ein Hinweis in der Wochenansicht.</p>
+  </div>
+
+  <div class="card">
+    <h3>🧑‍🏫 An Coach senden</h3>
+    <p class="muted small">Verschiebungen, eigene Ist-Werte und Notizen liegen nur auf diesem iPhone. Als Text kopieren und im Chat mit Claude einfügen, damit der Coach sie kennt.</p>
+    <button class="btn block" id="send-coach">An Coach senden</button>
   </div>
 
   <div class="card">
@@ -1110,6 +1117,7 @@ function onViewClick(e) {
   if (id === 'add-ill') return openIllness(null);
   if (id === 'save-settings') return saveSettings();
   if (id === 'export') return doExport();
+  if (id === 'send-coach') return openCoachSync();
   if (id === 'reload-plan') return loadPlan(true);
   if (id === 'copy-url') {
     navigator.clipboard?.writeText($('#review-url').textContent).then(() => toast('Link kopiert'));
@@ -1151,6 +1159,98 @@ function saveSettings() {
   save();
   render();
   toast('Gespeichert – alle Pace-, Watt- und HF-Vorgaben sind neu berechnet');
+}
+
+// ---------- An Coach senden ----------
+// Lokale Änderungen (nur auf dem Gerät) als Text für den Chat mit dem Coach.
+// Die letzte Zeile „#coachsync {…}“ liest tools/coach.mjs maschinell ein.
+function buildCoachSync() {
+  const st = app.state;
+  const t = today();
+  const from = C.addDays(t, -14);
+  const a = A();
+  const sess = new Map(app.plan.sessions.map((s) => [s.id, s]));
+  const dl = (d) => `${C.DAY_SHORT[C.weekday(d)]} ${C.fmtDayMonth(d)}`;
+  const recent = (d) => d && d >= from;
+
+  const overrides = {};
+  for (const [id, o] of Object.entries(st.overrides || {})) {
+    const s = sess.get(id);
+    if (s && (recent(s.date) || recent(o.date))) overrides[id] = o;
+  }
+  const actuals = {};
+  for (const [id, act] of Object.entries(st.actuals || {})) if (recent(act.date || id.slice(0, 10))) actuals[id] = act;
+  const pick = (obj) => Object.fromEntries(Object.entries(obj || {}).filter(([d]) => recent(d)));
+  const extras = pick(st.extras);
+  const notes = pick(st.notes);
+  const weekNotes = pick(st.weekNotes);
+  const illnesses = (st.illnesses || []).filter((i) => recent(i.end));
+  const settings = st.settings || {};
+
+  const L = [`Trainingsapp → Coach · Stand ${dl(t)}, ${new Date().toTimeString().slice(0, 5)} Uhr`, '', 'Änderungen am Plan:'];
+  const ovLines = Object.entries(overrides).map(([id, o]) => {
+    const s = sess.get(id);
+    const parts = [];
+    if (o.date) parts.push(`${dl(s.date)} → ${dl(o.date)}`);
+    if (o.cancelled) parts.push(o.cancelReason || 'abgesagt');
+    if (o.replaced) parts.push(`ersetzt durch „${o.replaced.title}“`);
+    return `- ${s.title}: ${parts.join(', ') || 'angepasst'}`;
+  });
+  L.push(...(ovLines.length ? ovLines : ['- keine']));
+  const actLines = Object.entries(actuals).map(([id, act]) => {
+    const s = sess.get(id);
+    const w = act.weights ? ` · Gewichte: ${Object.entries(act.weights).map(([k, v]) => `${k} ${v}`).join(', ')}` : '';
+    return `- ${dl(act.date || s?.date)} ${s?.title || id}: ${act.done ? actualSummary(act, s?.sport, a) : 'nicht gemacht'}${act.rpe ? ` · RPE ${act.rpe}` : ''}${w}${act.note ? ` · „${act.note}“` : ''}`;
+  });
+  if (actLines.length) L.push('', 'Eigene Ist-Einträge:', ...actLines);
+  const exLines = Object.entries(extras).flatMap(([d, list]) => list.map((x) => `- ${dl(d)} ${x.title || x.sport}: ${actualSummary({ ...x, done: true }, x.sport, a)}${x.note ? ` · „${x.note}“` : ''}`));
+  if (exLines.length) L.push('', 'Eigene Zusatzeinheiten:', ...exLines);
+  const noteLines = Object.entries(notes).map(([d, n]) => `- ${dl(d)}: ${n}`);
+  if (noteLines.length) L.push('', 'Tagesnotizen:', ...noteLines);
+  const wnLines = Object.entries(weekNotes).filter(([, w]) => w.text).map(([d, w]) => `- KW ab ${dl(d)}: ${w.text}`);
+  if (wnLines.length) L.push('', 'Wochenkommentare:', ...wnLines);
+  if (illnesses.length) L.push('', 'Krankheit/Verletzung:', ...illnesses.map((i) => `- ${E.ILLNESS_TYPES[i.type]?.short || i.type} ${C.fmtDayMonth(i.start)}–${C.fmtDayMonth(i.end)}${i.note ? ` · ${i.note}` : ''}`));
+  if (Object.keys(settings).length) L.push('', `Eigene Leistungswerte: ${Object.entries(settings).map(([k, v]) => `${k} ${v}`).join(', ')}`);
+
+  const data = { v: 1, at: new Date().toISOString(), planVersion: app.plan.version, overrides, actuals, extras, notes, weekNotes, illnesses, settings };
+  L.push('', `#coachsync ${JSON.stringify(data)}`);
+  return L.join('\n');
+}
+
+function openCoachSync() {
+  const text = buildCoachSync();
+  const canShare = !!navigator.share;
+  openSheet(
+    `<h2>An Coach senden</h2>
+    <p class="muted small">Deine Verschiebungen, Ist-Einträge und Notizen der letzten 14 Tage liegen nur auf diesem iPhone. Kopiere den Text und füge ihn im Chat mit Claude ein.</p>
+    <textarea class="input" id="sync-text" rows="8" readonly>${h(text)}</textarea>
+    <div class="btn-row">
+      <button class="btn primary" id="sync-copy">Kopieren</button>
+      ${canShare ? '<button class="btn" id="sync-share">Teilen …</button>' : ''}
+    </div>`,
+    {
+      onMount: (sheet) => {
+        const ta = $('#sync-text', sheet);
+        $('#sync-copy', sheet).onclick = async () => {
+          try {
+            await navigator.clipboard.writeText(text);
+            toast('Kopiert – jetzt im Chat einfügen');
+          } catch {
+            ta.focus();
+            ta.select();
+            toast('Text markiert – bitte kopieren');
+          }
+        };
+        const sh = $('#sync-share', sheet);
+        if (sh)
+          sh.onclick = async () => {
+            try {
+              await navigator.share({ text });
+            } catch {}
+          };
+      },
+    },
+  );
 }
 
 async function doExport() {
