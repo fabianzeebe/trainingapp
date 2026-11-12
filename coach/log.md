@@ -27,3 +27,4 @@ Chronologisches Protokoll der Importe, Analysen und Plananpassungen (neueste unt
 - 2026-11-11 18:25 UTC – 11.11. Rad Grundlage 60' (Rolle, Pyramide) importiert: 210 W (66 % FTP), HF 131.
 - 2026-11-12 10:58 UTC – 12.11. Lauf locker importiert: 10,8 km, 5:03/km, HF 138 (Soll 7 km).
 - 2026-11-12 11:08 UTC – Anpassung 2026-11-12-2: Sweet Spot 2×12′ (282–288 W), ~50 min statt 3×12′ / 1:31 h (schlechter Schlaf, Variante A).
+- 2026-11-12 15:51 UTC – 12.11. Sweet Spot 2×12′ (Rolle) importiert: 287/286 W (89–90 % FTP), HF 148/151.

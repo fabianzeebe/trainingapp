@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T11:08:48.963Z",
+ "updated": "2026-11-12T15:51:53.115Z",
  "actuals": {
   "2026-11-03-1": {
    "done": true,
@@ -255,6 +255,29 @@
     "0,8 km 5:07 · HF 136"
    ],
    "coach": "Locker und kontrolliert: Ø 5:03/km bei HF 138, nie über 148 – trotz schlechter Nacht. Die Pace kommt wieder Richtung 5:00 bei gleicher HF wie am 04.11., die Gardasee-Müdigkeit ist raus. 10,8 statt 7 km sind ok, weil der Freitag-Lauf ohnehin locker ist. Rad am Nachmittag wegen der Nacht auf 2×12′ (ca. 50 min) gekürzt."
+  },
+  "2026-11-12-2": {
+   "done": true,
+   "source": "strava",
+   "date": "2026-11-12",
+   "min": 51,
+   "km": 27.2,
+   "pace": null,
+   "hr": 138,
+   "maxHr": 157,
+   "watts": 231,
+   "np": null,
+   "elev": 0,
+   "stravaId": "20960376961",
+   "note": "Rolle. Besser als gedacht, HF stabil. Ventilator schwenkend – künftig direkt auf mich richten.",
+   "laps": [
+    "Einfahren 12' · 177 → 210 W · HF 120 → 130",
+    "SS 1 12' · 287 W (90 %) · HF 148 (max 153) · 89 rpm",
+    "Locker 5' · 165 W · HF 131",
+    "SS 2 12' · 286 W (89 %) · HF 151 (max 157) · 94 rpm",
+    "Ausfahren 10' · 178 W · HF 131"
+   ],
+   "coach": "Beide Blöcke punktgenau am unteren Ende: 287 und 286 W (89–90 % FTP) – genau wie besprochen. Die HF stieg vom ersten zum zweiten Block nur um ~3 Schläge (148 → 151), die Erholung in der Pause war schnell (zurück auf 131). Für einen Tag nach schlechter Nacht sehr solide, die Kürzung war trotzdem richtig. Ventilator: direkt auf Oberkörper/Gesicht gerichtet und nicht schwenkend bringt auf der Rolle oft 3–5 Schläge weniger Drift. Kleiner Hinweis: Block 2 mit 94 rpm, Block 1 mit 89 – die höhere Kadenz kostet auch etwas HF."
   }
  },
  "extras": {
