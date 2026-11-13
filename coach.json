@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T15:13:20.834Z",
+ "updated": "2026-11-13T20:07:57.977Z",
  "actuals": {
   "2026-11-03-1": {
    "done": true,
@@ -583,6 +583,43 @@
        55
       ],
       "label": "Ausfahren"
+     }
+    ]
+   }
+  },
+  "2026-12-05-1": {
+   "modNote": "Coach: Sa 05.12. ohne Rad (bei den Eltern): Lauf locker 45′ statt Rad 2 h. Die Radeinheit wandert auf Sonntag.",
+   "replaced": {
+    "sport": "run",
+    "title": "Lauf locker 45′ (statt Rad)",
+    "load": "easy",
+    "desc": "Bei den Eltern ohne Rad: 40–50 min ganz locker, HF unter 140. Am Vortag war der lange Lauf – das hier ist ein Regenerationslauf, kein Training. Fühlen sich die Beine schwer an, gerne nur 30 min.",
+    "steps": [
+     {
+      "t": "easy",
+      "zone": "E",
+      "km": 9,
+      "label": "Locker"
+     }
+    ]
+   }
+  },
+  "2026-12-04-1": {
+   "modNote": "Coach: Getauscht mit Samstag: Rad Grundlage 2 h statt Lauf locker, weil am Samstag kein Rad verfügbar ist. Bei Rückreisestress auch 60–90 min ok.",
+   "replaced": {
+    "sport": "bike",
+    "title": "Rad Grundlage 120'",
+    "load": "easy",
+    "desc": "Ruhige Grundlage. Bei trockenem Wetter gerne draußen mit dem Gravel – dann nach Gefühl/HF statt exakt Watt.",
+    "steps": [
+     {
+      "t": "easy",
+      "min": 120,
+      "pct": [
+       62,
+       72
+      ],
+      "label": "Grundlage"
      }
     ]
    }
