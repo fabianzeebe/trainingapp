@@ -29,4 +29,4 @@ Chronologisches Protokoll der Importe, Analysen und Plananpassungen (neueste unt
 - 2026-11-12 11:08 UTC – Anpassung 2026-11-12-2: Sweet Spot 2×12′ (282–288 W), ~50 min statt 3×12′ / 1:31 h (schlechter Schlaf, Variante A).
 - 2026-11-12 15:51 UTC – 12.11. Sweet Spot 2×12′ (Rolle) importiert: 287/286 W (89–90 % FTP), HF 148/151.- 2026-11-12 15:57 UTC – Neue App-Funktion „An Coach senden“. App-Stand eingelesen: Rad Grundlage 165' von Sa 14.11. auf Fr 13.11., Lauf locker + ABC von Fr auf Sa getauscht (Athlet). Geprüft: passt, keine Anpassung.
 
-- 2026-11-13 15:13 UTC – 13.11. Rad Grundlage (von Sa vorgezogen) importiert: 2:27 h, 76 km, 207 W (65 % FTP), HF 133, 4 °C. Ausrollen-Fahrt nicht importiert.
+- 2026-11-13 15:13 UTC – 13.11. Rad Grundlage (von Sa vorgezogen) importiert: 2:27 h, 76 km, 207 W (65 % FTP), HF 133, 4 °C. Ausrollen-Fahrt nicht importiert.- 2026-11-13 20:05 UTC – App-Stand eingelesen (An Coach senden): KW 49 Langer Lauf 18 km So 06.12. → Fr 04.12., Lauf locker Fr → So (Athlet). Geprüft: ok, Do-Tempo kontrolliert fahren. RPE 6 für Gardasee Tag 2 notiert.

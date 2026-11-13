@@ -1201,7 +1201,7 @@ function buildCoachSync() {
   const actLines = Object.entries(actuals).map(([id, act]) => {
     const s = sess.get(id);
     const w = act.weights ? ` · Gewichte: ${Object.entries(act.weights).map(([k, v]) => `${k} ${v}`).join(', ')}` : '';
-    return `- ${dl(act.date || s?.date)} ${s?.title || id}: ${act.done ? actualSummary(act, s?.sport, a) : 'nicht gemacht'}${act.rpe ? ` · RPE ${act.rpe}` : ''}${w}${act.note ? ` · „${act.note}“` : ''}`;
+    return `- ${dl(act.date || s?.date)} ${s?.title || id}: ${act.done ? actualSummary(act, s?.sport, a) : 'nicht gemacht'}${w}${act.note ? ` · „${act.note}“` : ''}`;
   });
   if (actLines.length) L.push('', 'Eigene Ist-Einträge:', ...actLines);
   const exLines = Object.entries(extras).flatMap(([d, list]) => list.map((x) => `- ${dl(d)} ${x.title || x.sport}: ${actualSummary({ ...x, done: true }, x.sport, a)}${x.note ? ` · „${x.note}“` : ''}`));
