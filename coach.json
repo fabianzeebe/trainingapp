@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T20:08:13.020Z",
+ "updated": "2026-11-13T21:06:26.721Z",
  "actuals": {
   "2026-11-03-1": {
    "done": true,
@@ -588,40 +588,38 @@
    }
   },
   "2026-12-05-1": {
-   "modNote": "Coach: Sa 05.12. ohne Rad (unterwegs): Lauf locker 45′ statt Rad 2 h. Die Radeinheit wandert auf Sonntag.",
+   "modNote": "Coach: Sa 05.12. ohne Rad (unterwegs): Lauf locker 40′ statt Rad 2 h.",
    "replaced": {
     "sport": "run",
-    "title": "Lauf locker 45′ (statt Rad)",
+    "title": "Lauf locker 40′ (statt Rad)",
     "load": "easy",
-    "desc": "Unterwegs ohne Rad: 40–50 min ganz locker, HF unter 140. Am Vortag war der lange Lauf – das hier ist ein Regenerationslauf, kein Training. Fühlen sich die Beine schwer an, gerne nur 30 min.",
+    "desc": "Unterwegs ohne Rad: 35–45 min ganz locker, HF unter 140. Am Vortag war der lange Lauf – das hier ist ein Regenerationslauf, kein Training.",
     "steps": [
      {
       "t": "easy",
       "zone": "E",
-      "km": 9,
+      "km": 8,
       "label": "Locker"
      }
     ]
    }
   },
   "2026-12-04-1": {
-   "modNote": "Coach: Getauscht mit Samstag: Rad Grundlage 2 h statt Lauf locker, weil am Samstag kein Rad verfügbar ist. Bei Rückreisestress auch 60–90 min ok.",
+   "modNote": "Coach: So 06.12. Reisetag, kein Rad möglich: kurzer lockerer Lauf (optional) statt Rad 2 h.",
    "replaced": {
-    "sport": "bike",
-    "title": "Rad Grundlage 120'",
+    "sport": "run",
+    "title": "Lauf locker 35′ (optional)",
     "load": "easy",
-    "desc": "Ruhige Grundlage. Bei trockenem Wetter gerne draußen mit dem Gravel – dann nach Gefühl/HF statt exakt Watt.",
+    "desc": "Reisetag: 30–40 min ganz locker, wann es passt – gerne auch abends nach der Rückkehr. Fällt der Lauf aus, ist das in der Entlastungswoche kein Problem.",
     "steps": [
      {
       "t": "easy",
-      "min": 120,
-      "pct": [
-       62,
-       72
-      ],
-      "label": "Grundlage"
+      "zone": "E",
+      "km": 7,
+      "label": "Locker"
      }
-    ]
+    ],
+    "optional": true
    }
   }
  }
