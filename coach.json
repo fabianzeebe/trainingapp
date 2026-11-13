@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T20:07:57.977Z",
+ "updated": "2026-11-13T20:08:13.020Z",
  "actuals": {
   "2026-11-03-1": {
    "done": true,
@@ -588,12 +588,12 @@
    }
   },
   "2026-12-05-1": {
-   "modNote": "Coach: Sa 05.12. ohne Rad (bei den Eltern): Lauf locker 45′ statt Rad 2 h. Die Radeinheit wandert auf Sonntag.",
+   "modNote": "Coach: Sa 05.12. ohne Rad (unterwegs): Lauf locker 45′ statt Rad 2 h. Die Radeinheit wandert auf Sonntag.",
    "replaced": {
     "sport": "run",
     "title": "Lauf locker 45′ (statt Rad)",
     "load": "easy",
-    "desc": "Bei den Eltern ohne Rad: 40–50 min ganz locker, HF unter 140. Am Vortag war der lange Lauf – das hier ist ein Regenerationslauf, kein Training. Fühlen sich die Beine schwer an, gerne nur 30 min.",
+    "desc": "Unterwegs ohne Rad: 40–50 min ganz locker, HF unter 140. Am Vortag war der lange Lauf – das hier ist ein Regenerationslauf, kein Training. Fühlen sich die Beine schwer an, gerne nur 30 min.",
     "steps": [
      {
       "t": "easy",

@@ -32,3 +32,4 @@ Chronologisches Protokoll der Importe, Analysen und Plananpassungen (neueste unt
 - 2026-11-13 15:13 UTC – 13.11. Rad Grundlage (von Sa vorgezogen) importiert: 2:27 h, 76 km, 207 W (65 % FTP), HF 133, 4 °C. Ausrollen-Fahrt nicht importiert.- 2026-11-13 20:05 UTC – App-Stand eingelesen (An Coach senden): KW 49 Langer Lauf 18 km So 06.12. → Fr 04.12., Lauf locker Fr → So (Athlet). Geprüft: ok, Do-Tempo kontrolliert fahren. RPE 6 für Gardasee Tag 2 notiert.
 
 - 2026-11-13 20:07 UTC – KW 49: Sa 05.12. Rad 120′ → Lauf locker 45′ (kein Rad verfügbar); So 06.12. Lauf locker → Rad Grundlage 120′. Laufumfang der Woche bleibt ~46 km (Entlastung).
+- 2026-11-13 20:08 UTC – KW 49: Sa 05.12. Rad 120′ → Lauf locker 45′ (unterwegs, kein Rad); So 06.12. Lauf locker → Rad Grundlage 120′. Laufumfang der Woche bleibt ~46 km (Entlastung).
