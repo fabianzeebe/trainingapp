@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T15:51:53.115Z",
+ "updated": "2026-11-13T15:13:20.834Z",
  "actuals": {
   "2026-11-03-1": {
    "done": true,
@@ -278,6 +278,28 @@
     "Ausfahren 10' · 178 W · HF 131"
    ],
    "coach": "Beide Blöcke punktgenau am unteren Ende: 287 und 286 W (89–90 % FTP) – genau wie besprochen. Die HF stieg vom ersten zum zweiten Block nur um ~3 Schläge (148 → 151), die Erholung in der Pause war schnell (zurück auf 131). Für einen Tag nach schlechter Nacht sehr solide, die Kürzung war trotzdem richtig. Ventilator: direkt auf Oberkörper/Gesicht gerichtet und nicht schwenkend bringt auf der Rolle oft 3–5 Schläge weniger Drift. Kleiner Hinweis: Block 2 mit 94 rpm, Block 1 mit 89 – die höhere Kadenz kostet auch etwas HF."
+  },
+  "2026-11-14-1": {
+   "done": true,
+   "source": "strava",
+   "date": "2026-11-13",
+   "min": 147,
+   "km": 76,
+   "pace": null,
+   "hr": 133,
+   "maxHr": 148,
+   "watts": 207,
+   "np": null,
+   "elev": 560,
+   "stravaId": "20971705934",
+   "note": "Beine gut, aber sehr kalt (ca. 4 °C, gefühlt 2 °C) und daher etwas zäh. Ausrollen 13' separat.",
+   "laps": [
+    "Gesamt 2:27 h · 76 km · 560 hm · 207 W (65 %) · HF 133",
+    "Beste Stunde 214 W (67 %)",
+    "Kurze Wellen bis ~280 W",
+    "+ 13' Ausrollen (nicht importiert)"
+   ],
+   "coach": "Grundlage sauber getroffen: Ø 207 W (65 % FTP), HF 133, beste Stunde 214 W – genau im Zielbereich 198–230 W. Mit dem Ausrollen ~2:40 h, also praktisch wie geplant. Dass es bei 4 °C zäh war, ist normal: Kälte kostet Leistung und Energie (Muskeln brauchen länger, Körper heizt mit). Für kalte Tage: Überschuhe, Unterhemd, etwas mehr essen und die ersten 20 min bewusst locker einfahren. Morgen 11 km locker mit Lauf-ABC, Sonntag 20 km."
   }
  },
  "extras": {
