@@ -228,7 +228,8 @@ function navHeader(label, sub, kind) {
 }
 
 function statBox(label, ist, soll, unit, sub = '') {
-  const p = soll > 0 ? Math.min(pct(num(ist), num(soll)), 130) : 0;
+  // ist/soll kommen formatiert („4,6“) – erst in Zahlen umwandeln, sonst ist "4,6" > 0 false
+  const p = num(soll) > 0 ? Math.min(pct(num(ist), num(soll)), 130) : 0;
   return `<div class="stat"><div class="stat-l">${label}</div><div class="stat-v"><b>${ist}</b><span>/ ${soll} ${unit}</span></div>${sub ? `<div class="stat-s">${sub}</div>` : ''}<div class="bar"><i style="width:${Math.min(p, 100)}%"></i></div></div>`;
 }
 // Zweite Zeile der Kacheln: Lauf-Zeit bzw. Rad-Kilometer
