@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T09:39:49.691Z",
+ "updated": "2026-11-16T12:26:44.367Z",
  "actuals": {
   "2026-11-03-1": {
    "done": true,
@@ -417,6 +417,33 @@
     "coach": "Wirklich locker gelaufen: 5:12–5:21/km, HF 136–138 ohne Drift – genau richtig für einen Tag nach der Gardasee-Woche. Kleiner Hinweis: Am 04.11. lagst du bei 5:00/km mit derselben HF, heute 18 s/km langsamer. Das ist ein leichtes Signal, dass die vier Radtage noch in den Beinen stecken (Regen und Abend spielen auch mit rein). Morgen beim Fahrtspiel deshalb nach Gefühl laufen; sind die Beine schwer, einfach locker durchlaufen.",
     "id": "s20922727528"
    }
+  ],
+  "2026-11-16": [
+   {
+    "source": "strava",
+    "sport": "run",
+    "title": "Lauf locker (statt Ruhetag)",
+    "min": 40,
+    "km": 8,
+    "pace": 303,
+    "hr": 134,
+    "maxHr": 142,
+    "elev": 57,
+    "stravaId": "21007240846",
+    "note": "Schönes Wetter, sehr gute Schlafwerte, frische Beine.",
+    "laps": [
+     "km 1 5:11 · HF 128",
+     "km 2 4:59 · HF 136",
+     "km 3 5:05 · HF 134",
+     "km 4 5:09 · HF 136",
+     "km 5 5:02 · HF 135",
+     "km 6 5:00 · HF 131",
+     "km 7 4:56 · HF 135",
+     "km 8 5:01 · HF 134"
+    ],
+    "coach": "Sehr locker: Ø 5:03/km bei HF 134 – das ist bei gleicher Pace 4 Schläge weniger als vor einer Woche, trotz Wind. Die Form zeigt nach oben. Damit der Wochenumfang nicht davonläuft (53 km geplant + 8), wird der lockere Lauf am Donnerstag auf 6 km gekürzt.",
+    "id": "s21007240846"
+   }
   ]
  },
  "notes": {
@@ -645,6 +672,23 @@
      }
     ],
     "optional": true
+   }
+  },
+  "2026-11-19-1": {
+   "modNote": "Coach: Montag zusätzlich 8 km gelaufen – Do-Lauf auf 6 km gekürzt, damit der Wochenumfang bei ~57 statt 61 km bleibt (Plan 53).",
+   "replaced": {
+    "sport": "run",
+    "title": "Lauf locker 30′",
+    "load": "easy",
+    "desc": "Lockerer Dauerlauf im Gesprächstempo. Bewusst langsam, das ist die Basis für alles andere.",
+    "steps": [
+     {
+      "t": "easy",
+      "zone": "E",
+      "km": 6,
+      "label": "Locker"
+     }
+    ]
    }
   }
  }
