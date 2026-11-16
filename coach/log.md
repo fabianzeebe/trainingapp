@@ -34,4 +34,4 @@ Chronologisches Protokoll der Importe, Analysen und Plananpassungen (neueste unt
 - 2026-11-13 20:07 UTC – KW 49: Sa 05.12. Rad 120′ → Lauf locker 45′ (kein Rad verfügbar); So 06.12. Lauf locker → Rad Grundlage 120′. Laufumfang der Woche bleibt ~46 km (Entlastung).
 - 2026-11-13 20:08 UTC – KW 49: Sa 05.12. Rad 120′ → Lauf locker 45′ (unterwegs, kein Rad); So 06.12. Lauf locker → Rad Grundlage 120′. Laufumfang der Woche bleibt ~46 km (Entlastung).
 - 2026-11-13 21:06 UTC – KW 49: So 06.12. Rad 120′ → Lauf locker 35′ optional (Reisetag). Sa auf 40′ gekürzt. Rad in KW 49 nur Mi/Do (~2 h), Laufumfang ~51 km.
-- 2026-11-15 11:25 UTC – 15.11. Langer Lauf importiert: 20,8 km, 5:06/km, HF 138 (136–140, kein Drift), −1 °C. Sa-Lauf (14.11.) ausgelassen.
+- 2026-11-15 11:25 UTC – 15.11. Langer Lauf importiert: 20,8 km, 5:06/km, HF 138 (136–140, kein Drift), −1 °C. Sa-Lauf (14.11.) ausgelassen.- 2026-11-16 09:39 UTC – App-Stand 16.11. eingelesen: KW 47 Rad 2:45 h mit Tempo Sa 21.11. → Fr 20.11., Lauf + Steigerungen Fr → Sa (Athlet). Sa-Lauf 14.11. als ausgelassen markiert. Hinweis Fr: Tempo am unteren Ende (Do Kraftausdauer).
