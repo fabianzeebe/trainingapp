@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T12:26:44.367Z",
+ "updated": "2026-11-17T07:55:54.520Z",
  "actuals": {
   "2026-11-03-1": {
    "done": true,
@@ -323,6 +323,35 @@
     "Rest 0,8 km 5:05 · HF 137"
    ],
    "coach": "Lehrbuch-Longrun: 20,8 km in Ø 5:06/km, HF über die gesamte Distanz zwischen 136 und 140 – null Drift, und die letzten 4 km waren mit ~5:00 sogar die schnellsten. Bei −1 °C ein sehr ökonomischer Lauf. Das ist genau die aerobe Basis, auf der Sub 2:50 aufbaut. Nächster langer Lauf: 22 km (So 22.11.)."
+  },
+  "2026-11-17-1": {
+   "done": true,
+   "source": "strava",
+   "date": "2026-11-17",
+   "min": 67,
+   "km": 13.3,
+   "pace": 301,
+   "hr": 146,
+   "maxHr": 176,
+   "watts": null,
+   "np": null,
+   "elev": 155,
+   "stravaId": "21017813200",
+   "note": "Sehr gut angefühlt, Beine bis zum letzten Intervall stark. In der Gruppe.",
+   "laps": [
+    "Einlaufen 4 km · 5:05/km · HF 141",
+    "#1 255 m (3:55/km) · 583 W · HF 165",
+    "#2 265 m (3:46) · 611 W · HF 162",
+    "#3 263 m (3:48) · 629 W · HF 163",
+    "#4 275 m (3:38) · 649 W · HF 163",
+    "#5 275 m (3:38) · 637 W · HF 165",
+    "#6 285 m (3:31) · 674 W · HF 166",
+    "#7 283 m (3:32) · 682 W · HF 164",
+    "#8 289 m (3:28) · 676 W · HF 165",
+    "Trabpausen 90 s bergab · HF 151–157",
+    "Auslaufen 5,3 km · 5:10/km · HF 140"
+   ],
+   "coach": "Starke Bergläufe: jede Wiederholung etwas weiter (255 → 289 m bei ~5,5 % Steigung), die Laufleistung stieg von 583 auf ~680 W – sauber progressiv statt eingebrochen. Die HF blieb im Schnitt pro Stück bei 162–166, nur die Spitzen gingen gegen Ende auf 174–175. Ganz am oberen Rand der Vorgabe (~5-km-Anstrengung), aber kontrolliert. 13,3 statt 10 km wegen längerem Ein-/Auslaufen sind ok. Nachmittags die 50′ Rad wirklich locker."
   }
  },
  "extras": {

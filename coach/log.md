@@ -37,3 +37,4 @@ Chronologisches Protokoll der Importe, Analysen und Plananpassungen (neueste unt
 - 2026-11-15 11:25 UTC – 15.11. Langer Lauf importiert: 20,8 km, 5:06/km, HF 138 (136–140, kein Drift), −1 °C. Sa-Lauf (14.11.) ausgelassen.- 2026-11-16 09:39 UTC – App-Stand 16.11. eingelesen: KW 47 Rad 2:45 h mit Tempo Sa 21.11. → Fr 20.11., Lauf + Steigerungen Fr → Sa (Athlet). Sa-Lauf 14.11. als ausgelassen markiert. Hinweis Fr: Tempo am unteren Ende (Do Kraftausdauer).
 
 - 2026-11-16 12:26 UTC – 16.11. Zusatzlauf am Ruhetag: 8,0 km, 5:03/km, HF 134. Do 19.11. Lauf locker 10 → 6 km (Wochenumfang ~57 statt 61 km).
+- 2026-11-17 07:55 UTC – 17.11. Bergläufe 8×60s importiert: 13,3 km, Reps 255→289 m, 583→682 W, HF 162–166 (max 175).
