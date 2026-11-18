@@ -39,3 +39,4 @@ Chronologisches Protokoll der Importe, Analysen und Plananpassungen (neueste unt
 - 2026-11-16 12:26 UTC – 16.11. Zusatzlauf am Ruhetag: 8,0 km, 5:03/km, HF 134. Do 19.11. Lauf locker 10 → 6 km (Wochenumfang ~57 statt 61 km).
 - 2026-11-17 07:55 UTC – 17.11. Bergläufe 8×60s importiert: 13,3 km, Reps 255→289 m, 583→682 W, HF 162–166 (max 175).
 - 2026-11-17 14:53 UTC – 17.11. Rad Grundlage 50′ (Rolle, Stufen) importiert: 211 W, HF 124.
+- 2026-11-18 08:32 UTC – 18.11. Stabi C (laut App): Goblet Squat 20 kg, Hip Thrust 50 kg, seitl. Ausfallschritte 20 kg, Beincurl liegend 8 kg. Strava-Aktivität noch nicht vorhanden.

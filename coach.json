@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T14:53:03.593Z",
+ "updated": "2026-11-18T08:32:57.052Z",
  "actuals": {
   "2026-11-03-1": {
    "done": true,
@@ -373,6 +373,24 @@
     "Ausfahren 7' · 200 W · HF 123"
    ],
    "coach": "Schöne Grundlage nach den Bergläufen: Stufen 210/220/230 W (66–72 % FTP), Ø 211 W, HF nur 124 und max 131 – genau im Bereich und ohne Drift über die vier Durchgänge. Die Beine haben die Bergläufe vom Morgen gut weggesteckt. Morgen Stabi C + 60′ Rad locker."
+  },
+  "2026-11-18-1": {
+   "done": true,
+   "source": "app",
+   "date": "2026-11-18",
+   "min": 50,
+   "km": null,
+   "pace": null,
+   "hr": null,
+   "watts": null,
+   "np": null,
+   "weights": {
+    "Goblet Squat": "20 kg",
+    "Hip Thrust (Langhantel)": "50 kg",
+    "Seitliche Ausfallschritte": "20 kg",
+    "Nordic Hamstring Curl (assistiert)": "8 kg (liegender Beincurl, KH zwischen den Füßen)"
+   },
+   "coach": "Stabi C erledigt, Gewichte notiert. Hip Thrust mit 50 kg ist ein guter Startwert – hier darf es über die nächsten Durchgänge Richtung 60–70 kg gehen, solange die Hüfte oben sauber gestreckt wird. Statt Nordic Hamstring liegende Beincurls mit 8 kg: guter Ersatz; Nordics brauchen eine feste Fußfixierung, die kommt später. Pogo Jumps und Split Jumps sind die wichtigsten Übungen für die Laufökonomie – locker-federnd, kurze Bodenkontakte."
   }
  },
  "extras": {
