@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T08:32:57.052Z",
+ "updated": "2026-11-18T18:09:18.409Z",
  "actuals": {
   "2026-11-03-1": {
    "done": true,
@@ -376,12 +376,12 @@
   },
   "2026-11-18-1": {
    "done": true,
-   "source": "app",
+   "source": "strava",
    "date": "2026-11-18",
-   "min": 50,
+   "min": 51,
    "km": null,
    "pace": null,
-   "hr": null,
+   "hr": 113,
    "watts": null,
    "np": null,
    "weights": {
@@ -390,7 +390,35 @@
     "Seitliche Ausfallschritte": "20 kg",
     "Nordic Hamstring Curl (assistiert)": "8 kg (liegender Beincurl, KH zwischen den Füßen)"
    },
-   "coach": "Stabi C erledigt, Gewichte notiert. Hip Thrust mit 50 kg ist ein guter Startwert – hier darf es über die nächsten Durchgänge Richtung 60–70 kg gehen, solange die Hüfte oben sauber gestreckt wird. Statt Nordic Hamstring liegende Beincurls mit 8 kg: guter Ersatz; Nordics brauchen eine feste Fußfixierung, die kommt später. Pogo Jumps und Split Jumps sind die wichtigsten Übungen für die Laufökonomie – locker-federnd, kurze Bodenkontakte."
+   "coach": "Stabi C erledigt, Gewichte notiert. Hip Thrust mit 50 kg ist ein guter Startwert – hier darf es über die nächsten Durchgänge Richtung 60–70 kg gehen, solange die Hüfte oben sauber gestreckt wird. Statt Nordic Hamstring liegende Beincurls mit 8 kg: guter Ersatz; Nordics brauchen eine feste Fußfixierung, die kommt später. Pogo Jumps und Split Jumps sind die wichtigsten Übungen für die Laufökonomie – locker-federnd, kurze Bodenkontakte.",
+   "maxHr": 153,
+   "stravaId": "21031372392"
+  },
+  "2026-11-18-2": {
+   "done": true,
+   "source": "strava",
+   "date": "2026-11-18",
+   "min": 60,
+   "km": 30.9,
+   "pace": null,
+   "hr": 130,
+   "maxHr": 144,
+   "watts": 210,
+   "np": null,
+   "elev": 0,
+   "stravaId": "21037222550",
+   "note": "Rolle, GA1-Pyramide. Beine gut, HF stabil.",
+   "laps": [
+    "10′ · 184 W · HF 119",
+    "5′ · 210 W · HF 126",
+    "6′ · 218 W · HF 131",
+    "7′ · 227 W · HF 134",
+    "8′ · 240 W · HF 139",
+    "7′ · 229 W · HF 136",
+    "6′ · 210 W · HF 132",
+    "10′ · 184 W · HF 126"
+   ],
+   "coach": "Gleiche Pyramide wie am 11.11. – direkter Vergleich: Spitze 240 W bei HF 139 (11.11.: 238 W bei 139), auf dem Rückweg bei ~229 W nur HF 136 statt 140. Weniger Drift, das spricht für bessere Kühlung oder bessere Form. Ø 210 W (66 % FTP) bei HF 130. Morgen früh 6 km locker, nachmittags Kraftausdauer 5×5′ mit niedriger Kadenz."
   }
  },
  "extras": {
