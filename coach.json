@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T18:09:18.409Z",
+ "updated": "2026-11-19T11:26:33.770Z",
  "actuals": {
   "2026-11-03-1": {
    "done": true,
@@ -419,6 +419,30 @@
     "10′ · 184 W · HF 126"
    ],
    "coach": "Gleiche Pyramide wie am 11.11. – direkter Vergleich: Spitze 240 W bei HF 139 (11.11.: 238 W bei 139), auf dem Rückweg bei ~229 W nur HF 136 statt 140. Weniger Drift, das spricht für bessere Kühlung oder bessere Form. Ø 210 W (66 % FTP) bei HF 130. Morgen früh 6 km locker, nachmittags Kraftausdauer 5×5′ mit niedriger Kadenz."
+  },
+  "2026-11-19-1": {
+   "done": true,
+   "source": "strava",
+   "date": "2026-11-19",
+   "min": 30,
+   "km": 6.1,
+   "pace": 298,
+   "hr": 132,
+   "maxHr": 139,
+   "watts": null,
+   "np": null,
+   "elev": 6,
+   "stravaId": "21045176582",
+   "note": "Etwas Muskelkater (Stabi C), sonst stabil. HF sehr niedrig für die Pace.",
+   "laps": [
+    "km 1 5:10 · HF 125",
+    "km 2 4:57 · HF 132",
+    "km 3 4:57 · HF 135",
+    "km 4 4:51 · HF 132",
+    "km 5 4:51 · HF 135",
+    "km 6 4:58 · HF 135"
+   ],
+   "coach": "Ø 4:58/km bei HF 132 – vor drei Wochen lagst du bei 5:00 mit HF 137. Bei gleicher Anstrengung jetzt rund 5 s/km schneller bzw. 5 Schläge weniger: die aerobe Basis wächst sichtbar. Der Muskelkater kommt von Hip Thrust und Sprüngen (Stabi C zum ersten Mal) und ist normal. Nachmittags die Kraftausdauer am unteren Ende (269–275 W) beginnen und nur steigern, wenn sich die Beine gut anfühlen."
   }
  },
  "extras": {
@@ -547,7 +571,8 @@
   "2026-11-07": "Heute nur Grundlage: bergauf höchstens ~230 W, HF möglichst unter 135. Nach zwei harten Tagen holst du dir den Trainingseffekt durch Erholung – am Montag startet die Base-Phase.",
   "2026-11-08": "Nur ausrollen. Den optionalen Koppellauf (20–25′) nur, wenn die Beine sich wirklich frisch anfühlen – sonst weglassen. Montag ist Ruhetag, Dienstag startet die Base-Phase mit dem Fahrtspiel.",
   "2026-11-10": "Montag schon 8 km gelaufen, deshalb heute nach Gefühl: die schnellen Minuten zügig, aber nicht verbissen. Fühlen sich die Beine beim Einlaufen schwer an, die schnellen Minuten weglassen und 8–10 km locker laufen.",
-  "2026-11-20": "Am Vortag war Kraftausdauer am Rad – die 3×12′ Tempo heute am unteren Ende fahren (250–260 W), dazwischen wirklich Grundlage. Sonntag kommt der lange Lauf."
+  "2026-11-20": "Am Vortag war Kraftausdauer am Rad – die 3×12′ Tempo heute am unteren Ende fahren (250–260 W), dazwischen wirklich Grundlage. Sonntag kommt der lange Lauf.",
+  "2026-11-19": "Leichter Muskelkater nach Stabi C: Kraftausdauer am unteren Ende starten (269–275 W, 55–65 rpm), nur steigern, wenn es sich rund anfühlt. Knie und Hüfte stabil halten, Oberkörper ruhig."
  },
  "weekNotes": {
   "2026-10-26": "Erholungswoche nach dem Isartal-HM (vor Planstart): 2 Läufe mit 35 km (10,5 km locker + 24,5 km Long Run), 2 Gravel-Ausfahrten mit ~4:45 h und 1× Beine & Stabi. Alle Läufe im Grundlagenbereich (HF Ø 138–141) ohne nennenswerte HF-Drift – die Erholung vom HM ist gut verlaufen und die aerobe Basis stimmt. Einziger Punkt: der Long Run 5 Tage nach dem HM war früh, durch den Ruhetag am Samstag aber gut abgefangen. Ausblick KW 45: Mo Ruhetag, Di/Mi locker laufen + Stabi, ab Do Gardasee mit Fokus Rad. Ab Montag ordne ich alles dem Plan zu.",
