@@ -42,3 +42,4 @@ Chronologisches Protokoll der Importe, Analysen und Plananpassungen (neueste unt
 - 2026-11-18 08:32 UTC – 18.11. Stabi C (laut App): Goblet Squat 20 kg, Hip Thrust 50 kg, seitl. Ausfallschritte 20 kg, Beincurl liegend 8 kg. Strava-Aktivität noch nicht vorhanden.
 - 2026-11-18 18:09 UTC – 18.11. Stabi C (Strava ergänzt, HF 113) und Rad Grundlage 60′ (Rolle, Pyramide) importiert: 210 W, HF 130, weniger Drift als 11.11.
 - 2026-11-19 11:26 UTC – 19.11. Lauf locker 6 km importiert: 4:58/km, HF 132. Leichter Muskelkater nach Stabi C.
+- 2026-11-19 15:11 UTC – 19.11. Kraftausdauer 5×5′ (Rolle) importiert: 274–280 W (86–88 % FTP), HF 144–146; wegen Muskelkater 85–90 rpm statt 55–65 rpm.
