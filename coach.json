@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T12:21:39.875Z",
+ "updated": "2026-11-20T13:21:33.834Z",
  "actuals": {
   "2026-11-03-1": {
    "done": true,
@@ -861,6 +861,96 @@
       "zone": "E",
       "km": 6,
       "label": "Locker"
+     }
+    ]
+   }
+  },
+  "2026-12-02-2": {
+   "modNote": "Coach: FTP-Check auf Wunsch: seit zwei Wochen 280–285 W über 12–20 min bei HF ~148 – FTP vermutlich über 320 W. Test in der Entlastungswoche statt Rad Grundlage.",
+   "replaced": {
+    "sport": "bike",
+    "title": "FTP-Test 20′",
+    "load": "hard",
+    "desc": "Ziel: aktuelle FTP bestimmen (FTP ≈ 95 % des 20-min-Schnitts). Am besten auf der Rolle mit Ventilator direkt auf dich, ausgeruht und gut gegessen. Den Test gleichmäßig fahren: die ersten 5 min bei ~330 W beginnen, ab Minute 10 nach Gefühl steigern, die letzten 2–3 min alles geben. Nicht zu schnell starten! Stabi A heute erst nach dem Test oder nur leicht. Ergebnis kommt per Strava, die Zonen passe ich danach an.",
+    "steps": [
+     {
+      "t": "wu",
+      "min": 15,
+      "pct": [
+       50,
+       70
+      ],
+      "label": "Einfahren (steigernd)"
+     },
+     {
+      "rep": 3,
+      "steps": [
+       {
+        "t": "work",
+        "min": 1,
+        "pct": [
+         100,
+         110
+        ],
+        "label": "Öffner, hohe Kadenz"
+       },
+       {
+        "t": "rec",
+        "min": 1,
+        "pct": [
+         45,
+         55
+        ],
+        "label": "Locker"
+       }
+      ]
+     },
+     {
+      "t": "rec",
+      "min": 5,
+      "pct": [
+       50,
+       60
+      ],
+      "label": "Locker"
+     },
+     {
+      "t": "work",
+      "min": 20,
+      "pct": [
+       100,
+       108
+      ],
+      "label": "20′-Test – gleichmäßig maximal"
+     },
+     {
+      "t": "cd",
+      "min": 15,
+      "pct": [
+       45,
+       55
+      ],
+      "label": "Ausfahren"
+     }
+    ]
+   }
+  },
+  "2026-12-03-2": {
+   "modNote": "Coach: Tempo 2×15′ entfällt, weil am Mittwoch der FTP-Test ist und am Freitag der lange Lauf folgt – nur lockere Grundlage.",
+   "replaced": {
+    "sport": "bike",
+    "title": "Rad Grundlage 60'",
+    "load": "easy",
+    "desc": "Ruhige Grundlage, gleichmäßig treten, Kadenz 85–95. Locker genug, dass der Lauf am nächsten Tag nicht leidet.",
+    "steps": [
+     {
+      "t": "easy",
+      "min": 60,
+      "pct": [
+       62,
+       72
+      ],
+      "label": "Grundlage"
      }
     ]
    }
