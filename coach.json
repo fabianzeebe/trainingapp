@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T13:21:33.834Z",
+ "updated": "2026-11-21T17:22:36.734Z",
  "actuals": {
   "2026-11-03-1": {
    "done": true,
@@ -496,6 +496,32 @@
     "+ 14' Ausrollen (nicht importiert)"
    ],
    "coach": "Gravel-Tempo trotz Wald gut umgesetzt: Block 1 und 2 mit 276/284 W bei HF 147–148 – das ist eher Sweet Spot als Tempo und über der Vorgabe (250–260 W nach der Kraftausdauer gestern), aber stabil. Block 3 mit 243 W lag an der Strecke, nicht an den Beinen. Gesamt 2:34 h, Ø 201 W, HF 133 – solide Grundlage drumherum. Auffällig: Du fährst seit zwei Wochen 280–285 W über 12–20 min bei HF ~148 sehr kontrolliert – Zeit für einen FTP-Check."
+  },
+  "2026-11-20-1": {
+   "done": true,
+   "source": "strava",
+   "date": "2026-11-21",
+   "min": 56,
+   "km": 11.5,
+   "pace": 293,
+   "hr": 139,
+   "maxHr": 160,
+   "watts": null,
+   "np": null,
+   "elev": 15,
+   "stravaId": "21068483196",
+   "note": "Strides progressiv, Beine gut.",
+   "laps": [
+    "9 km locker · 4:46–4:59/km · HF 133–140",
+    "Steigerung 1 · 20 s · 3:41/km",
+    "Steigerung 2 · 3:33/km",
+    "Steigerung 3 · 3:28/km",
+    "Steigerung 4 · 3:22/km",
+    "Steigerung 5 · 3:18/km",
+    "Steigerung 6 · 3:14/km",
+    "Auslaufen 1,3 km · 5:00/km · HF 139"
+   ],
+   "coach": "Lockerer Teil im Schnitt ~4:55/km bei HF 139 – flott, aber noch im lockeren HF-Bereich. Die Steigerungen schön progressiv von 3:41 auf 3:14/km, genau richtig dosiert (locker-schnell, nicht gesprintet). Wochenumfang liegt mit dem langen Lauf morgen bei ~61 km statt 49 geplant – Sonntag deshalb genau 22 km, ruhig bei HF unter 145, und Montag ein echter Ruhetag."
   }
  },
  "extras": {
@@ -625,7 +651,8 @@
   "2026-11-08": "Nur ausrollen. Den optionalen Koppellauf (20–25′) nur, wenn die Beine sich wirklich frisch anfühlen – sonst weglassen. Montag ist Ruhetag, Dienstag startet die Base-Phase mit dem Fahrtspiel.",
   "2026-11-10": "Montag schon 8 km gelaufen, deshalb heute nach Gefühl: die schnellen Minuten zügig, aber nicht verbissen. Fühlen sich die Beine beim Einlaufen schwer an, die schnellen Minuten weglassen und 8–10 km locker laufen.",
   "2026-11-20": "Am Vortag war Kraftausdauer am Rad – die 3×12′ Tempo heute am unteren Ende fahren (250–260 W), dazwischen wirklich Grundlage. Sonntag kommt der lange Lauf.",
-  "2026-11-19": "Leichter Muskelkater nach Stabi C: Kraftausdauer am unteren Ende starten (269–275 W, 55–65 rpm), nur steigern, wenn es sich rund anfühlt. Knie und Hüfte stabil halten, Oberkörper ruhig."
+  "2026-11-19": "Leichter Muskelkater nach Stabi C: Kraftausdauer am unteren Ende starten (269–275 W, 55–65 rpm), nur steigern, wenn es sich rund anfühlt. Knie und Hüfte stabil halten, Oberkörper ruhig.",
+  "2026-11-22": "Diese Woche wird es mit dem langen Lauf rund 61 km statt 49 – heute daher genau 22 km, nicht mehr, und ruhig (HF unter 145, gerne 5:05–5:15/km). Montag ist ein echter Ruhetag."
  },
  "weekNotes": {
   "2026-10-26": "Erholungswoche nach dem Isartal-HM (vor Planstart): 2 Läufe mit 35 km (10,5 km locker + 24,5 km Long Run), 2 Gravel-Ausfahrten mit ~4:45 h und 1× Beine & Stabi. Alle Läufe im Grundlagenbereich (HF Ø 138–141) ohne nennenswerte HF-Drift – die Erholung vom HM ist gut verlaufen und die aerobe Basis stimmt. Einziger Punkt: der Long Run 5 Tage nach dem HM war früh, durch den Ruhetag am Samstag aber gut abgefangen. Ausblick KW 45: Mo Ruhetag, Di/Mi locker laufen + Stabi, ab Do Gardasee mit Fokus Rad. Ab Montag ordne ich alles dem Plan zu.",
