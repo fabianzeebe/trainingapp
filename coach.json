@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T17:22:36.734Z",
+ "updated": "2026-11-22T12:33:08.276Z",
  "actuals": {
   "2026-11-03-1": {
    "done": true,
@@ -522,6 +522,29 @@
     "Auslaufen 1,3 km · 5:00/km · HF 139"
    ],
    "coach": "Lockerer Teil im Schnitt ~4:55/km bei HF 139 – flott, aber noch im lockeren HF-Bereich. Die Steigerungen schön progressiv von 3:41 auf 3:14/km, genau richtig dosiert (locker-schnell, nicht gesprintet). Wochenumfang liegt mit dem langen Lauf morgen bei ~61 km statt 49 geplant – Sonntag deshalb genau 22 km, ruhig bei HF unter 145, und Montag ein echter Ruhetag."
+  },
+  "2026-11-22-1": {
+   "done": true,
+   "source": "strava",
+   "date": "2026-11-22",
+   "min": 111,
+   "km": 22.1,
+   "pace": 301,
+   "hr": 137,
+   "maxHr": 146,
+   "watts": null,
+   "np": null,
+   "elev": 43,
+   "stravaId": "21080509869",
+   "note": "Gefühl gut, Beine gut.",
+   "laps": [
+    "km 1–5 · 5:16 → 5:00/km · HF 128–139",
+    "km 6–10 · 4:59–5:22/km · HF 134–141",
+    "km 11–15 · 4:54–5:01/km · HF 136–138",
+    "km 16–20 · 4:52–5:02/km · HF 134–137",
+    "km 21–22 · 4:50–4:57/km · HF 139–141"
+   ],
+   "coach": "Wieder ein Longrun ohne Drift: 22,1 km in Ø 5:01/km, HF über die ganze Strecke 134–141, km 16–20 sogar niedriger als am Anfang. Etwas flotter als die angepeilten 5:05–5:15, aber mit HF 137 klar im Grundlagenbereich – passt. Halbmarathon-Durchgang in 1:48:50 rein aerob. Nächster langer Lauf: 24 km wellig (So 29.11.)."
   }
  },
  "extras": {
@@ -657,7 +680,8 @@
  "weekNotes": {
   "2026-10-26": "Erholungswoche nach dem Isartal-HM (vor Planstart): 2 Läufe mit 35 km (10,5 km locker + 24,5 km Long Run), 2 Gravel-Ausfahrten mit ~4:45 h und 1× Beine & Stabi. Alle Läufe im Grundlagenbereich (HF Ø 138–141) ohne nennenswerte HF-Drift – die Erholung vom HM ist gut verlaufen und die aerobe Basis stimmt. Einziger Punkt: der Long Run 5 Tage nach dem HM war früh, durch den Ruhetag am Samstag aber gut abgefangen. Ausblick KW 45: Mo Ruhetag, Di/Mi locker laufen + Stabi, ab Do Gardasee mit Fokus Rad. Ab Montag ordne ich alles dem Plan zu.",
   "2026-11-02": "KW 45 (Übergang): Laufen 20,3 km in 2 Einheiten (Soll ~30 km, geplant reduziert wegen Gardasee), beide sehr kontrolliert bei Ø 5:00/km und HF 137–138 ohne Drift. Stabi 1× erledigt. Rad 4 Tage, rund 12 h und ~5.600 hm – Umfang wie geplant, Intensität deutlich höher: Do 60' @ 79 %, Fr 3×20' @ 88 %, Sa 3:41 h Grundlage, So 5×5' progressiv bis 104 % FTP. Für eine Übergangswoche nach dem HM war das zu viel Qualität, die Daten zeigen aber keine Ermüdung (HF bergauf niedrig, Leistung am vierten Tag noch steigend). Auffällig stark auf dem Rad: 283 W über 20' bei HF 148 und 333 W über 5' – Vorschlag: FTP-Check (z. B. 20'-Test) in einer der nächsten Wochen, möglicherweise liegt die FTP bei ~330–335 W. Ausblick KW 46 (Base, 48 km Lauf): Montag komplett frei, Dienstag Fahrtspiel 8×1'/1' nach Gefühl, Rad unter der Woche ruhig halten. Ab jetzt hat der Lauf wieder Vorrang.",
-  "2026-11-09": "KW 46 (Base 1): Laufen 50,3 km in 5 Läufen (Soll 48; Sa-Lauf ausgelassen, dafür Mo zusätzlich 8 km). Qualität: Fahrtspiel 8×1' souverän (meist 3:27–3:30/km, HF unter Schwelle), langer Lauf 20,8 km ohne HF-Drift und mit schnellerem Schluss – sehr gute aerobe Signale. Die lockeren Läufe liegen jetzt wieder bei ~5:00–5:05/km mit HF 136–138, die Gardasee-Müdigkeit ist raus. Rad 4:18 h (Soll ~5 h nach Absage Di): Grundlage-Pyramide 210 W, Sweet Spot 2×12' punktgenau mit 287 W trotz schlechter Nacht, 2:27 h Grundlage bei 4 °C. Stabi B mit Gewichten erledigt. Belastung insgesamt gut verteilt, keine Ermüdungszeichen. Ausblick KW 47 (53 km): Bergläufe 8×60s am Dienstag, Kraftausdauer am Rad am Donnerstag, langer Lauf 22 km am Sonntag. Hinweis: Läufe bitte nicht zu oft verlängern – die Steigerung kommt über den Plan."
+  "2026-11-09": "KW 46 (Base 1): Laufen 50,3 km in 5 Läufen (Soll 48; Sa-Lauf ausgelassen, dafür Mo zusätzlich 8 km). Qualität: Fahrtspiel 8×1' souverän (meist 3:27–3:30/km, HF unter Schwelle), langer Lauf 20,8 km ohne HF-Drift und mit schnellerem Schluss – sehr gute aerobe Signale. Die lockeren Läufe liegen jetzt wieder bei ~5:00–5:05/km mit HF 136–138, die Gardasee-Müdigkeit ist raus. Rad 4:18 h (Soll ~5 h nach Absage Di): Grundlage-Pyramide 210 W, Sweet Spot 2×12' punktgenau mit 287 W trotz schlechter Nacht, 2:27 h Grundlage bei 4 °C. Stabi B mit Gewichten erledigt. Belastung insgesamt gut verteilt, keine Ermüdungszeichen. Ausblick KW 47 (53 km): Bergläufe 8×60s am Dienstag, Kraftausdauer am Rad am Donnerstag, langer Lauf 22 km am Sonntag. Hinweis: Läufe bitte nicht zu oft verlängern – die Steigerung kommt über den Plan.",
+  "2026-11-16": "KW 47 (Base 2): Laufen 61 km in 5 Läufen (Plan 53, nach Anpassung 49) – Mehrumfang durch Montagslauf und längeres Ein-/Auslaufen bei den Bergläufen. Qualität: Bergläufe 8×60s stark und progressiv (255→289 m), Steigerungen sauber 3:41→3:14/km, langer Lauf 22,1 km ohne HF-Drift. Lockere Läufe jetzt 4:55–5:00/km bei HF 132–139 – deutlich ökonomischer als Anfang November (5:00 bei HF 137–138). Rad 5:45 h (Soll 5,9 h): Grundlage-Pyramide mit weniger Drift als in KW 46, Kraftausdauer wegen Muskelkater mit höherer Kadenz (274–280 W), Gravel-Tempo 276/284 W – wieder über der Vorgabe bei stabiler HF → FTP-Test am Mi 02.12. eingeplant. Stabi C mit Gewichten (Hip Thrust 50 kg), danach leichter Muskelkater. Fazit: sehr gute Woche, keine Ermüdungszeichen, aber zweimal in Folge über dem Laufplan. Ausblick KW 48 (58 km): Mo echter Ruhetag, Di erster Progressionslauf, Do Sweet Spot 2×20', So 24 km wellig. Laufumfang diesmal möglichst nah an 58 km halten."
  },
  "adjustments": {
   "2026-11-03-1": {
