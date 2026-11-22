@@ -1,5 +1,5 @@
 {
- "at": "2026-11-16T09:39:12.533Z",
+ "at": "2026-11-22T14:05:20.100Z",
  "planVersion": 4,
  "overrides": {
   "2026-11-14-1": {
@@ -19,25 +19,37 @@
   },
   "2026-11-20-1": {
    "date": "2026-11-21"
+  },
+  "2026-11-28-1": {
+   "date": "2026-11-27"
+  },
+  "2026-11-27-1": {
+   "date": "2026-11-28"
   }
  },
  "actuals": {
-  "2026-11-06-2": {
-   "done": true,
-   "date": "2026-11-06",
-   "min": 135,
-   "km": 50.9,
-   "pace": null,
-   "watts": 196,
-   "hr": 129,
-   "rpe": 6,
-   "ts": 1793975252748
-  },
   "2026-11-13-1": {
    "done": false,
    "missed": true,
    "date": "2026-11-14",
    "ts": 1794725236451
+  },
+  "2026-11-18-1": {
+   "done": true,
+   "date": "2026-11-18",
+   "min": 50,
+   "km": null,
+   "pace": null,
+   "watts": null,
+   "hr": null,
+   "rpe": null,
+   "weights": {
+    "Goblet Squat": "20",
+    "Hip Thrust (Langhantel)": "50",
+    "Seitliche Ausfallschritte": "20",
+    "Nordic Hamstring Curl (assistiert)": "8"
+   },
+   "ts": 1794989714797
   }
  }
 }
