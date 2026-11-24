@@ -1,7 +1,7 @@
 {
  "planId": "hamburg-2027",
- "version": 4,
- "generated": "2026-11-10",
+ "version": 5,
+ "generated": "2026-11-24",
  "goal": {
   "name": "Haspa Marathon Hamburg",
   "date": "2027-04-25",
@@ -193,7 +193,7 @@
    "phase": "build1",
    "deload": false,
    "focus": "Wechseltempo und 10 km im HM-Tempo – härteste Build-1-Woche.",
-   "runKm": 85,
+   "runKm": 84,
    "bikeH": 3.7
   },
   {
@@ -1051,7 +1051,7 @@
    "id": "2026-11-24-1",
    "date": "2026-11-24",
    "sport": "run",
-   "title": "Progressionslauf 12 km",
+   "title": "Progressionslauf 13 km",
    "load": "hard",
    "desc": "Drei Stufen ohne Pause: locker → steady → Marathon-Pace. Lehrt, am Ende schneller zu werden, wenn die Beine müde sind.",
    "steps": [
@@ -3300,7 +3300,7 @@
    "id": "2027-01-21-1",
    "date": "2027-01-21",
    "sport": "run",
-   "title": "Progressionslauf 14 km (locker → HM)",
+   "title": "Progressionslauf 15,5 km (locker → HM)",
    "load": "hard",
    "desc": "5 km locker, 5 km steady, 3 km Marathon-Pace, 1 km HM-Pace. Kontrolle bis zum Schluss.",
    "steps": [
@@ -3871,7 +3871,7 @@
     {
      "t": "easy",
      "zone": "E",
-     "km": 9.5,
+     "km": 10,
      "label": "Locker"
     },
     {
@@ -3904,7 +3904,7 @@
     {
      "t": "easy",
      "zone": "E",
-     "km": 9,
+     "km": 9.5,
      "label": "Locker"
     }
    ]
@@ -3941,7 +3941,7 @@
     {
      "t": "easy",
      "zone": "E",
-     "km": 14,
+     "km": 13,
      "label": "Locker"
     },
     {
@@ -4491,7 +4491,7 @@
     {
      "t": "easy",
      "zone": "E",
-     "km": 15,
+     "km": 14,
      "label": "Locker"
     },
     {
@@ -4892,7 +4892,7 @@
     {
      "t": "easy",
      "zone": "E",
-     "km": 11,
+     "km": 11.5,
      "label": "Locker"
     },
     {
@@ -4925,7 +4925,7 @@
     {
      "t": "easy",
      "zone": "E",
-     "km": 11,
+     "km": 11.5,
      "label": "Locker"
     }
    ]
@@ -4962,7 +4962,7 @@
     {
      "t": "easy",
      "zone": "E",
-     "km": 10,
+     "km": 9,
      "label": "Locker"
     },
     {
@@ -5756,7 +5756,7 @@
     {
      "t": "easy",
      "zone": "E",
-     "km": 11.5,
+     "km": 12,
      "label": "Locker"
     }
    ]
@@ -5793,7 +5793,7 @@
     {
      "t": "easy",
      "zone": "E",
-     "km": 13,
+     "km": 12,
      "label": "Locker"
     },
     {

@@ -64,7 +64,7 @@ export const RUN = {
     }),
   progression: ({ e = 5, s = 4, mp = 3 } = {}) =>
     R({
-      title: `Progressionslauf ${e + s + mp} km`,
+      title: `Progressionslauf ${e + s + mp + 1} km`,
       load: 'hard',
       desc: 'Drei Stufen ohne Pause: locker → steady → Marathon-Pace. Lehrt, am Ende schneller zu werden, wenn die Beine müde sind.',
       steps: [easyKm(e, 'Stufe 1 locker'), run('S', { km: s }, 'Stufe 2 Steady'), run('MP', { km: mp }, 'Stufe 3 Marathon-Pace'), cd(1)],
@@ -174,7 +174,7 @@ export const RUN = {
     }),
   progression14: () =>
     R({
-      title: 'Progressionslauf 14 km (locker → HM)',
+      title: 'Progressionslauf 15,5 km (locker → HM)',
       load: 'hard',
       desc: '5 km locker, 5 km steady, 3 km Marathon-Pace, 1 km HM-Pace. Kontrolle bis zum Schluss.',
       steps: [easyKm(5, 'Locker'), run('S', { km: 5 }, 'Steady'), run('MP', { km: 3 }, 'Marathon-Pace'), run('HM', { km: 1 }, 'HM-Pace'), cd(1.5)],
@@ -214,7 +214,7 @@ export const RUN = {
       case 'progressive':
         return { ...base, title: `Langer Lauf ${km} km progressiv`, desc: 'In drei Dritteln steigern: locker → oberes locker/steady → letztes Viertel Marathon-Pace.', steps: [easyKm(Math.round(km * 0.45), 'Locker'), run('S', { km: Math.round(km * 0.3) }, 'Steady'), run('MP', { km: km - Math.round(km * 0.45) - Math.round(km * 0.3) }, 'Marathon-Pace')] };
       case 'mpBlocks': {
-        const fast = n * blockKm + (n - 1) * 1;
+        const fast = n * (blockKm + 1); // jeder MP-Block + 1 km steady
         return { ...base, title: `Langer Lauf ${km} km mit ${n}× ${blockKm} km MP`, desc: 'Schlüsseleinheit Marathon: MP-Blöcke im langen Lauf, dazwischen 1 km steady. Rennverpflegung üben (alle 25–30 min).', steps: [easyKm(Math.max(km - fast - 2, 4), 'Locker'), rep(n, run('MP', { km: blockKm }, 'Marathon-Pace'), run('S', { km: 1 }, 'Steady')), easyKm(2, 'Auslaufen')] };
       }
       case 'mpContinuous':

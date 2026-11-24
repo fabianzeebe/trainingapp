@@ -84,10 +84,10 @@ export function migrateToPlan(plan, state) {
   if (state.planId === plan.planId && state.planVersion === plan.version) return null;
   const first = state.planId == null;
   const ids = new Set(plan.sessions.map((s) => s.id));
-  const today = todayStr();
   let dropped = 0;
   for (const [id, o] of Object.entries(state.overrides)) {
-    const keep = ids.has(id) && (id.slice(0, 10) < today || (o.date && o.date < today));
+    // Eigene Verschiebungen/Absagen bleiben erhalten, solange es die Einheit im neuen Plan noch gibt
+    const keep = ids.has(id);
     if (!keep) {
       delete state.overrides[id];
       dropped++;

@@ -47,3 +47,4 @@ Chronologisches Protokoll der Importe, Analysen und Plananpassungen (neueste unt
 - 2026-11-20 13:21 UTC – KW 49: FTP-Test 20′ am Mi 02.12. eingeplant (statt Rad 60′); Do 03.12. Tempo 2×15′ → Grundlage 60′, damit vor dem langen Lauf Fr 04.12. kein zweiter harter Tag liegt.
 - 2026-11-21 17:22 UTC – 21.11. Lauf locker + 6 Steigerungen importiert: 11,5 km, 4:53/km, HF 139, Strides 3:41→3:14/km. Woche ~61 km inkl. So (Plan 49).
 - 2026-11-22 12:33 UTC – 22.11. Langer Lauf importiert: 22,1 km, 5:01/km, HF 137 (134–141), kein Drift.- 2026-11-22 14:05 UTC – App-Stand 22.11. eingelesen: KW 48 Rad 3 h mit 2×20′ Tempo Sa 28.11. → Fr 27.11., Lauf + Steigerungen Fr → Sa (Athlet). Hinweis Fr: Tempo am unteren Ende (Do Sweet Spot).
+- 2026-11-24 06:17 UTC – Plan v5: Titel Progressionsläufe zeigen Gesamt-km (13 / 15,5 km), Fehler bei langen Läufen mit MP-Blöcken behoben (waren 1 km zu lang). Eigene Verschiebungen bleiben beim Planwechsel jetzt erhalten.
