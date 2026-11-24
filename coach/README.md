@@ -20,6 +20,7 @@ Text in eine Datei im Scratchpad speichern und `node tools/coach.mjs sync <datei
 2. Strava: `list_activities` für den Tag (bzw. seit dem letzten Import, siehe `coach/log.md`).
    - **Nicht importieren:** separate „Ausrollen“-Fahrten (Name enthält „Ausrollen“ oder kurze Rad-Aktivität < 25 min direkt nach einer anderen Ausfahrt).
    - Einheiten vor dem Planstart (02.11.2026) nicht importieren.
+   - **Schwimmen** (Swim) vorerst nicht importieren und nicht bewerten (Technikeinheiten als Vorbereitung auf Triathlon 2027, Absprache 24.11.2026). Nur erwähnen, wenn eine Einheit ungewöhnlich lang/hart war (> 60 min oder viel Intensität) – dann Erholung für den Folgetag prüfen.
 3. Jede Aktivität einer geplanten Einheit zuordnen (gleiches Datum ±1 Tag, gleiche Sportart; verschobene Einheiten beachten).
    Passt keine → als Zusatzeinheit (`extra`).
 4. Für Qualitätseinheiten `get_activity_performance` / Runden ansehen: Pace bzw. Watt und HF **pro Intervall** gegen die Vorgaben.
