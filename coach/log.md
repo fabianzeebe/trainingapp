@@ -51,3 +51,4 @@ Chronologisches Protokoll der Importe, Analysen und Plananpassungen (neueste unt
 
 - 2026-11-24 06:29 UTC – KW 49: Tausch Langer Lauf Fr 04.12. / Lauf locker So 06.12. als Coach-Anpassung gesichert (App-Verschiebung war beim Planwechsel verloren gegangen).
 - 2026-11-24 09:40 UTC – 24.11. Progressionslauf importiert: 13,2 km; Steady 4:31→4:24 (HF 150), MP 4:02/4:02/4:00 (HF 159–162). Punktgenau.
+- 2026-11-24 15:00 UTC – 24.11. Rad Grundlage 50′ (Rolle, Stufen) importiert: 205 W, HF 125.
