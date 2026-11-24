@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T06:29:29.895Z",
+ "updated": "2026-11-24T09:40:09.254Z",
  "actuals": {
   "2026-11-03-1": {
    "done": true,
@@ -545,6 +545,33 @@
     "km 21–22 · 4:50–4:57/km · HF 139–141"
    ],
    "coach": "Wieder ein Longrun ohne Drift: 22,1 km in Ø 5:01/km, HF über die ganze Strecke 134–141, km 16–20 sogar niedriger als am Anfang. Etwas flotter als die angepeilten 5:05–5:15, aber mit HF 137 klar im Grundlagenbereich – passt. Halbmarathon-Durchgang in 1:48:50 rein aerob. Nächster langer Lauf: 24 km wellig (So 29.11.)."
+  },
+  "2026-11-24-1": {
+   "done": true,
+   "source": "strava",
+   "date": "2026-11-24",
+   "min": 62,
+   "km": 13.2,
+   "pace": 281,
+   "hr": 145,
+   "maxHr": 163,
+   "watts": null,
+   "np": null,
+   "elev": 50,
+   "stravaId": "21104252073",
+   "note": "Erste 5 km etwas hügelig und durch Wohngebiete, nicht rhythmisch. Beine gut.",
+   "laps": [
+    "Stufe 1 locker 5 km · 5:05–5:11/km · HF 126–139",
+    "Stufe 2 Steady km 6 · 4:31 · HF 150",
+    "km 7 · 4:28 · HF 149",
+    "km 8 · 4:27 · HF 150",
+    "km 9 · 4:24 · HF 151",
+    "Stufe 3 MP km 10 · 4:02 · HF 159",
+    "km 11 · 4:02 · HF 161",
+    "km 12 · 4:00 · HF 162",
+    "Auslaufen 1,2 km · 5:16 · HF 140"
+   ],
+   "coach": "Punktlandung in allen drei Stufen: locker 5:05–5:11, Steady 4:31 → 4:24 (Ziel 4:23–4:37) bei HF 149–151, Marathon-Pace 4:02/4:02/4:00 (Ziel 4:00–4:03). Sauber progressiv, nie überzogen. Die HF bei MP lag mit 159–162 am oberen Rand des MP-Bereichs (155–162) – heute fühlt sich 4:01/km also noch eher nach HM-Anstrengung an. Genau das ist der Gradmesser für die nächsten Monate: Ziel ist, dass 4:01 bis Februar bei HF ~152–156 läuft."
   }
  },
  "extras": {

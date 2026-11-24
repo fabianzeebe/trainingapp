@@ -50,3 +50,4 @@ Chronologisches Protokoll der Importe, Analysen und Plananpassungen (neueste unt
 - 2026-11-24 06:17 UTC – Plan v5: Titel Progressionsläufe zeigen Gesamt-km (13 / 15,5 km), Fehler bei langen Läufen mit MP-Blöcken behoben (waren 1 km zu lang). Eigene Verschiebungen bleiben beim Planwechsel jetzt erhalten.
 
 - 2026-11-24 06:29 UTC – KW 49: Tausch Langer Lauf Fr 04.12. / Lauf locker So 06.12. als Coach-Anpassung gesichert (App-Verschiebung war beim Planwechsel verloren gegangen).
+- 2026-11-24 09:40 UTC – 24.11. Progressionslauf importiert: 13,2 km; Steady 4:31→4:24 (HF 150), MP 4:02/4:02/4:00 (HF 159–162). Punktgenau.
