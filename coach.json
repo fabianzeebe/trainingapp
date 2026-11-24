@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T14:05:47.270Z",
+ "updated": "2026-11-24T06:29:29.895Z",
  "actuals": {
   "2026-11-03-1": {
    "done": true,
@@ -898,7 +898,8 @@
      }
     ],
     "optional": true
-   }
+   },
+   "date": "2026-12-06"
   },
   "2026-11-19-1": {
    "modNote": "Coach: Montag zusätzlich 8 km gelaufen – Do-Lauf auf 6 km gekürzt, damit der Wochenumfang bei ~57 statt 61 km bleibt (Plan 53).",
@@ -1006,6 +1007,10 @@
      }
     ]
    }
+  },
+  "2026-12-06-1": {
+   "modNote": "Coach: Langer Lauf auf Freitag gezogen (Sa/So unterwegs, So Reisetag).",
+   "date": "2026-12-04"
   }
  }
 }
