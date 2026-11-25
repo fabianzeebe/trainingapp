@@ -54,3 +54,4 @@ Chronologisches Protokoll der Importe, Analysen und Plananpassungen (neueste unt
 - 2026-11-24 15:00 UTC – 24.11. Rad Grundlage 50′ (Rolle, Stufen) importiert: 205 W, HF 125.- 2026-11-24 15:15 UTC – Absprache: Schwimmen (Technik, Triathlon-Vorbereitung 2027) wird vorerst nicht importiert/bewertet.
 
 - 2026-11-25 08:13 UTC – 25.11. Stabi D importiert (50′, HF 91). Gewichte nur in der App.
+- 2026-11-25 10:45 UTC – 25.11. Rad Grundlage 75′ (Rolle, 3×15′ progressiv) importiert: 211/229/243 W, HF 122/130/135.

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T08:13:48.371Z",
+ "updated": "2026-11-25T10:45:22.299Z",
  "actuals": {
   "2026-11-03-1": {
    "done": true,
@@ -608,6 +608,31 @@
    "stravaId": "21116689786",
    "note": "Gewichte in der App eingetragen.",
    "coach": "Stabi D (Rumpf-Zirkel & Balance) erledigt, Ø HF 91 – reine Stabilisationsarbeit ohne Kreislaufbelastung, genau richtig vor Sweet Spot morgen. Heute noch 75′ Rad Grundlage."
+  },
+  "2026-11-25-2": {
+   "done": true,
+   "source": "strava",
+   "date": "2026-11-25",
+   "min": 75,
+   "km": 38.5,
+   "pace": null,
+   "hr": 124,
+   "maxHr": 140,
+   "watts": 209,
+   "np": null,
+   "elev": 0,
+   "stravaId": "21117756753",
+   "note": "Rolle, GA1 3×15′ progressiv. Sehr gut gefühlt.",
+   "laps": [
+    "Einfahren 10′ · 183 W · HF 113",
+    "15′ · 211 W (66 %) · HF 122",
+    "5′ · 181 W · HF 118",
+    "15′ · 229 W (71 %) · HF 130",
+    "5′ · 181 W · HF 121",
+    "15′ · 243 W (76 %) · HF 135",
+    "Ausfahren 10′ · 183 W · HF 121"
+   ],
+   "coach": "Sauber gestufte Grundlage: 211 → 229 → 243 W bei HF 122 → 130 → 135. Der letzte Block lag mit 243 W (76 %) knapp über der Grundlagen-Obergrenze, HF aber nur 135 – absolut im Rahmen. Ø 209 W, HF 124. Morgen früh locker laufen, nachmittags Sweet Spot 2×20′ (282–294 W)."
   }
  },
  "extras": {
