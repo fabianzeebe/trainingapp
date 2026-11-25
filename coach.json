@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T10:45:22.299Z",
+ "updated": "2026-11-25T15:48:03.834Z",
  "actuals": {
   "2026-11-03-1": {
    "done": true,
@@ -764,7 +764,9 @@
   "2026-11-20": "Am Vortag war Kraftausdauer am Rad – die 3×12′ Tempo heute am unteren Ende fahren (250–260 W), dazwischen wirklich Grundlage. Sonntag kommt der lange Lauf.",
   "2026-11-19": "Leichter Muskelkater nach Stabi C: Kraftausdauer am unteren Ende starten (269–275 W, 55–65 rpm), nur steigern, wenn es sich rund anfühlt. Knie und Hüfte stabil halten, Oberkörper ruhig.",
   "2026-11-22": "Diese Woche wird es mit dem langen Lauf rund 61 km statt 49 – heute daher genau 22 km, nicht mehr, und ruhig (HF unter 145, gerne 5:05–5:15/km). Montag ist ein echter Ruhetag.",
-  "2026-11-27": "Am Vortag Sweet Spot 2×20′ – die 2×20′ Tempo heute am unteren Ende fahren (250–260 W), dazwischen echte Grundlage. Sonntag kommt der lange Lauf (24 km wellig)."
+  "2026-11-27": "Am Vortag Sweet Spot 2×20′ – die 2×20′ Tempo heute am unteren Ende fahren (250–260 W), dazwischen echte Grundlage. Sonntag kommt der lange Lauf (24 km wellig).",
+  "2026-12-20": "Reisetag in die Schweiz – frei. Ab hier 2 Wochen ohne Rad, Fokus Laufen + Skifahren.",
+  "2026-12-21": "Skitage 21.–24.12.: Skifahren zählt als Training (Oberschenkel, exzentrisch). Erster Tag eher ruhig angehen, viel trinken (Höhe, trockene Luft). Läufe an diesen Tagen sind optional und ganz locker; abends 10–20 min Mobility. Am 25.12. geht es mit normalem Lauftraining weiter."
  },
  "weekNotes": {
   "2026-10-26": "Erholungswoche nach dem Isartal-HM (vor Planstart): 2 Läufe mit 35 km (10,5 km locker + 24,5 km Long Run), 2 Gravel-Ausfahrten mit ~4:45 h und 1× Beine & Stabi. Alle Läufe im Grundlagenbereich (HF Ø 138–141) ohne nennenswerte HF-Drift – die Erholung vom HM ist gut verlaufen und die aerobe Basis stimmt. Einziger Punkt: der Long Run 5 Tage nach dem HM war früh, durch den Ruhetag am Samstag aber gut abgefangen. Ausblick KW 45: Mo Ruhetag, Di/Mi locker laufen + Stabi, ab Do Gardasee mit Fokus Rad. Ab Montag ordne ich alles dem Plan zu.",
@@ -1099,6 +1101,242 @@
   "2026-12-06-1": {
    "modNote": "Coach: Langer Lauf auf Freitag gezogen (Sa/So unterwegs, So Reisetag).",
    "date": "2026-12-04"
+  },
+  "2026-12-17-2": {
+   "modNote": "Coach: Statt 40/20: am Freitag kommt der lange Lauf vorgezogen – daher nur Grundlage, dafür etwas länger (danach 2 Wochen ohne Rad).",
+   "replaced": {
+    "sport": "bike",
+    "title": "Rad Grundlage 90′ (letzte Radeinheit vor der Schweiz)",
+    "load": "easy",
+    "desc": "Ruhige Grundlage, gleichmäßig treten, Kadenz 85–95. Locker genug, dass der Lauf am nächsten Tag nicht leidet.",
+    "steps": [
+     {
+      "t": "easy",
+      "min": 90,
+      "pct": [
+       62,
+       72
+      ],
+      "label": "Grundlage"
+     }
+    ]
+   }
+  },
+  "2026-12-20-1": {
+   "modNote": "Coach: Langer Lauf vorgezogen: 20.12. Reisetag in die Schweiz, 18.12. noch zu Hause.",
+   "date": "2026-12-18"
+  },
+  "2026-12-18-1": {
+   "modNote": "Coach: In Konstanz: lockerer Lauf mit Steigerungen statt langer Ausfahrt.",
+   "date": "2026-12-19"
+  },
+  "2026-12-19-1": {
+   "modNote": "Coach: Unterwegs ohne Rad (Konstanz/Schweiz bis 02.01.).",
+   "cancelled": true,
+   "cancelReason": "Coach: Unterwegs ohne Rad (Konstanz/Schweiz bis 02.01.)."
+  },
+  "2026-12-19-2": {
+   "modNote": "Coach: Koppellauf entfällt mit der Radeinheit.",
+   "cancelled": true,
+   "cancelReason": "Coach: Koppellauf entfällt mit der Radeinheit."
+  },
+  "2026-12-22-1": {
+   "modNote": "Coach: Skitag (21.–24.12.): Bergläufe entfallen, Skifahren belastet die Oberschenkel stark – nur optionaler, sehr lockerer Lauf.",
+   "replaced": {
+    "sport": "run",
+    "title": "Lauf locker 35′ (Skitag, optional)",
+    "load": "easy",
+    "desc": "Nur wenn die Beine nach dem Skifahren locker sind: 30–40 min ganz ruhig, HF unter 140, gern auf geräumtem Talweg. Skifahren zählt heute als Training (Oberschenkel exzentrisch!).",
+    "steps": [
+     {
+      "t": "easy",
+      "zone": "E",
+      "km": 7,
+      "label": "Locker"
+     }
+    ],
+    "optional": true
+   }
+  },
+  "2026-12-22-2": {
+   "modNote": "Coach: Kein Rad in der Schweiz.",
+   "cancelled": true,
+   "cancelReason": "Coach: Kein Rad in der Schweiz."
+  },
+  "2026-12-23-1": {
+   "modNote": "Coach: Skitag: Stabi D durch kurze Mobility ersetzt.",
+   "replaced": {
+    "sport": "gym",
+    "title": "Mobility 20′ nach dem Skifahren",
+    "load": "easy",
+    "min": 20,
+    "desc": "Abends 20 min: Hüftbeuger, Oberschenkel vorne/hinten, Waden, Rücken. Foam Roller falls vorhanden. Kein Krafttraining an Skitagen.",
+    "exercises": [
+     "Nur leichte Aktivierung, nichts Neues, kein Muskelkater!",
+     "Dead Bug – 2× 8/Seite",
+     "Seitstütz – 2× 30s/Seite",
+     "Glute Bridge – 2× 12",
+     "Monster Walk – 2× 10 Schritte",
+     "Wadenheben – 2× 12",
+     "Mobility Hüfte & Waden 10 min"
+    ]
+   }
+  },
+  "2026-12-23-2": {
+   "modNote": "Coach: Kein Rad in der Schweiz.",
+   "cancelled": true,
+   "cancelReason": "Coach: Kein Rad in der Schweiz."
+  },
+  "2026-12-24-1": {
+   "modNote": "Coach: Skitag: nur optionaler lockerer Lauf.",
+   "replaced": {
+    "sport": "run",
+    "title": "Lauf locker 35′ (Skitag, optional)",
+    "load": "easy",
+    "desc": "Optional morgens oder nach dem Skifahren: 30–40 min ganz locker. Fühlen sich die Oberschenkel schwer an: auslassen, Mobility reicht.",
+    "steps": [
+     {
+      "t": "easy",
+      "zone": "E",
+      "km": 7,
+      "label": "Locker"
+     }
+    ],
+    "optional": true
+   }
+  },
+  "2026-12-24-2": {
+   "modNote": "Coach: Kein Rad in der Schweiz.",
+   "cancelled": true,
+   "cancelReason": "Coach: Kein Rad in der Schweiz."
+  },
+  "2026-12-26-1": {
+   "modNote": "Coach: Kein Rad: Stabi im Gym statt 3 h Grundlage.",
+   "replaced": {
+    "sport": "gym",
+    "title": "Stabi D im Gym",
+    "load": "easy",
+    "min": 50,
+    "desc": "Rumpf-Zirkel im Gym vor Ort. Danach optional 20–30 min Crosstrainer oder Ergometer locker, falls vorhanden.",
+    "exercises": [
+     "Aufwärmen: 5 min + Mobility",
+     "Zirkel 3 Runden, 40s Belastung / 20s Pause:",
+     "· Plank Shoulder Taps",
+     "· Russian Twist mit Gewicht",
+     "· Einbeinstand auf Kissen mit Ballwurf/Armbewegung",
+     "· Reverse Crunch",
+     "· Seitstütz rechts / links",
+     "· Superman / Rückenstrecker",
+     "· Clamshells mit Band",
+     "Abschluss: Wadenheben auf Stufe 3× 15"
+    ]
+   }
+  },
+  "2026-12-26-2": {
+   "modNote": "Coach: Statt Koppellauf: normaler lockerer Lauf, Sonntag kommt der lange Lauf.",
+   "replaced": {
+    "sport": "run",
+    "title": "Lauf locker",
+    "load": "easy",
+    "desc": "Lockerer Dauerlauf im Gesprächstempo. Bewusst langsam, das ist die Basis für alles andere.",
+    "steps": [
+     {
+      "t": "easy",
+      "zone": "E",
+      "km": 10,
+      "label": "Locker"
+     }
+    ]
+   }
+  },
+  "2026-12-27-1": {
+   "modNote": "Coach: Nach 4 Skitagen und auf Winterwegen: 26 statt 28 km, flach und ruhig.",
+   "replaced": {
+    "sport": "run",
+    "long": true,
+    "load": "hard",
+    "title": "Langer Lauf 26 km",
+    "desc": "Möglichst flache, geräumte Strecke im Tal (Talweg/Rhone). Bei Schnee/Glätte Trailschuhe oder Spikes; notfalls in zwei Teilen oder teilweise auf dem Laufband. Nach den Skitagen ruhig laufen, HF unter 145.",
+    "steps": [
+     {
+      "t": "easy",
+      "zone": "E",
+      "km": 26,
+      "label": "Locker"
+     }
+    ]
+   }
+  },
+  "2026-12-29-1": {
+   "modNote": "Coach: Fahrtspiel bleibt, bei Winterbedingungen auf dem Laufband.",
+   "replaced": {
+    "sport": "run",
+    "title": "Fahrtspiel 6× 2' HM-Tempo",
+    "load": "moderate",
+    "desc": "Auf dem Laufband im Gym (1 % Steigung) oder auf einem geräumten flachen Abschnitt. Bei Schnee/Glätte lieber Laufband – sauberes Tempo ist wichtiger als draußen.",
+    "steps": [
+     {
+      "t": "wu",
+      "zone": "E",
+      "km": 3,
+      "label": "Einlaufen"
+     },
+     {
+      "rep": 6,
+      "steps": [
+       {
+        "t": "work",
+        "zone": "HM",
+        "min": 2,
+        "label": "HM-Tempo"
+       },
+       {
+        "t": "rec",
+        "zone": "JOG",
+        "min": 1,
+        "label": "Trabpause"
+       }
+      ]
+     },
+     {
+      "t": "cd",
+      "zone": "E",
+      "km": 3,
+      "label": "Auslaufen"
+     }
+    ]
+   }
+  },
+  "2026-12-30-2": {
+   "modNote": "Coach: Kein eigenes Rad: optional Ergometer im Gym.",
+   "replaced": {
+    "sport": "bike",
+    "title": "Ergometer/Crosstrainer locker 45′ (optional, Gym)",
+    "load": "easy",
+    "desc": "Nur falls im Gym ein Ergometer oder Crosstrainer steht: 45 min locker nach Gefühl (Watt am Gym-Rad sind nicht vergleichbar). Sonst einfach weglassen.",
+    "steps": [
+     {
+      "t": "easy",
+      "min": 45,
+      "pct": [
+       62,
+       72
+      ],
+      "label": "Grundlage"
+     }
+    ],
+    "optional": true
+   }
+  },
+  "2026-12-31-2": {
+   "modNote": "Coach: Kein Rad: Schwelleneinheit am Rad entfällt (FTP-Check ist am 02.12.).",
+   "cancelled": true,
+   "cancelReason": "Coach: Kein Rad: Schwelleneinheit am Rad entfällt (FTP-Check ist am 02.12.)."
+  },
+  "2027-01-02-1": {
+   "modNote": "Coach: Rückreise nach München.",
+   "cancelled": true,
+   "cancelReason": "Coach: Rückreise nach München."
   }
  }
 }

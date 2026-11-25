@@ -55,3 +55,4 @@ Chronologisches Protokoll der Importe, Analysen und Plananpassungen (neueste unt
 
 - 2026-11-25 08:13 UTC – 25.11. Stabi D importiert (50′, HF 91). Gewichte nur in der App.
 - 2026-11-25 10:45 UTC – 25.11. Rad Grundlage 75′ (Rolle, 3×15′ progressiv) importiert: 211/229/243 W, HF 122/130/135.
+- 2026-11-25 15:47 UTC – Urlaubsplanung Schweiz 18.12.–02.01. eingetragen (siehe Einträge 17.12.–02.01.).
