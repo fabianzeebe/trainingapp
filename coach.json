@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T15:00:27.820Z",
+ "updated": "2026-11-25T08:13:48.371Z",
  "actuals": {
   "2026-11-03-1": {
    "done": true,
@@ -593,6 +593,21 @@
     "Ausfahren 7' · 197 W · HF 125"
    ],
    "coach": "Lockere Grundlage nach dem Progressionslauf: Ø 205 W (64 % FTP), HF 125, max 136 – genau richtig. Gleiche Stufen wie am 17.11. bei praktisch gleicher HF, obwohl der Lauf heute früh deutlich intensiver war. Die Beine erholen sich schnell. Morgen Stabi D + 75′ Grundlage."
+  },
+  "2026-11-25-1": {
+   "done": true,
+   "source": "strava",
+   "date": "2026-11-25",
+   "min": 50,
+   "km": null,
+   "pace": null,
+   "hr": 91,
+   "maxHr": 134,
+   "watts": null,
+   "np": null,
+   "stravaId": "21116689786",
+   "note": "Gewichte in der App eingetragen.",
+   "coach": "Stabi D (Rumpf-Zirkel & Balance) erledigt, Ø HF 91 – reine Stabilisationsarbeit ohne Kreislaufbelastung, genau richtig vor Sweet Spot morgen. Heute noch 75′ Rad Grundlage."
   }
  },
  "extras": {
