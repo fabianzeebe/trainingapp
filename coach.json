@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T09:23:13.173Z",
+ "updated": "2026-11-26T16:21:27.948Z",
  "actuals": {
   "2026-11-03-1": {
    "done": true,
@@ -656,6 +656,29 @@
     "0,6 km 4:55 · HF 137"
    ],
    "coach": "Locker und gleichmäßig: Ø 4:58/km bei HF 137, kein Anstieg. 10,6 statt 9,5 km ist ok. Zum Hüftbeuger: wahrscheinlich eine Mischung aus Stabi D gestern (Reverse Crunch, Rumpf) und viel Sitzen – bitte beobachten. Beim Sweet Spot heute: wenn es beim Einfahren zieht, nur Grundlage fahren."
+  },
+  "2026-11-26-2": {
+   "done": true,
+   "source": "strava",
+   "date": "2026-11-26",
+   "min": 70,
+   "km": 38.2,
+   "pace": null,
+   "hr": 141,
+   "maxHr": 160,
+   "watts": 243,
+   "np": null,
+   "elev": 0,
+   "stravaId": "21132874451",
+   "note": "Rolle. Hüftbeuger nicht gemerkt. Rechter Oberschenkel im 2. Intervall letzte 8 min mehr zugemacht als links – schmerzfrei, nur ermüdet.",
+   "laps": [
+    "Einfahren 15′ · 174 → 225 W · HF 117 → 130",
+    "SS 1 · 20′ · 290 W (91 %) · HF 149 (max 155) · 94 rpm",
+    "Pause 5′ · 165 W · HF 133",
+    "SS 2 · 20′ · 289 W (90 %) · HF 154 (max 160) · 92 rpm",
+    "Ausfahren 10′ · 166 W · HF 129"
+   ],
+   "coach": "Zwei sehr konstante Blöcke mit 290/289 W (90–91 % FTP), genau im Sweet Spot. Block 2 kostete deutlich mehr: HF +5 (149 → 154, Spitze 160) und rechter Oberschenkel zu – das war ein ordentlicher Reiz, eher an der Grenze zur Schwelle. Rechts/links-Unterschied beobachten (Ermüdung, Sitzposition, Stabi); solange es schmerzfrei bleibt, kein Grund zur Sorge. Morgen keine weitere Intensität nötig."
   }
  },
  "extras": {
