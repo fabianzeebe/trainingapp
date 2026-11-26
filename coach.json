@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T15:48:03.834Z",
+ "updated": "2026-11-26T09:17:35.277Z",
  "actuals": {
   "2026-11-03-1": {
    "done": true,
@@ -633,6 +633,29 @@
     "Ausfahren 10′ · 183 W · HF 121"
    ],
    "coach": "Sauber gestufte Grundlage: 211 → 229 → 243 W bei HF 122 → 130 → 135. Der letzte Block lag mit 243 W (76 %) knapp über der Grundlagen-Obergrenze, HF aber nur 135 – absolut im Rahmen. Ø 209 W, HF 124. Morgen früh locker laufen, nachmittags Sweet Spot 2×20′ (282–294 W)."
+  },
+  "2026-11-26-1": {
+   "done": true,
+   "source": "strava",
+   "date": "2026-11-26",
+   "min": 53,
+   "km": 10.6,
+   "pace": 298,
+   "hr": 137,
+   "maxHr": 146,
+   "watts": null,
+   "np": null,
+   "elev": 19,
+   "stravaId": "21128627987",
+   "note": "Etwas länger, gut gefühlt. Hüftbeuger hat etwas gezwickt, danach lange gedehnt.",
+   "laps": [
+    "km 1 5:11 · HF 135",
+    "km 2–4 4:55–5:01 · HF 134–139",
+    "km 5–8 4:56–4:58 · HF 138–140",
+    "km 9–10 4:57 · HF 135–136",
+    "0,6 km 4:55 · HF 137"
+   ],
+   "coach": "Locker und gleichmäßig: Ø 4:58/km bei HF 137, kein Anstieg. 10,6 statt 9,5 km ist ok. Zum Hüftbeuger: wahrscheinlich eine Mischung aus Stabi D gestern (Reverse Crunch, Rumpf) und viel Sitzen – bitte beobachten. Beim Sweet Spot heute: wenn es beim Einfahren zieht, nur Grundlage fahren."
   }
  },
  "extras": {
@@ -766,7 +789,8 @@
   "2026-11-22": "Diese Woche wird es mit dem langen Lauf rund 61 km statt 49 – heute daher genau 22 km, nicht mehr, und ruhig (HF unter 145, gerne 5:05–5:15/km). Montag ist ein echter Ruhetag.",
   "2026-11-27": "Am Vortag Sweet Spot 2×20′ – die 2×20′ Tempo heute am unteren Ende fahren (250–260 W), dazwischen echte Grundlage. Sonntag kommt der lange Lauf (24 km wellig).",
   "2026-12-20": "Reisetag in die Schweiz – frei. Ab hier 2 Wochen ohne Rad, Fokus Laufen + Skifahren.",
-  "2026-12-21": "Skitage 21.–24.12.: Skifahren zählt als Training (Oberschenkel, exzentrisch). Erster Tag eher ruhig angehen, viel trinken (Höhe, trockene Luft). Läufe an diesen Tagen sind optional und ganz locker; abends 10–20 min Mobility. Am 25.12. geht es mit normalem Lauftraining weiter."
+  "2026-12-21": "Skitage 21.–24.12.: Skifahren zählt als Training (Oberschenkel, exzentrisch). Erster Tag eher ruhig angehen, viel trinken (Höhe, trockene Luft). Läufe an diesen Tagen sind optional und ganz locker; abends 10–20 min Mobility. Am 25.12. geht es mit normalem Lauftraining weiter.",
+  "2026-11-26": "Hüftbeuger: Beim Einfahren auf Zwicken achten. Zieht es bei Belastung, Sweet Spot abbrechen und 60′ locker fahren. Heute Abend Hüftbeuger-Dehnung im Ausfallschritt (2× 60 s/Seite, Becken nach vorn kippen, nicht ins Hohlkreuz) und Gesäß aktivieren (Glute Bridge 2× 15)."
  },
  "weekNotes": {
   "2026-10-26": "Erholungswoche nach dem Isartal-HM (vor Planstart): 2 Läufe mit 35 km (10,5 km locker + 24,5 km Long Run), 2 Gravel-Ausfahrten mit ~4:45 h und 1× Beine & Stabi. Alle Läufe im Grundlagenbereich (HF Ø 138–141) ohne nennenswerte HF-Drift – die Erholung vom HM ist gut verlaufen und die aerobe Basis stimmt. Einziger Punkt: der Long Run 5 Tage nach dem HM war früh, durch den Ruhetag am Samstag aber gut abgefangen. Ausblick KW 45: Mo Ruhetag, Di/Mi locker laufen + Stabi, ab Do Gardasee mit Fokus Rad. Ab Montag ordne ich alles dem Plan zu.",
