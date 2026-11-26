@@ -56,4 +56,4 @@ Chronologisches Protokoll der Importe, Analysen und Plananpassungen (neueste unt
 - 2026-11-25 08:13 UTC – 25.11. Stabi D importiert (50′, HF 91). Gewichte nur in der App.
 - 2026-11-25 10:45 UTC – 25.11. Rad Grundlage 75′ (Rolle, 3×15′ progressiv) importiert: 211/229/243 W, HF 122/130/135.
 - 2026-11-25 15:47 UTC – Urlaubsplanung Schweiz 18.12.–02.01. eingetragen (siehe Einträge 17.12.–02.01.).
-- 2026-11-26 09:17 UTC – 26.11. Lauf locker importiert: 10,6 km, 4:58/km, HF 137. Hüftbeuger leicht gezwickt – beobachten.
+- 2026-11-26 09:17 UTC – 26.11. Lauf locker importiert: 10,6 km, 4:58/km, HF 137. Hüftbeuger leicht gezwickt – beobachten.- 2026-11-26 09:23 UTC – App-Stand 26.11. eingelesen (RPE: Progressionslauf 7, GA 4, Stabi D 4; Russian Twist 10 kg). Hinweis Fr 27.11. um Hüftbeuger ergänzt.

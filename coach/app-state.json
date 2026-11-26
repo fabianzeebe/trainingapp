@@ -1,5 +1,5 @@
 {
- "at": "2026-11-24T06:29:01.880Z",
+ "at": "2026-11-26T09:22:35.912Z",
  "planVersion": 5,
  "overrides": {
   "2026-11-14-1": {
@@ -44,6 +44,42 @@
     "Nordic Hamstring Curl (assistiert)": "8"
    },
    "ts": 1794989714797
+  },
+  "2026-11-24-2": {
+   "done": true,
+   "date": "2026-11-24",
+   "min": 51,
+   "km": 25.9,
+   "pace": null,
+   "watts": 205,
+   "hr": 125,
+   "rpe": 4,
+   "ts": 1795546396805
+  },
+  "2026-11-24-1": {
+   "done": true,
+   "date": "2026-11-24",
+   "min": 62,
+   "km": 13.2,
+   "pace": 281.8181818181818,
+   "watts": null,
+   "hr": 145,
+   "rpe": 7,
+   "ts": 1795546411032
+  },
+  "2026-11-25-1": {
+   "done": true,
+   "date": "2026-11-25",
+   "min": 50,
+   "km": null,
+   "pace": null,
+   "watts": null,
+   "hr": null,
+   "rpe": 4,
+   "weights": {
+    "Russian Twist mit Gewicht": "10kg"
+   },
+   "ts": 1795594274440
   }
  }
 }
