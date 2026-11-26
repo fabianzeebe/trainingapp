@@ -58,4 +58,4 @@ Chronologisches Protokoll der Importe, Analysen und Plananpassungen (neueste unt
 - 2026-11-25 15:47 UTC – Urlaubsplanung Schweiz 18.12.–02.01. eingetragen (siehe Einträge 17.12.–02.01.).
 - 2026-11-26 09:17 UTC – 26.11. Lauf locker importiert: 10,6 km, 4:58/km, HF 137. Hüftbeuger leicht gezwickt – beobachten.- 2026-11-26 09:23 UTC – App-Stand 26.11. eingelesen (RPE: Progressionslauf 7, GA 4, Stabi D 4; Russian Twist 10 kg). Hinweis Fr 27.11. um Hüftbeuger ergänzt.
 
-- 2026-11-26 16:21 UTC – 26.11. Sweet Spot 2×20′ (Rolle) importiert: 290/289 W, HF 149/154 (max 160). Rechter Oberschenkel im 2. Block ermüdet, schmerzfrei. Hüftbeuger ok.
+- 2026-11-26 16:21 UTC – 26.11. Sweet Spot 2×20′ (Rolle) importiert: 290/289 W, HF 149/154 (max 160). Rechter Oberschenkel im 2. Block ermüdet, schmerzfrei. Hüftbeuger ok.- 2026-11-26 16:23 UTC – Athlet: Zumachen des rechten Oberschenkels hängt vermutlich mit dem rechten Hüftbeuger zusammen (Rectus femoris). Beobachten; Sa-Lauf als Check, So-Longrun ggf. flach statt wellig. Variante für Fr noch offen.
