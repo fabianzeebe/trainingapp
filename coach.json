@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T06:28:37.228Z",
+ "updated": "2026-11-27T12:44:56.580Z",
  "actuals": {
   "2026-11-03-1": {
    "done": true,
@@ -679,6 +679,30 @@
     "Ausfahren 10′ · 166 W · HF 129"
    ],
    "coach": "Zwei sehr konstante Blöcke mit 290/289 W (90–91 % FTP), genau im Sweet Spot. Block 2 kostete deutlich mehr: HF +5 (149 → 154, Spitze 160) und rechter Oberschenkel zu – das war ein ordentlicher Reiz, eher an der Grenze zur Schwelle. Rechts/links-Unterschied beobachten (Ermüdung, Sitzposition, Stabi); solange es schmerzfrei bleibt, kein Grund zur Sorge. Morgen keine weitere Intensität nötig."
+  },
+  "2026-11-28-1": {
+   "done": true,
+   "source": "strava",
+   "date": "2026-11-27",
+   "min": 91,
+   "km": 47.4,
+   "pace": null,
+   "hr": 129,
+   "maxHr": 147,
+   "watts": 213,
+   "np": null,
+   "elev": 0,
+   "stravaId": "21141417356",
+   "note": "Rolle, GA1-Fahrtspiel.",
+   "laps": [
+    "Einfahren 10′ · 174 W · HF 115",
+    "20′ · 202 W (63 %) · HF 121",
+    "30′ · 227 W (71 %) · HF 131",
+    "5′ · 170 W · HF 126",
+    "20′ · 242 W (76 %) · HF 141 (max 147)",
+    "Ausfahren 5′ · 193 W · HF 135"
+   ],
+   "coach": "91′ Grundlage, Ø 213 W, HF 129 – im Wesentlichen wie besprochen. Der letzte 20′-Block mit 242 W (76 %) lag über den 200–225 W und kostete HF 141: einen Tag nach den 2×20′ mit 290 W hätte ich ihn ruhiger gefahren. Kein Problem, aber am Ende einer harten Radwoche reicht echte Grundlage. Morgen lockerer Lauf als Check für den Hüftbeuger – Steigerungen nur bei beschwerdefreier Hüfte."
   }
  },
  "extras": {

@@ -61,3 +61,4 @@ Chronologisches Protokoll der Importe, Analysen und Plananpassungen (neueste unt
 - 2026-11-26 16:21 UTC – 26.11. Sweet Spot 2×20′ (Rolle) importiert: 290/289 W, HF 149/154 (max 160). Rechter Oberschenkel im 2. Block ermüdet, schmerzfrei. Hüftbeuger ok.- 2026-11-26 16:23 UTC – Athlet: Zumachen des rechten Oberschenkels hängt vermutlich mit dem rechten Hüftbeuger zusammen (Rectus femoris). Beobachten; Sa-Lauf als Check, So-Longrun ggf. flach statt wellig. Variante für Fr noch offen.
 
 - 2026-11-27 06:28 UTC – Anpassung 2026-11-28-1 (Fr 27.11.): Rad Grundlage 90–105′ Rolle statt 3 h mit 2×20′ Tempo (Variante A, Athlet).
+- 2026-11-27 12:44 UTC – 27.11. Rad Grundlage 91′ (Rolle) importiert: 213 W, HF 129; letzter Block 242 W über Vorgabe.
