@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T12:44:56.580Z",
+ "updated": "2026-11-28T13:17:34.957Z",
  "actuals": {
   "2026-11-03-1": {
    "done": true,
@@ -703,6 +703,29 @@
     "Ausfahren 5′ · 193 W · HF 135"
    ],
    "coach": "91′ Grundlage, Ø 213 W, HF 129 – im Wesentlichen wie besprochen. Der letzte 20′-Block mit 242 W (76 %) lag über den 200–225 W und kostete HF 141: einen Tag nach den 2×20′ mit 290 W hätte ich ihn ruhiger gefahren. Kein Problem, aber am Ende einer harten Radwoche reicht echte Grundlage. Morgen lockerer Lauf als Check für den Hüftbeuger – Steigerungen nur bei beschwerdefreier Hüfte."
+  },
+  "2026-11-27-1": {
+   "done": true,
+   "source": "strava",
+   "date": "2026-11-28",
+   "min": 56,
+   "km": 11.2,
+   "pace": 298,
+   "hr": 138,
+   "maxHr": 146,
+   "watts": null,
+   "np": null,
+   "elev": 24,
+   "stravaId": "21150676093",
+   "note": "Strides vorsichtshalber weggelassen, Hüftbeuger noch etwas gemerkt.",
+   "laps": [
+    "km 1 5:05 · HF 135",
+    "km 2–5 4:53–5:00 · HF 137–139",
+    "km 6–9 4:56–5:00 · HF 137–139",
+    "km 10–11 4:55–4:57 · HF 138",
+    "0,2 km · HF 139"
+   ],
+   "coach": "Locker und gleichmäßig (Ø 4:58/km, HF 138) – richtig, die Steigerungen wegzulassen, solange der Hüftbeuger sich meldet. Für den langen Lauf morgen: flach statt wellig und 22 statt 24 km, damit die Hüfte nicht bergauf zusätzlich gefordert wird."
   }
  },
  "extras": {
@@ -1425,6 +1448,24 @@
        72
       ],
       "label": "Grundlage"
+     }
+    ]
+   }
+  },
+  "2026-11-29-1": {
+   "modNote": "Coach: Hüftbeuger rechts noch spürbar: langer Lauf flach statt wellig und 22 statt 24 km, mit Abbruch-Regel.",
+   "replaced": {
+    "sport": "run",
+    "long": true,
+    "load": "hard",
+    "title": "Langer Lauf 22 km flach",
+    "desc": "Wegen des Hüftbeugers flach statt wellig und 22 statt 24 km. Ruhig laufen (HF unter 145). Abbruch-Regel: wird das Ziehen stärker oder verändert sich dein Laufstil, abkürzen und heimtraben – lieber 16 km gut als 22 km mit Schmerz. Vorher 5 min Hüft-Mobility, danach Couch-Stretch.",
+    "steps": [
+     {
+      "t": "easy",
+      "zone": "E",
+      "km": 22,
+      "label": "Locker"
      }
     ]
    }

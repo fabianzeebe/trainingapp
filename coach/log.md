@@ -62,3 +62,4 @@ Chronologisches Protokoll der Importe, Analysen und Plananpassungen (neueste unt
 
 - 2026-11-27 06:28 UTC – Anpassung 2026-11-28-1 (Fr 27.11.): Rad Grundlage 90–105′ Rolle statt 3 h mit 2×20′ Tempo (Variante A, Athlet).
 - 2026-11-27 12:44 UTC – 27.11. Rad Grundlage 91′ (Rolle) importiert: 213 W, HF 129; letzter Block 242 W über Vorgabe.
+- 2026-11-28 13:17 UTC – 28.11. Lauf locker importiert: 11,2 km, 4:58/km, HF 138, ohne Steigerungen (Hüftbeuger noch spürbar). So-Longrun auf 22 km flach angepasst.
